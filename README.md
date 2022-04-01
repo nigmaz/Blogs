@@ -33,7 +33,7 @@ Syntax highlighted code block
 For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
 ```Sample
-https://github.com/l1j9m4-0n1/Blog/blob/main/sample_Markdown.png
+![Image](https://github.com/l1j9m4-0n1/Blog/blob/main/sample_Markdown.png)
 ```
 
 ### Jekyll Themes
