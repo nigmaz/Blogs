@@ -148,20 +148,20 @@ sudo apt update && \
 sudo apt install code
 ```
 
-### 5) Install tools for pwn
+### 6) Install tools for Pwnable
 
 #### +) Create folder for tools
 
 ```bash
-cd ~/ && \
-mkdir Install && \
-cd Install
+$ cd ~/ && \
+mkdir Tools && \
+cd Tools
 ```
 
 #### +) pwndbg (Gdb extension)
 
 ```bash
-git clone https://github.com/pwndbg/pwndbg.git && \
+$ git clone https://github.com/pwndbg/pwndbg.git && \
 cd pwndbg && \
 ./setup.sh && \
 cd ../
@@ -172,9 +172,22 @@ cd ../
 * It usually install with pwntools, you can pass if you already can use ROPgadget
 
 ```bash
-git clone https://github.com/JonathanSalwan/ROPgadget.git && \
+$ git clone https://github.com/JonathanSalwan/ROPgadget.git && \
 cd ROPgadget && \
-sudo python setup.py install && \
+sudo python3 setup.py install && \
+cd ../
+```
+
+#### +) pwninit (Tools for patching libc)
+
+* Download the pwninit binary and copy to `/usr/bin/` to excute as a command in terminal
+
+```bash
+mkdir pwninit && \
+cd pwninit && \
+wget https://github.com/io12/pwninit/releases/download/3.2.0/pwninit && \
+chmod +x pwninit && \
+sudo cp pwninit /usr/bin/ && \
 cd ../
 ```
 
@@ -191,22 +204,9 @@ sudo apt install -y gcc ruby-dev && \
 sudo gem install seccomp-tools
 ```
 
-#### +) pwninit (Tools for patching libc)
+#### +) Ghidra (Tools for reversing)
 
-* Download the pwninit binary and copy to `/usr/bin/` to excute as a command in terminal
-
-```bash
-mkdir pwninit && \
-cd pwninit && \
-wget https://github.com/io12/pwninit/releases/download/3.2.0/pwninit && \
-chmod +x pwninit && \
-sudo cp pwninit /usr/bin/ && \
-cd ../
-```
-
-#### +) ghidra (Tools for reversing)
-
-* Version 10.1.12 latest in 8/3/2022, check for new version in [ghidra](https://github.com/NationalSecurityAgency/ghidra/releases)
+* Version 10.1.12 latest in 01/04/2022, check for new version in [ghidra](https://github.com/NationalSecurityAgency/ghidra/releases)
 
 ```bash
 wget https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_10.1.2_build/ghidra_10.1.2_PUBLIC_20220125.zip && \
@@ -247,75 +247,6 @@ git clone https://github.com/niklasb/libc-database
 ```bash
 sudo apt install -y docker.io
 ```
-
-### 6) Add libc source code to gdb
-
-* Use when you want to debug deep in libc function like (printf, puts, read, ...), i need to setup this when i learned FSOP attack
-
-* Download the glibc source code
-
-```bash
-git config --global http.sslverify false && \
-git clone https://sourceware.org/git/glibc.git
-```
-
-* Setup some scripts for convenient work
-
-```bash
-mkdir add_glibc_source && \
-cd add_glibc_source && \
-touch add_glibc_source.py && \
-nano add_glibc_source.py
-```
-
-* Copy and patse this code to `add_glibc_source.py`, edit the path `/home/cobra/` to your path ( this is my scripts, sorry if it so noob :)) )
-
-```python
-import gdb
-import os
-
-def add_all_folder(path):
-	gdb.execute('dir ' + path)
-	dir = os.listdir(path)
-	for i in dir:
-		subfolder = path + i + '/'
-		if os.path.isdir(subfolder):
-			add_all_folder(subfolder)
-
-add_all_folder('/home/cobra/Install/glibc/')
-```
-
-* We add this script to `.gdbinit`, this will auto add glibc source code when we start gdb
-
-```bash
-echo "source ~/Install/add_glibc_source/add_glibc_source.py" >> ~/.gdbinit
-```
-
-* Create another scripts
-
-```bash
-touch libc && \
-nano libc
-```
-
-* Copy and patse this code to `libc`
-
-```bash
-#!/bin/sh
-
-cd ~/Install/glibc/
-git checkout release/$1/master
-```
-
-* Add it to `/usr/bin/` to execute as a command
-
-```bash
-chmod +x libc && \
-sudo cp libc /usr/bin && \
-cd ../
-```
-
-* Later if you want to change version of glibc source code, just open the terminal and type `libc + version`, this equal to go to the libc folder and checkout to that version
 
 ### 7) Setup qemu
 
