@@ -95,7 +95,7 @@ pip 20.0.2 from /usr/local/lib/python2.7/dist-packages/pip (python 2.7)
 ```
 NOTE: Add PATH
 
-### 3) Install needed libraries
+### 4) Install needed libraries
 
 * Update Ubuntu
 
@@ -107,13 +107,19 @@ $ sudo apt-get upgrade
 * Install libraries and tools
 
 ```bash
-sudo apt-get install -y socat build-essential jq strace ltrace curl wget rubygems gcc dnsutils netcat gcc-multilib net-tools gdb gdb-multiarch python python3 python3-pip python3-dev libssl-dev libffi-dev wget git make procps libpcre3-dev libdb-dev libxt-dev libxaw7-dev libc6:i386 libncurses5:i386 libstdc++6:i386 patchelf elfutils nasm vim && sudo apt-get install -y python-is-python3
+sudo apt-get install -y socat build-essential jq strace ltrace curl wget git make procps vim ssh rubygems gcc dnsutils netcat gcc-multilib net-tools gdb gdb-multiarch libssl-dev libffi-dev libpcre3-dev libdb-dev libxt-dev libxaw7-dev libc6:i386 libncurses5:i386 libstdc++6:i386 patchelf elfutils nasm  
 ```
 
 * Install python3 libraries
 
 ```bash
-sudo pip3 install pwntools keystone-engine unicorn capstone ropper
+sudo pip3 install pwntools pathlib2 keystone-engine unicorn capstone ropper
+```
+
+* Install python2 libraries
+
+```bash
+sudo pip2 install pwntools pathlib2 keystone-engine unicorn capstone ropper
 ```
 
 ### 4) Install vscode
