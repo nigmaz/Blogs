@@ -22,12 +22,15 @@ $ sudo chsh -s $(which zsh)
 ```
 Now change content file ~/.zshrc
 
+```bash
+$ nano ~/.zshrc
+```
+
 	+) ZSH_THEME="half-life"
 	+) plugins=(git
 	   zsh-autosuggestions)  
 
 ```bash
-$ nano ~/.zshrc
 $ source ~/.zshrc
 ```
 
