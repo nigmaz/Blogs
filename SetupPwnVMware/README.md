@@ -34,6 +34,12 @@ $ nano ~/.zshrc
 $ source ~/.zshrc
 ```
 
+* Update ubuntu
+
+```bash
+sudo apt-get update
+```
+
 ### 2) Add i386 architecture (to run 32 bit elf)
 
 ```bash
@@ -42,11 +48,6 @@ sudo dpkg --add-architecture i386
 
 ### 3) Install needed libraries
 
-* Update ubuntu
-
-```bash
-sudo apt-get update
-```
 
 * Install libraries and tools
 
