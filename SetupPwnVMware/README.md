@@ -107,19 +107,19 @@ $ sudo apt-get upgrade
 * Install libraries and tools
 
 ```bash
-sudo apt-get install -y socat build-essential jq strace ltrace curl wget git make procps vim ssh rubygems gcc dnsutils netcat gcc-multilib net-tools gdb gdb-multiarch libssl-dev libffi-dev libpcre3-dev libdb-dev libxt-dev libxaw7-dev libc6:i386 libncurses5:i386 libstdc++6:i386 patchelf elfutils nasm  
+$ sudo apt-get install -y socat build-essential jq strace ltrace curl wget git make procps vim ssh rubygems gcc dnsutils netcat gcc-multilib net-tools gdb gdb-multiarch libssl-dev libffi-dev libpcre3-dev libdb-dev libxt-dev libxaw7-dev libc6:i386 libncurses5:i386 libstdc++6:i386 patchelf elfutils nasm  
 ```
 
 * Install python3 libraries
 
 ```bash
-sudo pip3 install pwntools pathlib2 keystone-engine unicorn capstone ropper
+$ sudo pip3 install pwntools pathlib2 keystone-engine unicorn capstone ropper
 ```
 
 * Install python2 libraries
 
 ```bash
-sudo pip2 install pwntools pathlib2 keystone-engine unicorn capstone ropper
+$ sudo pip2 install pwntools pathlib2 keystone-engine unicorn capstone ropper
 ```
 
 ### 5) Install Text Editor
@@ -128,15 +128,23 @@ You can choose 1 of 2
 
 * Sublime Text 
 
-
+```bash
+$ sudo apt update && \
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add - && \
+sudo apt install apt-transport-https && \
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list && \
+sudo apt update && \
+sudo apt install sublime-text
+```
 
 * VS Code
 
 ```bash
-sudo apt update && \
+$ sudo apt update && \
 sudo apt install -y software-properties-common apt-transport-https wget  && \
 wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -  && \
 sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"  && \
+sudo apt update && \
 sudo apt install code
 ```
 
