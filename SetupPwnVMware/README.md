@@ -65,7 +65,35 @@ $ sudo dpkg --add-architecture i386
 
 I use both Python2 and Python3 for play Pwn CTFs
 
+From Ubuntu 20.04, py3 is available in base system and py2 is available to install from the Universe repository.
+
+* Python3 and pip3
+
+```bash
+$ sudo apt-get install python3 python3-pip python3-dev
+$ pip3 --version
+pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.8)
+```
+
+Upgrade pip3
+
+```bash
+$ python3 -m pip install --upgrade pip
+```
+
 * Python2 and pip2
+
+```bash
+$ sudo add-apt-repository universe
+$ sudo apt update 
+$ sudo apt install python2
+$ sudo apt-get install curl 
+$ curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
+$ sudo python2 get-pip.py
+$ pip2 --version
+pip 20.0.2 from /usr/local/lib/python2.7/dist-packages/pip (python 2.7)
+```
+NOTE: Add PATH
 
 ### 3) Install needed libraries
 
