@@ -95,7 +95,7 @@ pip 20.0.2 from /usr/local/lib/python2.7/dist-packages/pip (python 2.7)
 ```
 NOTE: Add PATH
 
-### 4) Install needed libraries
+### 4) Install needed libraries and support tools
 
 * Update Ubuntu
 
@@ -122,7 +122,15 @@ sudo pip3 install pwntools pathlib2 keystone-engine unicorn capstone ropper
 sudo pip2 install pwntools pathlib2 keystone-engine unicorn capstone ropper
 ```
 
-### 4) Install vscode
+### 5) Install Text Editor
+
+You can choose 1 of 2
+
+* Sublime Text 
+
+
+
+* VS Code
 
 ```bash
 sudo apt update && \
