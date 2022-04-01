@@ -97,6 +97,12 @@ NOTE: Add PATH
 
 ### 3) Install needed libraries
 
+* Update Ubuntu
+
+```bash
+$ sudo apt-get update -y
+$ sudo apt-get upgrade
+```
 
 * Install libraries and tools
 
