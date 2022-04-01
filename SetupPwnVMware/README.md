@@ -241,12 +241,12 @@ $ git clone https://github.com/niklasb/libc-database
 ```
 or use libc-database search WEB [libc_serach](https://libc.blukat.me/)
 
-#### +) docker
+#### +) Docker
 
 * You will need to use docker when you want to setup the same environment with the server
 
 ```bash
-sudo apt install -y docker.io
+$ sudo apt install -y docker.io
 ```
 
 ### 7) Setup qemu
