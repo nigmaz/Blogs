@@ -46,7 +46,7 @@ $ source ~/.zshrc
 sudo apt-get update
 ```
 
-### 2) Add i386 architecture (to run 32 bit elf)
+### 2) Add i386 architecture (to run file ELF x86 (32-bit))
 
 ```bash
 sudo dpkg --add-architecture i386
