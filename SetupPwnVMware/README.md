@@ -183,7 +183,7 @@ cd ../
 * Download the pwninit binary and copy to `/usr/bin/` to excute as a command in terminal
 
 ```bash
-mkdir pwninit && \
+$ mkdir pwninit && \
 cd pwninit && \
 wget https://github.com/io12/pwninit/releases/download/3.2.0/pwninit && \
 chmod +x pwninit && \
@@ -194,13 +194,13 @@ cd ../
 #### +) one_gadget (Tools for one_gadget searching)
 
 ```bash
-sudo gem install one_gadget
+$ sudo gem install one_gadget
 ```
 
 #### +) seccomp-tools (Tools for seccomp)
 
 ```bash
-sudo apt install -y gcc ruby-dev && \
+$ sudo apt install -y gcc ruby-dev && \
 sudo gem install seccomp-tools
 ```
 
@@ -209,26 +209,26 @@ sudo gem install seccomp-tools
 * Version 10.1.12 latest in 01/04/2022, check for new version in [ghidra](https://github.com/NationalSecurityAgency/ghidra/releases)
 
 ```bash
-wget https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_10.1.2_build/ghidra_10.1.2_PUBLIC_20220125.zip && \
+$ wget https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_10.1.2_build/ghidra_10.1.2_PUBLIC_20220125.zip && \
 unzip ghidra_10.1.2_PUBLIC_20220125.zip && \
 rm -rf ghidra_10.1.2_PUBLIC_20220125.zip && \
 cd ghidra_10.1.2_PUBLIC && \
-sudo ln -s ~/Install/ghidra_10.1.2_PUBLIC/ghidraRun /usr/bin/ghidra && \
+sudo ln -s ~/Tools/ghidra_10.1.2_PUBLIC/ghidraRun /usr/bin/ghidra && \
 cd ../
 ```
 
-* The command `sudo ln -s ~/Install/ghidra_10.1.2_PUBLIC/ghidraRun /usr/bin/ghidra` just add the symlink from `ghidraRun` to `/usr/bin/ghidra`, so you can open ghidra with command "ghidra" in terminal
+* The command `sudo ln -s ~/Tools/ghidra_10.1.2_PUBLIC/ghidraRun /usr/bin/ghidra` just add the symlink from `ghidraRun` to `/usr/bin/ghidra`, so you can open ghidra with command "ghidra" in terminal
 
 * If you cannot run the ghidra, checking the ghidra path again, if it alright, try checking `java` (`jdk` and `jre`)
 
 ```bash
-sudo apt install -y default-jdk default-jre
+$ sudo apt install -y default-jdk default-jre
 ```
 
 #### +) radare2
 
 ```bash
-git clone https://github.com/radare/radare2 && \
+$ git clone https://github.com/radare/radare2 && \
 cd radare2 && \
 sys/install.sh && \
 cd ../
@@ -237,8 +237,9 @@ cd ../
 #### +) libc-database
 
 ```bash
-git clone https://github.com/niklasb/libc-database
+$ git clone https://github.com/niklasb/libc-database
 ```
+or use libc-database search WEB [libc_serach](https://libc.blukat.me/)
 
 #### +) docker
 
