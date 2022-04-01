@@ -39,9 +39,11 @@ $ nano ~/.zshrc
 ```bash
 $ source ~/.zshrc
 ```
-NOTE: 
-$ zsh: corrupt history file /home/<user_name>/.zsh_history
+
+NOTE:$ zsh: corrupt history file /home/<user_name>/.zsh_history
+
 zsh often get this error when using
+
 fix:
 ```bash
 $ cd ~ && mv .zsh_history .zsh_history_bad && strings -eS .zsh_history_bad > .zsh_history && fc -R .zsh_history
