@@ -39,18 +39,31 @@ $ nano ~/.zshrc
 ```bash
 $ source ~/.zshrc
 ```
+NOTE: 
+$ zsh: corrupt history file /home/<user_name>/.zsh_history
+zsh often get this error when using
+fix:
+```bash
+$ cd ~ && mv .zsh_history .zsh_history_bad && strings -eS .zsh_history_bad > .zsh_history && fc -R .zsh_history
+```
 
 * Update ubuntu
 
 ```bash
-sudo apt-get update
+$ sudo apt-get update
 ```
 
 ### 2) Add i386 architecture (to run file ELF x86 (32-bit))
 
 ```bash
-sudo dpkg --add-architecture i386
+$ sudo dpkg --add-architecture i386
 ```
+
+### 3) Install Python and Pip
+
+I use both Python2 and Python3 for play Pwn CTFs
+
+* Python2 and pip2
 
 ### 3) Install needed libraries
 
