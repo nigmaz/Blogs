@@ -20,6 +20,16 @@ $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/t
 $ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 $ sudo chsh -s $(which zsh)
 ```
+Now change content file ~/.zshrc
+
+	+) ZSH_THEME="half-life"
+	+) plugins=(git
+	   zsh-autosuggestions)  
+
+```bash
+$ nano ~/.zshrc
+$ source ~/.zshrc
+```
 
 ### 2) Add i386 architecture (to run 32 bit elf)
 
