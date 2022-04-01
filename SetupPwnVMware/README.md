@@ -258,3 +258,8 @@ sudo apt install -y qemu-user qemu-user-static gcc-aarch64-linux-gnu binutils-aa
 sudo apt install -y gcc-arm-linux-gnueabihf binutils-arm-linux-gnueabihf binutils-arm-linux-gnueabihf-dbg && \
 sudo apt-get -y install qemu-kvm qemu
 ```
+
+### 8) Finally
+
+*These are most of the tools I use to play CTF pwn challenges, there are still a lot of other great tools that I haven't used yet. I want to share so that newbies can start on the path of pwnable. After the installation is complete, you should take a snapshot or compress and store it, in case an error occurs. Older or newer versions of Ubuntu will likely have some errors, but basically I think there won't be too much change in the way of installation. Last word, hope you will find passion or pleasure playing pwnable, goodluck.*
+
