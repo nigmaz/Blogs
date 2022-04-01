@@ -225,6 +225,8 @@ cd ../
 $ sudo apt install -y default-jdk default-jre
 ```
 
+Or you can use IDA Pro if you have it on your windows server.
+
 #### +) radare2
 
 ```bash
