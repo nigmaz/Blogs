@@ -10,6 +10,12 @@ It's not really to play the pwn CTF challenge but it optimizes your performance 
 
 ```bash
 $ sudo apt install open-vm-tools open-vm-tools-desktop
+$ sudo reboot
+```
+Check VMware Tools
+
+```bash
+$ lsb_release -a
 ```
 
 * "Oh My ZSH!"
