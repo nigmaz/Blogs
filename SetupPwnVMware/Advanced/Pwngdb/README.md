@@ -1,6 +1,6 @@
 # Pwngdb
 
-It's setup Pwndbg for Heap Exploit
+It's setup Pwndbg for Heap Exploit.
 
 Source: [https://github.com/scwuaptx/Pwngdb](https://github.com/scwuaptx/Pwngdb)
 
