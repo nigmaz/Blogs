@@ -1,6 +1,16 @@
 # Pwngdb
 
-It's setup Pwndbg for Heap Exploit.
+It's setup Pwndbg for Heap Exploit. It supports `gdb-peda`.
+
+Source: [https://github.com/longld/peda](https://github.com/longld/peda)
+
+## Install gdb-peda.
+
+```
+git clone https://github.com/longld/peda.git ~/Tools/peda
+echo "source ~/Tools/peda/peda.py" >> ~/.gdbinit				// I change it to for me.
+echo "DONE! debug your program with gdb and enjoy"
+```
 
 Source: [https://github.com/scwuaptx/Pwngdb](https://github.com/scwuaptx/Pwngdb)
 
@@ -9,9 +19,23 @@ GDB for pwn.
 ## Install
 
 ### install
-	cd ~/
+	cd ~/Tools
 	git clone https://github.com/scwuaptx/Pwngdb.git 
-	cp ~/Pwngdb/.gdbinit ~/
+	cp ~/Tools/Pwngdb/.gdbinit ~/		<-- I delete line 
+
+I add script -> `~/.gdbinit`
+
+```
+source ~/Tools/Pwngdb/pwngdb.py
+source ~/Tools/Pwngdb/angelheap/gdbinit.py
+
+define hook-run
+python
+import angelheap
+angelheap.init_angelheap()
+end
+end
+```
 
 If you dont want to use gdb-peda , you can modify the gdbinit to remove it.
 
