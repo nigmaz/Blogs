@@ -178,6 +178,15 @@ sudo python3 setup.py install && \
 cd ../
 ```
 
+or
+
+[ROPgadget](https://github.com/JonathanSalwan/ROPgadget)
+```
+$ sudo apt install python3-pip
+$ sudo -H python3 -m pip install ROPgadget
+$ ROPgadget --help
+```
+
 #### +) pwninit (Tools for patching libc)
 
 * Download the pwninit binary and copy to `/usr/bin/` to excute as a command in terminal
