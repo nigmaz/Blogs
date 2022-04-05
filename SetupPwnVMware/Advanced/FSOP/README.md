@@ -6,14 +6,14 @@
 * Download the glibc source code (workdir: Tools)
 
 ```bash
-git config --global http.sslverify false && \
+$ git config --global http.sslverify false && \
 git clone https://sourceware.org/git/glibc.git
 ```
 
 * Setup some scripts for convenient work
 
 ```bash
-mkdir add_glibc_source && \
+$ mkdir add_glibc_source && \
 cd add_glibc_source && \
 touch add_glibc_source.py && \
 nano add_glibc_source.py
@@ -39,13 +39,13 @@ add_all_folder('/home/l1j9m4/Install/glibc/')
 * We add this script to `~/.gdbinit`, this will auto add glibc source code when we start gdb
 
 ```bash
-echo "source ~/Tools/add_glibc_source/add_glibc_source.py" >> ~/.gdbinit
+$ echo "source ~/Tools/add_glibc_source/add_glibc_source.py" >> ~/.gdbinit
 ```
 
 * Create another scripts
 
 ```bash
-touch libc && \
+$ touch libc && \
 nano libc
 ```
 
@@ -61,7 +61,7 @@ git checkout release/$1/master
 * Add it to `/usr/bin/` to execute as a command
 
 ```bash
-chmod +x libc && \
+$ chmod +x libc && \
 sudo cp libc /usr/bin && \
 cd ../
 ```
