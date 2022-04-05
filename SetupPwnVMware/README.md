@@ -206,13 +206,6 @@ cd ../
 $ sudo gem install one_gadget
 ```
 
-#### +) seccomp-tools (Tools for seccomp)
-
-```bash
-$ sudo apt install -y gcc ruby-dev && \
-sudo gem install seccomp-tools
-```
-
 #### +) Ghidra (Tools for reversing)
 
 * Version 10.1.12 latest in 01/04/2022, check for new version in [ghidra](https://github.com/NationalSecurityAgency/ghidra/releases)
