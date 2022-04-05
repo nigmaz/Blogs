@@ -158,6 +158,8 @@ mkdir Tools && \
 cd Tools
 ```
 
+(WORKDIR: ~/Tools)
+
 #### +) pwndbg (Gdb extension)
 
 ```bash
