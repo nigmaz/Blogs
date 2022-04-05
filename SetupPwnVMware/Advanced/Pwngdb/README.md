@@ -26,6 +26,7 @@ GDB for pwn.
 I add script -> `~/.gdbinit`
 
 ```
+source ~/Tools/peda/peda.py
 source ~/Tools/Pwngdb/pwngdb.py
 source ~/Tools/Pwngdb/angelheap/gdbinit.py
 
