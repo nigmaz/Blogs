@@ -12,6 +12,7 @@ $ sudo apt install -y gcc ruby-dev && \
 sudo gem install seccomp-tools
 ```
 
+#### +) Python2
 
 ```bash
 $ pip2 install pwnsandbox
