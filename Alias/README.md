@@ -1,0 +1,6 @@
+# ~/.bashrc
+
+// ALIAS
+
+// NASM
+
