@@ -18,12 +18,16 @@ neofetch | lolcat
 
 figlet -f smslant "l1j9m4 0n1"
 
+```
 cnasm32(){
     filename=${1%.*}
     nasm -f elf $filename.asm; ld -m elf_i386 $filename.o -o $filename #; ./$filename
 }
+```
 
+```
 cnasm64(){
     filename=${1%.*}
     nasm -f elf64 $filename.asm; ld $filename.o -o $filename #; ./$filename
 }
+```
