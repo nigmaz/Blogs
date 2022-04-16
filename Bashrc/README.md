@@ -3,7 +3,9 @@
 ### ALIAS
 
 alias check_aslr='cat /proc/sys/kernel/randomize_va_space'
+
 alias turn_off_aslr="echo 0 | sudo tee /proc/sys/kernel/randomize_va_space"
+
 alias turn_on_aslr="echo 2 | sudo tee /proc/sys/kernel/randomize_va_space"
 
 ### NASM
