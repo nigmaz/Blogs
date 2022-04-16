@@ -1,20 +1,20 @@
 # ~/.bashrc
 
-// ALIAS
+### ALIAS
 
 alias check_aslr='cat /proc/sys/kernel/randomize_va_space'
 alias turn_off_aslr="echo 0 | sudo tee /proc/sys/kernel/randomize_va_space"
 alias turn_on_aslr="echo 2 | sudo tee /proc/sys/kernel/randomize_va_space"
 
-// NASM
+### NASM
 
-# nasm -f elf64 hello.asm && ld hello.o -o hello && ./hello
+nasm -f elf64 hello.asm && ld hello.o -o hello && ./hello
 
-# nasm -f elf helloworld.asm && ld -m elf_i386 helloworld.o -o helloworld && ./helloworld
+nasm -f elf helloworld.asm && ld -m elf_i386 helloworld.o -o helloworld && ./helloworld
 
-# neofetch | lolcat
+neofetch | lolcat
 
-# figlet -f smslant "l1j9m4 0n1"
+figlet -f smslant "l1j9m4 0n1"
 
 cnasm32(){
     filename=${1%.*}
