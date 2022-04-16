@@ -12,9 +12,9 @@ alias turn_on_aslr="echo 2 | sudo tee /proc/sys/kernel/randomize_va_space"
 
 ### NASM
 
-nasm -f elf64 hello.asm && ld hello.o -o hello && ./hello
+~$ nasm -f elf64 hello.asm && ld hello.o -o hello && ./hello
 
-nasm -f elf helloworld.asm && ld -m elf_i386 helloworld.o -o helloworld && ./helloworld
+~$ nasm -f elf helloworld.asm && ld -m elf_i386 helloworld.o -o helloworld && ./helloworld
 
 neofetch | lolcat
 
