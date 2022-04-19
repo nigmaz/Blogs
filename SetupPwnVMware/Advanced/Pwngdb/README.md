@@ -1,6 +1,6 @@
 # Pwngdb
 
-It's setup Pwndbg for Heap Exploit. It supports `gdb-peda`.
+It's setup Pwndbg for Heap Exploit. It supports `gdb-peda` or `gdb` for analysis HEAP.
 
 Source: [https://github.com/longld/peda](https://github.com/longld/peda)
 
