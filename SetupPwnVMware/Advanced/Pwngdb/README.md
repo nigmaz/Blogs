@@ -14,6 +14,8 @@ echo "DONE! debug your program with gdb and enjoy"
 
 Source: [https://github.com/scwuaptx/Pwngdb](https://github.com/scwuaptx/Pwngdb)
 
+## Install Pwngdb
+
 GDB for pwn.
 
 ## Install
