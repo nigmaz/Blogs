@@ -18,8 +18,6 @@ Source: [https://github.com/scwuaptx/Pwngdb](https://github.com/scwuaptx/Pwngdb)
 
 GDB for pwn.
 
-## Install
-
 ### install
 	cd ~/Tools
 	git clone https://github.com/scwuaptx/Pwngdb.git 
