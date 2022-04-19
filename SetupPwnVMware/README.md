@@ -93,7 +93,7 @@ $ sudo python2 get-pip.py
 $ pip2 --version
 pip 20.0.2 from /usr/local/lib/python2.7/dist-packages/pip (python 2.7)
 ```
-NOTE: Add PATH
+NOTE: [Add PATH](https://linuxize.com/post/how-to-add-directory-to-path-in-linux/)
 
 ### 4) Install needed libraries and support tools
 
