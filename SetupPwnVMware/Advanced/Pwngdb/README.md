@@ -110,4 +110,7 @@ If you want to use the feature of heapinfo and tracemalloc , you need to install
 ![trace](http://i.imgur.com/7UHqiwX.png)
 
 + magic
+
 ![magic](https://i.imgur.com/M4XCv1f.png)
+
+
