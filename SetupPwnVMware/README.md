@@ -22,9 +22,9 @@ $ lsb_release -a
 
 ```bash
 $ sudo apt-get install git zsh curl
+$ sudo chsh -s $(which zsh)
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 $ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-$ sudo chsh -s $(which zsh)
 ```
 Now change content file ~/.zshrc
 
@@ -33,8 +33,10 @@ $ nano ~/.zshrc
 ```
 
 	+) ZSH_THEME="half-life"
-	+) plugins=(git
-	   zsh-autosuggestions)  
+	+) plugins=(
+		git
+	   	zsh-autosuggestions
+	   )  
 
 ```bash
 $ source ~/.zshrc
