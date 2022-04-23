@@ -44,4 +44,6 @@ cnasm64(){
 export PATH="$HOME/bin:/usr/lib/python3:/usr/local/lib/python2.7:$PATH"
 ```
 
+### NOTE: `source ~/.bashrc` or `source ~/.zshrc`.
+
 ...
