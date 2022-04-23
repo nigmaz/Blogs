@@ -114,6 +114,13 @@ pip 20.0.2 from /usr/local/lib/python2.7/dist-packages/pip (python 2.7)
 ```
 NOTE: [Add PATH](https://linuxize.com/post/how-to-add-directory-to-path-in-linux/)
 
+```
+# PYTHON write into ~/.bashrc
+export PATH="$HOME/bin:/usr/lib/python3:/usr/local/lib/python2.7:$PATH"
+```
+
+`source ~/.bashrc`
+
 ### 4) Install needed libraries and support tools
 
 * Update Ubuntu
