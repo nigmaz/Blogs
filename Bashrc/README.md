@@ -37,4 +37,11 @@ cnasm64(){
 }
 ```
 
+### ADD PYTHON INTO PATH
+
+```
+# PYTHON write into ~/.bashrc or ~/.zshr
+export PATH="$HOME/bin:/usr/lib/python3:/usr/local/lib/python2.7:$PATH"
+```
+
 ...
