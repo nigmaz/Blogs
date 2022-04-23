@@ -1,5 +1,7 @@
 # ~/.bashrc
 
+NOTE: If you use zsh then add it into ~/.zshrc
+
 ### ALIAS
 
 ```
