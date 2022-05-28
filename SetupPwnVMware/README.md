@@ -287,7 +287,7 @@ $ sudo apt install -y docker.io
 
 ### 7) Setup qemu
 
-* Use for kernel exploitation or arm compiler-debug
+* Use for kernel exploitation or Arm compiler-debug
 
 ```bash
 $ sudo apt install -y qemu-user qemu-user-static gcc-aarch64-linux-gnu binutils-aarch64-linux-gnu binutils-aarch64-linux-gnu-dbg && \
