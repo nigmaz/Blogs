@@ -71,7 +71,6 @@ $ chmod +x zsh_history_fix && sudo cp zsh_history_fix /usr/bin && cd ../
 * Terminator
 
 ```bash
-$ sudo add-apt-repository ppa:gnome-terminator
 $ sudo apt-get update
 $ sudo apt-get install terminator
 ```
