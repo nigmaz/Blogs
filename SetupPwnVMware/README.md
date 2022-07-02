@@ -146,13 +146,13 @@ $ sudo apt-get install -y socat build-essential jq strace ltrace curl wget git m
 * Install python3 libraries
 
 ```bash
-$ sudo pip3 install pwntools pathlib2 keystone-engine unicorn capstone ropper
+$ sudo pip3 install pwntools pathlib2 keystone-engine unicorn capstone ropper ipython
 ```
 
 * Install python2 libraries
 
 ```bash
-$ sudo pip2 install pwntools pathlib2 keystone-engine unicorn capstone ropper
+$ sudo pip2 install pwntools pathlib2 keystone-engine unicorn capstone ropper ipython
 ```
 
 ### 5) Install Text Editor
