@@ -42,7 +42,9 @@ $ nano ~/.zshrc
 $ source ~/.zshrc
 ```
 
-NOTE:$ zsh: corrupt history file /home/<user_name>/.zsh_history
+>NOTE:  +) Preferences/Unnamed/Command/Run a custom command instead of my shell/Custom command: zsh 
+	
+	+) zsh: corrupt history file /home/<user_name>/.zsh_history
 
 zsh often get this error when using
 
