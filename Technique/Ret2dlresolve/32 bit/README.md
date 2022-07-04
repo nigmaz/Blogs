@@ -196,9 +196,9 @@ The pseudocode  below summarize the process described until now:
 ```C
 // call of unresolved read(0, buf, 0x100)
 _dl_runtime_resolve(link_map, rel_offset) {
-    Elf32_Rel * rel_entry = JMPREL + rel_offset ;
-    Elf32_Sym * sym_entry = &SYMTAB [ ELF32_R_SYM ( rel_entry -> r_info )];
-    char * sym_name = STRTAB + sym_entry -> st_name ;
+    Elf32_Rel *rel_entry = JMPREL + rel_offset ;
+    Elf32_Sym *sym_entry = &SYMTAB [ ELF32_R_SYM ( rel_entry -> r_info )];
+    char *sym_name = STRTAB + sym_entry -> st_name ;
     _search_for_symbol_(link_map, sym_name);
     // invoke initial read call now that symbol is resolved
     read(0, buf, 0x100);
