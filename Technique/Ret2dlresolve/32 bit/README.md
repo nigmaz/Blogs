@@ -104,7 +104,7 @@ Relocation section '.rel.plt' at offset 0x2b0 contains 3 entries:
 0804a014  00000407 R_386_JUMP_SLOT   00000000   __libc_start_main@GLIBC_2.0
 ```
 
-The type of these entries is ```Elf32\_Rel```, which is defined as it follows. The size of one entry is 8 bytes.
+The type of these entries is ```Elf32_Rel```, which is defined as it follows. The size of one entry is 8 bytes.
 
 ```C
 typedef uint32_t Elf32_Addr ; 
