@@ -233,8 +233,8 @@ sym_string   |"syst   |  0x320
              |em\x00" |
              +--------+
 ```
-When ```_dl_runtime_resolve ( link_map , 0x300)``` is called, the 0x300 offset is used to get the ```Elf32_Rel* rel = JMPREL + 0x300 == 0x300.```<br>
-Secondly, the Elf32_Sym is accessed using the ```r_info``` field from 0x304. ``` Elf32_Sym* sym = &SYMTAB[(0x2100 >> 8)] == 0x310.```<br>
+When ```_dl_runtime_resolve(link_map, 0x300)``` is called, the 0x300 offset is used to get the ```Elf32_Rel *rel = JMPREL + 0x300 == 0x300.```<br>
+Secondly, the Elf32_Sym is accessed using the ```r_info``` field from 0x304. ``` Elf32_Sym *sym = &SYMTAB[(0x2100 >> 8)] == 0x310.```<br>
 The last step is to compute the address of the symbol string. This is done by adding ```st_name``` to ```STRTAB``` : ``` const char *name = STRTAB + 0x120 == 0x320```.<br>
 Note that SYMTAB access its entries as an array, therefore ELF32_sym should be aligned to 0x10 bytes.
 Now that we control st_name, we can basically force the resolver to relocate  ```system``` and call ```system('sh') ``` to a own the system :)<br>
