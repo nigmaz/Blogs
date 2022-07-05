@@ -1,4 +1,7 @@
 # 0ctf babystack with return-to dl-resolve
+
+>[Link writeup] https://gist.github.com/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62
+
 In this write-up I will discuss how I managed to solve the challenge "babystack" from 0ctf with a technique called return to dl-resolve. I did not know this kind of return-to attack before the contest. In the following sections a detailed explanation of the entire exploit will be presented.
 ## 1. Binary analysis
 I downloaded the provided binary [babystack](./babystack) and quickly fired up binaryninja alongside with gdb to analyze it. I quickly realized a buffer overflow vulnerability is present within <code>sub_804843b</code>.
@@ -318,8 +321,6 @@ All things consider, return-to dl-resolve is one of the most interesting techniq
 Despite the fact that  additional gadgets and address leaks are still required on 64-bit environment, the principle is the same.
 To automate the payload crafting process easier, roputils library from inaz2 can be used. This great tool has support for various return-to techniques, including the one described in this article [7].
 Should you have any questions or remarks, please contact me: ricardoungureanu@gmail.com
-
->[Link writeup] https://gist.github.com/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62
 
 <hr>
 [1] http://phrack.org/issues/58/4.html<br>
