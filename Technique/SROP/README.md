@@ -111,7 +111,7 @@ Sử dụng `mprotect` để làm cho một vùng bộ nhớ mà chúng tôi l�
 
 ### 4) Practice example
 
-[1] [miniPwn](https://hackmd.io/@imth/SROP)
+[1] [miniPWN](https://hackmd.io/@imth/SROP)
 
 [2] [BUUCTF](https://www.cnblogs.com/xlrp/p/14273599.html)
 
