@@ -1,7 +1,7 @@
 # Blog
 >Setup Tools and Code for CTFs
 
->Short technique documents
+>Short technique documents for Pwn
 -------------------------------------------------------------------------------------------------------------------------------------
 
 ## Welcome to GitHub Pages
