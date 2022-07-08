@@ -1,9 +1,9 @@
 # SROP
 >Được sử dụng để kiếm soát tất cả các thanh ghi cùng một lúc.
 
-Sigreturn là một loại syscall đặc biệt. Mục đích của sigreturn là quay trở lại từ `signal handler` và trả lại tất cả các giá trị thanh ghi được lưu trữ trên ngăn xếp sau khi tín hiệu đã được bỏ chặn. 
+`Sigreturn` là một loại syscall đặc biệt. Mục đích của sigreturn là quay trở lại từ `signal handler` và trả lại tất cả các giá trị thanh ghi được lưu trữ trên ngăn xếp sau khi tín hiệu đã được bỏ chặn. 
 
-Vì vậy, bằng cách tận dụng sigreturn, nếu như chúng ta có thể làm giả cấu trúc là tập hợp các giá trị của các thanh ghi được lưu trên stack, chúng ta có thể kiểm soát tất cả các giá trị đăng ký cùng một lúc.
+Vì vậy, bằng cách tận dụng sigreturn, nếu như chúng ta có thể làm giả cấu trúc là tập hợp các giá trị của các thanh ghi được lưu trên stack, chúng ta có thể `kiểm soát tất cả các giá trị đăng ký cùng một lúc.`
 
 ### 1) Khái niệm liên quan
 
