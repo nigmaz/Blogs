@@ -30,6 +30,8 @@ pop rip
 
 Điều này có nghĩa là với `leave ; ret` của function ta có thể kiểm soát được giá trị trên `rbp` sau đó ta ghi đè `return address` bằng địa chỉ của gadget `leave ; ret` (nghĩa là ta đang thực hiện leave ; ret hai lần). Sau đó `mov rsp, rbp` sẽ chuyển giá trị trong `rbp` lên `rsp` khi đó ta dễ dàng kiểm soát được giá trị trên rsp.
 
+### Note: Sử dụng cả trên 32bit và 64bit.
+
 ----------------------------------------------------------------------------
 
 ### Reference Source:
