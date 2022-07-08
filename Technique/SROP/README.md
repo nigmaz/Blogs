@@ -35,7 +35,7 @@ rt-sigreturn | 0xf <x86_64>
 sigreturn | 0x77 <x86>
 ```
 
-Thiết lập giá trị cho `rax | eax` là vấn đề lớn nhất, có rất nhiều cách để làm điều đó và nó phụ thuộc vào mục tiêu mà chúng ta khai thác. Tôi sẽ trình bày trên cấu trúc 64bit(32bit chỉ khác về giá trị muốn đặt lên eax còn cách thực hiện vẫn vậy) và chỉ liệt kê các cách có thể, nếu muốn tìm hiểu rõ hơn bạn có thể đọc bài viết này [SROP](https://rog3rsm1th.github.io/posts/sigreturn-oriented-programming/).
+Thiết lập giá trị cho `rax | eax` là vấn đề lớn nhất, có rất nhiều cách để làm điều đó và nó phụ thuộc vào mục tiêu mà chúng ta khai thác. Tôi sẽ trình bày trên cấu trúc 64bit (32bit chỉ khác về giá trị muốn đặt lên eax còn cách thực hiện vẫn vậy) và chỉ liệt kê các cách có thể, nếu muốn tìm hiểu rõ hơn bạn có thể đọc bài viết này [SROP](https://rog3rsm1th.github.io/posts/sigreturn-oriented-programming/).
 
 1. mov rax, 0xf ; ret
 2. pop rax ; ret
