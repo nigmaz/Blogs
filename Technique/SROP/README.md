@@ -13,7 +13,7 @@ Vì vậy, bằng cách tận dụng sigreturn, nếu như chúng ta có thể l
 
 - Để có thể tiếp tục tiến trình được tạm dừng khi đã xử lí xong tín hiệu xuất hiện kia, ngữ cảnh của tiến trình tạm dừng được đẩy lên lưu trữ trên stack(register, flag, stack pointer, instruction pointer, ...). Ngữ cảnh có dạng cấu trúc "sigcontext".
 
-<h1 align="center"> <img height=40 src="https://github.com/l1j9m4-0n1/Blogs/blob/main/Technique/SROP/sigcontext.png"> </h1>
+<h1 align="center"> <img height=500 src="https://github.com/l1j9m4-0n1/Blogs/blob/main/Technique/SROP/sigcontext.png"> </h1>
 
 
 - 
