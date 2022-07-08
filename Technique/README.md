@@ -5,7 +5,7 @@
 |:----------:|:---------:|
 |Heap Exploit|    ❌    |
 |ret2csu| ✅   |
-|Ret2dlresolve|  ✅   |
+|Ret2dlresolve|  ❌   |
 |SROP| ✅   |
 |Stack Pivot| ✅   |
 
