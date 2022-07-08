@@ -19,7 +19,7 @@ Vì vậy, bằng cách tận dụng sigreturn, nếu như chúng ta có thể l
 
 <h1 align="center"> <img height=200 src="https://github.com/l1j9m4-0n1/Blogs/blob/main/Technique/SROP/sigreturn.png"> </h1>
 
->=> Vì vậy cuộc tấn công sử dụng `SROP` hoạt động bằng cách đẩy cấu trúc `sigcontext giả mạo` lên stack, ghi đè `return address` ban đầu bằng vị trí của `gadget` cho phép chúng ta thực hiện syscall `sigreturn`.
+>=> Vì vậy cuộc tấn công sử dụng `SROP` hoạt động bằng cách đẩy cấu trúc `sigcontext giả mạo` lên stack, ghi đè `return address` ban đầu bằng vị trí của `gadget` cho phép thiết lập các giá trị liên quan để thực hiện syscall `sigreturn`.
 
 ### 2) Giải quyết vấn đề 
 
