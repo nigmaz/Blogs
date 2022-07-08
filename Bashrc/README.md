@@ -46,7 +46,7 @@ export PATH="$HOME/bin:/usr/lib/python3:/usr/local/lib/python2.7:$PATH"
 
 - figlet -f smslant "l1j9m4 0n1"
 
-### NOTE: `source ~/.bashrc` or `source ~/.zshrc`.
+### Note: `source ~/.bashrc` or `source ~/.zshrc`.
 
 Loading...
 
