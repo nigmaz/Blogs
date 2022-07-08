@@ -49,9 +49,7 @@ Thiết lập giá trị cho `rax | eax` là vấn đề lớn nhất, có rất
 |    Padding until we reach the saved `rip`    | 
 | :------------------------------------------: |
 |   address of the `mov rax, 0x0; ret` gadget  |
-| :------------------------------------------: |
 |     address of the `syscall; ret` gadget     |
-| :------------------------------------------: |
 
 Sau đó nhập vào một chuỗi dài 15 ký tự `(0xf = 15)`, điều này sẽ cho phép chúng tôi đặt giá trị 0xf trong eax.
 
@@ -60,18 +58,14 @@ Và sau đó là:
 |   address of the `syscall ; ret` gadget        |
 | :------------------------------------------:   |
 |SigContext structure with the desired parameters|
-| :------------------------------------------:   |
 
 - **Sử dụng gadget `pop rax`.**
 
 |    Padding until we reach the saved `rip`    | 
 | :------------------------------------------: |
 |   address of the `pop rax ; ret` gadget      |
-| :------------------------------------------: |
 |        `0x0` (`read` syscall number)         |
-| :------------------------------------------: |
 |     address of the `syscall; ret` gadget     |
-| :------------------------------------------: |
 
 Sau đó nhập vào một chuỗi dài 15 ký tự `(0xf = 15)`, điều này sẽ cho phép chúng tôi đặt giá trị 0xf trong eax.
 
@@ -80,7 +74,6 @@ Và sau đó là:
 |   address of the `syscall ; ret` gadget        |
 | :------------------------------------------:   |
 |SigContext structure with the desired parameters|
-| :------------------------------------------:   |
 
 >Note: Ở trường hợp thứ hai này bạn có thể tận dụng trực tiếp gadget `pop rax ; ret`.
 
@@ -95,15 +88,10 @@ Khi đã tìm ra cách gọi `syscall sigreturn`, chúng ta cần tìm cách l�
 | `Register` | `Value`           |
 |:----------:|:-----------------:|
 | `rip`      |`syscall` instruction address|
-|:----------:|:-----------------:|
 | `rax`      |`0x3b` (`execve` syscall)|
-|:----------:|:-----------------:|
 | `rdi`      |address of `/bin/sh`|
-|:----------:|:-----------------:|
 | `rsi`      |0x0 (`NULL`)|
-|:----------:|:-----------------:|
 | `rdi`      |0x0 (`NULL`)|
-|:----------:|:-----------------:|
 
 2. Sử dụng `mprotect`.
 
@@ -114,17 +102,11 @@ Sử dụng `mprotect` để làm cho một vùng bộ nhớ mà chúng tôi l�
 | `Register` | `Value`           |
 |:----------:|:-----------------:|
 | `rax`      |`0xa` (`mprotect` syscall)|
-|:----------:|:-----------------:|
 | `rdi`      |address shellcode|
-|:----------:|:-----------------:|
 | `rsi`      |size (`0x1000` for exemple)|
-|:----------:|:-----------------:|
 | `rdx`      |`0x7` -> mode (rwx)|
-|:----------:|:-----------------:|
 | `rsp`      |entrypoint (new stack)|
-|:----------:|:-----------------:|
 | `rip`      |address of the `syscall; ret` gadget|
-|:----------:|:-----------------:|
 
 ### 4) Practice example
 
