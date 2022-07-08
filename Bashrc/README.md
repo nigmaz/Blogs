@@ -2,7 +2,7 @@
 
 NOTE: Add it to `~/.bashrc` or `~/.zshrc` depending on which you use.
 
-### ALIAS
+### 1) ALIAS
 
 ```
 # ASLR
@@ -13,11 +13,11 @@ alias turn_off_aslr="echo 0 | sudo tee /proc/sys/kernel/randomize_va_space"
 alias turn_on_aslr="echo 2 | sudo tee /proc/sys/kernel/randomize_va_space"
 ```
 
-### NASM
+### 2) NASM
 
-neofetch | lolcat
+- neofetch | lolcat
 
-figlet -f smslant "l1j9m4 0n1"
+- figlet -f smslant "l1j9m4 0n1"
 
 ```
 # nasm -f elf helloworld.asm && ld -m elf_i386 helloworld.o -o helloworld && ./helloworld
@@ -37,7 +37,7 @@ cnasm64(){
 }
 ```
 
-### ADD PYTHON INTO PATH
+### 3) ADD PYTHON INTO PATH
 
 ```
 # PYTHON write into ~/.bashrc or ~/.zshr
