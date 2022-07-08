@@ -17,7 +17,7 @@ Vì vậy, bằng cách tận dụng sigreturn, nếu như chúng ta có thể l
 
 - Khi trình xử lý kết thúc, `sigreturn()` được gọi => giá trị trong ngữ cảnh được lưu trên stack được trả về với các thanh ghi và xóa chúng trên stack.
 
-<h1 align="center"> <img height=250 src="https://github.com/l1j9m4-0n1/Blogs/blob/main/Technique/SROP/sigreturn.png"> </h1>
+<h1 align="center"> <img height=200 src="https://github.com/l1j9m4-0n1/Blogs/blob/main/Technique/SROP/sigreturn.png"> </h1>
 
 ---------------------------------------------------
 
