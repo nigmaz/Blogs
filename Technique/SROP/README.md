@@ -7,16 +7,17 @@ Vì vậy, bằng cách tận dụng sigreturn, nếu như chúng ta có thể l
 
 ### 1) Một số khái niệm liên quan
 
-Để hiểu cách thức hoạt động của SROP, ta sẽ tìm hiểu về cách mà hệ thống xử lí khi một tín hiệu xuất hiện trong hệ thống Unix.
+Để hiểu cách thức hoạt động của SROP, ta sẽ tìm hiểu về cách mà hệ thống xử lý khi một tín hiệu xuất hiện trong hệ thống Unix.
 
-- Chương trình sẽ tạm dừng tiến trình đang diễn ra để chuyển sang một tiến trình nhằm xử lí tín hiệu.
+- Chương trình sẽ tạm dừng tiến trình đang diễn ra để chuyển sang một tiến trình nhằm xử lý tín hiệu.
 
-- Để có thể tiếp tục tiến trình được tạm dừng khi đã xử lí xong tín hiệu xuất hiện kia, ngữ cảnh của tiến trình tạm dừng được đẩy lên lưu trữ trên stack(register, flag, stack pointer, instruction pointer, ...). Ngữ cảnh có dạng cấu trúc "sigcontext".
+- Để có thể tiếp tục tiến trình được tạm dừng khi đã xử lý xong tín hiệu xuất hiện kia, ngữ cảnh của tiến trình tạm dừng được đẩy lên lưu trữ trên stack(register, flag, stack pointer, instruction pointer, ...). Ngữ cảnh có dạng cấu trúc "sigcontext".
 
 <h1 align="center"> <img height=500 src="https://github.com/l1j9m4-0n1/Blogs/blob/main/Technique/SROP/sigcontext.png"> </h1>
 
+- Khi trình xử lý kết thúc, `sigreturn()` được gọi => giá trị trong ngữ cảnh được lưu trên stack được trả về với các thanh ghi và xóa chúng trên stack.
 
-- 
+<h1 align="center"> <img height=500 src="https://github.com/l1j9m4-0n1/Blogs/blob/main/Technique/SROP/sigreturn.png"> </h1>
 
 ---------------------------------------------------
 
