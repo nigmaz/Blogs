@@ -82,7 +82,7 @@ Và sau đó là:
 
 Khi đã tìm ra cách gọi `syscall sigreturn`, chúng ta cần tìm cách lấy shell thông qua `Sigcontext` sẽ được khôi phục từ stack. `Pwntools` hỗ trợ rất mạnh trong việc setup trực tiếp giá trị của thanh ghi mà ta muốn thay vì phải viết lại nguyên một `Sigcontext` và mất thời gian thiết lập các giá trị không lien quan đến mục tiêu. 
 
-1. Nếu file có sẵn chuỗi `/bin/sh`.
+1. **Nếu file có sẵn chuỗi `/bin/sh`**.
 
 Ý tưởng là gọi hàm `execve` `(syscall 0x3b -> 59 ở dạng thập phân)` với chuỗi `/bin/sh` là tham số sẽ lấy được `shell`. Chuỗi `/bin/sh` có thể có sẵn trong file hoặc chúng ta có thể ghi nó vào vùng nhớ mà biết rõ địa chỉ.
 
@@ -94,7 +94,7 @@ Khi đã tìm ra cách gọi `syscall sigreturn`, chúng ta cần tìm cách l�
 | `rsi`      |0x0 (`NULL`)|
 | `rdi`      |0x0 (`NULL`)|
 
-2. Sử dụng `mprotect`.
+2. **Sử dụng `mprotect`**.
 
 >`mprotect`: set protection on a region of memory
 
@@ -111,9 +111,9 @@ Sử dụng `mprotect` để làm cho một vùng bộ nhớ mà chúng tôi l�
 
 ### 4) Practice example
 
-[miniPwn](https://hackmd.io/@imth/SROP)
+[1] [miniPwn](https://hackmd.io/@imth/SROP)
 
-[BUUCTF](https://www.cnblogs.com/xlrp/p/14273599.html)
+[2] [BUUCTF](https://www.cnblogs.com/xlrp/p/14273599.html)
 
 ---------------------------------------------------
 
