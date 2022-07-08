@@ -47,10 +47,14 @@ Thiết lập giá trị cho `rax | eax` là vấn đề lớn nhất, có rất
 
 - **Sử dụng gadget `mov rax, 0x0`.**
 
+<h1 align="center">
+
 |    Padding until we reach the saved `rip`    | 
 | :------------------------------------------: |
 |   address of the `mov rax, 0x0; ret` gadget  |
 |     address of the `syscall; ret` gadget     |
+
+</h1>
 
 Sau đó nhập vào một chuỗi dài 15 ký tự `(0xf = 15)`, điều này sẽ cho phép chúng tôi đặt giá trị 0xf trong eax.
 
