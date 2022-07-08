@@ -1,6 +1,6 @@
 # Stack Pivot
 
->Sử dụng khi thiếu không gian ghi đè sau `Return address` trên Stack.
+>Sử dụng khi thiếu không gian ghi đè sau `Return address` trên Stack khi thực hiện ROP hoặc thiết lập giá trị đối số cho hàm.
 
 Khi thực hiện `Stack Pivot`, cần tìm gadget giúp kiểm soát được giá trị lưu trong thanh ghi `RSP` và giả mạo vị trí của Stack. Có một số cách để làm điều này 
 
