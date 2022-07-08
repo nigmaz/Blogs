@@ -5,7 +5,7 @@ Sigreturn là một loại syscall đặc biệt. Mục đích của sigreturn l
 
 Vì vậy, bằng cách tận dụng sigreturn, nếu như chúng ta có thể làm giả cấu trúc là tập hợp các giá trị của các thanh ghi được lưu trên stack, chúng ta có thể kiểm soát tất cả các giá trị đăng ký cùng một lúc.
 
-### 1) Một số khái niệm liên quan
+### 1) Khái niệm liên quan
 
 Để hiểu cách thức hoạt động của SROP, ta sẽ tìm hiểu về cách mà hệ thống xử lý khi một tín hiệu xuất hiện trong hệ thống Unix.
 
@@ -18,6 +18,21 @@ Vì vậy, bằng cách tận dụng sigreturn, nếu như chúng ta có thể l
 - Khi trình xử lý kết thúc, `sigreturn()` được gọi => giá trị trong ngữ cảnh được lưu trên stack được trả về với các thanh ghi và xóa chúng trên stack.
 
 <h1 align="center"> <img height=200 src="https://github.com/l1j9m4-0n1/Blogs/blob/main/Technique/SROP/sigreturn.png"> </h1>
+
+### 2) Giải quyết vấn đề 
+
+=> Cần một số yếu tố tùy thuộc vào quá trình khai thác để thực hiện `SROP` nhưng cơ bản là ba điều sau.
+
+- Tất nhiên đầu tiên là lỗ hổng `buffer overflow`.
+- Một cách để đặt giá trị thanh ghi `rax` = `0xf` (64bit) hoặc `eax` = `0x77` (32bit) 
+- Gadget `syscall ; ret`
+
+### Note:
+```
+rt-sigreturn | 0xf <x86_64>
+sigreturn | 0x77 <x86>
+```
+
 
 ---------------------------------------------------
 
