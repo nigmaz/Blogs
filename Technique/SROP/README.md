@@ -42,7 +42,8 @@ Thiết lập giá trị cho `rax | eax` là vấn đề lớn nhất, có rất
 3. Sử dụng `the read` syscall để thiết lập giá trị `rax` = 0xf
 4. ...
 
-Ở cách thứ ba ta lợi dụng vào một tính chất thú vị của syscall `read` là ghi lại số byte được đọc vào thanh ghi `rax`. Có hai cách để lợi dụng điều đó.
+### Note:
+>Ở cách thứ ba ta lợi dụng vào một tính chất thú vị của syscall `read` là ghi lại số byte được đọc vào thanh ghi `rax`. Có hai cách để lợi dụng điều đó.
 
 - **Sử dụng gadget `mov rax, 0x0`.**
 
