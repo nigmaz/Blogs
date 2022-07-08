@@ -313,6 +313,3 @@ sudo apt-get -y install qemu-kvm qemu
 ### [+] **The article is for general purposes, I recommend that you learn and practice as well as set up tools for the problems you have, do not install all the tools at once and I'm happy to receive your comments.**
 
 ### [+] **I keep the advice from the author of the article that I referenced to create this article to thank the author. If the author can read the article, please allow me!!! Thank you very much.**
-
-
-# PWNABLE
