@@ -1,4 +1,4 @@
-# Blog
+# Blogs
 >Setup Tools and Code for CTFs.
 
 >Short Technique documents for Pwn.
