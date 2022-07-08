@@ -4,7 +4,7 @@
 | Technique  | Documents |
 |:----------:|:---------:|
 |Heap Exploit|    ❌    |
-|ret2csu| ✅   |
+|Ret2csu| ✅   |
 |Ret2dlresolve|  ❌   |
 |SROP| ✅   |
 |Stack Pivot| ✅   |
