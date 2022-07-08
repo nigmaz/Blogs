@@ -1,7 +1,7 @@
 # Blog
 >Setup Tools and Code for CTFs
 
->Short documents Technique 
+>Short technique documents
 -------------------------------------------------------------------------------------------------------------------------------------
 
 ## Welcome to GitHub Pages
