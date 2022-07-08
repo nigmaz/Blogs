@@ -1,6 +1,6 @@
 # ~/.bashrc
 
-NOTE: If you use zsh then add it into ~/.zshrc
+NOTE: Add it to `~/.bashrc` or `~/.zshrc` depending on which you use.
 
 ### ALIAS
 
