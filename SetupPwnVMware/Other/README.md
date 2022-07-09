@@ -1,5 +1,5 @@
 # Tools
 
-> Setup tools for reversing as such as IDA, etc...
+> Setup tools for reversing as such as IDA, WSL, etc...
 
 ----------------------------------------------------------------
