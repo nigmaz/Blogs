@@ -69,7 +69,7 @@ typedef struct
 
 - **STRTAB**
 
-```
+```asm
 pwndbg> x/10s 0x804822c
 0x804822c:	""
 0x804822d:	"libc.so.6"
