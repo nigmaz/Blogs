@@ -5,9 +5,11 @@
 |:----------:|:---------:|
 |Heap Exploit|    ❌    |
 |Ret2csu| ✅   |
-|Ret2dlresolve|  ❌   |
+|Ret2dlresolve|  ✅   |
 |SROP| ✅   |
 |Stack Pivot| ✅   |
+
+Nếu có gì sai xót rất vui khi nhận sự góp ý từ các bạn ❤❤❤ 
 
 ----------------------------------------------------
 
