@@ -154,13 +154,19 @@ _dl_runtime_resolve(link_map, rel_offset) {
 
 Để khai thác cần tính toán, lựa chọn vị trí và align phức tạp nữa nên một lần nữa tôi nhấn mạnh đây chỉ giống như `cheat sheet` => đọc và làm ví dụ từ writeup `0ctf babystack` tôi để link trong mẫu 32 bit.
 
-------------------------------------------------
+---------------------------------------------------
 
+### Reference Source:
 
+[+] https://gist.github.com/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62
+
+[+] https://www.lazenca.net/display/TEC/01.Return-to-dl-resolve+-+x86
 
 ## 2) 64 bit.
 
------------------------------------------
+---------------------------------------------------
+
+### Reference Source:
 
 [+]
 
