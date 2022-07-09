@@ -8,11 +8,11 @@ Tổng hợp ngắn gọn lại các cấu trúc và thuật toán cần fake đ
 
 - Khi chương trình gọi hàm từ thư viện lần đầu tiên.
 
-
+[firstCall.png](./firstCall.png)
 
 - Những lần gọi hàm sau lần đầu tiên.
 
-
+[otherCall.png](./otherCall.png)
 
 ## 2) 64 bit.
 
