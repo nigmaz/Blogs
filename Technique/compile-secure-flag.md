@@ -1,4 +1,5 @@
 # Compile secure flag
+>gcc file.c -o file
 
 ### RELRO:
 - Partial RELRO: -Wl,-z,relro
