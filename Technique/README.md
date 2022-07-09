@@ -13,6 +13,6 @@ Nếu có gì sai xót rất vui khi nhận sự góp ý từ các bạn ❤❤�
 
 ----------------------------------------------------
 
-[+] Tổng hợp tài liệu để có điểm bắt đầu khi học hay xem lại.
+[+] Tổng hợp tài liệu để có điểm bắt đầu khi học cho người mới, các mốc khai thác của kỹ thuật.
 
-[+] Chỉ là tổng hợp lại không thay thế được bài phân tích hay quá trình tự học khai thác của bạn.
+[+] Tổng hợp lại không thay thế được writeup chi tiết, bài báo về kỹ thuật khai thác hay quá trình tự học khai thác của bạn.
