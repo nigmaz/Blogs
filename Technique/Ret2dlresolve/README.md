@@ -164,13 +164,17 @@ _dl_runtime_resolve(link_map, rel_offset) {
 
 ## 2) 64 bit.
 
+Loading...
+
 ---------------------------------------------------
 
 ### Reference Source:
 
-[+]
+[+] https://www.lazenca.net/pages/viewpage.action?pageId=19300744
 
-[+]
+[+] https://syst3mfailure.io/ret2dl_resolve
 
-[+]
+[+] http://rk700.github.io/2015/08/09/return-to-dl-resolve/
+
+[+] https://chung96vn.wordpress.com/2018/12/28/ret2dlresolve-technique/
 
