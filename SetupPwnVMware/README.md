@@ -247,6 +247,8 @@ cd ../
 $ sudo gem install one_gadget
 ```
 
+link: [one_gadget](https://github.com/david942j/one_gadget)
+
 #### +) Ghidra (Tools for reversing)
 
 * Version 10.1.12 latest in 01/04/2022, check for new version in [ghidra](https://github.com/NationalSecurityAgency/ghidra/releases)
