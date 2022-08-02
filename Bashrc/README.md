@@ -48,8 +48,9 @@ export PATH="$HOME/bin:/usr/lib/python3:/usr/local/lib/python2.7:$PATH"
 
 ### Note: `source ~/.bashrc` or `source ~/.zshrc`.
 
->[Oh My Zsh](https://www.youtube.com/watch?v=Mhdl-qppnlY&list=PL2YJKKcudhJ0ar-IYMehPGRwbcUz8NZJj&index=17&t=1112s) .
-
-Loading...
-
 -------------------------------------------------------------------------------------------------------
+
+[+] [Oh My Zsh](https://www.youtube.com/watch?v=Mhdl-qppnlY&list=PL2YJKKcudhJ0ar-IYMehPGRwbcUz8NZJj&index=17&t=1112s) .
+
+[+] [Wine](https://www.youtube.com/watch?v=Wx8NbZEAPNM&list=PL2YJKKcudhJ0ar-IYMehPGRwbcUz8NZJj&index=18&t=9s) .
+
