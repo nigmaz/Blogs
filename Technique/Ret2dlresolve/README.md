@@ -144,6 +144,10 @@ _dl_runtime_resolve(link_map, rel_offset) {
     read(0, buf, 0x100);
 ```
 
+- `rel_offset` cung cấp độ lệch của bảng `Elf32_Rel` trong JMPREL. 
+
+- `Link_map` - (0x804a004) không có gì khác ngoài một danh sách với tất cả các thư viện đã tải. `_dl_runtime_resolve` sử dụng danh sách này để giải quyết biểu tượng của hàm cần tìm. 
+
 ### Tóm lại cần fake 
 
 **1.** `Rel_offset`
