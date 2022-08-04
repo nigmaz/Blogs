@@ -1,5 +1,5 @@
 # Compile secure flag
->gcc file.c -o file
+>gcc file.c -o file | gcc -Wl,-z,relro -fno-stack-protector -no-pie
 
 ### RELRO:
 - Partial RELRO: `-Wl,-z,relro`
