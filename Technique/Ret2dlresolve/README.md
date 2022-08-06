@@ -60,9 +60,10 @@ typedef uint32_t Elf32_Addr ;
 typedef uint32_t Elf32_Word ; 
 typedef struct 
 {
-   Elf32_Addr r_offset ; /* Address */ 
-   Elf32_Word r_info ; /* Relocation type and symbol index */ 
+   Elf32_Addr  r_offset ;  /* Address */ 4
+   Elf32_Word  r_info ;    /* Relocation type and symbol index */ 4 
 } Elf32_Rel ; 
+
 #define ELF32_R_SYM(val) ((val) >> 8) 
 #define ELF32_R_TYPE(val) ((val) & 0xff)
 ```
@@ -93,12 +94,12 @@ Bảng này chứa thông tin `symbol` có liên quan. Mỗi mục nhập là m�
 ```c
 typedef struct 
 { 
-   Elf32_Word st_name ; /* Symbol name (string tbl index) */
-   Elf32_Addr st_value ; /* Symbol value */ 
-   Elf32_Word st_size ; /* Symbol size */ 
-   unsigned char st_info ; /* Symbol type and binding */ 
-   unsigned char st_other ; /* Symbol visibility under glibc>=2.2 */ 
-   Elf32_Section st_shndx ; /* Section index */ 
+   Elf32_Word     st_name ;   /* Symbol name (string tbl index) */ 4
+   Elf32_Addr     st_value ;  /* Symbol value */ 4
+   Elf32_Word     st_size ;   /* Symbol size */ 4
+   unsigned char  st_info ;   /* Symbol type and binding */ 1 
+   unsigned char  st_other ;  /* Symbol visibility under glibc>=2.2 */ 1 
+   Elf32_Section  st_shndx ;  /* Section index */  2
 } Elf32_Sym ;
 ```
 
