@@ -194,7 +194,38 @@ fake_sym_struct += p32(0) + p32(0x12)
 
 ## 2) 64 bit.
 
-Loading...
+```c
+typedef uint64_t Elf64_Addr;
+typedef uint64_t Elf64_Xword;
+typedef int64_t  Elf64_Sxword;
+ 
+typedef struct
+{
+  Elf64_Addr        r_offset;                /* Address */
+  Elf64_Xword        r_info;                        /* Relocation type and symbol index */
+  Elf64_Sxword        r_addend;                /* Addend */
+} Elf64_Rela;
+```
+
+```c
+typedef uint32_t Elf64_Word;
+typedef uint16_t Elf64_Section;
+typedef uint64_t Elf64_Addr;
+typedef uint64_t Elf64_Xword;
+ 
+ 
+typedef struct
+{
+  Elf64_Word        st_name;                /* Symbol name (string tbl index) */4
+  unsigned char        st_info;                /* Symbol type and binding */1
+  unsigned char st_other;                /* Symbol visibility */1
+  Elf64_Section        st_shndx;                /* Section index */2
+  Elf64_Addr        st_value;                /* Symbol value */8
+  Elf64_Xword        st_size;                /* Symbol size */8
+} Elf64_Sym;
+```
+
+
 
 ---------------------------------------------------
 
