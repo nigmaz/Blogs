@@ -150,11 +150,11 @@ _dl_runtime_resolve(link_map, rel_offset) {
 
 ### Tóm lại cần fake 
 
-**1.** `Rel_offset`
+**1.** `Rel_offset` - Argument function `_dl_runtime_resolve` .
 
-**2.** `Elf32_Rel->r_info`
+**2.** `Elf32_Rel->r_info` - Fake struct Elf32_Rel .
 
-**3.** `Elf32_Sym->st_name` 
+**3.** `Elf32_Sym->st_name` - Fake struct Elf32_Sym .
 
 Để khai thác cần tính toán, lựa chọn vị trí và align phức tạp nữa nên một lần nữa tôi nhấn mạnh đây chỉ giống như `cheat sheet` => đọc và làm ví dụ từ writeup `0ctf - babystack` tôi để link trong mẫu 32 bit.
 
