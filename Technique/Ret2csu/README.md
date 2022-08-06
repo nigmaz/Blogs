@@ -55,6 +55,44 @@ Gadgets are:
 | pop r15     |
 | ret         |
 
+>VD:
+
+```asm
+   0x00000000004011b0 <+0>:	endbr64 
+   0x00000000004011b4 <+4>:	push   r15
+   0x00000000004011b6 <+6>:	lea    r15,[rip+0x2c53]        # 0x403e10
+   0x00000000004011bd <+13>:	push   r14
+   0x00000000004011bf <+15>:	mov    r14,rdx
+   0x00000000004011c2 <+18>:	push   r13
+   0x00000000004011c4 <+20>:	mov    r13,rsi
+   0x00000000004011c7 <+23>:	push   r12
+   0x00000000004011c9 <+25>:	mov    r12d,edi
+   0x00000000004011cc <+28>:	push   rbp
+   0x00000000004011cd <+29>:	lea    rbp,[rip+0x2c44]        # 0x403e18
+   0x00000000004011d4 <+36>:	push   rbx
+   0x00000000004011d5 <+37>:	sub    rbp,r15
+   0x00000000004011d8 <+40>:	sub    rsp,0x8
+   0x00000000004011dc <+44>:	call   0x401000 <_init>
+   0x00000000004011e1 <+49>:	sar    rbp,0x3
+   0x00000000004011e5 <+53>:	je     0x401206 <__libc_csu_init+86>
+   0x00000000004011e7 <+55>:	xor    ebx,ebx
+   0x00000000004011e9 <+57>:	nop    DWORD PTR [rax+0x0]
+   0x00000000004011f0 <+64>:	mov    rdx,r14    ############################################
+   0x00000000004011f3 <+67>:	mov    rsi,r13
+   0x00000000004011f6 <+70>:	mov    edi,r12d
+   0x00000000004011f9 <+73>:	call   QWORD PTR [r15+rbx*8]  ; sau khi gọi hàm với các đối số đã được thiết lập gadget chạy xuống dòng dưới.
+   0x00000000004011fd <+77>:	add    rbx,0x1
+   0x0000000000401201 <+81>:	cmp    rbp,rbx
+   0x0000000000401204 <+84>:	jne    0x4011f0 <__libc_csu_init+64>
+   0x0000000000401206 <+86>:	add    rsp,0x8                 ; để ý dòng này để set "A" * 8 nhằm tương thích với instruction để không bị chèn sai giá trị thanh ghi.
+   0x000000000040120a <+90>:	pop    rbx        ############################################
+   0x000000000040120b <+91>:	pop    rbp
+   0x000000000040120c <+92>:	pop    r12
+   0x000000000040120e <+94>:	pop    r13
+   0x0000000000401210 <+96>:	pop    r14
+   0x0000000000401212 <+98>:	pop    r15
+   0x0000000000401214 <+100>:	ret 
+```
 
 >Tôi học được nó khi mà muốn cố gắng setup giá trị thanh ghi rdx để sử dụng `write` cho việc leak giá trị của `linkmap` phục vụ cho khai thác `ret2dlresolve` trên kiến trúc 64bit.
 
