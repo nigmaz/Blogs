@@ -66,6 +66,8 @@ typedef struct
 
 #define ELF32_R_SYM(val) ((val) >> 8) 
 #define ELF32_R_TYPE(val) ((val) & 0xff)
+
+val = Elf32_Rel->r_info .
 ```
 
 - **STRTAB**
@@ -207,7 +209,10 @@ typedef struct
   Elf64_Sxword    r_addend;              /* Addend */ 8
 } Elf64_Rela;
 
+#define ELF64_R_SYM(val) ((val) >> 8) 
+#define ELF64_R_TYPE(val) ((val) & 0xff)
 
+val = Elf64_Rela->r_info .
 ```
 
 ```c
