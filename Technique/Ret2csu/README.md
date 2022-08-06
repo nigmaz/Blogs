@@ -41,6 +41,21 @@ Bây giờ chúng ta có thể kiểm soát được giá trị trên thanh ghi 
 
 => Điều này thực sự rất hữu ích khi ta muốn dùng nó phục vụ cho các syscall như `execve` hoặc là điền tham số các hàm như `write` và `read`.
 
+Tổng quát hơn nó sẽ trông như thế này.
+
+Gadgets are:
+
+|    popper   |    caller         |
+| ----------- | ----------------- |
+| pop rbx     | mov    rdx, r13   |
+| pop rbp     | mov    rsi, r12   |
+| pop r12     | mov    edi, ebp   |
+| pop r13     | call qword ptr [r15 + rbx*0x8] |
+| pop r14     | 
+| pop r15     |
+| ret         |
+
+
 >Tôi học được nó khi mà muốn cố gắng setup giá trị thanh ghi rdx để sử dụng `write` cho việc leak giá trị của `linkmap` phục vụ cho khai thác `ret2dlresolve` trên kiến trúc 64bit.
 
 -------------------------------------------------------------------
@@ -50,3 +65,5 @@ Bây giờ chúng ta có thể kiểm soát được giá trị trên thanh ghi 
 [+] https://ir0nstone.gitbook.io/notes/types/stack/ret2csu
 
 [+] https://i.blackhat.com/briefings/asia/2018/asia-18-Marco-return-to-csu-a-new-method-to-bypass-the-64-bit-Linux-ASLR-wp.pdf
+
+[+] https://gist.github.com/kaftejiman/a853ccb659fc3633aa1e61a9e26266e9
