@@ -204,13 +204,13 @@ typedef int64_t  Elf64_Sxword;
  
 typedef struct
 {
-  Elf64_Addr      r_offset;              /* Address */ 8
+  Elf64_Addr      r_offset;              /* Address, Location at which to apply the action */ 8
   Elf64_Xword     r_info;                /* Relocation type and symbol index */ 8
-  Elf64_Sxword    r_addend;              /* Addend */ 8
+  Elf64_Sxword    r_addend;              /* Constant addend used to compute value */ 8
 } Elf64_Rela;
 
 #define ELF64_R_SYM(val) ((val) >> 32) 
-#define ELF64_R_TYPE(val) ((val) & 0xff)
+#define ELF64_R_TYPE(val) ((val) & 0xffffffff)
 
 /* val = Elf64_Rela->r_info */
 ```
