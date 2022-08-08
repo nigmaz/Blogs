@@ -232,7 +232,18 @@ typedef struct
 } Elf64_Sym;
 ```
 
-
+```c
+const struct r_found_version *version = NULL;
+ 
+if (l->l_info[VERSYMIDX (DT_VERSYM)] != NULL)
+{
+    const ElfW(Half) *vernum = (const void *) D_PTR (l, l_info[VERSYMIDX (DT_VERSYM)]);
+    ElfW(Half) ndx = vernum[ELFW(R_SYM) (reloc->r_info)] & 0x7fff;
+    version = &l->l_versions[ndx];
+    if (version->hash == 0)
+        version = NULL;
+}
+```
 
 ---------------------------------------------------
 
