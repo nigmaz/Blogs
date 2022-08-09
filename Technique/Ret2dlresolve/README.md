@@ -242,7 +242,11 @@ typedef struct
       - Điều quan trọng ở đây là kích thước của cấu trúc thay đổi.
          - Kích thước của cấu trúc Elf32_Rel (8 byte) → Kích thước của cấu trúc Elf64_Rela (24 byte)
          - Kích thước của cấu trúc Elf32_Sym (16 byte)  →  Kích thước của cấu trúc Elf64_Sym (24 byte)
-         - Do đó, giá trị Reset_offset phải là chỉ số mảng của cấu trúc Elf64_Rela, không phải là giá trị bù đắp của địa chỉ.
+      - Do đó, giá trị Rela_offset phải là chỉ số mảng của cấu trúc Elf64_Rela, không phải là giá trị bù đắp của địa chỉ.
+      
+ Cách thức tính toán thay đổi ở Rela_offset - đối số của `_dl_runtime_resolve` là chỉ số của cấu trúc thay vì là giá trị bù đắp, còn lại cách thức tính toán tên của `symbol` cần `resolve` tương tự trên 32 bit.
+
+>Note: Vấn đề phát sinh ở kiến trúc 64 bit xuất phát từ đoạn mã sau:
 
 ```c
 const struct r_found_version *version = NULL;
@@ -256,6 +260,12 @@ if (l->l_info[VERSYMIDX (DT_VERSYM)] != NULL)
         version = NULL;
 }
 ```
+
+Cụ thể bạn có thể đọc kỹ hơn ở phần `The Exploit` của bài viết này [ret2dl_resolve](https://syst3mfailure.io/ret2dl_resolve) . Từ đó kết hợp với những lần khai thác lại mẫu của tôi `(tôi sẽ để cả hai trường hợp ở VD mẫu)` tôi chia `ret2dl_resolve` trên 64 bit ra hai trường hợp xử lý:
+
+      1) Vùng .bss được ánh xạ ở nơi có địa chỉ dạng `0x60xxxx` - Trường hợp này bạn cần hàm `write` hoặc hàm có chức năng tương tự từ libc để ghi đè (l->l_info[VERSYMIDX (DT_VERSYM)] == NULL) dẫn đến không thực thi đoạn mã `check version` nên không sinh ra lỗi.
+      
+      2) Vùng .bss được ánh xạ nơi có địa chỉ dạng `0x40xxxx` - Trường hợp này khai thác như trên 32 bit khi mà mã nguồn chương trình cần khai thác chỉ có một hàm `read` từ libc.
 
 ---------------------------------------------------
 
