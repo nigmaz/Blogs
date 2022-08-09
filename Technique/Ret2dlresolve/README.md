@@ -151,7 +151,7 @@ _dl_runtime_resolve(link_map, rel_offset) {
 
 - `Link_map` - (0x804a004) không có gì khác ngoài một danh sách với tất cả các thư viện đã tải. `_dl_runtime_resolve` sử dụng danh sách này để giải quyết biểu tượng của hàm cần tìm. 
 
-### Tóm lại cần fake 
+### [*] Tóm lại cần fake 
 
 **1.** `Rel_offset` - Argument function `_dl_runtime_resolve` .
 
@@ -269,7 +269,7 @@ Cụ thể bạn có thể đọc kỹ hơn ở phần `The Exploit` của bài 
       
       2) Vùng .bss được ánh xạ nơi có địa chỉ dạng `0x40xxxx` - Trường hợp này khai thác như trên 32 bit khi mà mã nguồn chương trình cần khai thác chỉ có một hàm `read` từ libc và khi đó struct fake tại .bss không quá lớn dẫn đến lỗi `check version`.
 
-### Tóm lại cần fake 
+### [*] Tóm lại cần fake 
 
 **1.** `Rela_offset` - Argument function `_dl_runtime_resolve` .
 
