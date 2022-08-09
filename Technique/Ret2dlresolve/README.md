@@ -244,7 +244,7 @@ typedef struct
          - Kích thước của cấu trúc Elf32_Sym (16 byte)  →  Kích thước của cấu trúc Elf64_Sym (24 byte)
       - Do đó, giá trị Rela_offset phải là chỉ số mảng của cấu trúc Elf64_Rela, không phải là giá trị bù đắp của địa chỉ.
       
- Cách thức tính toán thay đổi ở Rela_offset - đối số của `_dl_runtime_resolve` là chỉ số của cấu trúc thay vì là giá trị bù đắp, còn lại cách thức tính toán tên của `symbol` cần `resolve` tương tự trên 32 bit.
+ Cách thức tính toán thay đổi ở Rela_offset - đối số của `_dl_runtime_resolve` là chỉ số của cấu trúc thay vì là giá trị bù đắp (offset), còn lại cách thức tính toán tên của `symbol` cần `resolve` tương tự trên 32 bit.
 
 >Note: Vấn đề phát sinh ở kiến trúc 64 bit xuất phát từ đoạn mã sau:
 
