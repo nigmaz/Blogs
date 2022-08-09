@@ -265,7 +265,7 @@ Cụ thể bạn có thể đọc kỹ hơn ở phần `The Exploit` của bài 
 
       1) Vùng .bss được ánh xạ ở nơi có địa chỉ dạng `0x60xxxx` - Trường hợp này bạn cần hàm `write` hoặc hàm có chức năng tương tự từ libc để ghi đè (l->l_info[VERSYMIDX (DT_VERSYM)] == NULL) dẫn đến không thực thi đoạn mã `check version` nên không sinh ra lỗi.
       
-      2) Vùng .bss được ánh xạ nơi có địa chỉ dạng `0x40xxxx` - Trường hợp này khai thác như trên 32 bit khi mà mã nguồn chương trình cần khai thác chỉ có một hàm `read` từ libc.
+      2) Vùng .bss được ánh xạ nơi có địa chỉ dạng `0x40xxxx` - Trường hợp này khai thác như trên 32 bit khi mà mã nguồn chương trình cần khai thác chỉ có một hàm `read` từ libc và khi đó struct fake tại .bss không quá lớn dẫn đến lỗi `check version`.
 
 ---------------------------------------------------
 
