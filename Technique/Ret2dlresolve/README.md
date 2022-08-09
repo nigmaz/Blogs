@@ -265,7 +265,7 @@ if (l->l_info[VERSYMIDX (DT_VERSYM)] != NULL)
 
 Cụ thể bạn có thể đọc kỹ hơn ở phần `The Exploit` của bài viết này [ret2dl_resolve](https://syst3mfailure.io/ret2dl_resolve) . Từ đó kết hợp với những lần khai thác lại mẫu của tôi `(tôi sẽ để cả hai trường hợp ở VD mẫu)` tôi chia `ret2dl_resolve` trên 64 bit ra hai trường hợp xử lý:
 
-      1) Vùng .bss được ánh xạ ở nơi có địa chỉ dạng `0x60xxxx` - Trường hợp này bạn cần hàm `write` hoặc hàm có chức năng tương tự từ libc để leak giá trị của linkmap (GOT + 8) phục vụ việc ghi đè (l->l_info[VERSYMIDX (DT_VERSYM)] == NULL) dẫn đến không thực thi đoạn mã `check version` nên không sinh ra lỗi.
+      1) Vùng .bss được ánh xạ ở nơi có địa chỉ dạng `0x60xxxx` - Trường hợp này bạn cần hàm `write` hoặc hàm có chức năng tương tự từ libc để leak giá trị của link_map (GOT + 8) phục vụ việc ghi đè (l->l_info[VERSYMIDX (DT_VERSYM)] == NULL) dẫn đến không thực thi đoạn mã `check version` nên không sinh ra lỗi.
       
       2) Vùng .bss được ánh xạ nơi có địa chỉ dạng `0x40xxxx` - Trường hợp này khai thác như trên 32 bit khi mà mã nguồn chương trình cần khai thác chỉ có một hàm `read` từ libc và khi đó struct fake tại .bss không quá lớn dẫn đến lỗi `check version`.
 
@@ -277,7 +277,7 @@ Cụ thể bạn có thể đọc kỹ hơn ở phần `The Exploit` của bài 
 
 **3.** `Elf64_Sym->st_name` - Fake struct Elf64_Sym .
 
-**4.** Leak `linkmap` bằng hàm libc nếu có và ghi đè giá trị của `linkmap + 0x1d0` ( hoặc `linkmap + 0x1c8` tùy phiên bản libc ) thành NULL (TH: .bss => 0x60xxxx) .
+**4.** Leak `link_map` bằng hàm libc nếu có và ghi đè giá trị của `link_map + 0x1d0` ( hoặc `linkmap + 0x1c8` tùy phiên bản libc ) thành NULL (TH: .bss => 0x60xxxx) .
 
 Để khai thác cần tính toán, lựa chọn vị trí và align phức tạp nữa nên một lần nữa tôi nhấn mạnh đây chỉ giống như `cheat sheet` => đọc và làm ví dụ tôi để trong mẫu 64 bit (có cả hai trường hợp).
 
