@@ -164,7 +164,7 @@ _dl_runtime_resolve(link_map, rel_offset) {
 ```python
 ### FAKE INFO 
 # Compute offsets and forged structures
-forged_ara = buf + 0x14				                  # buffer2 contain struct from buf + 0x14
+forged_ara = buf + 0x14				                  # buffer2 contain struct from buf + 0x14 = EXAMPLE
 
 elf32_sym = forged_ara + 0x8	                     # size of elf32_rel
 align = 0x10 - ((elf32_sym - SYMTAB) % 0x10) 	   # align to 0x10
@@ -281,7 +281,7 @@ Cụ thể bạn có thể đọc kỹ hơn ở phần `The Exploit` của bài 
 
 ```python
 ### FAKE INFO
-forged_area = base_stage + 40 # 64 - 8 * 3
+forged_area = base_stage + 40 # 64 - 8 * 3         # fake contain struct from fake + 40 = EXAMPLE
 
 addr_rela = forged_area
 align_rela = 24 - ((addr_rela - JMPREL) % 24)
