@@ -309,7 +309,7 @@ fake_rela_struct =  p64(read_got) + p64(r_info) + p64(0)
 fake_sym_struct = p32(st_name) + p32(0x12) + p64(0) + p64(0)
 ```
 
-### FAKE Link_map.
+### B) FAKE Link_map.
 
 Tôi chưa thử trường hợp này bao giờ, bạn có thể tham khảo nó qua bài viết này [ret2dl_resolve-fake_link_map](https://chung96vn.wordpress.com/2018/12/28/ret2dlresolve-technique/) .
 
