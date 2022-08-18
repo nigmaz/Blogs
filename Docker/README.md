@@ -8,7 +8,7 @@ Docker là một platform cung cấp cho người dùng những công cụ và s
 [DOCKER FILE] ==|build|==> [Image] ==|run|==> [Containers]  
 ```
 
-  - `Docker Registry`: Nơi chứa Docker Image.
+  - `Docker Registry` : Nơi chứa Docker Image.
   
   - `Docker Compose` : là công cụ cho phép bạn chạy Ứng Dụng với nhiều Docker Containers một cách nhanh chóng và dễ dàng.
 
