@@ -1,6 +1,6 @@
 # Script for Docker
 
-NOTE: Cheatsheet command line .
+>NOTE: Cheatsheet command line .
 
 Docker là một platform cung cấp cho người dùng những công cụ và service để có thể building, deploying và running ứng dụng dễ dàng hơn bằng cách sử dụng các containers (trên nền tảng ảo hóa).
 
