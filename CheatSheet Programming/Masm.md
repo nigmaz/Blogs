@@ -26,11 +26,11 @@
    
 +) Library `masm32`.
 - Properties/VC++ Directories:
->External Include Directories: `;C:\masm32`.
+`External Include Directories: ";C:\masm32".`
 
 >Code `mASM` load PEB(Process Environment Block) .
 
-[loadPEB](https://securitycafe.ro/2015/10/30/introduction-to-windows-shellcode-development-part1/) .
+[+] [loadPEB](https://securitycafe.ro/2015/10/30/introduction-to-windows-shellcode-development-part1/) .
 
 -----------------------------------------------
 
