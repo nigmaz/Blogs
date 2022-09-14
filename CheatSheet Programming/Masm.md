@@ -28,7 +28,7 @@
 - Properties/VC++ Directories:
 `External Include Directories: ";C:\masm32".`
 
->Code `mASM` load PEB(Process Environment Block) .
+>Code `mASM` load `PEB - (Process Environment Block)` .
 
 [+] [loadPEB](https://securitycafe.ro/2015/10/30/introduction-to-windows-shellcode-development-part1/) .
 
