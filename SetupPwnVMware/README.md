@@ -38,7 +38,7 @@ $ nano ~/.zshrc
 	   	zsh-autosuggestions
 	   )  
 
-Setting Terminal run zsh: Preferences/Unnamed/Command/Run a custom command instead of my shell/Custom command: zsh 
+>Setting Terminal run zsh default: Preferences/Unnamed/Command/Run a custom command instead of my shell/Custom command: zsh 
 
 ```bash
 $ source ~/.zshrc
