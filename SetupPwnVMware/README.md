@@ -163,7 +163,7 @@ $ sudo pip2 install pwntools pathlib2 keystone-engine unicorn capstone ropper ip
 
 You can choose 1 of 2
 
-* Sublime Text 
+* ![Sublime Text](https://www.sublimetext.com/docs/linux_repositories.html) 
 
 ```bash
 $ sudo apt update && \
