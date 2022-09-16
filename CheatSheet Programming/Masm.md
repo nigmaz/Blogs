@@ -32,6 +32,9 @@
 
 [+] [loadPEB](https://securitycafe.ro/2015/10/30/introduction-to-windows-shellcode-development-part1/) .
 
+[1] Build Dependencies.
+- `masm(.targets, .props)`.
+
 -----------------------------------------------
 
 [+] [Video Tutorial](https://www.youtube.com/watch?v=9e1ER2o83N0&list=PL2YJKKcudhJ0ar-IYMehPGRwbcUz8NZJj&index=19&t=11s) .
