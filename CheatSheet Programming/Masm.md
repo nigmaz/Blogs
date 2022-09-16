@@ -35,6 +35,9 @@
 [1] Build Dependencies.
 - `masm(.targets, .props)`.
 
+[2] Advanced.
+- `Entry point: => set "main"`.
+
 -----------------------------------------------
 
 [+] [Video Tutorial](https://www.youtube.com/watch?v=9e1ER2o83N0&list=PL2YJKKcudhJ0ar-IYMehPGRwbcUz8NZJj&index=19&t=11s) .
