@@ -135,8 +135,7 @@ export PATH="$HOME/bin:/home/l1ig/.local/lib/python3.10:/usr/lib/python3:/usr/lo
 * Update Ubuntu
 
 ```bash
-$ sudo apt-get update -y
-$ sudo apt-get upgrade
+$ sudo apt-get update -y && sudo apt-get upgrade
 ```
 
 * Install libraries and tools
