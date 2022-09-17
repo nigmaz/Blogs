@@ -31,10 +31,12 @@ Now change content file ~/.zshrc
 
 ```bash
 	+) ZSH_THEME="half-life"
+	...
 	+) plugins=(
 		git
 	   	zsh-autosuggestions
 	   )  
+	...
 ```
 
 >Setting Terminal run zsh default: `Preferences/Unnamed/Command/Run a custom command instead of my shell/Custom command: zsh` .
@@ -66,26 +68,24 @@ rm ~/.zsh_history_bad
 Create file bash name `zsh_history_fix` and add into `/usr/bin`.
 
 ```bash
-$ chmod +x zsh_history_fix && sudo cp zsh_history_fix /usr/bin && cd ../
+chmod +x zsh_history_fix && sudo cp zsh_history_fix /usr/bin && cd ../
 ```
 
 * Terminator
 
 ```bash
-$ sudo apt-get update
-$ sudo apt-get install terminator
+sudo apt-get update && sudo apt-get install terminator
 ```
 
 * Update ubuntu
 
-```bash
-$ sudo apt-get update
-```
+
+`$ sudo apt-get update`
 
 ### 2) Add i386 architecture (to run file ELF x86 (32-bit))
 
 ```bash
-$ sudo dpkg --add-architecture i386
+sudo dpkg --add-architecture i386
 ```
 
 ### 3) Install Python and Pip
@@ -97,7 +97,10 @@ From Ubuntu 20.04, py3 is available in base system and py2 is available to insta
 * Python3 and pip3
 
 ```bash
-$ sudo apt-get install python3 python3-pip python3-dev
+sudo apt-get install python3 python3-pip python3-dev
+```
+
+```
 $ pip3 --version
 pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.8)
 ```
@@ -105,21 +108,24 @@ pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.8)
 Upgrade pip3
 
 ```bash
-$ python3 -m pip install --upgrade pip
+python3 -m pip install --upgrade pip
 ```
 
 * Python2 and pip2
 
 ```bash
-$ sudo add-apt-repository universe
-$ sudo apt update 
-$ sudo apt install python2
-$ sudo apt-get install curl 
-$ curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
-$ sudo python2 get-pip.py
+sudo add-apt-repository universe
+```
+
+```bash
+sudo apt update && sudo apt install python2 && sudo apt-get install curl && curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py && sudo python2 get-pip.py
+```
+
+```bash
 $ pip2 --version
 pip 20.0.2 from /usr/local/lib/python2.7/dist-packages/pip (python 2.7)
 ```
+
 NOTE: [Add PATH](https://linuxize.com/post/how-to-add-directory-to-path-in-linux/)
 
 ```
@@ -134,13 +140,13 @@ export PATH="$HOME/bin:/home/l1ig/.local/lib/python3.10:/usr/lib/python3:/usr/lo
 * Update Ubuntu
 
 ```bash
-$ sudo apt-get update -y && sudo apt-get upgrade
+sudo apt-get update -y && sudo apt-get upgrade
 ```
 
 * Install libraries and tools
 
 ```bash
-$ sudo apt-get install -y socat build-essential jq strace ltrace curl wget git make procps vim ssh rubygems gcc dnsutils netcat gcc-multilib net-tools gdb gdb-multiarch libssl-dev libffi-dev libpcre3-dev libdb-dev libxt-dev libxaw7-dev libc6:i386 libncurses5:i386 libstdc++6:i386 patchelf elfutils nasm ascii 
+sudo apt-get install -y socat build-essential jq strace ltrace curl wget git make procps vim ssh rubygems gcc dnsutils netcat gcc-multilib net-tools gdb gdb-multiarch libssl-dev libffi-dev libpcre3-dev libdb-dev libxt-dev libxaw7-dev libc6:i386 libncurses5:i386 libstdc++6:i386 patchelf elfutils nasm ascii 
 ```
 
 `$ reboot` .
@@ -148,31 +154,30 @@ $ sudo apt-get install -y socat build-essential jq strace ltrace curl wget git m
 * Install python3 libraries
 
 ```bash
-$ sudo pip3 install pwntools pathlib2 keystone-engine unicorn capstone ropper ipython
+sudo pip3 install pwntools pathlib2 keystone-engine unicorn capstone ropper ipython
 ```
 
 * Install python2 libraries
 
 ```bash
-$ sudo pip2 install pwntools pathlib2 keystone-engine unicorn capstone ropper ipython
+sudo pip2 install pwntools pathlib2 keystone-engine unicorn capstone ropper ipython
 ```
 
 ### 5) Install Text Editor
 
 You can choose 1 of 2
 
-* [Sublime Text](https://www.sublimetext.com/docs/linux_repositories.html) 
+* [Sublime Text](https://www.sublimetext.com/docs/linux_repositories.html) .
 
 ```bash
-$ sudo apt update && \
-wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add - && \
-sudo apt install apt-transport-https && \
-echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list && \
-sudo apt update && \
-sudo apt install sublime-text
+sudo apt-get install apt-transport-https
 ```
 
-* VS Code
+```bash
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg && echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list && sudo apt-get update && sudo apt-get install sublime-text
+```
+
+* [VS Code](https://code.visualstudio.com/download) .
 
 ```bash
 $ sudo apt update && \
@@ -188,7 +193,7 @@ sudo apt install code
 #### +) Create folder for tools
 
 ```bash
-$ cd ~/ && \
+cd ~/ && \
 mkdir Tools && \
 cd Tools
 ```
@@ -198,11 +203,11 @@ cd Tools
 #### +) pwndbg (Gdb extension)
 
 ```
-$ sudo apt-get install libc6-dbg libc6:i386 libc6-dbg:i386
+sudo apt-get install libc6-dbg libc6:i386 libc6-dbg:i386
 ```
 
 ```bash
-$ git clone https://github.com/pwndbg/pwndbg.git && \
+git clone https://github.com/pwndbg/pwndbg.git && \
 cd pwndbg && \
 ./setup.sh && \
 cd ../
@@ -235,7 +240,7 @@ $ ROPgadget --help
 * Download the pwninit binary and copy to `/usr/bin/` to excute as a command in terminal
 
 ```bash
-$ mkdir pwninit && \
+mkdir pwninit && \
 cd pwninit && \
 wget https://github.com/io12/pwninit/releases/download/3.2.0/pwninit && \
 chmod +x pwninit && \
@@ -246,38 +251,38 @@ cd ../
 #### +) one_gadget (Tools for one_gadget searching)
 
 ```bash
-$ sudo gem install one_gadget
+sudo gem install one_gadget
 ```
 
-link: [one_gadget](https://github.com/david942j/one_gadget)
+link: [one_gadget](https://github.com/david942j/one_gadget) .
 
 #### +) Ghidra (Tools for reversing)
-
-* Version 10.1.2 latest in 01/04/2022, check for new version in [ghidra](https://github.com/NationalSecurityAgency/ghidra/releases)
-
-```bash
-$ wget https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_10.1.2_build/ghidra_10.1.2_PUBLIC_20220125.zip && \
-unzip ghidra_10.1.2_PUBLIC_20220125.zip && \
-rm -rf ghidra_10.1.2_PUBLIC_20220125.zip && \
-cd ghidra_10.1.2_PUBLIC && \
-sudo ln -s ~/Tools/ghidra_10.1.2_PUBLIC/ghidraRun /usr/bin/ghidra && \
-cd ../
-```
-
-* The command `sudo ln -s ~/Tools/ghidra_10.1.2_PUBLIC/ghidraRun /usr/bin/ghidra` just add the symlink from `ghidraRun` to `/usr/bin/ghidra`, so you can open ghidra with command "ghidra" in terminal
 
 * If you cannot run the ghidra, checking the ghidra path again, if it alright, try checking `java` (`jdk` and `jre`)
 
 ```bash
-$ sudo apt install -y default-jdk default-jre
+sudo apt install -y default-jdk default-jre
 ```
 
 Or you can use IDA Pro if you have it on your windows host.
 
+* Version 10.1.2 latest in 01/04/2022, check for new version in [ghidra](https://github.com/NationalSecurityAgency/ghidra/releases) .
+
+```bash
+$ wget https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_10.1.5_build/ghidra_10.1.5_PUBLIC_20220726.zip && \
+unzip ghidra_10.1.5_PUBLIC_20220726.zip && \
+rm -rf ghidra_10.1.5_PUBLIC_20220726.zip && \
+cd ghidra_10.1.5_PUBLIC && \
+sudo ln -s ~/Tools/ghidra_10.1.5_PUBLIC/ghidraRun /usr/bin/ghidra && \
+cd ../
+```
+
+* The command `sudo ln -s ~/Tools/ghidra_10.1.5_PUBLIC/ghidraRun /usr/bin/ghidra` just add the symlink from `ghidraRun` to `/usr/bin/ghidra`, so you can open ghidra with command "ghidra" in terminal
+
 #### +) radare2
 
 ```bash
-$ git clone https://github.com/radare/radare2 && \
+git clone https://github.com/radare/radare2 && \
 cd radare2 && \
 sys/install.sh && \
 cd ../
@@ -286,16 +291,16 @@ cd ../
 #### +) libc-database
 
 ```bash
-$ git clone https://github.com/niklasb/libc-database
+git clone https://github.com/niklasb/libc-database
 ```
-or use libc-database search WEB [libc_serach](https://libc.blukat.me/)
+or use libc-database search WEB [libc_serach](https://libc.blukat.me/) .
 
 #### +) Docker
 
 * You will need to use docker when you want to setup the same environment with the server
 
 ```bash
-$ sudo apt install -y docker.io
+sudo apt install -y docker.io
 ```
 
 ### 7) Setup qemu
@@ -303,7 +308,7 @@ $ sudo apt install -y docker.io
 * Use for kernel exploitation or Arm compiler-debug
 
 ```bash
-$ sudo apt install -y qemu-user qemu-user-static gcc-aarch64-linux-gnu binutils-aarch64-linux-gnu binutils-aarch64-linux-gnu-dbg && \
+sudo apt install -y qemu-user qemu-user-static gcc-aarch64-linux-gnu binutils-aarch64-linux-gnu binutils-aarch64-linux-gnu-dbg && \
 sudo apt install -y gcc-arm-linux-gnueabihf binutils-arm-linux-gnueabihf binutils-arm-linux-gnueabihf-dbg && \
 sudo apt-get -y install qemu-kvm qemu
 ```
