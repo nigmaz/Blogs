@@ -9,34 +9,33 @@ It's not really to play the pwn CTF challenge but it optimizes your performance 
 * VMware Tools
 
 ```bash
-$ sudo apt install open-vm-tools open-vm-tools-desktop
-$ sudo reboot
+sudo apt install open-vm-tools open-vm-tools-desktop
 ```
+
+`$ sudo reboot` .
+
 Check VMware Tools
 
 ```bash
-$ lsb_release -a
+lsb_release -a
 ```
 
 * "Oh My ZSH!"
 
 ```bash
-$ sudo apt-get install git zsh curl
-$ sudo chsh -s $(which zsh)
-$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-$ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+sudo apt-get install git zsh curl && sudo chsh -s $(which zsh) && sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" && git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 Now change content file ~/.zshrc
 
-```bash
-$ nano ~/.zshrc
-```
+`$ nano ~/.zshrc` .
 
+```bash
 	+) ZSH_THEME="half-life"
 	+) plugins=(
 		git
 	   	zsh-autosuggestions
 	   )  
+```
 
 >Setting Terminal run zsh default: `Preferences/Unnamed/Command/Run a custom command instead of my shell/Custom command: zsh` .
 
