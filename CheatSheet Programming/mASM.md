@@ -31,7 +31,9 @@
 >Code `mASM` load `PEB - (Process Environment Block)` .
 
 - Compile: 
+ 
 >`ml /c /Zd /coff msgbox.obj` .
+
 >`link /SUBSYSTEM:WINDOWS  /LIBPATH:c:\masm32\lib  msgbox.obj` . WINDOWS or CONSOLE
 
 
