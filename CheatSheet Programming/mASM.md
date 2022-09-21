@@ -30,7 +30,12 @@
 
 >Code `mASM` load `PEB - (Process Environment Block)` .
 
-[+] [loadPEB](https://securitycafe.ro/2015/10/30/introduction-to-windows-shellcode-development-part1/) .
+>Compile: 
+>`ml /c /Zd /coff msgbox.obj` .
+>`link /SUBSYSTEM:WINDOWS  /LIBPATH:c:\masm32\lib  msgbox.obj` . WINDOWS or CONSOLE
+
+
+[+] [loadPEB](https://securitycafe.ro/2015/10/30/introduction-to-windows-shellcode-development-part1/) and `Extern`.
 
 [1] Build Dependencies.
 - `masm(.targets, .props)`.
