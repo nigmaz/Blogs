@@ -17,8 +17,8 @@ alias turn_on_aslr="echo 2 | sudo tee /proc/sys/kernel/randomize_va_space"
 
 ```
 # nasm -f elf helloworld.asm && ld -m elf_i386 helloworld.o -o helloworld && ./helloworld
-# cnasm32 <file.asm>
-cnasm32(){
+# nasm32 <file.asm>
+nasm32(){
     filename=${1%.*}
     nasm -f elf $filename.asm; ld -m elf_i386 $filename.o -o $filename #; ./$filename
 }
@@ -26,8 +26,8 @@ cnasm32(){
 
 ```
 # nasm -f elf64 hello.asm && ld hello.o -o hello && ./hello
-# cnasm64 <file.asm>
-cnasm64(){
+# nasm64 <file.asm>
+nasm64(){
     filename=${1%.*}
     nasm -f elf64 $filename.asm; ld $filename.o -o $filename #; ./$filename
 }
@@ -37,7 +37,7 @@ cnasm64(){
 
 ```
 # PYTHON write into ~/.bashrc or ~/.zshrc
-export PATH="$HOME/bin:/home/l1ig/.local/lib/python3.10:/usr/lib/python3:/usr/local/lib/python2.7:/home/l1ig/.local/bin:$PATH"
+export PATH="$HOME/bin:/home/l1igma_/.local/lib/python3.10:/usr/lib/python3:/usr/local/lib/python2.7:/home/l1igma_/.local/bin:$PATH"
 ```
 
 ### 4) Other
