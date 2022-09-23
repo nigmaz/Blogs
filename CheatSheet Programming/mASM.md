@@ -51,7 +51,7 @@
 
 [+] [Video Tutorial](https://www.youtube.com/watch?v=9e1ER2o83N0&list=PL2YJKKcudhJ0ar-IYMehPGRwbcUz8NZJj&index=19&t=11s) .
 
-[+] [Compile](https://web.archive.org/web/20140225144938/http://www.codegurus.be/codegurus/Programming/assembler&win64_en.htm) .
+[+] [Compile masm_x64](https://web.archive.org/web/20140225144938/http://www.codegurus.be/codegurus/Programming/assembler&win64_en.htm) .
 
 
 
