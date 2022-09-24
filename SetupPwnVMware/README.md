@@ -265,6 +265,7 @@ link: [one_gadget](https://github.com/david942j/one_gadget) .
 ```bash
 sudo apt-get install gcc ruby-dev && sudo gem install seccomp-tools
 ```
+link: [seccomp-tools](https://github.com/david942j/seccomp-tools) .
 
 #### +) Ghidra (Tools for reversing)
 
