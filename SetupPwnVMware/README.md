@@ -263,7 +263,7 @@ link: [one_gadget](https://github.com/david942j/one_gadget) .
 #### +) seccomp-tools (Analyze seccomp sandbox in CTF pwn challenges.)
 
 ```bash
-sudo apt-get install gcc ruby-dev && gem install seccomp-tools
+sudo apt-get install gcc ruby-dev && sudo gem install seccomp-tools
 ```
 
 #### +) Ghidra (Tools for reversing)
