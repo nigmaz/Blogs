@@ -328,4 +328,4 @@ sudo apt-get -y install qemu-kvm qemu
 ### [+] **I keep the advice from the author of the article that I referenced to create this article to thank the author. If the author can read the article, please allow me!!! Thank you very much.**
 
 ### [+] NOTE FIX:
-+ [echo 20 > /proc/sys/kernel/watchdog_thresh](https://www.suse.com/support/kb/doc/?id=000018705) .
++ [echo 20 | sudo tee /proc/sys/kernel/watchdog_thresh](https://www.suse.com/support/kb/doc/?id=000018705) .
