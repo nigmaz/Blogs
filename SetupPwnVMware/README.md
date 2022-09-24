@@ -260,6 +260,12 @@ sudo gem install one_gadget
 
 link: [one_gadget](https://github.com/david942j/one_gadget) .
 
+#### +) seccomp-tools (Analyze seccomp sandbox in CTF pwn challenges.)
+
+```bash
+sudo apt-get install gcc ruby-dev && gem install seccomp-tools
+```
+
 #### +) Ghidra (Tools for reversing)
 
 * If you cannot run the ghidra, checking the ghidra path again, if it alright, try checking `java` (`jdk` and `jre`)
