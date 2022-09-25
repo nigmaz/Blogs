@@ -6,11 +6,11 @@ NOTE: Add it to `~/.bashrc` or `~/.zshrc` depending on which you use.
 
 ```
 # ASLR
-alias check_aslr='cat /proc/sys/kernel/randomize_va_space'
+alias aslr_check='cat /proc/sys/kernel/randomize_va_space'
 
-alias turn_off_aslr="echo 0 | sudo tee /proc/sys/kernel/randomize_va_space"
+alias aslr_off="echo 0 | sudo tee /proc/sys/kernel/randomize_va_space"
 
-alias turn_on_aslr="echo 2 | sudo tee /proc/sys/kernel/randomize_va_space"
+alias aslr_on="echo 2 | sudo tee /proc/sys/kernel/randomize_va_space"
 ```
 
 ### 2) Nasm
@@ -37,7 +37,7 @@ nasm64(){
 
 ```
 # PYTHON write into ~/.bashrc or ~/.zshrc
-export PATH="$HOME/bin:/home/l1igma_/.local/lib/python3.10:/usr/lib/python3:/usr/local/lib/python2.7:/home/l1igma_/.local/bin:$PATH"
+export PATH="$HOME/bin:/home/l1igma_/.local/lib/python3.8:/usr/lib/python3:/usr/local/lib/python2.7:/home/l1igma_/.local/bin:$PATH"
 ```
 
 ### 4) Other
