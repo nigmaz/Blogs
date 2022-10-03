@@ -134,7 +134,9 @@ NOTE: [Add PATH](https://linuxize.com/post/how-to-add-directory-to-path-in-linux
 
 ```
 # PYTHON write into ~/.bashrc or ~/.zshrc
-export PATH="$HOME/bin:/home/l1igma_/.local/lib/python3.8:/usr/lib/python3:/usr/local/lib/python2.7:/home/l1igma_/.local/bin:$PATH"
+export PATH="$HOME/bin:/usr/bin/python2:/bin/python2:/usr/bin/python3:/bin/python3:$PATH"
+
+export PATH="$HOME/bin:/home/l1igma_/.local/lib/python3.8:/usr/lib/python3:/usr/local/lib/python2.7:/home/l1igma_/.local/bin:/home/l1igma_/.local/lib/python3.8/site-packages/pip:$PATH"
 ```
 
 `source ~/.bashrc` or `source ~/.zshrc`.
