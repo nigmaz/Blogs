@@ -279,7 +279,7 @@ sudo apt install -y default-jdk default-jre
 
 Or you can use IDA Pro if you have it on your windows host.
 
-* Version 10.1.2 latest in 01/04/2022, check for new version in [ghidra](https://github.com/NationalSecurityAgency/ghidra/releases) .
+* Version 10.1.5 latest in 01/04/2022, check for new version in [ghidra](https://github.com/NationalSecurityAgency/ghidra/releases) .
 
 ```bash
 wget https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_10.1.5_build/ghidra_10.1.5_PUBLIC_20220726.zip && \
