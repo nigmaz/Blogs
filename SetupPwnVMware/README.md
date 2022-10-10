@@ -9,7 +9,7 @@ It's not really to play the pwn CTF challenge but it optimizes your performance 
 * VMware Tools
 
 ```bash
-sudo apt install open-vm-tools open-vm-tools-desktop
+sudo apt-get install open-vm-tools open-vm-tools-desktop
 ```
 
 `$ sudo reboot` .
