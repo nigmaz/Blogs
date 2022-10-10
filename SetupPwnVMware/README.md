@@ -232,6 +232,8 @@ sudo cp pwninit /usr/bin/ && \
 cd ../
 ```
 
+link: [pwninit](https://github.com/io12/pwninit) .
+
 #### +) one_gadget (Tools for one_gadget searching)
 
 ```bash
@@ -258,7 +260,7 @@ cd libc-database && \
 cd ../
 ```
 
-[libc-database](https://github.com/niklasb/libc-database) .
+link: [libc-database](https://github.com/niklasb/libc-database) .
 
 or use libc-database search WEB [libc_serach](https://libc.blukat.me/) .
 
