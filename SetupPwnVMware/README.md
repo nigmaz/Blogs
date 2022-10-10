@@ -292,6 +292,27 @@ cd ../
 
 * The command `sudo ln -s ~/Tools/ghidra_10.1.5_PUBLIC/ghidraRun /usr/bin/ghidra` just add the symlink from `ghidraRun` to `/usr/bin/ghidra`, so you can open ghidra with command "ghidra" in terminal
 
+#### +) libc-database
+
+* Use to find version of libc with offset (more libc than web database) .
+
+```bash
+git clone https://github.com/niklasb/libc-database && \
+cd libc-database && \
+./get ubuntu && \
+cd ../
+```
+or use libc-database search WEB [libc_serach](https://libc.blukat.me/) .
+
+#### +) Docker
+
+* You will need to use docker when you want to setup the same environment with the server .
+
+```bash
+sudo apt install -y docker.io && \
+sudo apt install -y docker-compose
+```
+
 #### +) radare2
 
 ```bash
@@ -299,21 +320,6 @@ git clone https://github.com/radare/radare2 && \
 cd radare2 && \
 sys/install.sh && \
 cd ../
-```
-
-#### +) libc-database
-
-```bash
-git clone https://github.com/niklasb/libc-database
-```
-or use libc-database search WEB [libc_serach](https://libc.blukat.me/) .
-
-#### +) Docker
-
-* You will need to use docker when you want to setup the same environment with the server
-
-```bash
-sudo apt install -y docker.io
 ```
 
 ### 7) Setup qemu
