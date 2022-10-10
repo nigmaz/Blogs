@@ -256,6 +256,7 @@ link: [seccomp-tools](https://github.com/david942j/seccomp-tools) .
 ```bash
 git clone https://github.com/niklasb/libc-database && \
 cd libc-database && \
+sudo apt-get install zstd && \
 ./get ubuntu && \
 cd ../
 ```
