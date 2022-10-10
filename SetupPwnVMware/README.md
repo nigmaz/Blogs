@@ -219,28 +219,6 @@ cd pwndbg && \
 cd ../
 ```
 
-#### +) ROPgadget (Tools for gadget searching)
-
-* It usually install with pwntools, you can pass if you already can use ROPgadget.
-
->NOTE: pwntools have ROPgadget.
-
-```bash
-$ git clone https://github.com/JonathanSalwan/ROPgadget.git && \
-cd ROPgadget && \
-sudo python3 setup.py install && \
-cd ../
-```
-
-or
-
-[ROPgadget](https://github.com/JonathanSalwan/ROPgadget)
-```
-$ sudo apt install python3-pip
-$ sudo -H python3 -m pip install ROPgadget
-$ ROPgadget --help
-```
-
 #### +) pwninit (Tools for patching libc)
 
 * Download the pwninit binary and copy to `/usr/bin/` to excute as a command in terminal
@@ -269,6 +247,58 @@ sudo apt-get install gcc ruby-dev && sudo gem install seccomp-tools
 ```
 link: [seccomp-tools](https://github.com/david942j/seccomp-tools) .
 
+#### +) libc-database
+
+* Use to find version of libc with offset (more libc than web database) .
+
+```bash
+git clone https://github.com/niklasb/libc-database && \
+cd libc-database && \
+./get ubuntu && \
+cd ../
+```
+or use libc-database search WEB [libc_serach](https://libc.blukat.me/) .
+
+#### +) Docker
+
+* You will need to use docker when you want to setup the same environment with the server .
+
+```bash
+sudo apt install -y docker.io && \
+sudo apt install -y docker-compose
+```
+
+#### +) ROPgadget (Tools for gadget searching)
+
+* It usually install with pwntools, you can pass if you already can use ROPgadget.
+
+>NOTE: pwntools have ROPgadget.
+
+```bash
+$ git clone https://github.com/JonathanSalwan/ROPgadget.git && \
+cd ROPgadget && \
+sudo python3 setup.py install && \
+cd ../
+```
+
+or
+
+[ROPgadget](https://github.com/JonathanSalwan/ROPgadget)
+```
+$ sudo apt install python3-pip
+$ sudo -H python3 -m pip install ROPgadget
+$ ROPgadget --help
+```
+
+#### +) radare2
+
+```bash
+git clone https://github.com/radare/radare2 && \
+cd radare2 && \
+sys/install.sh && \
+cd ../
+```
+
 #### +) Ghidra (Tools for reversing)
 
 * If you cannot run the ghidra, checking the ghidra path again, if it alright, try checking `java` (`jdk` and `jre`)
@@ -291,36 +321,6 @@ cd ../
 ```
 
 * The command `sudo ln -s ~/Tools/ghidra_10.1.5_PUBLIC/ghidraRun /usr/bin/ghidra` just add the symlink from `ghidraRun` to `/usr/bin/ghidra`, so you can open ghidra with command "ghidra" in terminal
-
-#### +) libc-database
-
-* Use to find version of libc with offset (more libc than web database) .
-
-```bash
-git clone https://github.com/niklasb/libc-database && \
-cd libc-database && \
-./get ubuntu && \
-cd ../
-```
-or use libc-database search WEB [libc_serach](https://libc.blukat.me/) .
-
-#### +) Docker
-
-* You will need to use docker when you want to setup the same environment with the server .
-
-```bash
-sudo apt install -y docker.io && \
-sudo apt install -y docker-compose
-```
-
-#### +) radare2
-
-```bash
-git clone https://github.com/radare/radare2 && \
-cd radare2 && \
-sys/install.sh && \
-cd ../
-```
 
 ### 7) Setup qemu
 
