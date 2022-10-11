@@ -223,7 +223,7 @@ sudo apt-get install libc6-dbg libc6:i386 libc6-dbg:i386
 ```
 
 ```bash
-git clone https://github.com/pwndbg/pwndbg.git && \
+git clone https://github.com/pwndbg/pwndbg && \
 cd pwndbg && \
 ./setup.sh && \
 cd ../
