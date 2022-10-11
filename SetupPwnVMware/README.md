@@ -43,6 +43,12 @@ Now change content file ~/.zshrc
 	...
 ```
 
+> [how-to-make-zsh-the-default-shell](https://askubuntu.com/questions/131823/how-to-make-zsh-the-default-shell) .
+
+```
+chsh -s $(which zsh)
+```
+
 >Setting Terminal run zsh default: `Preferences/Unnamed/Command/Run a custom command instead of my shell/Custom command: zsh` .
 
 ```bash
