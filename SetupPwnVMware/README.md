@@ -330,6 +330,13 @@ cd ../
 
 * The command `sudo ln -s ~/Tools/ghidra_10.1.5_PUBLIC/ghidraRun /usr/bin/ghidra` just add the symlink from `ghidraRun` to `/usr/bin/ghidra`, so you can open ghidra with command "ghidra" in terminal
 
+### +) fidra
+* Use for dynamic reversing
+
+```
+pip install frida-tools
+```
+
 ### 7) Setup qemu
 
 * Use for kernel exploitation or Arm compiler-debug
