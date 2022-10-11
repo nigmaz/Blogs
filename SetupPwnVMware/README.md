@@ -334,7 +334,7 @@ cd ../
 * Use for dynamic reversing
 
 ```
-pip install frida-tools
+pip3 install frida-tools
 ```
 
 ### 7) Setup qemu
