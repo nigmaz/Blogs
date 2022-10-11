@@ -229,6 +229,15 @@ cd pwndbg && \
 cd ../
 ```
 
+>plugin-gdb:
+
+* [pưndbg](https://github.com/pwndbg/pwndbg) .
+
+* [gef](https://github.com/hugsy/gef) .
+
+* [gdb-peda](https://github.com/longld/peda) .
+
+
 FIX ERROR: `sudo apt-get install python3-testresources` .
 
 #### +) pwninit (Tools for patching libc)
