@@ -169,6 +169,10 @@ sudo apt-get install -y socat build-essential jq strace ltrace curl wget git mak
 sudo pip3 install pwntools pathlib2 keystone-engine unicorn capstone ropper ipython
 ```
 
+```
+sudo pip3 install checksec.py
+```
+
 * Install python2 libraries
 
 ```bash
