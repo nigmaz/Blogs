@@ -160,8 +160,10 @@ sudo apt-get install -y socat build-essential jq strace ltrace curl wget git mak
 * Install python3 libraries
 
 ```bash
-sudo pip3 install pwntools pathlib2 keystone-engine unicorn capstone ropper ipython python3-testresources
+sudo pip3 install pwntools pathlib2 keystone-engine unicorn capstone ropper ipython 
 ```
+
+`sudo pip3 install python3-testresources` .
 
 * Install python2 libraries
 
