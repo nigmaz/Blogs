@@ -33,7 +33,7 @@ def add_all_folder(path):
 		if os.path.isdir(subfolder):
 			add_all_folder(subfolder)
 
-add_all_folder('/home/l1j9m4/Install/glibc/')
+add_all_folder('/home/l1igma/Tools/glibc/')
 ```
 
 * We add this script to `~/.gdbinit`, this will auto add glibc source code when we start gdb
