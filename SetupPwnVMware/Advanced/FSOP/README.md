@@ -6,7 +6,7 @@
 * Download the glibc source code (workdir: Tools)
 
 ```bash
-$ git config --global http.sslverify false && \
+git config --global http.sslverify false && \
 git clone https://sourceware.org/git/glibc.git
 ```
 
