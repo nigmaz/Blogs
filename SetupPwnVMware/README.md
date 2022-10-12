@@ -233,7 +233,7 @@ cd ../
 
 >plugin-gdb:
 
-* [pưndbg](https://github.com/pwndbg/pwndbg) .
+* [pwndbg](https://github.com/pwndbg/pwndbg) .
 
 * [gef](https://github.com/hugsy/gef) .
 
