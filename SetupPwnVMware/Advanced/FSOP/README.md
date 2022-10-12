@@ -39,7 +39,7 @@ add_all_folder('/home/l1igma/Tools/glibc/')
 * We add this script to `~/.gdbinit`, this will auto add glibc source code when we start gdb
 
 ```bash
-$ echo "source ~/Tools/add_glibc_source/add_glibc_source.py" >> ~/.gdbinit
+echo "source ~/Tools/add_glibc_source/add_glibc_source.py" >> ~/.gdbinit
 ```
 
 * Create another scripts
