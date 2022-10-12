@@ -107,7 +107,7 @@ From Ubuntu 20.04, py3 is available in base system and py2 is available to insta
 * Python3 and pip3
 
 ```bash
-sudo apt-get install python3 python3-pip python3-dev
+sudo apt-get install python3 python3-dev python3-pip 
 ```
 
 ```
