@@ -144,6 +144,7 @@ export PATH="$HOME/bin:/usr/bin/python2:/bin/python2:/usr/bin/python3:/bin/pytho
 
 export PATH="$HOME/bin:/usr/local/lib/python2.7/dist-packages/pip:/usr/lib/python3/dist-packages/pip:/home/nigma/.local/lib/python3.8/site-packages/pip:/home/nigma/.local/bin:$PATH"
 # cat /etc/environment
+# echo $PATH
 ```
 
 `source ~/.bashrc` or `source ~/.zshrc`.
