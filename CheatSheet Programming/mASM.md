@@ -37,7 +37,7 @@
 >`link /SUBSYSTEM:CONSOLE  /LIBPATH:c:\masm32\lib  msgbox.obj` . WINDOWS or CONSOLE
 
 
-[+] [loadPEB](https://securitycafe.ro/2015/10/30/introduction-to-windows-shellcode-development-part1/) and `Extern`.
+### 3) [loadPEB](https://securitycafe.ro/2015/10/30/introduction-to-windows-shellcode-development-part1/) and `Extern`.
 
 [1] Build Dependencies.
 - `masm(.targets, .props)`.
