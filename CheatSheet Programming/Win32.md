@@ -4,7 +4,7 @@
 
 ### NOTE config:
 
-[+] [Name project] => Properties => Linker => System => SubSystem : `Windows (/SUBSYSTEM:WINDOWS)` .
+[+] {Name project} => Properties => Linker => System => SubSystem : `Windows (/SUBSYSTEM:WINDOWS)` .
 
 -----------------------------------------------
 
