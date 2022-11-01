@@ -1,2 +1,2 @@
 # Blogs
->[!] Note .
+>[+] Note for me [>+$].
