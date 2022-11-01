@@ -5,6 +5,8 @@
 
 Vì vậy, bằng cách tận dụng sigreturn, nếu như chúng ta có thể làm giả cấu trúc là tập hợp các giá trị của các thanh ghi được lưu trên stack, chúng ta có thể `kiểm soát tất cả các giá trị đăng ký cùng một lúc.`
 
+>Dấu hiệu:ASLR và NX bật, không thể shellcode chương trình không có hoặc không đủ dữ kiện tiến hành leak libc và ret2libc => ý tưởng là có thể tạo ROPchain nhưng do chương trình quá nhỏ nên không đủ gadget => linh hoạt các trường hợp mà sử dụng SROP.
+
 ### 1) Khái niệm liên quan
 
 Để hiểu cách thức hoạt động của SROP, ta sẽ tìm hiểu về cách mà hệ thống xử lý khi một tín hiệu xuất hiện trong hệ thống Unix.
