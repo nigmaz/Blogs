@@ -1,3 +1,4 @@
++) 
 typedef struct {
         Elf32_Word      st_name;
         Elf32_Addr      st_value;
@@ -15,7 +16,8 @@ typedef struct {
         Elf64_Addr      st_value;
         Elf64_Xword     st_size;
 } Elf64_Sym;
-[7:39 PM]
+
++)
 typedef struct {
         Elf32_Addr      r_offset;
         Elf32_Word      r_info;
@@ -27,6 +29,7 @@ typedef struct {
         Elf32_Sword     r_addend;
 } Elf32_Rela;
 
++) 
 typedef struct {
         Elf64_Addr      r_offset;
         Elf64_Xword     r_info;
