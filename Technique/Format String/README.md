@@ -1,4 +1,7 @@
-[Blind Format String] - find libc with libc-base
+[1]> [Blind Format String] - find libc with libc-base
 
-[Blind Fmt](https://www.youtube.com/watch?v=XuzuFUGuQv0)
+    - [Blind Fmt video](https://www.youtube.com/watch?v=XuzuFUGuQv0) .
 
+    - [Blind src](https://github.com/beerpwn/ctf/tree/master/2019/redpwn_ctf/black_echo) .
+    
+    
