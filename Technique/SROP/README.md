@@ -117,6 +117,8 @@ Sử dụng `mprotect` để làm cho một vùng bộ nhớ mà chúng tôi l�
 
 [2] [BUUCTF](https://www.cnblogs.com/xlrp/p/14273599.html)
 
+Có một lưu ý nhỏ là cố gắng để syscall ngay kế bên frame thì khi thực hiện SROP mới đúng được.
+
 ---------------------------------------------------
 
 ### Reference Source:
