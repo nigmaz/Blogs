@@ -1,4 +1,4 @@
-# Script setup Linux Commands
+# bashrc OR zshrc
 
 NOTE: Add it to `~/.bashrc` or `~/.zshrc` depending on which you use.
 
