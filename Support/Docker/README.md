@@ -77,6 +77,8 @@ docker system prune
    * [Video](https://www.youtube.com/watch?v=jOm_XSeMnJI&t=33s) .
 
    * [Tutorial](https://viblo.asia/p/tooling-gioi-thieu-ngrok-mang-demo-du-an-web-len-internet-khong-can-deploy-naQZR7eqlvx) .
+   
+   * Pwn Deploy sample: [A Hiep](https://gitlab.com/hypnguyen1209/pwn-deploy), [A Chuoi](https://github.com/yuumi001/miniCTF2021_deploy?fbclid=IwAR19QpvrUm9jJXu_s5xvdCNkFKtN4SADFCNtQaciJWqm2cipE_LR7vRVDTQ) .
 -------------------------------------------------------------------------------------------------------
 
 ### REF:
