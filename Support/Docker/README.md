@@ -72,8 +72,11 @@ docker system prune
 
 ```
 
-### 3) Run Local use Ngrok: [Video](https://www.youtube.com/watch?v=jOm_XSeMnJI&t=33s) .
+### 3) Run Local use Ngrok: 
 
+    - [Video](https://www.youtube.com/watch?v=jOm_XSeMnJI&t=33s) .
+
+    - [Tutorial](https://viblo.asia/p/tooling-gioi-thieu-ngrok-mang-demo-du-an-web-len-internet-khong-can-deploy-naQZR7eqlvx) .
 -------------------------------------------------------------------------------------------------------
 
 ### REF:
