@@ -1,11 +1,11 @@
-# Setup Advanced for learn and research Exploit attack
+# [1] Setup Advanced for learn and research Exploit attack
 * Heap 
 * FSOP
 * Sandbox
 * Kernel 
 * ...
 
-# ~/.bashrc OR ~/.zshrc
+# [2] ~/.bashrc OR ~/.zshrc
 
 NOTE: Add it to `~/.bashrc` or `~/.zshrc` depending on which you use.
 
@@ -67,7 +67,7 @@ export PATH="$HOME/bin:/usr/local/lib/python2.7/dist-packages/pip:/usr/lib/pytho
 
 [+] [Burp Suite](https://www.youtube.com/watch?v=-ozGijESmTY&list=PL2YJKKcudhJ0ar-IYMehPGRwbcUz8NZJj&index=3&t=5s) .
 
-# Tools
+# [3] Tools
 
 > Setup tools for reversing as such as IDA, WSL, etc...
 
