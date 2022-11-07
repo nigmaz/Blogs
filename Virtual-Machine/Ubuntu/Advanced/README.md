@@ -67,3 +67,18 @@ export PATH="$HOME/bin:/usr/local/lib/python2.7/dist-packages/pip:/usr/lib/pytho
 
 [+] [Burp Suite](https://www.youtube.com/watch?v=-ozGijESmTY&list=PL2YJKKcudhJ0ar-IYMehPGRwbcUz8NZJj&index=3&t=5s) .
 
+# Tools
+
+> Setup tools for reversing as such as IDA, WSL, etc...
+
+* Google
+
+```bash
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo apt install ./google-chrome-stable_current_amd64.deb
+```
+
+----------------------------------------------------------------
+
+[+] ipyida: https://github.com/eset/ipyida
+
+[+] WSL: https://pureinfotech.com/install-windows-subsystem-linux-2-windows-10/
