@@ -1,0 +1,30 @@
+# pwndbg-----------------------------------------
+source /home/l1j9m4/Tools/pwndbg/gdbinit.py
+# -----------------------------------------------
+
+
+# peda-------------------------------------------
+# source /home/l1j9m4/Tools/peda/peda.py
+# -----------------------------------------------
+
+# gef--------------------------------------------
+# source /home/l1j9m4/Tools/gef/gef.py
+'''
+$ git clone https://github.com/hugsy/gef.git
+$ echo source `pwd`/gef/gef.py >> ~/.gdbinit
+'''
+# -----------------------------------------------
+
+
+# Pwngdb-for-heap--------------------------------
+# source ~/Tools/Pwngdb/pwngdb.py
+# source ~/Tools/Pwngdb/angelheap/gdbinit.py
+
+# define hook-run
+# python
+# import angelheap
+# angelheap.init_angelheap()
+# end
+# end
+# I use it into gdb-peda and gdb
+# ----------------------------------------------
