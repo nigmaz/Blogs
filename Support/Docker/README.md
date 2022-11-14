@@ -77,6 +77,8 @@ docker system prune
    * [Video](https://www.youtube.com/watch?v=jOm_XSeMnJI&t=33s) .
    
    * [Video](https://www.youtube.com/watch?v=9BJmDa0TIgw) .
+   
+   * [Video](https://www.youtube.com/watch?v=uG1QW5UWVrU) .
 
    * [Tutorial](https://viblo.asia/p/tooling-gioi-thieu-ngrok-mang-demo-du-an-web-len-internet-khong-can-deploy-naQZR7eqlvx) .
    
