@@ -323,22 +323,29 @@ $ ROPgadget --help
 
 * NOTE: `sudo apt-get install libxcb-xinerama0` .
 
-![Download IDA](https://hex-rays.com/ida-pro/)
-
-Or you can use IDA Pro if you have it on your windows host.
-
-* Version 10.1.5 latest in 01/04/2022, check for new version in [ghidra](https://github.com/NationalSecurityAgency/ghidra/releases) .
+[Download IDA](https://hex-rays.com/ida-pro/)
 
 ```bash
-wget https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_10.1.5_build/ghidra_10.1.5_PUBLIC_20220726.zip && \
-unzip ghidra_10.1.5_PUBLIC_20220726.zip && \
-rm -rf ghidra_10.1.5_PUBLIC_20220726.zip && \
-cd ghidra_10.1.5_PUBLIC && \
-sudo ln -s ~/Tools/ghidra_10.1.5_PUBLIC/ghidraRun /usr/bin/ghidra && \
-cd ../
+sudo ln -s /opt/idafree-8.1/ida64 /usr/bin  
 ```
 
-* The command `sudo ln -s ~/Tools/ghidra_10.1.5_PUBLIC/ghidraRun /usr/bin/ghidra` just add the symlink from `ghidraRun` to `/usr/bin/ghidra`, so you can open ghidra with command "ghidra" in terminal
+Icon - file `ida64.desktop`
+
+```bash
+[Desktop Entry]
+Version=8.1
+Name=IDA Freeware 8.1
+Exec=/usr/bin/ida64
+Icon=/opt/idafree-8.1/appico64.png
+Terminal=false
+Type=Application
+Categories=Application;Development;Utility;
+Comment=IDA Freeware 8.1
+```
+
+>Save file this as "ida64.desktop" in ~/.local/share/applications .
+
+* [link youtube tutorial](https://www.google.com/search?q=how+to+install+ida+freeware+on+ubuntu&biw=1536&bih=758&tbm=vid&sxsrf=ALiCzsbb55gpcDfE0SMX5cbXcN5cGbliDQ%3A1669274367537&ei=_xp_Y9WqINqi-Qbg9bqgBg&oq=h%C6%A1+to+install+ida+for+ubuntu&gs_lcp=Cg1nd3Mtd2l6LXZpZGVvEAMYAjIECCMQJzIGCAAQFhAeMgYIABAWEB4yBggAEBYQHlAAWABg9RBoAHAAeACAAXKIAXKSAQMwLjGYAQDAAQE&sclient=gws-wiz-video#fpstate=ive&vld=cid:caa36be6,vid:3FnyzJ6bTEs)
 
 #### +) radare2
 
