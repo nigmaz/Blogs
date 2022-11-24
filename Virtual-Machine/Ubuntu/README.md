@@ -319,6 +319,27 @@ $ sudo -H python3 -m pip install ROPgadget
 $ ROPgadget --help
 ```
 
+#### +) IDA Freeware (Tools for reversing)
+
+* NOTE: `sudo apt-get install libxcb-xinerama0` .
+
+![Download IDA](https://hex-rays.com/ida-pro/)
+
+Or you can use IDA Pro if you have it on your windows host.
+
+* Version 10.1.5 latest in 01/04/2022, check for new version in [ghidra](https://github.com/NationalSecurityAgency/ghidra/releases) .
+
+```bash
+wget https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_10.1.5_build/ghidra_10.1.5_PUBLIC_20220726.zip && \
+unzip ghidra_10.1.5_PUBLIC_20220726.zip && \
+rm -rf ghidra_10.1.5_PUBLIC_20220726.zip && \
+cd ghidra_10.1.5_PUBLIC && \
+sudo ln -s ~/Tools/ghidra_10.1.5_PUBLIC/ghidraRun /usr/bin/ghidra && \
+cd ../
+```
+
+* The command `sudo ln -s ~/Tools/ghidra_10.1.5_PUBLIC/ghidraRun /usr/bin/ghidra` just add the symlink from `ghidraRun` to `/usr/bin/ghidra`, so you can open ghidra with command "ghidra" in terminal
+
 #### +) radare2
 
 ```bash
