@@ -1,14 +1,17 @@
+set disassembly-flavor intel
+set follow-fork-mode child
+
 # pwndbg-----------------------------------------
-source /home/l1j9m4/Tools/pwndbg/gdbinit.py
+source /home/nigma/Tools/pwndbg/gdbinit.py
 # -----------------------------------------------
 
 
 # peda-------------------------------------------
-# source /home/l1j9m4/Tools/peda/peda.py
+# source /home/nigma/Tools/peda/peda.py
 # -----------------------------------------------
 
 # gef--------------------------------------------
-# source /home/l1j9m4/Tools/gef/gef.py
+# source /home/nigma/Tools/.gdbinit-gef.py
 '''
 $ git clone https://github.com/hugsy/gef.git
 $ echo source `pwd`/gef/gef.py >> ~/.gdbinit
