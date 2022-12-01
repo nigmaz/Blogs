@@ -12,10 +12,9 @@ source /home/nigma/Tools/pwndbg/gdbinit.py
 
 # gef--------------------------------------------
 # source /home/nigma/Tools/.gdbinit-gef.py
-'''
-$ git clone https://github.com/hugsy/gef.git
-$ echo source `pwd`/gef/gef.py >> ~/.gdbinit
-'''
+
+# $ git clone https://github.com/hugsy/gef.git
+# $ echo source `pwd`/gef/gef.py >> ~/.gdbinit
 # -----------------------------------------------
 
 
