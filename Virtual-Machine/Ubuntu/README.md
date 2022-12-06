@@ -8,6 +8,8 @@ It's not really to play the pwn CTF challenge but it optimizes your performance 
 
 * VMware Tools
 
+>NOTE: Ubuntu 22.04 => error network.
+
 ```bash
 sudo apt-get install open-vm-tools open-vm-tools-desktop
 ```
