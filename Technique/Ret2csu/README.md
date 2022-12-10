@@ -15,6 +15,7 @@ Nhưng bắt đầu từ việc kiểm soát thanh ghi đối số thứ ba là 
 Giải pháp là chúng ta sẽ tận dụng hàm `__libc_csu_init` được liên kết vào chương trình khi biên dịch động chương trình với thư viện được liên kết. Hàm này có một số đoạn mã như sau có thể tận dụng được.
 
 ```asm
+; gadget_csu_1
 pop rbx
 pop rbp
 pop r12
@@ -27,6 +28,7 @@ ret
 và 
 
 ```asm
+# gadget_csu_2
 mov rdx, r14
 mov rsi, r13
 mov edi, r12d
