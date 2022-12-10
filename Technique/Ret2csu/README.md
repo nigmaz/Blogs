@@ -114,6 +114,9 @@ Gadgets are:
    0x4011a0 <__do_global_dtors_aux+32>: ret
 ```
 
+VD: Với 2 gadget này ta có thể add vào địa chỉ chứ tại [rbp - 0x3d] với ebx ta kiểm soát.
+Đồng thời ta thấy rằng binary ở đây có Partial Relro, nên ta sẽ relative add lên got table biến printf thành one_gadget.
+
 -------------------------------------------------------------------
 
 ### Reference Source:
