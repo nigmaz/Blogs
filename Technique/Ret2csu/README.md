@@ -28,7 +28,7 @@ ret
 và 
 
 ```asm
-# gadget_csu_2
+; gadget_csu_2
 mov rdx, r14
 mov rsi, r13
 mov edi, r12d
