@@ -96,6 +96,24 @@ Gadgets are:
 
 >Tôi học được nó khi mà muốn cố gắng setup giá trị thanh ghi rdx để sử dụng `write` cho việc leak giá trị của `linkmap` phục vụ cho khai thác `ret2dlresolve` trên kiến trúc 64bit.
 
+>NOTE: Có một vài trường hợp kết hợp nó với gadget sau để cộng vào một giá trị bất kỳ do `rbp` và `rbx` đều do ta kiểm soát.
+
+```bash
+   0x4013ca <__libc_csu_init+90>:       pop    rbx
+   0x4013cb <__libc_csu_init+91>:       pop    rbp
+   0x4013cc <__libc_csu_init+92>:       pop    r12
+   0x4013ce <__libc_csu_init+94>:       pop    r13
+   0x4013d0 <__libc_csu_init+96>:       pop    r14
+   0x4013d2 <__libc_csu_init+98>:       pop    r15
+   0x4013d4 <__libc_csu_init+100>:      ret    
+```
+
+```bash
+   0x40119c <__do_global_dtors_aux+28>: add    DWORD PTR [rbp-0x3d],ebx
+   0x40119f <__do_global_dtors_aux+31>: nop
+   0x4011a0 <__do_global_dtors_aux+32>: ret
+```
+
 -------------------------------------------------------------------
 
 ### Reference Source:
