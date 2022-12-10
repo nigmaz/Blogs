@@ -13,7 +13,7 @@ Nếu có gì sai xót rất vui khi nhận sự góp ý từ các bạn ❤❤�
 
 >TrickNote:
 
-* Vậy nên để bypass tránh việc ghi đè canary ta chỉ cần nhập chữ cái mà không thuộc format %lu thì phần tử đó sẽ bị skip, không thay đổi. VD: chall `Warmup` - UIT-2022-CTF .
+* Vậy nên để bypass tránh việc ghi đè canary ta chỉ cần nhập chữ cái (+, -, *, /) mà không thuộc format %lu thì phần tử đó sẽ bị skip, không thay đổi. VD: chall `Warmup` - UIT-2022-CTF . 
 
 ----------------------------------------------------
 
