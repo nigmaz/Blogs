@@ -22,6 +22,11 @@
 - `-s` : thuộc tính `stripped` - Xóa tất cả `symbol table` và `relocation information` khỏi tệp thực thi.
 - `-static` : file không liên kết thư viện động.
 - `-g` : debug file with source code.
+
+>Note: $ patchelf --set-interpreter ./<ld-[linking dynamic]> --set-rpath ./<libc.so.6-[libc]> ./<my-program>
+
+* [patchelf](https://github.com/NixOS/patchelf) .
+
 -------------------------------------------------
 
 [+] https://dtrugman.medium.com/elf-loaders-libraries-and-executables-on-linux-e5cfce318f94
