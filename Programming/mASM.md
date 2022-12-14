@@ -28,15 +28,6 @@
 - Properties/VC++ Directories:
 `External Include Directories: ";C:\masm32".`
 
->Code `mASM` load `PEB - (Process Environment Block)` .
-
-- Compile: 
- 
->`ml /c /Zd /coff msgbox.obj` .
-
->`link /SUBSYSTEM:CONSOLE  /LIBPATH:c:\masm32\lib  msgbox.obj` . WINDOWS or CONSOLE
-
-
 ### 3) [loadPEB](https://securitycafe.ro/2015/10/30/introduction-to-windows-shellcode-development-part1/) and `Extern`.
 
 [1] Build Dependencies.
@@ -46,6 +37,14 @@
 - `Entry point: => set "main"`.
 
 >NOTE: Check `Item type: Microsoft Macro Assembler` and `Configuration Manager - x64` .
+
+>Code `mASM` load `PEB - (Process Environment Block)` .
+
+- Compile: 
+ 
+>`ml /c /Zd /coff msgbox.obj` .
+
+>`link /SUBSYSTEM:CONSOLE  /LIBPATH:c:\masm32\lib  msgbox.obj` . WINDOWS or CONSOLE
 
 -----------------------------------------------
 
