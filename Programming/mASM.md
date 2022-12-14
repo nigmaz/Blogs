@@ -33,7 +33,7 @@
 [1] Build Dependencies.
 - `masm(.targets, .props)`.
 
-[2] Advanced.
+[2] Linker/Advanced/Entry Point.
 - `Entry point: => set "main"`.
 
 >NOTE: Check `Item type: Microsoft Macro Assembler` and `Configuration Manager - x64` .
