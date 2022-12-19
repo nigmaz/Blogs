@@ -52,6 +52,19 @@ We choose to launch the `ShellExecuteA` function, located in the DLL shell32.dll
 `ShellExecuteA` - which function is used to launch an executable, in our case, the calc.exe calculator.
 ```
 
+* Save strings in stack.
+
+```bash 
+    jmp labeldata
+labelcode:
+    pop ebx
+    ; Reste du code
+
+labeldata:
+    call labelcode
+    db "ma string", 0
+```
+
 - Compile: 
  
 >`ml /c /Zd /coff msgbox.obj` .
