@@ -43,7 +43,7 @@
 * x86 : point entry load start `main`. set `Build Dependencies` . set `Solution Platforms` .
 * x86_64 : point entry load start `mainCRTStartup`. set `Build Dependencies` . set `Solution Platforms` . 
 
-Shellcode Windows step:
+>[NOTE] Shellcode Windows:
 
 ```
 `LoadLibraryA` - allows you to load a DLL. 
