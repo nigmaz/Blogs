@@ -46,7 +46,10 @@
 Shellcode Windows:
 
 ```
-LoadLibraryA allows you to load a DLL. GetProcAddress allows you to retrieve the address of a function in a DLL. We choose to launch the ShellExecuteA function, located in the DLL shell32.dll. This function is used to launch an executable, in our case, the calc.exe calculator.
+`LoadLibraryA` allows you to load a DLL. 
+`GetProcAddress` allows you to retrieve the address of a function in a DLL. 
+We choose to launch the `ShellExecuteA` function, located in the DLL shell32.dll. 
+`ShellExecuteA` which function is used to launch an executable, in our case, the calc.exe calculator.
 ```
 
 - Compile: 
