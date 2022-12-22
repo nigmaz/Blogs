@@ -11,9 +11,9 @@
 
 [!] C4133 error visual studio 2019 from 'LPWSTR' to 'LPCSTR'
 
-To compile your code in Visual C++ you need to use Multi-Byte char WinAPI functions instead of Wide char ones.
+      * To compile your code in Visual C++ you need to use Multi-Byte char WinAPI functions instead of Wide char ones.
 
-Set Project -> Properties -> Advanced (or. General for older versions) -> Character Set option to Use Multi-Byte Character Set
+      * Set Project -> Properties -> Advanced (or. General for older versions) -> Character Set option to Use Multi-Byte Character Set
 
 
 -----------------------------------------------
