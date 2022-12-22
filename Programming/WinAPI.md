@@ -15,7 +15,8 @@
 
       * Set Project -> Properties -> Advanced (or. General for older versions) -> Character Set option to Use Multi-Byte Character Set
 
-
+[!] x64 change `Solution Platforms` => x64
+.
 -----------------------------------------------
 
 [+] learn Win32 - [Document](http://www.winprog.org/tutorial/start.html) .
