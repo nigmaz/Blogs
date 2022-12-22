@@ -11,7 +11,7 @@
 
 - Check `masm32` in `cmd` run: *__ml__*.
 
-### 2) Setting for masm32 in VS2019
+### 2) Setting for masm use LIB in VS2019
 
 [1] Build Dependencies.
 - `masm(.targets, .props)`.
