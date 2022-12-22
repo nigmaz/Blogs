@@ -15,7 +15,7 @@
 
       * Set Project -> Properties -> Advanced (or. General for older versions) -> Character Set option to Use Multi-Byte Character Set
 
-* **[4]** x64 change `Solution Platforms` => x64 .
+* **[4]** x64 change `Solution Platforms` => x64 / set [1] NOTE .
 
 
 -----------------------------------------------
