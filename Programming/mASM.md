@@ -28,12 +28,12 @@
 - Properties/VC++ Directories:
 `External Include Directories: ";C:\masm32".`
 
-### 3) [loadPEB](https://securitycafe.ro/2015/10/30/introduction-to-windows-shellcode-development-part1/) and `Extern`.
+### 3) [loadPEB](https://securitycafe.ro/2015/10/30/introduction-to-windows-shellcode-development-part1/) and `Extrn`.
 
 [1] Build Dependencies.
 - `masm(.targets, .props)`.
 
-[2] Linker/Advanced/Entry Point.
+[2] Code Extrn: Linker/Advanced/Entry Point.
 - `Entry point: => set "main"`.
 
 >NOTE: Check `Item type: Microsoft Macro Assembler` and `Configuration Manager - x64` .
