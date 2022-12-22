@@ -40,8 +40,8 @@
 
 ### * Code `mASM` load `PEB - (Process Environment Block)` .
 
-* x86 : point entry load start `main`. set `Build Dependencies` . set `Solution Platforms` .
-* x86_64 : point entry load start `mainCRTStartup`. set `Build Dependencies` . set `Solution Platforms` . 
+* x86 : point entry load start `main` && set `Build Dependencies` && set `Solution Platforms` .
+* x86_64 : point entry load start `mainCRTStartup` && set `Build Dependencies` && set `Solution Platforms` . 
 
 >[NOTE] Shellcode Windows:
 
