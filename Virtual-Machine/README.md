@@ -23,4 +23,4 @@
 
 * YF390-0HF8P-M81RQ-2DXQE-M2UT6
 
->NOTE: Fix [Antimalware Service Executable](https://www.freecodecamp.org/news/what-is-antimalware-service-executable-why-is-it-high-cpu-disk-usage/#:~:text=Antimalware%20service%20executable%20is%20a%20Windows%20Security%20process%20that%20executes,programs%20from%20time%20to%20time.) .
+>NOTE: Fix [Antimalware Service Executable hight CPU](https://www.freecodecamp.org/news/what-is-antimalware-service-executable-why-is-it-high-cpu-disk-usage/#:~:text=Antimalware%20service%20executable%20is%20a%20Windows%20Security%20process%20that%20executes,programs%20from%20time%20to%20time.) .
