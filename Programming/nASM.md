@@ -74,3 +74,8 @@ colorscheme nord
 [+] https://asmtutor.com/
 
 [+] https://www.tutorialspoint.com/assembly_programming/index.htm
+
+- Debug ASM in Linux
+
+[+] https://github.com/newtonsart/vscode-assembly
+
