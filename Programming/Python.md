@@ -1,6 +1,8 @@
 # PYTHON
 >Install [Python3 Windows](https://www.python.org/downloads/).
 
+>[Configure a Python interpreter](https://www.jetbrains.com/help/pycharm/configuring-python-interpreter.html).
+
 - Các kiểu dữ liệu trong python.
 
 1) Numbers: int, long, float, complex(số phức), ...
