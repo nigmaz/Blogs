@@ -1,7 +1,7 @@
 # PYTHON
->Install [Python3 Windows](https://www.python.org/downloads/).
+>Install - [Python3 Windows](https://www.python.org/downloads/).
 
->[Configure a Python interpreter](https://www.jetbrains.com/help/pycharm/configuring-python-interpreter.html).
+>Pycharm - [Configure a Python interpreter](https://www.jetbrains.com/help/pycharm/configuring-python-interpreter.html).
 
 - Các kiểu dữ liệu trong python.
 
