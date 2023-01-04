@@ -10,4 +10,8 @@ Windows10 Home: `Registry Editor` => `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Polic
 
 1 - Off WindowsDefender
 
+* Tools
+
+1. https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite
+
 ------------------------------------------------------------------
