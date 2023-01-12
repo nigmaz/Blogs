@@ -36,6 +36,8 @@
 
 [+] [Video Tutorial](https://www.youtube.com/watch?v=yvWYggka30A) .
 
+[+] [List video WinAPI - MFC Programming](https://www.youtube.com/watch?v=60O6B2Di5RE&list=PLfszubEEhakf7mGTDjsImyp-YGU69_S5k&index=42) .
+
 
 
 
