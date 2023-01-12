@@ -20,6 +20,14 @@
 * **[4]** x64 change `Solution Platforms` => x64 / set [1] NOTE .
 
 
+### Knowledge:
+
+* Base Services - kernel32.dll 
+* Advance Services - dvapi32.dll
+* Graphics Services - gdi32.dll
+* User Interface - shell32.dll, user32.dll, comctl32.dll, comdlg32.dll
+* Network Service and Multimedia 
+
 -----------------------------------------------
 
 [+] learn Win32 - [Document](http://www.winprog.org/tutorial/start.html) .
