@@ -1,6 +1,7 @@
 # WinAPI
 
 > VS2019. WinAPI (language C) settings project Type: `Empty project`.
+> Key learn: `learn mfc` .
 
 ### NOTE:
 
