@@ -89,3 +89,9 @@ docker system prune
 
 [+] [Docker](https://gist.github.com/chaseYLC/3d2ab4c6955044f21da628546c0c6977) .
 
+[+] [USE DOCKERFILE FOR DEBUGGING WITH PWNTOOLS](https://shakuganz.com/2022/04/20/use-dockerfile-for-debugging-with-pwntools/) .
+
+[+] [Search `setup docker local for debug pwn ctf`] .
+
+
+
