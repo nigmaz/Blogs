@@ -3,7 +3,7 @@
 
 | Technique  | Documents |
 |:----------:|:---------:|
-|Heap Exploit|    ❌    |
+|Heap Exploit|        |
 |Ret2csu| ✅   |
 |Ret2dlresolve|  ✅   |
 |SROP| ✅   |
