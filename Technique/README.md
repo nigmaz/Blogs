@@ -35,6 +35,18 @@ STACK:
 
 * Use * to have a variable field width, equals to an signed integer on the stack, can combine with positional argument. Eg. %*10$c: print a number of characters equals to the 10th argument.
 
+* [patchelf](https://github.com/NixOS/patchelf) .
+
+```
+$ 
+patchelf --set-interpreter ./<ld-[linking dynamic]> --set-rpath ./<libc.so.6-[libc]> ./<my-program>
+
+$ 
+patchelf --set-interpreter ./ld-linux-x86-64.so.2 ./chall
+
+patchelf --replace-needed libc.so.6 ./libc.so.6 ./chall
+```
+
 ----------------------------------------------------
 
 [+] Tổng hợp tài liệu để có điểm bắt đầu khi học cho người mới, các lưu ý khai thác của kỹ thuật.
