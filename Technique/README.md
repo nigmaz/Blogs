@@ -32,6 +32,9 @@ STACK:
 9. địa chỉ lệnh "ret"
 10. địa chỉ nào đó muốn return về.
 ```
+
+* Use * to have a variable field width, equals to an signed integer on the stack, can combine with positional argument. Eg. %*10$c: print a number of characters equals to the 10th argument.
+
 ----------------------------------------------------
 
 [+] Tổng hợp tài liệu để có điểm bắt đầu khi học cho người mới, các lưu ý khai thác của kỹ thuật.
