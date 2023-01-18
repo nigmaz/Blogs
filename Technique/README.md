@@ -33,7 +33,7 @@ STACK:
 10. địa chỉ nào đó muốn return về.
 ```
 
-* Use * to have a variable field width, equals to an signed integer on the stack, can combine with positional argument. Eg. %*10$c: print a number of characters equals to the 10th argument.
+* Use * to have a variable field width, equals to an signed integer on the stack, can combine with positional argument. Eg. %*10$c: print a number of characters equals to the 10th argument. [FMT XMaster - TTV KCSC 2023]
 
 * [patchelf](https://github.com/NixOS/patchelf) .
 
