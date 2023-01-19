@@ -49,6 +49,10 @@ patchelf --replace-needed libc.so.6 ./libc.so.6 ./chall
 
 * Functions read_str(a1, a2) thường thì sẽ đọc được a2+1 character => offbyone `[The Last One - TTV KCSC 2023]`
 
+* Hàm strncat() sẽ copy chuỗi name vào chuỗi bullet.name, sau đó sẽ thêm 1 ký tự NULL vào cuối chuỗi. => có thể dẫn đến off-by-one => thay đổi size dẫn đến check size bị sai kết quả => bufer overflow vượt qua check size chuỗi đã khởi tạo. 
+
+
+
 ----------------------------------------------------
 
 [+] Tổng hợp tài liệu để có điểm bắt đầu khi học cho người mới, các lưu ý khai thác của kỹ thuật.
