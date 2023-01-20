@@ -1,6 +1,6 @@
 # Setup a simple VMware for playing CTF pwn challenges in Ubuntu 20.04
 
->DATE: 31/07/2022 - Ubuntu 18.04, 20.04, 22.04
+>DATE: 01/02/2023 - Ubuntu 18.04, 20.04, 22.04
 
 ### 1) Install "Oh My ZSH!" and VMware Tools (to copy and patse from host)
 
