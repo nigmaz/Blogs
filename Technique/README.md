@@ -53,11 +53,13 @@ patchelf --replace-needed libc.so.6 ./libc.so.6 ./chall
 
 * Leak flag (Format String) convert
 
+```python
 >>> a = '0x....0x....0x....0x....'
 >>> a = a.split('0x')
 >>> for i in range(1, len(a)):
 >>>   f += p64(int(a[i], 16))
 >>> f = ctf{.....}
+```
 
 * random: dùng seed là giá trị là thời gian thực lúc chạy chương trình, vì vậy tạo 1 script chạy cùng là xong
 
