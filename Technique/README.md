@@ -61,7 +61,7 @@ patchelf --replace-needed libc.so.6 ./libc.so.6 ./chall
 >>> f = ctf{.....}
 ```
 
-* random: dùng seed là giá trị là thời gian thực lúc chạy chương trình, vì vậy tạo 1 script chạy cùng là xong
+* random: dùng seed có giá trị là thời gian thực lúc chạy chương trình, vì vậy tạo 1 script chạy cùng là xong
 
 ```asm
 asm:
