@@ -35,7 +35,7 @@ STACK:
 
 * Use * to have a variable field width, equals to an signed integer on the stack, can combine with positional argument. Eg. %*10$c: print a number of characters equals to the 10th argument. `[FMT XMaster - TTV KCSC 2023]`
 
-* [patchelf](https://github.com/NixOS/patchelf) .
+* [patchelf](https://github.com/NixOS/patchelf) . `TTV KSSC 2023`
 
 ```
 $ 
@@ -51,7 +51,34 @@ patchelf --replace-needed libc.so.6 ./libc.so.6 ./chall
 
 * Hàm strncat() sẽ copy chuỗi name vào chuỗi bullet.name, sau đó sẽ thêm 1 ký tự NULL vào cuối chuỗi. => có thể dẫn đến off-by-one => thay đổi size dẫn đến check size bị sai kết quả => bufer overflow vượt qua check size chuỗi đã khởi tạo. `Silver Bullet - pwnable.tw`
 
-* 
+* Leak flag (Format String) convert
+
+>>> a = '0x....0x....0x....0x....'
+>>> a = a.split('0x')
+>>> for i in range(1, len(a)):
+>>>   f += p64(int(a[i], 16))
+>>> f = ctf{.....}
+
+* random: dùng seed là giá trị là thời gian thực lúc chạy chương trình, vì vậy tạo 1 script chạy cùng là xong
+
+```asm
+asm:
+  mov edi, 0
+  call _time
+  add eax, 2
+  mov edi, eax
+  call _srand
+```
+
+```C
+int main(){
+  int seed = time(0) + 2;
+  srand(seed);
+  for(int i = 0; i < 100; i++)
+    printf("%d\n", rand());
+  return 0;
+  }
+```
 
 
 
