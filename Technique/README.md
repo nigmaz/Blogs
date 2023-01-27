@@ -65,10 +65,10 @@ patchelf --replace-needed libc.so.6 ./libc.so.6 ./chall
 
 ```asm
 asm:
-  mov edi, 0
+  mov edi, 0      ; time
   call _time
   add eax, 2
-  mov edi, eax
+  mov edi, eax    ; seed
   call _srand
 ```
 
