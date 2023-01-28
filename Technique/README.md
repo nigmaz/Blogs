@@ -86,7 +86,7 @@ int main(){
 
 [Meshuggah](https://qbao.home.blog/2020/04/30/start-to-pwnb01lers-ctf/) .
 
-*
+* Unsortedbin Attack - malloc 1 chunk rồi free chunk đó để nó thuộc unsortedbin, khi chunk đó được cấp phát lại - Bây giờ khi một chunk được lấy ra khỏi unsortedbin , một con trỏ để ghi vào đoạn sau của nó; Cụ thể một con trỏ sẽ được ghi vào `bk + 0x10` trên x64 (`bk + 0x8` cho x86).
 
 ----------------------------------------------------
 
