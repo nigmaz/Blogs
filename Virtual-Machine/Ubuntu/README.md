@@ -2,6 +2,8 @@
 
 >DATE: 01/02/2023 - Ubuntu 18.04, 20.04, 22.04
 
+Brave browser - snap store .
+
 ### 1) Install "Oh My ZSH!" and VMware Tools (to copy and patse from host)
 
 It's not really to play the pwn CTF challenge but it optimizes your performance when pwning.
