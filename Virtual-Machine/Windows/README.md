@@ -14,8 +14,16 @@ Windows10 Home: `Registry Editor` => `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Polic
 
 * [Expand disk Windows VM](https://www.youtube.com/watch?v=Y5aT8hE177I)
 
-### Tools
+### 3) Tools
 
-1. https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite
+* IDA Pro
+
+[+] [IDA Pro - chị Ánh](https://drive.google.com/drive/folders/1Fqn87VWTiBT1hOU0YSB88dFSkUEPjhqN?fbclid=IwAR2xJAoiXEzflTlzxbMmkVdGwM_qFbZoFT39dLz_Wshe79Rqdug_hjn6jzU)
+
+[+] [IDA Pro - anh Hiệp](https://drive.google.com/file/d/1iZv4b2oocSkGyF145XQRBCaXskO952Cd/view?usp=sharing)
+
+>NOTE: Use in linux use wine [Download Wine tutorial](https://www.youtube.com/watch?v=Wx8NbZEAPNM) .
+
+* https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite
 
 ------------------------------------------------------------------
