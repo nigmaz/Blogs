@@ -89,6 +89,7 @@ int main(){
 * Unsortedbin Attack - malloc 1 chunk rồi free chunk đó để nó thuộc unsortedbin, khi chunk đó được cấp phát lại - Bây giờ khi một chunk được lấy ra khỏi unsortedbin , một con trỏ để ghi vào đoạn sau của nó [nó ghi con trỏ fd của nó vào bk+0x10 tức là bỏ nó ra khỏi mắt xích rồi nối lại hai mắt xích trước và sau nó với nhau bằng bk và fd]; Cụ thể một con trỏ sẽ được ghi vào `bk + 0x10` trên x64 (`bk + 0x8` cho x86). `Nếu có 1 unsortedbins thì bk và fd của khối đó chỉ về main_arena+88` .
 
 * Fastbin Attack: VD[babyheap - 0ctf 2017] 
+
 (https://medium.com/@thanhtuan9906/0ctf-quals-2017-babyheap-e2638b3e727b)
 
 ----------------------------------------------------
