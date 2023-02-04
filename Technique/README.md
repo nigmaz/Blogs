@@ -28,7 +28,7 @@ STACK:
 6. địa chỉ lệnh "pop rdi, ret"
 7. địa chỉ muốn được in (đọc chuỗi)
 8. địa chỉ hàm printf 
-
+# leak = printf thì sau printf lại phải dùng ret
 9. địa chỉ lệnh "ret"
 10. địa chỉ nào đó muốn return về.
 ```
