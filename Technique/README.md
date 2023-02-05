@@ -98,6 +98,11 @@ int main(){
 
 (https://medium.com/@thanhtuan9906/0ctf-quals-2017-babyheap-e2638b3e727b)
 
+Cùng là fastbins nhưng chunk - 0x20 size thì next chunk lưu ở main_arena+16
+                    
+chunk - 0x60 size thì next chunk lưu ở main_arena+48 (bài này thì trường hợp này lại exploit thành công).
+
+
 ----------------------------------------------------
 
 [+] Tổng hợp tài liệu để có điểm bắt đầu khi học cho người mới, các lưu ý khai thác của kỹ thuật.
