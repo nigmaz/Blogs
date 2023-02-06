@@ -98,6 +98,8 @@ int main(){
 
 (https://medium.com/@thanhtuan9906/0ctf-quals-2017-babyheap-e2638b3e727b)
 
+Có thể leak bằng fastbins nếu sử dụng ghi đè p8(lastbyte) .
+
 Cùng là fastbins nhưng 
 ```
 chunk - 0x20 size thì next chunk lưu ở main_arena+16
