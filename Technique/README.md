@@ -56,6 +56,7 @@ patchelf --replace-needed libc.so.6 ./libc.so.6 ./chall
 * Leak flag (Format String) convert
 
 ```python
+>>> from pwntools import *
 >>> f = ''
 >>> a = '0x....0x....0x....0x....'
 >>> a = a.split('0x')
