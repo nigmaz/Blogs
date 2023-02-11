@@ -57,7 +57,7 @@ patchelf --replace-needed libc.so.6 ./libc.so.6 ./chall
 
 ```python
 >>> from pwn import *
->>> f = ''
+>>> f = b''
 >>> a = '0x....0x....0x....0x....'
 >>> a = a.split('0x')
 >>> for i in range(1, len(a)):
