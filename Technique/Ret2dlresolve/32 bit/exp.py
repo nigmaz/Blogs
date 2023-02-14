@@ -13,6 +13,7 @@ resolver = 0x80482f0	   # push link_map and call dl_resolve
 buf = 0x804af00		   # controllable area | segment rw-p
 leave_ret = 0x80483a8	   # 0x080483a8 : leave ; ret
 
+# # readelf -d ./babystack
 STRTAB = 0x804822c
 SYMTAB = 0x80481cc
 JMPREL = 0x80482b0
