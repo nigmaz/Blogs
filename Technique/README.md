@@ -104,7 +104,7 @@ int main(){
 
 `Có thể leak bằng fastbins nếu sử dụng ghi đè p8(lastbyte) .`
 
-Cùng là fastbins nhưng 
+Cùng là fastbins nhưng [Lưu ý khi dùng fasstbins attack cần set được size của vị trí muốn ghi thỏa mãn là 1 khối chunk fastbin]
 ```
 chunk - 0x20 size thì next chunk lưu ở main_arena+16
                     
