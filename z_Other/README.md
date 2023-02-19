@@ -87,8 +87,18 @@ p.interactive()
 
 ```
 
-
+https://azeria-labs.com/heap-exploitation-part-2-glibc-heap-free-bins/
 
 https://dangokyo.me/2017/12/14/0ctf-2016-quals-pwn-zerostorage-write-up/
+
+https://ctf-wiki.mahaloz.re/pwn/linux/glibc-heap/unsorted_bin_attack/
+
+https://www.lazenca.net/pages/viewpage.action?pageId=51970214
+
+https://lantern.cool/note-pwn-free-hook/#参考
+
+https://ctf-wiki.org/pwn/linux/user-mode/environment/
+
+https://one2bla.me/the-dark-arts/common-vulnerabilities/unsortedbin-attack.html
 
 
