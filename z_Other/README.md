@@ -3,6 +3,8 @@
 >Pwnable.tw
 
    * https://hackmd.io/@wxrdnx/r1CXaFHdv
+   
+   * https://hackmd.io/@ductin/HyGmQq4w9
 
 ```python 
 #!/usr/bin/env python3 
