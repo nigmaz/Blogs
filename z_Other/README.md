@@ -6,6 +6,10 @@
    
    * https://hackmd.io/@ductin/HyGmQq4w9
 
+> TetCTF
+ 
+  * https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiEpLqR7qr9AhUR7GEKHbSBCS0QFnoECAwQAQ&url=https%3A%2F%2Fd4rkn3ss.medium.com%2Fwrite-up-for-pwnable-challenges-tetctf-2019-a74eb177518e&usg=AOvVaw0A1Oieo3lMK_KtxWpRGYcH
+
 ```python 
 #!/usr/bin/env python3 
 ptr = 0x603100
