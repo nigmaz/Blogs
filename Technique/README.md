@@ -90,6 +90,8 @@ int main(){
 
 [Meshuggah](https://qbao.home.blog/2020/04/30/start-to-pwnb01lers-ctf/) .
 
+> HEAP EXPLOIT.
+
 * `gdb command in heap:` 
 ```
       x/40gx &main_arena 
