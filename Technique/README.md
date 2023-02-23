@@ -116,7 +116,7 @@ chunk - 0x20 size thì next chunk lưu ở main_arena+16
 chunk - 0x60 size thì next chunk lưu ở main_arena+48 (bài này thì trường hợp này lại exploit thành công).
 ```
 
-
+* Để ý các function của chương trình vd chương trình có hàm edit password nghãi là có thể khi có bug ta sẽ cố gắng khai thác làm sao để free được 1 đoạn nằm trên vị trí password thì sẽ có thể dùng function changePassword để thay đổi dư liệu => Use After Free or Double Free, ... 
 
 ----------------------------------------------------
 
