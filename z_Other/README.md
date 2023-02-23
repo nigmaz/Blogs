@@ -2,6 +2,8 @@
 
 >Pwnable.tw
 
+   * https://www.taintedbits.com/2020/07/05/binary-exploitation-pwnable-tw-realloc/
+
    * https://hackmd.io/@wxrdnx/r1CXaFHdv
    
    * https://hackmd.io/@ductin/HyGmQq4w9
