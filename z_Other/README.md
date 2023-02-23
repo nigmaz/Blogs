@@ -71,6 +71,8 @@ p.interactive()
 ```
 >Heap
 
+   * https://infosecwriteups.com/heap-exploitation-journey-1-tcache-attack-5b38fb0c19b0
+
    * https://azeria-labs.com/heap-exploitation-part-2-glibc-heap-free-bins/
 
    * https://dangokyo.me/2017/12/14/0ctf-2016-quals-pwn-zerostorage-write-up/
