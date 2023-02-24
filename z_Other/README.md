@@ -1,5 +1,7 @@
 # Container images, text,... for my Github.
 
+> malloc.c full version: https://elixir.bootlin.com/glibc/glibc-2.29/source/malloc/malloc.c
+
 >Pwnable.tw
 
    * https://www.taintedbits.com/2020/07/05/binary-exploitation-pwnable-tw-realloc/
