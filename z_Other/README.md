@@ -4,7 +4,11 @@
 
 > http://p4nda.top/2018/08/27/WDBCTF-2018/
 
->https://blog.csdn.net/weixin_52640415/article/details/122599200
+> https://blog.csdn.net/weixin_52640415/article/details/122599200
+
+> https://wyv3rn.tistory.com/76
+
+> https://wyv3rn.tistory.com/75
 
 > malloc.c full version: https://elixir.bootlin.com/glibc/glibc-2.29/source/malloc/malloc.c
 
