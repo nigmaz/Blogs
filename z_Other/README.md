@@ -1,5 +1,11 @@
 # Container images, text,... for my Github.
 
+> https://0x434b.dev/
+
+> http://p4nda.top/2018/08/27/WDBCTF-2018/
+
+>https://blog.csdn.net/weixin_52640415/article/details/122599200
+
 > malloc.c full version: https://elixir.bootlin.com/glibc/glibc-2.29/source/malloc/malloc.c
 
 >Pwnable.tw
