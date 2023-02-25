@@ -17,6 +17,12 @@
    * https://hackmd.io/@wxrdnx/r1CXaFHdv
    
    * https://hackmd.io/@ductin/HyGmQq4w9
+   
+   CVE-2018-1160
+   
+   * https://gtrboy.github.io/posts/netatalk/
+   
+   * https://ddaa.tw/hitconctf_pwn_371_netatalk.html
 
 > TetCTF
  
