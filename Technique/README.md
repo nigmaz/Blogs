@@ -49,6 +49,8 @@ $
 patchelf --set-interpreter ./ld-linux-x86-64.so.2 ./chall
 
 patchelf --replace-needed libc.so.6 ./libc.so.6 ./chall
+
+         --add-needed
 ```
 
 * Functions read_str(a1, a2) thường thì sẽ đọc được a2+1 character => offbyone `[The Last One - TTV KCSC 2023]`
