@@ -8,6 +8,8 @@
 
 > malloc.c full version: https://elixir.bootlin.com/glibc/glibc-2.29/source/malloc/malloc.c
 
+> ASIA wu: https://gist.github.com/kungfulon/4add7fccdd41605ab6d857f2470446cf?fbclid=IwAR2BKQD-9VIqXNSFb-9Wb0Aq8-DnS0CzwWaVWa1lkl5wS7UhGBxa19lyfHE
+
 >Pwnable.tw
 
    * https://hackmd.io/@wxrdnx/r1CXaFHdv
