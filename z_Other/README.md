@@ -29,60 +29,7 @@
   * https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiEpLqR7qr9AhUR7GEKHbSBCS0QFnoECAwQAQ&url=https%3A%2F%2Fd4rkn3ss.medium.com%2Fwrite-up-for-pwnable-challenges-tetctf-2019-a74eb177518e&usg=AOvVaw0A1Oieo3lMK_KtxWpRGYcH
 
 ```python 
-#!/usr/bin/env python3 
-ptr = 0x603100
 
-from pwn import *
-
-elf = ELF('./vuln')
-libc = ELF('./libc.2.23.so')
-context.log_level = 'DEBUG'
-
-p = elf.process()
-gdb.attach(p, '''
-
-''')
-
-def register(name, passwd):
-    p.sendafter(b'> ', b'1')
-    p.sendafter(b'username\n> ', name)
-    p.sendafter(b'password\n> ', passwd)
-    p.sendafter(b'password\n> ', passwd)
-
-def login(name, passwd):
-    p.sendafter(b'> ', b'2')
-    p.sendafter(b'username\n> ', name)
-    p.sendafter(b'password\n> ', passwd)
-
-
-def info(username, password):
-    p.sendlineafter(b'> ', b'1')
-    p.sendafter(b'username\n> ', username)
-
-def send(username, money):
-    p.sendlineafter(b'> ', b'2')
-    p.sendafter(b'to?\n', username)
-    p.sendlineafter(b'many?\n', str(money).encode())
-
-def view_trans():
-    p.sendlineafter(b'> ', b'3')
-
-def change_passwd(password):
-    p.sendlineafter(b'> ', b'4')
-    p.sendafter(b'password\n> ', password)
-
-def delete():
-    p.sendlineafter(b'> ', b'5')
-
-def logout():
-    p.sendlineafter(b'> ', b'6')
-
-
-
-
-
-
-p.interactive()
 
 ```
 
