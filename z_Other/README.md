@@ -17,6 +17,8 @@
 
 https://hackmd.io/@maple3142/BJ9CgLu0j
 
+> ASIA 2022: https://inseclab.uit.edu.vn/wannashare-writeups-asis-ctf-quals-2022-crypto-pwn-rev-forensics/?fbclid=IwAR3WP4JgrZGNUKwSG2ULiATHSN-idzjE5-pRwd-HwXUTblpyNTlV0RbBRQw
+
 >Pwnable.tw
 
    * https://hackmd.io/@wxrdnx/r1CXaFHdv
