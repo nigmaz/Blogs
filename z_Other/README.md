@@ -1,6 +1,11 @@
 # Container images, text,... for my Github.
 
-> https://0x434b.dev/
+> LPE:
+* https://0x434b.dev/
+
+* https://www.freebuf.com/vuls/197122.html?fbclid=IwAR1HW1ATrcUYxFqAhCNaxBkm0BykAyVp7e7nVfFmhCvef8zlPvRnYhWZ6Jo
+
+* https://securityonline.info/poc-code-for-linux-kernel-privilege-escalation-flaw-cve-2022-2602-published/?fbclid=IwAR2ATZ_9vrlvg5Sy1PWmK5fFkmOwamw9Fjy6u4HogmJ1IK27TRnflyop0-E
 
 > https://wyv3rn.tistory.com/76
 
