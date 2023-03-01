@@ -10,6 +10,8 @@
 
 > ASIA wu: https://gist.github.com/kungfulon/4add7fccdd41605ab6d857f2470446cf?fbclid=IwAR2BKQD-9VIqXNSFb-9Wb0Aq8-DnS0CzwWaVWa1lkl5wS7UhGBxa19lyfHE
 
+https://hackmd.io/@maple3142/BJ9CgLu0j
+
 >Pwnable.tw
 
    * https://hackmd.io/@wxrdnx/r1CXaFHdv
