@@ -58,4 +58,4 @@ https://hackmd.io/@maple3142/BJ9CgLu0j
 
    * https://one2bla.me/the-dark-arts/common-vulnerabilities/unsortedbin-attack.html
 
-
+> how2heap - https://hackmd.io/@u1f383/Sy_2pqMAP
