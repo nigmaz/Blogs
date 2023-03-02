@@ -90,6 +90,8 @@ int main(){
   }
 ```
 
+Nhiệm vụ của srand(x) đưa ra seed x rồi rand() dựa vào x đưa ra số a. Khi đó a là seed cho lần gọi rand() tiếp theo (cứ như thế tiếp tục). Do vậy VD trong vòng lặp thời gian 1 giây rand() dùng seed cũ liên tục nên nó không bao giờ ra số khác nhau trong khoảng thời gian đó.
+
 [Meshuggah](https://qbao.home.blog/2020/04/30/start-to-pwnb01lers-ctf/) .
 
 > HEAP EXPLOIT.
