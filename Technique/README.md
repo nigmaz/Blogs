@@ -134,7 +134,15 @@ Nhiệm vụ của srand(x) đưa ra seed x rồi rand() dựa vào x đưa ra s
 ```python
 VD:
 exe = context.binary = ELF('./vuln', checksec=False)
+...
+
+shellcode = asm('''
+         instruction assembly
+         ...
+''')
 ```
+
+
 
 
 ----------------------------------------------------
