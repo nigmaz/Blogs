@@ -27,6 +27,8 @@ patchelf --replace-needed libc.so.6 ./libc.so.6 ./chall
          --add-needed
 ```
 
+* Với những bài bị stripped và cr bật PIE => gdb.attach sử dụng `breakrva *[offset]` .
+
 ## STACK bug.
 
 * Vậy nên để bypass tránh việc ghi đè canary ta chỉ cần nhập chữ cái (+, -, *, /) mà không thuộc format %lu thì phần tử đó sẽ bị skip, không thay đổi. VD: chall `Warmup` - UIT-2022-CTF . 
