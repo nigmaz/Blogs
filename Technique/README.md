@@ -29,6 +29,8 @@ patchelf --replace-needed libc.so.6 ./libc.so.6 ./chall
 
 * Với những bài bị stripped và cr bật PIE => gdb.attach sử dụng `breakrva *[offset]` .
 
+* pwntools hỗ trợ flat(...) giá trị byte điền tự động là p64() hoặc p32() phụ thuộc cấu trúc chương trình là x86 hay x86_64 hoặc có thể đặt giá trị giống code exploit [convert - ASCIS 2022]
+
 ## 1. STACK bug
 
 * Vậy nên để bypass tránh việc ghi đè canary ta chỉ cần nhập chữ cái (+, -, *, /) mà không thuộc format %lu thì phần tử đó sẽ bị skip, không thay đổi. VD: chall `Warmup` - UIT-2022-CTF . 
