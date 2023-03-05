@@ -129,6 +129,12 @@ Nhiệm vụ của srand(x) đưa ra seed x rồi rand() dựa vào x đưa ra s
 
 * [KMACTF2022 - Duet](https://github.com/nhtri2003gmail/CTFWriteup/tree/master/2022/KMACTF-2022/Duet)
 
+* Viết sheelcode cần set context.binary
+
+```python
+VD:
+exe = context.binary = ELF('./vuln', checksec=False)
+```
 
 
 ----------------------------------------------------
