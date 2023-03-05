@@ -151,6 +151,9 @@ shellcode = asm('''
 
 ----------------------------------------------------
 
-[+] Tổng hợp tài liệu để có điểm bắt đầu khi học cho người mới, các lưu ý khai thác của kỹ thuật.
+[+] WINDOWS EXPLOITATION 
 
-[+] Tổng hợp lại không thay thế được writeup chi tiết, bài báo về kỹ thuật khai thác hay quá trình tự học khai thác của bạn.
+[+] LINUX EXPLOITATION
+
+[+] IOS EXPLOITATION
+
