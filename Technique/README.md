@@ -151,9 +151,9 @@ shellcode = asm('''
 
 ----------------------------------------------------
 
-[+] WINDOWS EXPLOITATION 
+[+] `WINDOWS EXPLOITATION` 
 
-[+] LINUX EXPLOITATION
+[+] `LINUX EXPLOITATION`
 
-[+] IOS EXPLOITATION
+[+] `IOS EXPLOITATION`
 
