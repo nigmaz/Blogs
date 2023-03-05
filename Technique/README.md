@@ -29,7 +29,7 @@ patchelf --replace-needed libc.so.6 ./libc.so.6 ./chall
 
 * Với những bài bị stripped và cr bật PIE => gdb.attach sử dụng `breakrva *[offset]` .
 
-## STACK bug.
+## 1. STACK bug
 
 * Vậy nên để bypass tránh việc ghi đè canary ta chỉ cần nhập chữ cái (+, -, *, /) mà không thuộc format %lu thì phần tử đó sẽ bị skip, không thay đổi. VD: chall `Warmup` - UIT-2022-CTF . 
 
@@ -55,7 +55,7 @@ STACK:
 
 * Hàm strncat() sẽ copy chuỗi name vào chuỗi bullet.name, sau đó sẽ thêm 1 ký tự NULL vào cuối chuỗi. => có thể dẫn đến off-by-one => thay đổi size dẫn đến check size bị sai kết quả => bufer overflow vượt qua check size chuỗi đã khởi tạo. `Silver Bullet - pwnable.tw`
 
-## FORMATSTRING bug.
+## 2. FORMATSTRING bug
 
 * Use * to have a variable field width, equals to an signed integer on the stack, can combine with positional argument. Eg. %*10$c: print a number of characters equals to the 10th argument. `[FMT XMaster - TTV KCSC 2023]`
 
@@ -72,7 +72,7 @@ STACK:
 >>> f = ctf{.....}
 ```
 
-## HEAP EXPLOIT.
+## 3. HEAP EXPLOIT
 
 * `gdb command in heap:` 
 ```
@@ -100,7 +100,7 @@ chunk - 0x60 size thì next chunk lưu ở main_arena+48 (bài này thì trườ
 
 * Để ý các function của chương trình vd chương trình có hàm edit password nghĩa là có thể khi có bug ta sẽ cố gắng khai thác làm sao để free được 1 đoạn nằm trên vị trí password thì sẽ có thể dùng function changePassword để thay đổi dư liệu => Use After Free or Double Free, ... 
 
-## LOGIC bug: seed, permission, ...
+## 4.LOGIC bug: seed, permission, ...
 
 * random: dùng seed có giá trị là thời gian thực lúc chạy chương trình, vì vậy tạo 1 script chạy cùng là xong
 
@@ -127,7 +127,7 @@ Nhiệm vụ của srand(x) đưa ra seed x rồi rand() dựa vào x đưa ra s
 
 [Meshuggah](https://qbao.home.blog/2020/04/30/start-to-pwnb01lers-ctf/) .
 
-## SECCOMP-tools - SANDBOX 
+## 5. SECCOMP-tools - SANDBOX 
 
 * [KMACTF2022 - Duet](https://github.com/nhtri2003gmail/CTFWriteup/tree/master/2022/KMACTF-2022/Duet)
 
