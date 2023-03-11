@@ -127,7 +127,7 @@ Nhiệm vụ của srand(x) đưa ra seed x rồi rand() dựa vào x đưa ra s
 
 * BRUTEFORCE - `TWOSHOT - KMACTF2022`
 
-## 5. SECCOMP-tools - SANDBOX 
+## 5. SECCOMP-tools - SANDBOX ESCAPE         
 
 * [KMACTF2022 - Duet](https://github.com/nhtri2003gmail/CTFWriteup/tree/master/2022/KMACTF-2022/Duet)
 
