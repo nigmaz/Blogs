@@ -59,6 +59,8 @@ STACK:
 
 ## 2. FORMATSTRING bug
 
+* Một số bài format strings cần tạo vòng lặp loop thì có rất nhiều ý tưởng để tạo vòng lặp loop `1:` ghi đè func libc đằng sau vị trí có fmt, `2:` ghi đè .fini_array, ...
+
 * Use * to have a variable field width, equals to an signed integer on the stack, can combine with positional argument. Eg. %*10$c: print a number of characters equals to the 10th argument. `[FMT XMaster - TTV KCSC 2023]`
 
 
