@@ -176,6 +176,17 @@ shellcode = asm('''
          instruction assembly
          ...
 ''')
+
+OR
+
+context.arch = 'amd64'
+...
+
+shellcode = asm(
+         f"""
+         instruction assembly
+         """
+''')
 ```
 
 
