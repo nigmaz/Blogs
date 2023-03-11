@@ -25,7 +25,7 @@ patchelf --replace-needed libc.so.6 ./libc.so.6 ./chall
 
 * pwntools hỗ trợ flat(...) giá trị byte điền tự động là p64() hoặc p32() phụ thuộc cấu trúc chương trình là x86 hay x86_64 hoặc có thể đặt giá trị giống code exploit `[convert - ASCIS 2022]` .
 
-## 1. STACK bug
+## 1. STACK EXPLOIT
 
 * Vậy nên để bypass tránh việc ghi đè canary ta chỉ cần nhập chữ cái (+, -, *, /) mà không thuộc format %lu thì phần tử đó sẽ bị skip, không thay đổi. VD: chall `Warmup` - UIT-2022-CTF . 
 
@@ -51,7 +51,7 @@ STACK:
 
 * Hàm strncat() sẽ copy chuỗi name vào chuỗi bullet.name, sau đó sẽ thêm 1 ký tự NULL vào cuối chuỗi. => có thể dẫn đến off-by-one => thay đổi size dẫn đến check size bị sai kết quả => bufer overflow vượt qua check size chuỗi đã khởi tạo. `Silver Bullet - pwnable.tw`
 
-## 2. FORMATSTRING bug
+## 2. FORMATSTRING EXPLOIT
 
 * Một số bài format strings cần tạo vòng lặp loop thì có rất nhiều ý tưởng để tạo vòng lặp loop `1:` ghi đè func libc đằng sau vị trí có fmt, `2:` ghi đè .fini_array, ...
 
