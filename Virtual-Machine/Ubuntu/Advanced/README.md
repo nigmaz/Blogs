@@ -9,11 +9,11 @@
 
 >NOTE: 
 
-    * Add it to `~/.bashrc` or `~/.zshrc` depending on which you use.
+   * Add it to `~/.bashrc` or `~/.zshrc` depending on which you use.
 
-    * Rename User: https://youtu.be/k2ZeUkHZSn0
+   * Rename User: https://youtu.be/k2ZeUkHZSn0
     
-    * Rename Hostname: https://www.cyberciti.biz/faq/ubuntu-change-hostname-command/
+   * Rename Hostname: https://www.cyberciti.biz/faq/ubuntu-change-hostname-command/
 
 ### 1) Alias
 
