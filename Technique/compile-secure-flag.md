@@ -31,7 +31,7 @@ gef➤  r <<< $(perl -e 'print "%n"')
 Starting program: /challenge/app-systeme/ch17/ch17 <<< $(perl -e 'print "%n"')
 Ngoài ra, bạn có thể tạo một tệp chứa các giá trị đầu vào và tải nó khi chương trình được chạy.
 
-gef➤  r < 파일명
+gef➤  r < input.tx
 Ngoài ra, có một cách để tạo một tệp tạm thời và tải lại tệp, như hình dưới đây, nhưng nó không chắc sẽ được sử dụng.
 
 gef➤  r `perl -e 'print "A"x10' > tmp` < tmp
