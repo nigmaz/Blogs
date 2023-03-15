@@ -5,7 +5,9 @@
 
 >TrickNote:
 
-* [patchelf](https://github.com/NixOS/patchelf) . `TTV KSSC 2023`
+* [patchelf](https://github.com/NixOS/patchelf) . 
+
+VD: `TTV KSSC 2023`, https://wyv3rn.tistory.com/81
 
 ```
 $ 
