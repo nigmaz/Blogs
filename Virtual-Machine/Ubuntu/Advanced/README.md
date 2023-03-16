@@ -14,6 +14,8 @@
    * Rename User: https://youtu.be/k2ZeUkHZSn0
     
    * Rename Hostname: https://www.cyberciti.biz/faq/ubuntu-change-hostname-command/
+   
+   hostnamectl set-hostname newhostname
 
 ### 1) Alias
 
