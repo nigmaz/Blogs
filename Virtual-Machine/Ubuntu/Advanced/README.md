@@ -15,7 +15,7 @@
     
    * Rename Hostname: https://www.cyberciti.biz/faq/ubuntu-change-hostname-command/
    
-   hostnamectl set-hostname newhostname
+  `hostnamectl set-hostname newhostname`
 
 ### 1) Alias
 
