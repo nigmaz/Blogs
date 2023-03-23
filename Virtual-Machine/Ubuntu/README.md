@@ -466,7 +466,7 @@ cd ../
 
 ### 8) Setup qemu
 
-* Use for kernel exploitation or Arm compiler-debug
+* Use for Kernel Exploitation or Arm compiler-debug
 
 ```bash
 sudo apt install -y qemu-user qemu-user-static gcc-aarch64-linux-gnu binutils-aarch64-linux-gnu binutils-aarch64-linux-gnu-dbg && \
