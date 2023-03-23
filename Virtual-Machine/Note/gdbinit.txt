@@ -1,0 +1,32 @@
+set disassembly-flavor intel
+set follow-fork-mode child
+
+# pwndbg-----------------------------------------
+source /home/nigma/Tools/pwndbg/gdbinit.py
+# -----------------------------------------------
+
+
+# peda-------------------------------------------
+# source /home/nigma/Tools/peda/peda.py
+# -----------------------------------------------
+
+# gef--------------------------------------------
+# source /home/nigma/Tools/.gdbinit-gef.py
+
+# $ git clone https://github.com/hugsy/gef.git
+# $ echo source `pwd`/gef/gef.py >> ~/.gdbinit
+# -----------------------------------------------
+
+
+# Pwngdb-for-heap--------------------------------
+# source ~/Tools/Pwngdb/pwngdb.py
+# source ~/Tools/Pwngdb/angelheap/gdbinit.py
+
+# define hook-run
+# python
+# import angelheap
+# angelheap.init_angelheap()
+# end
+# end
+# I use it into gdb-peda and gdb
+# ----------------------------------------------
