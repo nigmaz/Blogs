@@ -1,6 +1,0 @@
-[
-     { "command": "cmd" }
-]
-
-// " Preferences -> Key Bindings " open " Default (Windows).sublime-keymap "
-//  { "keys": ["alt+b"], "command": "cmd"}
