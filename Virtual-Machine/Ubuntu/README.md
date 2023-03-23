@@ -395,7 +395,76 @@ cd ../
 pip3 install frida-tools
 ```
 
-### 7) Setup qemu
+### 7) Add libc source code to gdb
+
+* Use when you want to debug deep in libc function like (printf, puts, read, ...), i need to setup this when i learned FSOP attack
+
+* Download the glibc source code
+
+```bash
+git config --global http.sslverify false && \
+git clone https://sourceware.org/git/glibc.git
+```
+
+* Setup some scripts for convenient work
+
+```bash
+mkdir add_glibc_source && \
+cd add_glibc_source && \
+touch add_glibc_source.py && \
+nano add_glibc_source.py
+```
+
+* Copy and patse this code to `add_glibc_source.py`, edit the path `/home/cobra/` to your path ( this is my scripts, sorry if it so noob :)) )
+
+```python
+import gdb
+import os
+
+def add_all_folder(path):
+	gdb.execute('dir ' + path)
+	dir = os.listdir(path)
+	for i in dir:
+		subfolder = path + i + '/'
+		if os.path.isdir(subfolder):
+			add_all_folder(subfolder)
+
+add_all_folder('/home/cobra/Install/glibc/')
+```
+
+* We add this script to `.gdbinit`, this will auto add glibc source code when we start gdb
+
+```bash
+echo "source ~/Install/add_glibc_source/add_glibc_source.py" >> ~/.gdbinit
+```
+
+* Create another scripts
+
+```bash
+touch libc && \
+nano libc
+```
+
+* Copy and patse this code to `libc`
+
+```bash
+#!/bin/sh
+
+cd ~/Install/glibc/
+git checkout release/$1/master
+```
+
+* Add it to `/usr/bin/` to execute as a command
+
+```bash
+chmod +x libc && \
+sudo cp libc /usr/bin && \
+cd ../
+```
+
+* Later if you want to change version of glibc source code, just open the terminal and type `libc + version`, this equal to go to the libc folder and checkout to that version
+
+### 8) Setup qemu
 
 * Use for kernel exploitation or Arm compiler-debug
 
@@ -405,7 +474,7 @@ sudo apt install -y gcc-arm-linux-gnueabihf binutils-arm-linux-gnueabihf binutil
 sudo apt-get -y install qemu-kvm qemu
 ```
 
-### 8) Finally
+### 9) Finally
 
 *These are most of the tools I use to play CTF pwn challenges, there are still a lot of other great tools that I haven't used yet. I want to share so that newbies can start on the path of pwnable. After the installation is complete, you should take a snapshot or compress and store it, in case an error occurs. Older or newer versions of Ubuntu will likely have some errors, but basically I think there won't be too much change in the way of installation. Last word, hope you will find passion or pleasure playing pwnable, goodluck.*
 
