@@ -253,7 +253,7 @@ FIX ERROR: `sudo apt-get install python3-testresources` .
 ```bash
 mkdir pwninit && \
 cd pwninit && \
-wget https://github.com/io12/pwninit/releases/download/3.2.0/pwninit && \
+wget https://github.com/io12/pwninit/releases/download/3.3.0/pwninit && \
 chmod +x pwninit && \
 sudo cp pwninit /usr/bin/ && \
 cd ../
