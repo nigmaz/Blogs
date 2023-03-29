@@ -23,6 +23,8 @@
 - `-static` : file không liên kết thư viện động.
 - `-g` : debug file with source code.
 
+### Make: use cmd linux `make` compile filename Makefile contain cmd build program.
+
 # 2) GDB truyền đối số hoặc dữ liệu
 ```
 Khi nhận được giá trị đầu vào sau khi chạy chương trình, gdb có thể truyền giá trị như sau.
