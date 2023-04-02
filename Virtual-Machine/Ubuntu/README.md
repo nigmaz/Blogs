@@ -104,6 +104,8 @@ sudo dpkg --add-architecture i386
 
 ### 3) Install Python and Pip
 
+>Note: not recommend use python2 and pip2.
+
 I use both Python2 and Python3 for play Pwn CTFs
 
 From Ubuntu 20.04, py3 is available in base system and py2 is available to install from the Universe repository.
