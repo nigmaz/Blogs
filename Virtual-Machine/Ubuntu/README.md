@@ -38,7 +38,8 @@ Now change content file ~/.zshrc
 `$ nano ~/.zshrc` .
 
 ```bash
-	+) ZSH_THEME="half-life"
+	+) ZSH_THEME="half-life" # or "lukerandall"
+	
 	...
 	+) plugins=(
 		git
