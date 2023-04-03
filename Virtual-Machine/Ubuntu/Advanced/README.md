@@ -50,6 +50,12 @@ nasm64(){
 
 ### 3) Add Python into PATH
 
+* [Upgrade Python](https://www.itsupportwale.com/blog/how-to-upgrade-to-python-3-10-on-ubuntu-18-04-and-20-04-lts/)
+
+* [Install PythonLatestVersion](https://serverspace.io/support/help/install-python-latest-version-on-ubuntu-20-04/)
+
+* [Switch PythonVersions](https://www.rosehosting.com/blog/how-to-install-and-switch-python-versions-on-ubuntu-20-04/)
+
 ```
 # PYTHON write into ~/.bashrc or ~/.zshrc
 export PATH="$HOME/bin:/usr/bin/python2:/bin/python2:/usr/bin/python3:/bin/python3:$PATH"
