@@ -65,12 +65,6 @@ export PATH="$HOME/bin:/usr/local/lib/python2.7/dist-packages/pip:/usr/lib/pytho
 # cat $PATH
 ```
 
-### 4) Other
-
-- neofetch | lolcat
-
-- figlet -f smslant "l1j9m4 0n1"
-
 ### Note: `source ~/.bashrc` or `source ~/.zshrc`.
 
 -------------------------------------------------------------------------------------------------------
