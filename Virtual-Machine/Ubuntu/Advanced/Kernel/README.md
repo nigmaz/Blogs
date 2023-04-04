@@ -1,5 +1,10 @@
 # Loading...
 
+>Source kernel download: https://mirrors.edge.kernel.org/pub/linux/kernel/, chọn version v<number>.x, xong thay tên branch mình muốn.
+
+VD: https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.15.4.tar.xz
+
+
 ```bash
 sudo apt-get install build-essential libncurses-dev bison flex libssl-dev libelf-dev
 ```
