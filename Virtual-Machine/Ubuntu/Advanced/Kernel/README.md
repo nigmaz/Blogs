@@ -1,6 +1,6 @@
 # Loading...
 
->Source kernel download: https://mirrors.edge.kernel.org/pub/linux/kernel/, chọn version v<< number >>.x, xong thay tên branch mình muốn.
+>Source kernel download: https://mirrors.edge.kernel.org/pub/linux/kernel/, chọn version v< number >.x, xong thay tên branch mình muốn.
 
 VD: https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.15.4.tar.xz
 
