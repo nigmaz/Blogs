@@ -13,6 +13,8 @@ sudo apt-get install build-essential libncurses-dev bison flex libssl-dev libelf
 
 [+] [Upgrade kernel linux-vi](https://cloudcraft.info/huong-dan-upgrade-kernel-linux/)
 
+[+] [Điều gì xảy ra khi boot mot he thong linux](https://cloudcraft.info/nhung-gi-da-xay-ra-khi-boot-mot-he-thong-linux/)
+
 >Video 
 
 [+] [build change kernel in OS](https://www.youtube.com/watch?v=cAWqWB2wVZc)
