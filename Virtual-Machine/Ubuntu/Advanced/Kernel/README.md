@@ -17,6 +17,8 @@ sudo apt-get install build-essential libncurses-dev bison flex libssl-dev libelf
 
 [+] [Điều gì xảy ra khi boot mot he thong linux](https://cloudcraft.info/nhung-gi-da-xay-ra-khi-boot-mot-he-thong-linux/)
 
+[+] https://kernelnewbies.org/KernelBuild
+
 >Video 
 
 [+] [build change kernel in OS](https://www.youtube.com/watch?v=cAWqWB2wVZc)
