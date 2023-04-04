@@ -52,9 +52,15 @@ nasm64(){
 
 * [Upgrade Python](https://www.itsupportwale.com/blog/how-to-upgrade-to-python-3-10-on-ubuntu-18-04-and-20-04-lts/)
 
+* [Switch PythonVersions](https://www.rosehosting.com/blog/how-to-install-and-switch-python-versions-on-ubuntu-20-04/)
+
 * [Install PythonLatestVersion](https://serverspace.io/support/help/install-python-latest-version-on-ubuntu-20-04/) [*]
 
-* [Switch PythonVersions](https://www.rosehosting.com/blog/how-to-install-and-switch-python-versions-on-ubuntu-20-04/)
+```
+curl https://bootstrap.pypa.io/get-pip.py --output get-pip.py && python get-pip.py
+
+export PATH="$HOME/bin:/usr/bin/python:/usr/local/lib/python3.12/dist-packages/pip:$PATH"
+```
 
 ```
 # PYTHON write into ~/.bashrc or ~/.zshrc
