@@ -9,6 +9,12 @@ VD: https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.15.4.tar.xz
 sudo apt-get install build-essential libncurses-dev bison flex libssl-dev libelf-dev
 ```
 
+> Reference:
+
+[+] [Upgrade kernel linux-vi](https://cloudcraft.info/huong-dan-upgrade-kernel-linux/)
+
+>Video 
+
 [+] [build change kernel in OS](https://www.youtube.com/watch?v=cAWqWB2wVZc)
 
 [+] https://www.youtube.com/watch?v=1gEFYoGUFxM&t=30s
