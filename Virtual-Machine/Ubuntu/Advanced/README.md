@@ -56,10 +56,12 @@ nasm64(){
 
 * [Install PythonLatestVersion](https://serverspace.io/support/help/install-python-latest-version-on-ubuntu-20-04/) [*]
 
-```
+```bash
 curl https://bootstrap.pypa.io/get-pip.py --output get-pip.py && python get-pip.py
 
-export PATH="$HOME/bin:/usr/bin/python:/usr/local/lib/python3.12/dist-packages/pip:$PATH"
+# write to ~/.zshrc: export PATH="$HOME/bin:/usr/bin/python:/usr/local/lib/python3.12/dist-packages/pip:$PATH"
+
+sudo pip install pwntools pathlib2 keystone-engine unicorn capstone ropper ipython
 ```
 
 ```
