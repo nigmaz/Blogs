@@ -8,7 +8,8 @@ VD: https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.15.4.tar.xz
 ```bash
 sudo apt-get install build-essential libncurses-dev bison flex libssl-dev libelf-dev
 
-# qemu-system-x86_64 -kernel git/kernel/linux/arch/x86_64/boot/bzImage -initrd ramdisk.img -s
+# qemu-system-x86_64 -kernel git/kernel/linux/arch/x86_64/boot/bzImage -initrd ramdisk.img -s -append "console=ttyS0" -nographic
+
 ```
 
 > Reference:
@@ -16,8 +17,6 @@ sudo apt-get install build-essential libncurses-dev bison flex libssl-dev libelf
 [+] [Upgrade kernel linux-vi](https://cloudcraft.info/huong-dan-upgrade-kernel-linux/)
 
 [+] [Điều gì xảy ra khi boot mot he thong linux](https://cloudcraft.info/nhung-gi-da-xay-ra-khi-boot-mot-he-thong-linux/)
-
-[+] https://kernelnewbies.org/KernelBuild
 
 >Video 
 
