@@ -111,6 +111,8 @@ I use both Python2 and Python3 for play Pwn CTFs
 
 From Ubuntu 20.04, py3 is available in base system and py2 is available to install from the Universe repository.
 
+>Note: [python3](https://github.com/NigmaZ/Blogs/tree/main/Virtual-Machine/Ubuntu/Advanced#3-add-python-into-path)
+
 * Python3 and pip3
 
 ```bash
