@@ -8,7 +8,7 @@ VD: https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.15.4.tar.xz
 ```bash
 sudo apt-get install build-essential libncurses-dev bison flex libssl-dev libelf-dev
 
-# qemu-system-x86_64 -kernel git/kernel/linux/arch/x86_64/bôt/bzImage -initrd ramdisk.img -s
+# qemu-system-x86_64 -kernel git/kernel/linux/arch/x86_64/boot/bzImage -initrd ramdisk.img -s
 ```
 
 > Reference:
