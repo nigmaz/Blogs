@@ -106,7 +106,7 @@ sudo dpkg --add-architecture i386
 
 ### 3) Install Python and Pip
 
->Note: not recommend use python2 and pip2, when exploitation kernel tools pip2 error.
+>Note: not recommend use python2 and pip2 [exploitation kernel tools pip2 error], should use python3 install new versions or use direct python3 in OS Ubuntu.
 
 I use both Python2 and Python3 for play Pwn CTFs
 
