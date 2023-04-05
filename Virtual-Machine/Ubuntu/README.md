@@ -4,7 +4,7 @@
 
 Brave browser - snap store .
 
-### 1) Install "Oh My ZSH!" and VMware Tools (to copy and patse from host)
+## 1) Install "Oh My ZSH!" and VMware Tools (to copy and patse from host)
 
 It's not really to play the pwn CTF challenge but it optimizes your performance when pwning.
 
@@ -55,22 +55,13 @@ Now change content file ~/.zshrc
 chsh -s $(which zsh)
 ```
 
->Setting Terminal run zsh default: `Preferences/Unnamed/Command/Run a custom command instead of my shell/Custom command: zsh` .
+> Setting Terminal run zsh default: `Preferences/Unnamed/Command/Run a custom command instead of my shell/Custom command: zsh` .
 
 ```bash
 $ source ~/.zshrc
 ```
 
->NOTE: zsh: corrupt history file /home/<user_name>/.zsh_history
-
-zsh often get this error when using
-
-fix:
-```bash
-$ cd ~ && mv .zsh_history .zsh_history_bad && strings -eS .zsh_history_bad > .zsh_history && fc -R .zsh_history
-```
-
-or 
+> NOTE: zsh corrupt history file /home/<user_name>/.zsh_history, fix:
 
 ```bash
 #!/usr/bin/env zsh
@@ -80,6 +71,8 @@ mv ~/.zsh_history ~/.zsh_history_bad
 strings -eS ~/.zsh_history_bad > ~/.zsh_history
 fc -R ~/.zsh_history
 rm ~/.zsh_history_bad
+
+# or $ cd ~ && mv .zsh_history .zsh_history_bad && strings -eS .zsh_history_bad > .zsh_history && fc -R .zsh_history
 ```
 Create file bash name `zsh_history_fix` and add into `/usr/bin`.
 
