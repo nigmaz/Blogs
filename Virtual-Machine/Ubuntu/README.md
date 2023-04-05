@@ -1,4 +1,4 @@
-# Setup VMware for playing CTF pwn challenges in Ubuntu 20.04
+# Setup VMware for playing CTF Pwnable challenges in Ubuntu 20.04
 
 >DATE: 01/02/2023 - Ubuntu 18.04, 20.04, 22.04
 
