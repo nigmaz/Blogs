@@ -312,28 +312,6 @@ sudo apt install -y docker.io && \
 sudo apt install -y docker-compose
 ```
 
-#### +) ROPgadget (Tools for gadget searching)
-
-* It usually install with pwntools, you can pass if you already can use ROPgadget.
-
->NOTE: pwntools have ROPgadget.
-
-```bash
-$ git clone https://github.com/JonathanSalwan/ROPgadget.git && \
-cd ROPgadget && \
-sudo python3 setup.py install && \
-cd ../
-```
-
-or
-
-[ROPgadget](https://github.com/JonathanSalwan/ROPgadget)
-```
-$ sudo apt install python3-pip
-$ sudo -H python3 -m pip install ROPgadget
-$ ROPgadget --help
-```
-
 #### +) IDA Freeware (Tools for reversing)
 
 * NOTE: `sudo apt-get install libxcb-xinerama0` .
