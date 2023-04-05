@@ -1,6 +1,38 @@
 # INTRO
 >Tổng hợp lại một số các điểm lưu ý của các kỹ thuật khai thác mà tôi học được và có cả ví dụ code khai thác mẫu đơn giản để luyện tập.
 
+```python
+#!/usr/bin/env python3
+from pwn import *
+
+elf = ELF('./bop')
+context.binary = elf
+
+def connect():
+    if args.LOCAL:
+	libc = ELF('./libc.so.6')
+	p= elf.process()
+	context.log_level = 'DEBUG'        
+	if args.DEBUG:
+		gdb.attach(p, '''
+			b *0x40134d
+			b *0x401364
+		''')
+    else:
+	libc = ELF('./libc.so.6')
+        p = remote("mc.ax", "30284")
+
+    return p
+
+
+def main():
+    p = connect()
+
+
+if __name__ == "__main__":
+    main()
+```
+
 ----------------------------------------------------------------------------------------
 
 >TrickNote:
