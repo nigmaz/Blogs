@@ -5,7 +5,7 @@
 * Kernel 
 * ...
 
-## [1] ~/.bashrc OR ~/.zshrc, rename user, rename hostname, ...
+## [1]. ~/.bashrc OR ~/.zshrc, rename user, rename hostname,...
 
 >NOTE: 
 
@@ -17,7 +17,7 @@
    
   `hostnamectl set-hostname newhostname`
 
-### 1. Alias
+### 1.1 Alias
 
 ```
 # ASLR
@@ -28,7 +28,7 @@ alias aslr_off="echo 0 | sudo tee /proc/sys/kernel/randomize_va_space"
 alias aslr_on="echo 2 | sudo tee /proc/sys/kernel/randomize_va_space"
 ```
 
-### 2. Nasm
+### 1.2. Nasm
 
 ```
 # nasm -f elf helloworld.asm && ld -m elf_i386 helloworld.o -o helloworld && ./helloworld
@@ -48,7 +48,7 @@ nasm64(){
 }
 ```
 
-### 3. Python3 [new versions]
+### 1.3. Python3 [new versions]
 
 * [Upgrade Python](https://www.itsupportwale.com/blog/how-to-upgrade-to-python-3-10-on-ubuntu-18-04-and-20-04-lts/)
 
@@ -67,7 +67,7 @@ sudo pip install pwntools pathlib2 keystone-engine unicorn capstone ropper ipyth
 
 **Note:** `source ~/.bashrc` or `source ~/.zshrc`.
 
-# [2] Tools
+# [2]. Tools
 
 > Setup tools for reversing as such as IDA, WSL, etc...
 
