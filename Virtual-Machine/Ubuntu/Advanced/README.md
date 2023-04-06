@@ -163,7 +163,51 @@ $ git clone --depth 1 \
 colorscheme nord
 ```
 
-# [2]. Tools
+### Zsh other
+
+```bash
+$ sudo apt-get install git zsh curl 
+
+$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+$ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+$ sudo chsh -s $(which zsh)
+
+Custome 
+$ nano ~/.zshrc
+	+) ZSH_THEME="half-life"
+	+) plugins=(git
+	   zsh-autosuggestions)  
+
+$ source ~/.zshrc
+
+
+theme powerlevel10k
+$ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+$ Set ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc.
+
+fix icon ubuntu windows terminal 
+=> https://github.com/romkatv/powerlevel10k/blob/master/README.md#meslo-nerd-font-patched-for-powerlevel10k
+
+Windows Terminal by Microsoft (the new thing): 
+Open Settings (Ctrl+,), click either on the selected profile under 
+`Profiles` or on `Defaults`, 
+click `Appearance` and set 
+`Font face` to `MesloLGS NF`.
+
+$ fix icon vscode 
+https://dev.to/avantar/how-to-fix-zsh-icons-in-visual-studio-code-terminal-38bb
+
+vm tools
+$ sudo reboot
+$ lsb_release -a
+
+
+```
+
+## [2]. Tools
 
 > Setup tools for reversing as such as IDA, WSL, etc...
 
