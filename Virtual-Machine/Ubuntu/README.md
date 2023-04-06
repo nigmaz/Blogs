@@ -338,7 +338,9 @@ cd ../
 pip3 install frida-tools
 ```
 
-### 6.12) Add libc source code to gdb .
+### 6.12) [Add libc source to gdb](https://github.com/NigmaZ/Blogs/tree/main/Virtual-Machine/Ubuntu/Advanced/FSOP) .
+
+>FSOP attack
 
 * Use when you want to debug deep in libc function like (printf, puts, read, ...), i need to setup this when i learned FSOP attack.
 
