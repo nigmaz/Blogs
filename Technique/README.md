@@ -57,7 +57,7 @@ patchelf --replace-needed libc.so.6 ./libc.so.6 ./chall
          --add-needed
 ```
 
-* Với những bài bị stripped và cr bật PIE => gdb.attach sử dụng `breakrva *[offset]` .
+* Với những bài bị stripped và bật PIE => gdb.attach sử dụng `breakrva *[offset]`, check giá trị biến toàn cục thì `got` -> tìm dần lên theo địa chỉ của GOT được lưu.
 
 * pwntools hỗ trợ flat(...) giá trị byte điền tự động là p64() hoặc p32() phụ thuộc cấu trúc chương trình là x86 hay x86_64 hoặc có thể đặt giá trị giống code exploit `[convert - ASCIS 2022]` .
 
