@@ -163,11 +163,11 @@ $ git clone --depth 1 \
 colorscheme nord
 ```
 
-### Zsh other
+### 1.6. Zsh other
 
-* Theme powerlevel10k
+* Theme powerlevel10k.
 
-* [Package Font and Icon](https://github.com/NigmaZ/Blogs/tree/main/Virtual-Machine/Note/MesloLGS%20NF)
+* [Package Font and Icon](https://github.com/NigmaZ/Blogs/tree/main/Virtual-Machine/Note/MesloLGS%20NF).
 
 ```bash
 $ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
