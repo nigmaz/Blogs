@@ -22,6 +22,9 @@
 - `-s` : thuộc tính `stripped` - Xóa tất cả `symbol table` và `relocation information` khỏi tệp thực thi.
 - `-static` : file không liên kết thư viện động.
 - `-g` : debug file with source code.
+- `-Wall` : in ra mọi warning để tạo mã tốt nhất có thể.
+
+**NOTE:** https://linuxhandbook.com/gcc-flags/
 
 ### Make: use cmd linux `make` compile filename Makefile contain cmd build program.
 
