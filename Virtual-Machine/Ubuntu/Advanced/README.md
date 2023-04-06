@@ -115,7 +115,6 @@ source /home/nigma/Tools/pwndbg/gdbinit.py
   https://github.com/preservim/nerdtree.git \
   ~/.vim/pack/vendor/start/nerdtree
 
-
 4) git clone --depth 1 \
   https://github.com/vim-airline/vim-airline \
   ~/.vim/pack/vendor/start/vim-airline
