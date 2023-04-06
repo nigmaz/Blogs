@@ -1,43 +1,38 @@
 # Setup VMware for playing CTF Pwnable challenges in Ubuntu 20.04
 
->DATE: 01/02/2023 - Ubuntu 18.04, 20.04, 22.04
+>DATE: 06/04/2023 - Ubuntu 18.04, 20.04, 22.04
 
-Brave browser - snap store .
+## 1. Install "Oh My ZSH!" and VMware Tools.
 
-## 1) Install "Oh My ZSH!" and VMware Tools (to copy and patse from host)
+* It's not really to play the pwn CTF challenge but it optimizes your performance when pwning.
 
-It's not really to play the pwn CTF challenge but it optimizes your performance when pwning.
-
-* VMware Tools
-
->NOTE: Ubuntu 22.04 => error network - [ sudo apt-get install open-vm-tools-desktop -y ].
+### 1) VMware Tools .
 
 ```bash
-sudo apt-get install open-vm-tools-desktop -y # open-vm-tools
+# open-vm-tools 
+sudo apt-get install open-vm-tools-desktop -y && \ 
+reboot
 ```
 
-`$ sudo reboot` .
+**NOTE**: Ubuntu 22.04: error network -> fix `sudo apt-get install open-vm-tools-desktop -y` .
 
-Check VMware Tools
+* Check VMware Tools.
 
 ```bash
 lsb_release -a
 ```
 
-* "Oh My ZSH!"
+### 2) "Oh My ZSH!" .
 
 ```bash
-sudo apt-get install git zsh curl && sudo chsh -s $(which zsh) && sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-```
-
-```bash 
+sudo apt-get install git zsh curl && sudo chsh -s $(which zsh) && sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" && \
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
-Now change content file ~/.zshrc
 
-`$ nano ~/.zshrc` .
+* Now change content file ~/.zshrc.
 
 ```bash
+# $ nano ~/.zshrc
 	+) ZSH_THEME="half-life" 
 	# or "lukerandall"
 	# or "frontcube"
@@ -49,19 +44,14 @@ Now change content file ~/.zshrc
 	...
 ```
 
-> [how-to-make-zsh-the-default-shell](https://askubuntu.com/questions/131823/how-to-make-zsh-the-default-shell) .
+**Setting Terminal run zsh default:**
 
-```
-chsh -s $(which zsh)
-```
+* `Preferences/Unnamed/Command/Run a custom command instead of my shell/Custom command: zsh -> source ~/.zshrc` .
 
-> Setting Terminal run zsh default: `Preferences/Unnamed/Command/Run a custom command instead of my shell/Custom command: zsh` .
+* [how-to-make-zsh-the-default-shell-use-cmd](https://askubuntu.com/questions/131823/how-to-make-zsh-the-default-shell) .
 
-```bash
-$ source ~/.zshrc
-```
 
-> NOTE: zsh corrupt history file /home/<user_name>/.zsh_history, fix:
+**NOTE**: zsh corrupt history file /home/<user_name>/.zsh_history, fix:
 
 ```bash
 #!/usr/bin/env zsh
@@ -74,72 +64,64 @@ rm ~/.zsh_history_bad
 
 # or $ cd ~ && mv .zsh_history .zsh_history_bad && strings -eS .zsh_history_bad > .zsh_history && fc -R .zsh_history
 ```
-Create file bash name `zsh_history_fix` and add into `/usr/bin`.
+* Create file bash name `zsh_history_fix` and add into `/usr/bin`.
 
 ```bash
 chmod +x zsh_history_fix && sudo cp zsh_history_fix /usr/bin && cd ../
 ```
 
-* Terminator
+### 3) Terminator .
 
 ```bash
-sudo apt-get update && sudo apt-get install terminator
+sudo apt-get update && sudo apt-get install terminator && \
+sudo apt-get update -y && sudo apt-get dist-upgrade
 ```
 
-* Update ubuntu
 
+## 2. Add i386 architecture (to run and compile file ELF x86 (32-bit))
 
-`$ sudo apt-get update`
-
-### 2) Add i386 architecture (to run file ELF x86 (32-bit))
-
+### 1) Intel-386 .
 ```bash
 sudo dpkg --add-architecture i386
 ```
 
-### 3) Install Python and Pip
+## 3. Install Python and Pip
 
->Note: not recommend use python2 and pip2 [exploitation kernel tools pip2 error], should use python3 install new versions or use direct python3 in OS Ubuntu.
+**NOTE:** 
 
-I use both Python2 and Python3 for play Pwn CTFs
+* not recommend use python2 and pip2 `[exploitation kernel tools pip2 error]`.
+	
+* should use python3 install new versions or use direct python3 in OS Ubuntu.
 
-From Ubuntu 20.04, py3 is available in base system and py2 is available to install from the Universe repository.
+### 1) `Suggest:` [Python3 install new versions](https://github.com/NigmaZ/Blogs/tree/main/Virtual-Machine/Ubuntu/Advanced#3-python3---new-versions) .
 
->Note: [python3](https://github.com/NigmaZ/Blogs/tree/main/Virtual-Machine/Ubuntu/Advanced#3-add-python-into-path)
-
-* Python3 and pip3
+### 2) Python3 and pip3 (in OS Ubuntu) .
 
 ```bash
-sudo apt-get install python3 python3-dev python3-pip 
+sudo apt-get install python3 python3-dev python3-pip && \
+pip3 --version
+# pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.8)
 ```
 
-```
-$ pip3 --version
-pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.8)
-```
-
-Upgrade pip3
+* Upgrade pip3
 
 ```bash
 python3 -m pip install --upgrade pip
 ```
 
-* Python2 and pip2
+### 3) Python2 and pip2 (not suggest) .
 
 ```bash
-sudo add-apt-repository universe
+sudo add-apt-repository universe && \
+sudo apt update && sudo apt install python2 && \
+sudo apt-get install curl && \
+curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py && \
+sudo python2 get-pip.py && \
+pip2 --version
+# pip 20.0.2 from /usr/local/lib/python2.7/dist-packages/pip (python 2.7)
 ```
 
-```bash
-sudo apt update && sudo apt install python2 && sudo apt-get install curl && curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py && sudo python2 get-pip.py
-```
-
-```bash
-$ pip2 --version
-pip 20.0.2 from /usr/local/lib/python2.7/dist-packages/pip (python 2.7)
-```
-
-NOTE: [Add PATH](https://linuxize.com/post/how-to-add-directory-to-path-in-linux/)
+* **NOTE:** [Add PATH](https://linuxize.com/post/how-to-add-directory-to-path-in-linux/)
 
 ```
 # PYTHON write into ~/.bashrc or ~/.zshrc
@@ -150,55 +132,49 @@ export PATH="$HOME/bin:/usr/lib/python3/dist-packages/pip:/home/nigma/.local/lib
 # echo $PATH
 ```
 
-`source ~/.bashrc` or `source ~/.zshrc`.
+* `source ~/.bashrc` or `source ~/.zshrc`.
 
-### 4) Install needed libraries and support tools
+## 4. Install Libraries and support Tools
 
-* Update Ubuntu
+* Update Ubuntu.
 
 ```bash
 sudo apt-get update -y && sudo apt-get upgrade
 ```
 
-* Install libraries and tools
+### 1) Install Tools .
 
 ```bash
-sudo apt-get install -y socat build-essential jq strace ltrace curl wget git make procps vim ssh rubygems gcc dnsutils netcat gcc-multilib net-tools gdb gdb-multiarch libssl-dev libffi-dev libpcre3-dev libdb-dev libxt-dev libxaw7-dev libc6:i386 libncurses5:i386 libstdc++6:i386 patchelf elfutils nasm ascii tree
+sudo apt-get install -y socat build-essential jq strace ltrace curl wget git make procps vim ssh rubygems gcc dnsutils netcat gcc-multilib net-tools gdb gdb-multiarch libssl-dev libffi-dev libpcre3-dev libdb-dev libxt-dev libxaw7-dev libc6:i386 libncurses5:i386 libstdc++6:i386 patchelf elfutils nasm ascii tree && \
+reboot
 ```
 
-`$ reboot` .
+* Brave browser - snap store .
 
-* Install python3 libraries
+### 2) Install Python3 Libraries .
 
 ```bash
 sudo pip3 install pwntools pathlib2 keystone-engine unicorn capstone ropper ipython
 ```
 
-```
-sudo pip3 install checksec.py
-```
-
-* Install python2 libraries
+### 3) Install Python2 Libraries .
 
 ```bash
 sudo pip2 install pwntools pathlib2 keystone-engine unicorn capstone ropper ipython
 ```
 
-### 5) Install Text Editor
+## 5. Install Text Editor
 
-You can choose 1 of 2
+* You can choose 1 of 2
 
-* [Sublime Text](https://www.sublimetext.com/docs/linux_repositories.html) .
-
-```bash
-sudo apt-get install apt-transport-https
-```
+### 1) [Sublime Text](https://www.sublimetext.com/docs/linux_repositories.html) .
 
 ```bash
+sudo apt-get install apt-transport-https && \
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg && echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list && sudo apt-get update && sudo apt-get install sublime-text
 ```
 
-* [VS Code](https://code.visualstudio.com/download) .
+### 2) [VS Code](https://code.visualstudio.com/download) .
 
 ```bash
 $ sudo apt update && \
@@ -209,9 +185,9 @@ sudo apt update && \
 sudo apt install code
 ```
 
-### 6) Install tools for Pwnable
+## 6. Install tools for Pwnable
 
-#### +) Create folder for tools
+### 1) Create folder for tools .
 
 ```bash
 cd ~/ && \
@@ -219,9 +195,9 @@ mkdir Tools && \
 cd Tools
 ```
 
-(WORKDIR: ~/Tools)
+(**WORKDIR:** ~/Tools).
 
-#### +) pwndbg (Gdb extension)
+### 2) pwndbg (Gdb extension) .
 
 ```
 sudo apt-get install libc6-dbg libc6:i386 libc6-dbg:i386
@@ -243,11 +219,11 @@ cd ../
 * [gdb-peda](https://github.com/longld/peda) .
 
 
-FIX ERROR: `sudo apt-get install python3-testresources` .
+**NOTE:** `sudo apt-get install python3-testresources` .
 
-#### +) pwninit (Tools for patching libc)
+### 3) [pwninit](https://github.com/io12/pwninit) (Tools Patching Libc) .
 
-* Download the pwninit binary and copy to `/usr/bin/` to excute as a command in terminal
+* Download the pwninit binary and copy to `/usr/bin/` to excute as a command in terminal.
 
 ```bash
 mkdir pwninit && \
@@ -258,31 +234,24 @@ sudo cp pwninit /usr/bin/ && \
 cd ../
 ```
 
-link: [pwninit](https://github.com/io12/pwninit) .
 
-#### +) one_gadget (Tools for one_gadget searching)
+### 4) [one_gadget](https://github.com/david942j/one_gadget) (Tools for one_gadget searching) .
 
 ```bash
 sudo gem install one_gadget
 ```
 
-link: [one_gadget](https://github.com/david942j/one_gadget) .
-
-#### +) seccomp-tools (Analyze seccomp sandbox in CTF pwn challenges.)
+### 5) [seccomp-tools](https://github.com/david942j/seccomp-tools) (Analyze seccomp sandbox in CTF pwn challenges) .
 
 ```bash
-sudo apt-get install gcc ruby-dev && sudo gem install seccomp-tools
-```
-
-```bash
+sudo apt-get install gcc ruby-dev && \
+sudo gem install seccomp-tools && \
 sudo apt-get install libseccomp-dev libseccomp2 seccomp
 ```
 
-link: [seccomp-tools](https://github.com/david942j/seccomp-tools) .
+### 6) [libc-database](https://github.com/niklasb/libc-database) .
 
-#### +) libc-database
-
-* Use to find version of libc with offset (more libc than web database) .
+* Use to find version of libc with offset (more libc than web database).
 
 ```bash
 git clone https://github.com/niklasb/libc-database && \
@@ -292,30 +261,28 @@ sudo apt-get install zstd && \
 cd ../
 ```
 
-link: [libc-database](https://github.com/niklasb/libc-database) .
+or use libc-database search WEB [libc_serach](https://libc.blukat.me/).
 
-or use libc-database search WEB [libc_serach](https://libc.blukat.me/) .
+### 7) Docker .
 
-#### +) Docker
-
-* You will need to use docker when you want to setup the same environment with the server .
+* You will need to use docker when you want to setup the same environment with the server.
 
 ```bash
 sudo apt install -y docker.io && \
 sudo apt install -y docker-compose
 ```
 
-#### +) IDA Freeware (Tools for reversing)
+### 8) IDA Freeware (Tools for reversing) .
 
-* NOTE: `sudo apt-get install libxcb-xinerama0` .
+**NOTE:** `sudo apt-get install libxcb-xinerama0` .
 
-[Download IDA](https://hex-rays.com/ida-pro/)
+* [Download IDA](https://hex-rays.com/ida-pro/).
 
 ```bash
 sudo ln -s /opt/idafree-8.1/ida64 /usr/bin  
 ```
 
-Icon - file `ida64.desktop`
+Icon - file `ida64.desktop`.
 
 ```bash
 [Desktop Entry]
@@ -329,30 +296,19 @@ Categories=Application;Development;Utility;
 Comment=IDA Freeware 8.1
 ```
 
->Save file this as "ida64.desktop" in folder ~/.local/share/applications .
+* **Save file this as "ida64.desktop" in folder ~/.local/share/applications**.
 
-* [link youtube tutorial](https://www.google.com/search?q=how+to+install+ida+freeware+on+ubuntu&biw=1536&bih=758&tbm=vid&sxsrf=ALiCzsbb55gpcDfE0SMX5cbXcN5cGbliDQ%3A1669274367537&ei=_xp_Y9WqINqi-Qbg9bqgBg&oq=h%C6%A1+to+install+ida+for+ubuntu&gs_lcp=Cg1nd3Mtd2l6LXZpZGVvEAMYAjIECCMQJzIGCAAQFhAeMgYIABAWEB4yBggAEBYQHlAAWABg9RBoAHAAeACAAXKIAXKSAQMwLjGYAQDAAQE&sclient=gws-wiz-video#fpstate=ive&vld=cid:caa36be6,vid:3FnyzJ6bTEs)
+* [Youtube Tutorial](https://www.google.com/search?q=how+to+install+ida+freeware+on+ubuntu&biw=1536&bih=758&tbm=vid&sxsrf=ALiCzsbb55gpcDfE0SMX5cbXcN5cGbliDQ%3A1669274367537&ei=_xp_Y9WqINqi-Qbg9bqgBg&oq=h%C6%A1+to+install+ida+for+ubuntu&gs_lcp=Cg1nd3Mtd2l6LXZpZGVvEAMYAjIECCMQJzIGCAAQFhAeMgYIABAWEB4yBggAEBYQHlAAWABg9RBoAHAAeACAAXKIAXKSAQMwLjGYAQDAAQE&sclient=gws-wiz-video#fpstate=ive&vld=cid:caa36be6,vid:3FnyzJ6bTEs).
 
-#### +) radare2
+### 9) Ghidra (Tools for reversing) .
 
-```bash
-git clone https://github.com/radare/radare2 && \
-cd radare2 && \
-sys/install.sh && \
-cd ../
-```
-
-#### +) Ghidra (Tools for reversing)
-
-* If you cannot run the ghidra, checking the ghidra path again, if it alright, try checking `java` (`jdk` and `jre`)
+* If you cannot run the ghidra, checking the ghidra path again, if it alright, try checking `java` (`jdk` and `jre`).
 
 ```bash
 sudo apt install -y default-jdk default-jre
 ```
 
-Or you can use IDA Pro if you have it on your windows host.
-
-* Version 10.1.5 latest in 01/04/2022, check for new version in [ghidra](https://github.com/NationalSecurityAgency/ghidra/releases) .
+* Version 10.1.5 latest in 01/04/2022, check for new version in [ghidra](https://github.com/NationalSecurityAgency/ghidra/releases).
 
 ```bash
 wget https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_10.1.5_build/ghidra_10.1.5_PUBLIC_20220726.zip && \
@@ -363,27 +319,37 @@ sudo ln -s ~/Tools/ghidra_10.1.5_PUBLIC/ghidraRun /usr/bin/ghidra && \
 cd ../
 ```
 
-* The command `sudo ln -s ~/Tools/ghidra_10.1.5_PUBLIC/ghidraRun /usr/bin/ghidra` just add the symlink from `ghidraRun` to `/usr/bin/ghidra`, so you can open ghidra with command "ghidra" in terminal
+* The command `sudo ln -s ~/Tools/ghidra_10.1.5_PUBLIC/ghidraRun /usr/bin/ghidra` just add the symlink from `ghidraRun` to `/usr/bin/ghidra`, so you can open ghidra with command "ghidra" in terminal.
 
-### +) fidra
-* Use for dynamic reversing
+### 10) Radare2 .
+
+```bash
+git clone https://github.com/radare/radare2 && \
+cd radare2 && \
+sys/install.sh && \
+cd ../
+```
+
+### 11) Fidra .
+
+* Use for dynamic reversing.
 
 ```
 pip3 install frida-tools
 ```
 
-### 7) Add libc source code to gdb
+### 12) Add libc source code to gdb .
 
-* Use when you want to debug deep in libc function like (printf, puts, read, ...), i need to setup this when i learned FSOP attack
+* Use when you want to debug deep in libc function like (printf, puts, read, ...), i need to setup this when i learned FSOP attack.
 
-* Download the glibc source code
+* Download the glibc source code.
 
 ```bash
 git config --global http.sslverify false && \
 git clone https://sourceware.org/git/glibc.git
 ```
 
-* Setup some scripts for convenient work
+* Setup some scripts for convenient work.
 
 ```bash
 mkdir add_glibc_source && \
@@ -392,7 +358,7 @@ touch add_glibc_source.py && \
 nano add_glibc_source.py
 ```
 
-* Copy and patse this code to `add_glibc_source.py`, edit the path `/home/cobra/` to your path ( this is my scripts, sorry if it so noob :)) )
+* Copy and patse this code to `add_glibc_source.py`, edit the path `/home/nigma/` to your path ( this is my scripts, sorry if it so noob :) ).
 
 ```python
 import gdb
@@ -406,23 +372,23 @@ def add_all_folder(path):
 		if os.path.isdir(subfolder):
 			add_all_folder(subfolder)
 
-add_all_folder('/home/cobra/Install/glibc/')
+add_all_folder('/home/nigma/Install/glibc/')
 ```
 
-* We add this script to `.gdbinit`, this will auto add glibc source code when we start gdb
+* We add this script to `.gdbinit`, this will auto add glibc source code when we start gdb.
 
 ```bash
 echo "source ~/Install/add_glibc_source/add_glibc_source.py" >> ~/.gdbinit
 ```
 
-* Create another scripts
+* Create another scripts.
 
 ```bash
 touch libc && \
 nano libc
 ```
 
-* Copy and patse this code to `libc`
+* Copy and patse this code to `libc`.
 
 ```bash
 #!/bin/sh
@@ -431,7 +397,7 @@ cd ~/Install/glibc/
 git checkout release/$1/master
 ```
 
-* Add it to `/usr/bin/` to execute as a command
+* Add it to `/usr/bin/` to execute as a command.
 
 ```bash
 chmod +x libc && \
@@ -439,11 +405,17 @@ sudo cp libc /usr/bin && \
 cd ../
 ```
 
-* Later if you want to change version of glibc source code, just open the terminal and type `libc + version`, this equal to go to the libc folder and checkout to that version
+* Later if you want to change version of glibc source code, just open the terminal and type `libc + version`, this equal to go to the libc folder and checkout to that version.
 
-### 8) Setup qemu
+### 13) Setup qemu .
 
-* Use for Kernel Exploitation or Arm compiler-debug
+* Use for Kernel Exploitation debug.
+
+```
+sudo apt install qemu-utils qemu-system-x86
+```
+
+* Arm compiler-debug.
 
 ```bash
 sudo apt install -y qemu-user qemu-user-static gcc-aarch64-linux-gnu binutils-aarch64-linux-gnu binutils-aarch64-linux-gnu-dbg && \
@@ -451,13 +423,8 @@ sudo apt install -y gcc-arm-linux-gnueabihf binutils-arm-linux-gnueabihf binutil
 sudo apt-get -y install qemu-kvm qemu
 ```
 
-Kernel - ref dreamhack
 
-```
-sudo apt install qemu-utils qemu-system-x86
-```
-
-### 9) Finally
+# 7. Finally
 
 *These are most of the tools I use to play CTF pwn challenges, there are still a lot of other great tools that I haven't used yet. I want to share so that newbies can start on the path of pwnable. After the installation is complete, you should take a snapshot or compress and store it, in case an error occurs. Older or newer versions of Ubuntu will likely have some errors, but basically I think there won't be too much change in the way of installation. Last word, hope you will find passion or pleasure playing pwnable, goodluck.*
 
