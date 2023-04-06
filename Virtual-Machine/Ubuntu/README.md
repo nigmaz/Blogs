@@ -428,15 +428,16 @@ sudo apt-get -y install qemu-kvm qemu
 
 # [7]. Finally
 
+* **The article is for general purposes, I recommend that you learn and practice as well as set up tools for the problems you have, do not install all the tools at once and I'm happy to receive your comments.**
+
+>WELL!!!
+
 *These are most of the tools I use to play CTF pwn challenges, there are still a lot of other great tools that I haven't used yet. I want to share so that newbies can start on the path of pwnable. After the installation is complete, you should take a snapshot or compress and store it, in case an error occurs. Older or newer versions of Ubuntu will likely have some errors, but basically I think there won't be too much change in the way of installation. Last word, hope you will find passion or pleasure playing pwnable, goodluck.*
 
 ------------------------------------------------
 
-### [+] **The article is for general purposes, I recommend that you learn and practice as well as set up tools for the problems you have, do not install all the tools at once and I'm happy to receive your comments.**
-
-### [+] **I keep the advice from the author of the article that I referenced to create this article to thank the author. If the author can read the article, please allow me!!! Thank you very much.**
-
 ### [+] NOTE FIX:
+
 + [echo 20 | sudo tee /proc/sys/kernel/watchdog_thresh](https://www.suse.com/support/kb/doc/?id=000018705) .
 
 + fix error debug when pwn heap. [Fix](https://robbert1978.github.io/posts/Add-dbg_sym-to-libc/)
