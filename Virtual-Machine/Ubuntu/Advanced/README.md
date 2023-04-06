@@ -1,11 +1,11 @@
-# [1] Setup Advanced for learn and research Exploit attack
+# Setup Advanced for learn and research Exploit attack
 * Heap 
 * FSOP
 * Sandbox
 * Kernel 
 * ...
 
-# [2] ~/.bashrc OR ~/.zshrc, rename user, rename hostname, ...
+## [1] ~/.bashrc OR ~/.zshrc, rename user, rename hostname, ...
 
 >NOTE: 
 
@@ -17,7 +17,7 @@
    
   `hostnamectl set-hostname newhostname`
 
-### 1) Alias
+### 1. Alias
 
 ```
 # ASLR
@@ -28,7 +28,7 @@ alias aslr_off="echo 0 | sudo tee /proc/sys/kernel/randomize_va_space"
 alias aslr_on="echo 2 | sudo tee /proc/sys/kernel/randomize_va_space"
 ```
 
-### 2) Nasm
+### 2. Nasm
 
 ```
 # nasm -f elf helloworld.asm && ld -m elf_i386 helloworld.o -o helloworld && ./helloworld
@@ -48,13 +48,13 @@ nasm64(){
 }
 ```
 
-### 3) Python3 - new versions. 
+### 3. Python3 [new versions]
 
 * [Upgrade Python](https://www.itsupportwale.com/blog/how-to-upgrade-to-python-3-10-on-ubuntu-18-04-and-20-04-lts/)
 
 * [Switch PythonVersions](https://www.rosehosting.com/blog/how-to-install-and-switch-python-versions-on-ubuntu-20-04/)
 
-* [Install PythonLatestVersion](https://serverspace.io/support/help/install-python-latest-version-on-ubuntu-20-04/) [*]
+* [Install PythonLatestVersion](https://serverspace.io/support/help/install-python-latest-version-on-ubuntu-20-04/) **[*]**
 
 ```bash
 curl https://bootstrap.pypa.io/get-pip.py --output get-pip.py && python get-pip.py
@@ -65,15 +65,7 @@ sudo pip install pwntools pathlib2 keystone-engine unicorn capstone ropper ipyth
 ```
 
 
-### Note: `source ~/.bashrc` or `source ~/.zshrc`.
-
--------------------------------------------------------------------------------------------------------
-
-[+] [Oh My Zsh](https://www.youtube.com/watch?v=Mhdl-qppnlY&list=PL2YJKKcudhJ0ar-IYMehPGRwbcUz8NZJj&index=17&t=1112s) .
-
-[+] [Wine](https://www.youtube.com/watch?v=Wx8NbZEAPNM&list=PL2YJKKcudhJ0ar-IYMehPGRwbcUz8NZJj&index=18&t=9s) .
-
-[+] [Burp Suite](https://www.youtube.com/watch?v=-ozGijESmTY&list=PL2YJKKcudhJ0ar-IYMehPGRwbcUz8NZJj&index=3&t=5s) .
+**Note:** `source ~/.bashrc` or `source ~/.zshrc`.
 
 # [3] Tools
 
@@ -85,8 +77,15 @@ sudo pip install pwntools pathlib2 keystone-engine unicorn capstone ropper ipyth
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo apt install ./google-chrome-stable_current_amd64.deb
 ```
 
-----------------------------------------------------------------
 
-[+] ipyida: https://github.com/eset/ipyida
+* [Oh My Zsh](https://www.youtube.com/watch?v=Mhdl-qppnlY&list=PL2YJKKcudhJ0ar-IYMehPGRwbcUz8NZJj&index=17&t=1112s) .
 
-[+] WSL: https://pureinfotech.com/install-windows-subsystem-linux-2-windows-10/
+* [Wine](https://www.youtube.com/watch?v=Wx8NbZEAPNM&list=PL2YJKKcudhJ0ar-IYMehPGRwbcUz8NZJj&index=18&t=9s) .
+
+* [Burp Suite](https://www.youtube.com/watch?v=-ozGijESmTY&list=PL2YJKKcudhJ0ar-IYMehPGRwbcUz8NZJj&index=3&t=5s) .
+
+* ipyida: https://github.com/eset/ipyida
+
+* WSL: https://pureinfotech.com/install-windows-subsystem-linux-2-windows-10/
+
+
