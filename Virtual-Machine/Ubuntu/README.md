@@ -411,6 +411,8 @@ cd ../
 
 ### 6.13. Setup qemu 
 
+* [Prepare Kernel](https://github.com/NigmaZ/Blogs/tree/main/Virtual-Machine/Ubuntu/Advanced/Kernel).
+
 * Use for Kernel Exploitation debug.
 
 ```
