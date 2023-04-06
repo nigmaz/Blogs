@@ -80,6 +80,32 @@ docker system prune
 
 ```
 
+```
+Một số vị trí nhận biết port
+socat thì xem phần tcp-listen sẽ cho biết port
+xinetd thì phải xem trong file xinetd (có thể có đuôi mở rộng) tại phần port
+docker-compose.yml thì xem phần port sẽ thấy
+
+Một số lệnh docker thường
+* Build và run:
+sudo docker build . -t "tag-name"
+sudo docker run --rm -p "host-port":"docker-port" -it "tag-name"
+sudo docker run --rm -p "host-port":"docker-port" --privileged -it "tag-name"
+sudo docker-compose up --build
+
+* Liệt kê các container đang chạy:
+sudo docker ps
+
+* Thực thi lệnh linux trong docker:
+sudo docker exec -it "containter-id" "commands"
+sudo docker-compose exec "service-name" "commands"
+
+* Lấy file từ docker ra host:
+sudo docker cp "container-id":"path-to-file-in-docker" "path-to-file-in-host"
+
+Đối với wsl, để chạy được lệnh docker cần chạy nền docker daemon với lệnh sau: sudo dockerd &
+```
+
 ### 3) Run Local use Ngrok: 
 
    * [Video](https://www.youtube.com/watch?v=jOm_XSeMnJI&t=33s) .
