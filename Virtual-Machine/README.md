@@ -1,8 +1,6 @@
-# VMware KEY:
+# VMware Workstation
 
-### 1. VMware Workstation Pro 17
-
->KEY Active VMWare 17 Pro Full
+## 1. VMware Workstation Pro 17 key:
 
 >Used: 4A4RR-813DK-M81A9-4U35H-06KND
 
@@ -15,7 +13,7 @@
 * 4C21U-2KK9Q-M8130-4V2QH-CF810
 
 
-### 2. VMware Workstation Pro 16
+## 2. VMware Workstation Pro 16 key:
 
 >Used: ZF71R-DMX85-08DQY-8YMNC-PPHV8
 
@@ -24,3 +22,5 @@
 * YF390-0HF8P-M81RQ-2DXQE-M2UT6
 
 >NOTE: Fix [Antimalware Service Executable hight CPU](https://www.freecodecamp.org/news/what-is-antimalware-service-executable-why-is-it-high-cpu-disk-usage/#:~:text=Antimalware%20service%20executable%20is%20a%20Windows%20Security%20process%20that%20executes,programs%20from%20time%20to%20time.) .
+
+# Oracle Virtual Box
