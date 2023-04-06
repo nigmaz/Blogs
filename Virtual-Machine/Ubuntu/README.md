@@ -50,6 +50,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 * [how-to-make-zsh-the-default-shell-use-cmd](https://askubuntu.com/questions/131823/how-to-make-zsh-the-default-shell) .
 
+* [Zsh other](https://github.com/NigmaZ/Blogs/blob/main/Virtual-Machine/Ubuntu/Advanced/README.md#16-zsh-other) .
 
 **NOTE**: zsh corrupt history file /home/<user_name>/.zsh_history, fix:
 
