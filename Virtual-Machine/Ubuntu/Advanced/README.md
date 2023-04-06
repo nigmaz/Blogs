@@ -64,6 +64,8 @@ curl https://bootstrap.pypa.io/get-pip.py --output get-pip.py && python get-pip.
 sudo pip install pwntools pathlib2 keystone-engine unicorn capstone ropper ipython
 ```
 
+**Note:** `source ~/.bashrc` or `source ~/.zshrc`.
+
 ### 1.4. ~/.gdbinit
 
 ```bash
@@ -101,8 +103,6 @@ source /home/nigma/Tools/pwndbg/gdbinit.py
 # I use it into gdb-peda and gdb
 # ----------------------------------------------
 ```
-
-**Note:** `source ~/.bashrc` or `source ~/.zshrc`.
 
 # [2]. Tools
 
