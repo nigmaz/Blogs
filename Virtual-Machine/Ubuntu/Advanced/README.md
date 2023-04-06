@@ -48,7 +48,7 @@ nasm64(){
 }
 ```
 
-### 3) Add Python into PATH
+### 3) Python3 - new versions. 
 
 * [Upgrade Python](https://www.itsupportwale.com/blog/how-to-upgrade-to-python-3-10-on-ubuntu-18-04-and-20-04-lts/)
 
@@ -64,14 +64,6 @@ curl https://bootstrap.pypa.io/get-pip.py --output get-pip.py && python get-pip.
 sudo pip install pwntools pathlib2 keystone-engine unicorn capstone ropper ipython
 ```
 
-```
-# PYTHON write into ~/.bashrc or ~/.zshrc
-export PATH="$HOME/bin:/usr/bin/python2:/bin/python2:/usr/bin/python3:/bin/python3:$PATH"
-
-export PATH="$HOME/bin:/usr/local/lib/python2.7/dist-packages/pip:/usr/lib/python3/dist-packages/pip:/home/nigma/.local/lib/python3.8/site-packages/pip:/home/nigma/.local/bin:$PATH"
-# cat /etc/environment 
-# cat $PATH
-```
 
 ### Note: `source ~/.bashrc` or `source ~/.zshrc`.
 
