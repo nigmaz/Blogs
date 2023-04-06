@@ -5,15 +5,10 @@
 * [https://pypi.org/project/pwnsandbox/](https://pypi.org/project/pwnsandbox/)
 
 
-#### +) seccomp-tools (Tools for seccomp)
+## +) seccomp-tools (Tools for seccomp)
 
 ```bash
 $ sudo apt install -y gcc ruby-dev && \
 sudo gem install seccomp-tools
 ```
 
-#### +) Python2
-
-```bash
-$ pip2 install pwnsandbox
-```
