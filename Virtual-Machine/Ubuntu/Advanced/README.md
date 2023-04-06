@@ -67,7 +67,7 @@ sudo pip install pwntools pathlib2 keystone-engine unicorn capstone ropper ipyth
 
 **Note:** `source ~/.bashrc` or `source ~/.zshrc`.
 
-# [3] Tools
+# [2] Tools
 
 > Setup tools for reversing as such as IDA, WSL, etc...
 
