@@ -1,12 +1,12 @@
 # Setup VMware for playing CTF Pwnable challenges in Ubuntu 20.04
 
->DATE: 06/04/2023 - Ubuntu 18.04, 20.04, 22.04
+>DATE: 06/04/2023 - Ubuntu 18.04 | Ubuntu 20.04 | Ubuntu 22.04 .
 
-## 1. Install "Oh My ZSH!" and VMware Tools.
+## [1]. Install "Oh My ZSH!" and VMware Tools
 
 * It's not really to play the pwn CTF challenge but it optimizes your performance when pwning.
 
-### 1.1) VMware Tools .
+### 1.1. VMware Tools
 
 ```bash
 # open-vm-tools 
@@ -22,7 +22,7 @@ reboot
 lsb_release -a
 ```
 
-### 1.2) "Oh My ZSH!" .
+### 1.2. "Oh My ZSH!"
 
 ```bash
 sudo apt-get install git zsh curl && sudo chsh -s $(which zsh) && sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" && \
@@ -70,7 +70,7 @@ rm ~/.zsh_history_bad
 chmod +x zsh_history_fix && sudo cp zsh_history_fix /usr/bin && cd ../
 ```
 
-### 1.3) Terminator .
+### 1.3. Terminator
 
 ```bash
 sudo apt-get update && sudo apt-get install terminator && \
@@ -78,14 +78,14 @@ sudo apt-get update -y && sudo apt-get dist-upgrade
 ```
 
 
-## 2. Add i386 architecture (to run and compile file ELF x86 (32-bit))
+## [2]. Add i386 architecture (to run and compile file ELF x86)
 
-### 2.1) Intel-386 .
+### 2.1. Intel-386
 ```bash
 sudo dpkg --add-architecture i386
 ```
 
-## 3. Install Python and Pip
+## [3]. Install Python and Pip
 
 **NOTE:** 
 
@@ -93,9 +93,9 @@ sudo dpkg --add-architecture i386
 	
 * should use python3 install new versions or use direct python3 in OS Ubuntu.
 
-### 3.1) `Suggest:` [Python3 install new versions](https://github.com/NigmaZ/Blogs/tree/main/Virtual-Machine/Ubuntu/Advanced#3-python3---new-versions) .
+### 3.1. `Suggest:` [Python3 install new versions](https://github.com/NigmaZ/Blogs/tree/main/Virtual-Machine/Ubuntu/Advanced#3-python3---new-versions)
 
-### 3.2) Python3 and pip3 (in OS Ubuntu) .
+### 3.2. Python3 and pip3 (in OS Ubuntu)
 
 ```bash
 sudo apt-get install python3 python3-dev python3-pip && \
@@ -109,7 +109,7 @@ pip3 --version
 python3 -m pip install --upgrade pip
 ```
 
-### 3.3) Python2 and pip2 (not suggest) .
+### 3.3. Python2 and pip2 (not suggest)
 
 ```bash
 sudo add-apt-repository universe && \
@@ -134,7 +134,7 @@ export PATH="$HOME/bin:/usr/lib/python3/dist-packages/pip:/home/nigma/.local/lib
 
 * `source ~/.bashrc` or `source ~/.zshrc`.
 
-## 4. Install Libraries and support Tools
+## [4]. Install Libraries and support Tools
 
 * Update Ubuntu.
 
@@ -142,7 +142,7 @@ export PATH="$HOME/bin:/usr/lib/python3/dist-packages/pip:/home/nigma/.local/lib
 sudo apt-get update -y && sudo apt-get upgrade
 ```
 
-### 4.1) Install Tools .
+### 4.1. Install Tools
 
 ```bash
 sudo apt-get install -y socat build-essential jq strace ltrace curl wget git make procps vim ssh rubygems gcc dnsutils netcat gcc-multilib net-tools gdb gdb-multiarch libssl-dev libffi-dev libpcre3-dev libdb-dev libxt-dev libxaw7-dev libc6:i386 libncurses5:i386 libstdc++6:i386 patchelf elfutils nasm ascii tree && \
@@ -151,30 +151,30 @@ reboot
 
 * Brave browser - snap store .
 
-### 4.2) Install Python3 Libraries .
+### 4.2. Install Python3 Libraries
 
 ```bash
 sudo pip3 install pwntools pathlib2 keystone-engine unicorn capstone ropper ipython
 ```
 
-### 4.3) Install Python2 Libraries .
+### 4.3. Install Python2 Libraries
 
 ```bash
 sudo pip2 install pwntools pathlib2 keystone-engine unicorn capstone ropper ipython
 ```
 
-## 5. Install Text Editor
+## [5]. Install Text Editor
 
 * You can choose 1 of 2
 
-### 5.1) [Sublime Text](https://www.sublimetext.com/docs/linux_repositories.html) .
+### 5.1. [Sublime Text](https://www.sublimetext.com/docs/linux_repositories.html)
 
 ```bash
 sudo apt-get install apt-transport-https && \
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg && echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list && sudo apt-get update && sudo apt-get install sublime-text
 ```
 
-### 5.2) [VS Code](https://code.visualstudio.com/download) .
+### 5.2. [VS Code](https://code.visualstudio.com/download)
 
 ```bash
 $ sudo apt update && \
@@ -185,9 +185,9 @@ sudo apt update && \
 sudo apt install code
 ```
 
-## 6. Install tools for Pwnable
+## [6]. Install tools for Pwnable
 
-### 6.1) Create folder for tools .
+### 6.1. Create folder for tools
 
 ```bash
 cd ~/ && \
@@ -197,7 +197,7 @@ cd Tools
 
 (**WORKDIR:** ~/Tools).
 
-### 6.2) pwndbg (Gdb extension) .
+### 6.2. pwndbg (Gdb extension)
 
 ```
 sudo apt-get install libc6-dbg libc6:i386 libc6-dbg:i386
@@ -221,7 +221,7 @@ cd ../
 
 **NOTE:** `sudo apt-get install python3-testresources` .
 
-### 6.3) [pwninit](https://github.com/io12/pwninit) (Tools Patching Libc) .
+### 6.3. [pwninit](https://github.com/io12/pwninit) (Tools Patching Libc)
 
 * Download the pwninit binary and copy to `/usr/bin/` to excute as a command in terminal.
 
@@ -235,13 +235,13 @@ cd ../
 ```
 
 
-### 6.4) [one_gadget](https://github.com/david942j/one_gadget) (Tools for one_gadget searching) .
+### 6.4. [one_gadget](https://github.com/david942j/one_gadget) (Tools for one_gadget searching)
 
 ```bash
 sudo gem install one_gadget
 ```
 
-### 6.5) [seccomp-tools](https://github.com/david942j/seccomp-tools) (Analyze seccomp sandbox in CTF pwn challenges) .
+### 6.5. [seccomp-tools](https://github.com/david942j/seccomp-tools) (Analyze seccomp sandbox in CTF pwn challenges)
 
 ```bash
 sudo apt-get install gcc ruby-dev && \
@@ -249,7 +249,7 @@ sudo gem install seccomp-tools && \
 sudo apt-get install libseccomp-dev libseccomp2 seccomp
 ```
 
-### 6.6) [libc-database](https://github.com/niklasb/libc-database) .
+### 6.6. [libc-database](https://github.com/niklasb/libc-database)
 
 * Use to find version of libc with offset (more libc than web database).
 
@@ -263,7 +263,7 @@ cd ../
 
 or use libc-database search WEB [libc_serach](https://libc.blukat.me/).
 
-### 6.7) Docker .
+### 6.7. Docker
 
 * You will need to use docker when you want to setup the same environment with the server.
 
@@ -272,7 +272,7 @@ sudo apt install -y docker.io && \
 sudo apt install -y docker-compose
 ```
 
-### 6.8) IDA Freeware (Tools for reversing) .
+### 6.8. IDA Freeware (Tools for reversing)
 
 **NOTE:** `sudo apt-get install libxcb-xinerama0` .
 
@@ -300,7 +300,7 @@ Comment=IDA Freeware 8.1
 
 * [Youtube Tutorial](https://www.google.com/search?q=how+to+install+ida+freeware+on+ubuntu&biw=1536&bih=758&tbm=vid&sxsrf=ALiCzsbb55gpcDfE0SMX5cbXcN5cGbliDQ%3A1669274367537&ei=_xp_Y9WqINqi-Qbg9bqgBg&oq=h%C6%A1+to+install+ida+for+ubuntu&gs_lcp=Cg1nd3Mtd2l6LXZpZGVvEAMYAjIECCMQJzIGCAAQFhAeMgYIABAWEB4yBggAEBYQHlAAWABg9RBoAHAAeACAAXKIAXKSAQMwLjGYAQDAAQE&sclient=gws-wiz-video#fpstate=ive&vld=cid:caa36be6,vid:3FnyzJ6bTEs).
 
-### 6.9) Ghidra (Tools for reversing) .
+### 6.9. Ghidra (Tools for reversing)
 
 * If you cannot run the ghidra, checking the ghidra path again, if it alright, try checking `java` (`jdk` and `jre`).
 
@@ -321,7 +321,7 @@ cd ../
 
 * The command `sudo ln -s ~/Tools/ghidra_10.1.5_PUBLIC/ghidraRun /usr/bin/ghidra` just add the symlink from `ghidraRun` to `/usr/bin/ghidra`, so you can open ghidra with command "ghidra" in terminal.
 
-### 6.10) Radare2 .
+### 6.10. Radare2
 
 ```bash
 git clone https://github.com/radare/radare2 && \
@@ -330,7 +330,7 @@ sys/install.sh && \
 cd ../
 ```
 
-### 6.11) Fidra .
+### 6.11. Fidra
 
 * Use for dynamic reversing.
 
@@ -338,7 +338,7 @@ cd ../
 pip3 install frida-tools
 ```
 
-### 6.12) [Add libc source to gdb](https://github.com/NigmaZ/Blogs/tree/main/Virtual-Machine/Ubuntu/Advanced/FSOP) .
+### 6.12. [Add libc source to gdb](https://github.com/NigmaZ/Blogs/tree/main/Virtual-Machine/Ubuntu/Advanced/FSOP) 
 
 >FSOP attack
 
@@ -409,7 +409,7 @@ cd ../
 
 * Later if you want to change version of glibc source code, just open the terminal and type `libc + version`, this equal to go to the libc folder and checkout to that version.
 
-### 6.13) Setup qemu .
+### 6.13. Setup qemu 
 
 * Use for Kernel Exploitation debug.
 
@@ -426,7 +426,7 @@ sudo apt-get -y install qemu-kvm qemu
 ```
 
 
-# 7. Finally
+# [7]. Finally
 
 *These are most of the tools I use to play CTF pwn challenges, there are still a lot of other great tools that I haven't used yet. I want to share so that newbies can start on the path of pwnable. After the installation is complete, you should take a snapshot or compress and store it, in case an error occurs. Older or newer versions of Ubuntu will likely have some errors, but basically I think there won't be too much change in the way of installation. Last word, hope you will find passion or pleasure playing pwnable, goodluck.*
 
