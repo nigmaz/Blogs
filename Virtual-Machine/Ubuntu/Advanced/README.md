@@ -104,7 +104,7 @@ source /home/nigma/Tools/pwndbg/gdbinit.py
 # ----------------------------------------------
 ```
 
-1.5. Vim
+### 1.5. Vim
 
 ```bash
 1) touch ~/.vimrc
