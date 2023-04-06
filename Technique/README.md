@@ -5,8 +5,9 @@
 #!/usr/bin/env python3
 from pwn import *
 
-elf = ELF('./bop')
-context.binary = elf
+context.binary = elf = ELF('./bop')
+libc = ''
+ld = ''
 
 def connect():
     if args.LOCAL:
@@ -27,6 +28,8 @@ def connect():
 
 def main():
     p = connect()
+    
+    p.interactive()
 
 
 if __name__ == "__main__":
