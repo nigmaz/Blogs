@@ -26,4 +26,4 @@ Windows10 Home: `Registry Editor` => `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Polic
 
 * https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite
 
-------------------------------------------------------------------
+* [SublimeText config](https://github.com/NigmaZ/Blogs/tree/main/Virtual-Machine/Note/Sublime%20config) .
