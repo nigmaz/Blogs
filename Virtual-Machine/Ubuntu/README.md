@@ -419,7 +419,7 @@ cd ../
 sudo apt install qemu-utils qemu-system-x86
 ```
 
-* Arm compiler-debug.
+* ARM compiler-debug.
 
 ```bash
 sudo apt install -y qemu-user qemu-user-static gcc-aarch64-linux-gnu binutils-aarch64-linux-gnu binutils-aarch64-linux-gnu-dbg && \
