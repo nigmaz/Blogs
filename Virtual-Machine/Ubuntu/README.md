@@ -9,18 +9,12 @@
 ### 1.1. VMware Tools
 
 ```bash
-# open-vm-tools 
-sudo apt-get install open-vm-tools-desktop -y && \ 
-reboot
-```
-
-**NOTE**: Ubuntu 22.04: 
-
-```bash
 sudo apt install open-vm-tools && \
 sudo apt install open-vm-tools-desktop && \
 reboot
 ```
+
+* If that is error, fix:
 
 ```
 I had the same problem and found that this can be fixed by executing the following commands:
@@ -32,6 +26,8 @@ I had the same problem and found that this can be fixed by executing the followi
 4. sudo apt-get install open-vm-tools-desktop
 5. Reboot the VM, after the reboot copy/paste and drag/drop will work!
 ```
+
+**NOTE**: Ubuntu 22.04: [How to Fix Drag and Drop Not Working in Ubuntu 22.04 on VMware](https://www.youtube.com/watch?v=y7MQXyjM9Hk)
 
 * Check VMware Tools.
 
