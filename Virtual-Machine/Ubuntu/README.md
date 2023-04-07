@@ -14,7 +14,7 @@ sudo apt install open-vm-tools-desktop && \
 reboot
 ```
 
-* If that is error, fix:
+* If this is error, fix:
 
 ```
 I had the same problem and found that this can be fixed by executing the following commands:
