@@ -62,7 +62,7 @@ nasm64(){
 
 ### 1.3. Python3 [new versions]
 
-**[*]** [Install PythonLatestVersion](https://serverspace.io/support/help/install-python-latest-version-on-ubuntu-20-04/) 
+* [Install PythonLatestVersion](https://serverspace.io/support/help/install-python-latest-version-on-ubuntu-20-04/) [*]
 
 ```bash
 curl https://bootstrap.pypa.io/get-pip.py --output get-pip.py && python get-pip.py
