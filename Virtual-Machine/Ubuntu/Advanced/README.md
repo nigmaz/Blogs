@@ -11,17 +11,17 @@
 
    * Add it to `~/.bashrc` or `~/.zshrc` depending on which you use.
 
-   * Rename User: https://youtu.be/k2ZeUkHZSn0
+   * [Add and Delete User](https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-ubuntu-18-04) 
 ```
-#root
-sudo usermod -l <new username> -d /home/<new username> -m <old username>
+# Add
+sudo adduser <newuser>
 
-sudo groupmod -n <new username> <old username>
+groups <newuser>
 
-sudo ln -s /home/<new username> /home/<old username>
+sudo usermod -aG sudo <newuser>
 
-sudo chfn -f "<new username>" <new username>
-
+# Delete
+sudo deluser --remove-home <newuser>
 ```
     
    * Rename Hostname: https://www.cyberciti.biz/faq/ubuntu-change-hostname-command/
