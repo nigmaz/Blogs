@@ -29,6 +29,12 @@ I had the same problem and found that this can be fixed by executing the followi
 
 **NOTE**: Ubuntu 22.04: [How to Fix Drag and Drop Not Working in Ubuntu 22.04 on VMware](https://www.youtube.com/watch?v=y7MQXyjM9Hk)
 
+```
+$ sudo nano /etc/gdm3/custom.conf 
+
+#WaylandEnable=false => WaylandEnable=false
+```
+
 * Check VMware Tools.
 
 ```bash
