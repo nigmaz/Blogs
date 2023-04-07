@@ -14,7 +14,13 @@ sudo apt-get install open-vm-tools-desktop -y && \
 reboot
 ```
 
-**NOTE**: Ubuntu 22.04: error network -> fix `sudo apt-get install open-vm-tools-desktop -y` .
+**NOTE**: Ubuntu 22.04: 
+
+```bash
+sudo apt install open-vm-tools && \
+sudo apt install open-vm-tools-desktop && \
+reboot
+```
 
 * Check VMware Tools.
 
