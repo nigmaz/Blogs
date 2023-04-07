@@ -24,7 +24,7 @@ sudo usermod -aG sudo <newuser>
 sudo deluser --remove-home <newuser>
 ```
     
-   * Rename Hostname: https://www.cyberciti.biz/faq/ubuntu-change-hostname-command/
+   * [Rename Hostname](https://www.cyberciti.biz/faq/ubuntu-change-hostname-command/)
 ```
   The procedure to change the computer name on Ubuntu Linux:
 
