@@ -14,8 +14,7 @@
    * Rename User: https://youtu.be/k2ZeUkHZSn0
     
    * Rename Hostname: https://www.cyberciti.biz/faq/ubuntu-change-hostname-command/
-   
-  ```
+```
   The procedure to change the computer name on Ubuntu Linux:
 
   1. Type the following command to edit /etc/hostname using nano or vi text editor:
@@ -26,7 +25,7 @@
   Replace any occurrence of the existing computer name with your new one.
   3. Reboot the system to changes take effect:
   sudo reboot
-  ```
+```
    
   `hostnamectl set-hostname newhostname`
 
