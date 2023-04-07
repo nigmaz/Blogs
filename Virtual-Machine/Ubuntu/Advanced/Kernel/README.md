@@ -1,4 +1,4 @@
-# Loading...
+# Kernel Source setup
 
 >Source kernel download: https://mirrors.edge.kernel.org/pub/linux/kernel/, chọn version v< number >.x, xong thay tên branch mình muốn.
 
