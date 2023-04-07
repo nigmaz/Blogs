@@ -22,6 +22,17 @@ sudo apt install open-vm-tools-desktop && \
 reboot
 ```
 
+```
+I had the same problem and found that this can be fixed by executing the following commands:
+
+1. sudo apt-get autoremove open-vm-tools
+2. Install VMware Tools by following the usual method (Virtual Machine
+--> Reinstall VMWare Tools)
+3. Reboot the VM
+4. sudo apt-get install open-vm-tools-desktop
+5. Reboot the VM, after the reboot copy/paste and drag/drop will work!
+```
+
 * Check VMware Tools.
 
 ```bash
