@@ -12,6 +12,17 @@
    * Add it to `~/.bashrc` or `~/.zshrc` depending on which you use.
 
    * Rename User: https://youtu.be/k2ZeUkHZSn0
+```
+#root
+sudo usermod -l <new username> -d /home/<new username> -m <old username>
+
+sudo groupmod -n <new username> <old username>
+
+sudo ln -s /home/<new username> /home/<old username>
+
+sudo chfn -f "<new username>" <new username>
+
+```
     
    * Rename Hostname: https://www.cyberciti.biz/faq/ubuntu-change-hostname-command/
 ```
