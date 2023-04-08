@@ -33,3 +33,8 @@ sudo apt-get install build-essential libncurses-dev bison flex libssl-dev libelf
 [+] [How to build Linux Kernel from sources](https://www.youtube.com/watch?v=1gEFYoGUFxM&t=30s)
 
 [+] [Change kernel OS from compile source code kernel](https://www.youtube.com/watch?v=E4yRcmQqvWM) . 
+
+https://dev.to/jasper/adding-a-system-call-to-the-linux-kernel-5-8-1-in-ubuntu-20-04-lts-2ga8?fbclid=IwAR32uePGNxcGYK8XaI20-CQjxh23BCaY8AHkrrcaqDrO60QSDzBte3-749A
+
+https://viblo.asia/p/xay-dung-linux-kernel-va-them-loi-goi-he-thong-vao-linux-kernel-aAY4qvzeJPw?fbclid=IwAR2TKkIegW2_AO663yw60SjwcRWP-bQsYTWmbRsMa1ldRJU0TewuIbQ6N-s
+
