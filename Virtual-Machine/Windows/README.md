@@ -10,6 +10,8 @@ Windows10 Home: `Registry Editor` => `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Polic
 
 1 - Off WindowsDefender
 
+**NOTE:** demo cái gì trên máy ảo windows kiểu rce back reverseshell thì tắt hết firewall đi
+
 ### 2) Expand disk VM Windows 
 
 * [Expand disk Windows VM](https://www.youtube.com/watch?v=Y5aT8hE177I)
