@@ -20,6 +20,7 @@ groups <newuser>
 
 sudo usermod -aG sudo <newuser>
 
+# Logout user need delete
 # Delete
 sudo deluser --remove-home <user>
 ```
