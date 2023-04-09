@@ -21,7 +21,7 @@ groups <newuser>
 sudo usermod -aG sudo <newuser>
 
 # Delete
-sudo deluser --remove-home <newuser>
+sudo deluser --remove-home <user>
 ```
     
    * [Rename Hostname](https://www.cyberciti.biz/faq/ubuntu-change-hostname-command/)
