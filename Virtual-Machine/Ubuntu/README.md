@@ -169,7 +169,7 @@ sudo apt-get install -y socat build-essential jq strace ltrace curl wget git mak
 reboot
 ```
 
-* Brave browser - snap store => set default in settings app.
+* Brave browser - snap store => set default in settings app, [Tutorial-vi](https://www.linuxadictos.com/vi/c%C3%A1ch-c%C3%A0i-%C4%91%E1%BA%B7t-tr%C3%ACnh-duy%E1%BB%87t-web-d%C5%A9ng-c%E1%BA%A3m-tr%C3%AAn-debian-v%C3%A0-ubuntu.html), [Tutorial-en](https://brave.com/linux/).
 
 ### 4.2. Install Python3 Libraries
 
