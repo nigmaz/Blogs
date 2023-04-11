@@ -28,9 +28,9 @@ sudo apt-get install build-essential libncurses-dev bison flex libssl-dev libelf
 
 >Video 
 
-[+] [build change kernel in OS](https://www.youtube.com/watch?v=cAWqWB2wVZc)
+[+] [build change kernel in OS](https://www.youtube.com/watch?v=cAWqWB2wVZc) .
 
-[+] [How to build Linux Kernel from sources](https://www.youtube.com/watch?v=1gEFYoGUFxM&t=30s)
+[+] [How to build Linux Kernel from sources](https://www.youtube.com/watch?v=1gEFYoGUFxM&t=30s) .
 
 [+] [Change kernel OS from compile source code kernel](https://www.youtube.com/watch?v=E4yRcmQqvWM) . 
 
