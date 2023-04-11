@@ -40,6 +40,8 @@ sudo deluser --remove-home <user>
 ```
    
   `hostnamectl set-hostname newhostname`
+  
+  * The “nproc” command is used to check how many processing units are available or installed in your system. In Linux-like systems, we can have multiple processing units in our system and check them. We use the “nproc” command.
 
 ### 1.1 Alias
 
