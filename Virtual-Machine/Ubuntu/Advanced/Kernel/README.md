@@ -42,3 +42,56 @@ __VI__
 
 [+] [Điều gì xảy ra khi boot mot he thong linux](https://cloudcraft.info/nhung-gi-da-xay-ra-khi-boot-mot-he-thong-linux/)
 
+## [2]. 0-days, 1-days and n-days, ...
+
+> Kernel source
+
+  * https://www.kernel.org/
+
+  * https://github.com/torvalds/linux
+
+> Kernel - CTF: 
+
+* https://blog.efiens.com/post/midas/linux-kernel-pwn-1/
+
+* https://lkmidas.github.io/posts/20210123-linux-kernel-pwn-part-1/
+
+* https://x3ero0.tech/posts/easy_kernel_exploitation/
+
+* https://y3a.github.io/2021/06/11/hxpctf-kernelrop/
+
+* https://uaf.io/exploitation/2018/12/30/HOWTO-make-kernel-pwns.html?fbclid=IwAR1W2W87bhH5HeW2M5T-i2gu3XfhnEstidish_X7fdosknhiLz7CE085HNA
+
+* https://2020.ctf.link/
+
+* https://2021.ctf.link/
+
+* https://2022.ctf.link/
+
+* https://hackmd.io/@avila-pwn-notes/Hy1_8uzuY#Final-Payload
+
+> CVE - [RCE, PLE]:
+
+* https://0x434b.dev/
+
+* https://www.freebuf.com/vuls/197122.html?fbclid=IwAR1HW1ATrcUYxFqAhCNaxBkm0BykAyVp7e7nVfFmhCvef8zlPvRnYhWZ6Jo
+
+* https://securityonline.info/poc-code-for-linux-kernel-privilege-escalation-flaw-cve-2022-2602-published/?fbclid=IwAR2ATZ_9vrlvg5Sy1PWmK5fFkmOwamw9Fjy6u4HogmJ1IK27TRnflyop0-E
+
+> Video:
+
+* https://www.youtube.com/watch?v=HtdriW7KVNE
+
+* https://www.youtube.com/playlist?list=PLiCcguURxSpbD9M0ha-Mvs-vLYt-VKlWt
+
+* https://youtu.be/EoU3sXP2IH8 
+
+* https://www.youtube.com/watch?v=n0O4Sws01Ro&list=WL&index=252&t=774s
+
+* Tools: PEASS, PEASS Windows, ...
+
+* Documents: https://book.hacktricks.xyz/linux-hardening/privilege-escalation
+
+* [Home Tiếng Việt] https://vimentor.com/en/lesson/gioi-thieu-ve-linux-kernel-1
+
+
