@@ -26,13 +26,15 @@ sudo apt-get install build-essential libncurses-dev bison flex libssl-dev libelf
 
 [+] [get bzImage-cn](https://kviccn.github.io/posts/2021/08/linux-%E5%86%85%E6%A0%B8%E7%BC%96%E8%AF%91%E5%8F%8A%E8%BF%90%E8%A1%8C/)
 
->Video 
+> Video 
 
 [+] [build change kernel in OS](https://www.youtube.com/watch?v=cAWqWB2wVZc) .
 
 [+] [How to build Linux Kernel from sources](https://www.youtube.com/watch?v=1gEFYoGUFxM&t=30s) .
 
 [+] [Change kernel OS from compile source code kernel](https://www.youtube.com/watch?v=E4yRcmQqvWM) . 
+
+> Add syscall kernel module
 
 https://dev.to/jasper/adding-a-system-call-to-the-linux-kernel-5-8-1-in-ubuntu-20-04-lts-2ga8?fbclid=IwAR32uePGNxcGYK8XaI20-CQjxh23BCaY8AHkrrcaqDrO60QSDzBte3-749A
 
