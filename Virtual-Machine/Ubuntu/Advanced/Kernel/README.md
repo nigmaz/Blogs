@@ -34,6 +34,12 @@ kernel   etc      lib32    run      usr      proc
 
 [+] [get bzImage-cn](https://kviccn.github.io/posts/2021/08/linux-%E5%86%85%E6%A0%B8%E7%BC%96%E8%AF%91%E5%8F%8A%E8%BF%90%E8%A1%8C/)
 
+http://trac.gateworks.com/wiki/buildroot
+
+https://bootlin.com/pub/conferences/2013/kernel-recipes/rootfs-kernel-developer/rootfs-kernel-developer.pdf
+
+
+
 > Video 
 
 1.
