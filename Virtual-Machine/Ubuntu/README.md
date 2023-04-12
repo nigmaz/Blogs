@@ -141,6 +141,8 @@ export PATH="$HOME/bin:/usr/lib/python3/dist-packages/pip:/home/nigma/.local/lib
 # echo $PATH
 ```
 
+> export PATH="$HOME/bin:/usr/bin/python3:/usr/local/lib/python3.10/dist-packages/pip:$PATH"
+
 * `source ~/.bashrc` or `source ~/.zshrc`.
 
 ## [4]. Install Libraries and support Tools
