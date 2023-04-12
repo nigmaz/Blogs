@@ -30,6 +30,8 @@ kernel   etc      lib32    run      usr      proc
 
 [+] https://pnx9.github.io/thehive/Debugging-Linux-Kernel.html
 
+[+] https://www.sobyte.net/post/2022-02/debug-linux-kernel-with-qemu-and-gdb/
+
 [+] [get bzImage-cn](https://kviccn.github.io/posts/2021/08/linux-%E5%86%85%E6%A0%B8%E7%BC%96%E8%AF%91%E5%8F%8A%E8%BF%90%E8%A1%8C/)
 
 > Video 
