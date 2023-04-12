@@ -16,6 +16,16 @@ sudo apt-get install build-essential libncurses-dev bison flex libssl-dev libelf
 
 > Reference:
 
+[+] [Build and module initrd.img](https://kviccn.github.io/posts/2021/08/linux-%E5%86%85%E6%A0%B8%E7%BC%96%E8%AF%91%E5%8F%8A%E8%BF%90%E8%A1%8C/)
+
+```bash
+(initramfs) ls
+dev      bin      init     lib64    sbin     var      tmp
+root     conf     lib      libx32   scripts  sys
+kernel   etc      lib32    run      usr      proc
+(initramfs)
+```
+
 [+] https://www.sobyte.net/post/2022-02/debug-linux-kernel-with-qemu-and-gdb/
 
 [+] https://pnx9.github.io/thehive/Debugging-Linux-Kernel.html
