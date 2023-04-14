@@ -9,6 +9,8 @@
 
 >NOTE: 
 
+   * `sudo -s` - root user, `sudo -i` - root .
+
    * Add it to `~/.bashrc` or `~/.zshrc` depending on which you use.
 
    * [Add and Delete User](https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-ubuntu-18-04) 
