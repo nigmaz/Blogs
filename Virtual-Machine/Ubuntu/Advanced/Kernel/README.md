@@ -41,7 +41,7 @@ https://bootlin.com/pub/conferences/2013/kernel-recipes/rootfs-kernel-developer/
 
 > Change kernel OS 
 
-* [Thay đổi version kernel - VI](https://viblo.asia/p/xay-dung-linux-kernel-va-them-loi-goi-he-thong-vao-linux-kernel-aAY4qvzeJPw) .
+* [Thay đổi version kernel và thêm syscall vào kernel module - VI](https://viblo.asia/p/xay-dung-linux-kernel-va-them-loi-goi-he-thong-vao-linux-kernel-aAY4qvzeJPw) .
 
 * [Video build change kernel in OS](https://www.youtube.com/watch?v=cAWqWB2wVZc) .
 
