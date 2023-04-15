@@ -57,8 +57,6 @@ https://bootlin.com/pub/conferences/2013/kernel-recipes/rootfs-kernel-developer/
 
 https://dev.to/jasper/adding-a-system-call-to-the-linux-kernel-5-8-1-in-ubuntu-20-04-lts-2ga8?fbclid=IwAR32uePGNxcGYK8XaI20-CQjxh23BCaY8AHkrrcaqDrO60QSDzBte3-749A
 
-https://viblo.asia/p/xay-dung-linux-kernel-va-them-loi-goi-he-thong-vao-linux-kernel-aAY4qvzeJPw?fbclid=IwAR2TKkIegW2_AO663yw60SjwcRWP-bQsYTWmbRsMa1ldRJU0TewuIbQ6N-s
-
 __VI__
 
 [+] [Nâng cấp kernel OS linux-vi](https://cloudcraft.info/huong-dan-upgrade-kernel-linux/)
