@@ -39,14 +39,15 @@ http://trac.gateworks.com/wiki/buildroot
 https://bootlin.com/pub/conferences/2013/kernel-recipes/rootfs-kernel-developer/rootfs-kernel-developer.pdf
 
 
+> Change kernel OS 
+
+* [Thay đổi version kernel - VI](https://viblo.asia/p/xay-dung-linux-kernel-va-them-loi-goi-he-thong-vao-linux-kernel-aAY4qvzeJPw) .
+
+* [Video build change kernel in OS](https://www.youtube.com/watch?v=cAWqWB2wVZc) .
+
+* [Video Change kernel OS from compile source code kernel](https://www.youtube.com/watch?v=E4yRcmQqvWM) . 
 
 > Video 
-
-1.
-
-[+] [build change kernel in OS](https://www.youtube.com/watch?v=cAWqWB2wVZc) .
-
-[+] [Change kernel OS from compile source code kernel](https://www.youtube.com/watch?v=E4yRcmQqvWM) . 
 
 2.
 
