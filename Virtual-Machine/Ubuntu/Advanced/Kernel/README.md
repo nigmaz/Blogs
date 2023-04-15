@@ -53,9 +53,6 @@ https://bootlin.com/pub/conferences/2013/kernel-recipes/rootfs-kernel-developer/
 
 [+] [How to build Linux Kernel from sources](https://www.youtube.com/watch?v=1gEFYoGUFxM&t=30s) .
 
-> Add syscall kernel module
-
-https://dev.to/jasper/adding-a-system-call-to-the-linux-kernel-5-8-1-in-ubuntu-20-04-lts-2ga8?fbclid=IwAR32uePGNxcGYK8XaI20-CQjxh23BCaY8AHkrrcaqDrO60QSDzBte3-749A
 
 __VI__
 
