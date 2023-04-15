@@ -1,3 +1,5 @@
+markdown `-`, `*` và `+` .
+
 # [1] VMware Workstation
 
 ## 1.1. VMware Workstation Pro 17 key:
