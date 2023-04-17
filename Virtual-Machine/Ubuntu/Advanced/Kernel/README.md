@@ -66,7 +66,7 @@ __VI__
 
 * https://2022.ctf.link/
 
-* https://hackmd.io/@avila-pwn-notes/Hy1_8uzuY#Final-Payload
+* [Easy kernel](https://hackmd.io/@avila-pwn-notes/Hy1_8uzuY#Final-Payload)
 
 > CVE - [RCE, PLE]:
 
