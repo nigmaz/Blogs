@@ -5,6 +5,8 @@
 * Kernel 
 * ...
 
+* [Fuzzing](https://y3a.github.io/2022/12/14/fuzzing1/)
+
 ## [1]. ~/.bashrc OR ~/.zshrc, rename user, rename hostname,...
 
 >NOTE: 
