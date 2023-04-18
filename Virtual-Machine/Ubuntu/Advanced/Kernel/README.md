@@ -71,6 +71,7 @@ __VI__
 * https://trungnguyen1909.github.io/blog/post/matesctf/KSMASH/
 * [eBPF](https://niebelungen-d.github.io/ebpf-basic-learning/#%E9%AA%8C%E8%AF%81)
 * https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/linux-kernel-rop-ropping-your-way-to-part-1/
+* https://blog.wohin.me/posts/linux-kernel-pwn-01/
 
 > CVE - [RCE, PLE]:
 
