@@ -68,6 +68,7 @@ __VI__
 
 * [Easy kernel](https://hackmd.io/@avila-pwn-notes/Hy1_8uzuY#Final-Payload)
 * https://smallkirby.hatenablog.com/entry/2021/10/03/171804
+* https://trungnguyen1909.github.io/blog/post/matesctf/KSMASH/
 
 > CVE - [RCE, PLE]:
 
