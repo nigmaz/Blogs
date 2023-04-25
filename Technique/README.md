@@ -49,7 +49,7 @@ patchelf --set-interpreter ./<ld-[linking dynamic]> ./<my-program>
 
 patchelf --set-rpath ./<libc.so.6-[libc]> ./<my-program>
 
-$ 
+$ ##############
 patchelf --set-interpreter ./ld-linux-x86-64.so.2 ./chall
 
 patchelf --replace-needed libc.so.6 ./libc.so.6 ./chall
