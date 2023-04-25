@@ -101,6 +101,7 @@ sudo pip install pwntools pathlib2 keystone-engine unicorn capstone ropper ipyth
 ```bash
 set disassembly-flavor intel
 set follow-fork-mode child
+set max-visualize-chunk-size 0x500
 
 # pwndbg-----------------------------------------
 source /home/nigma/Tools/pwndbg/gdbinit.py
