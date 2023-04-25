@@ -55,6 +55,8 @@ patchelf --set-interpreter ./ld-linux-x86-64.so.2 ./chall
 patchelf --replace-needed libc.so.6 ./libc.so.6 ./chall
 
          --add-needed
+	 
+	 check use: --print-needed
 ```
 
 * Với những bài bị stripped và bật PIE => gdb.attach sử dụng `breakrva *[offset]`, check giá trị biến toàn cục thì `got` -> tìm dần lên theo địa chỉ của GOT được lưu.
