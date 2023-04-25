@@ -69,13 +69,13 @@ STOP ALL
 
 ```
 $ Stop all running containers.
-docker stop $(docker ps -a -q)
+docker stop $(sudo docker ps -a -q)
 
 $ Delete all stopted containers.
-docker rm $(docker ps -a -q)
+docker rm $(sudo docker ps -a -q)
 
 $ Delete all image.
-docker rmi $(docker images -q)
+docker rmi $(sudo docker images -q)
 
 $ Xóa tất cả image và tài nguyên không sử dụng.
 docker system prune
