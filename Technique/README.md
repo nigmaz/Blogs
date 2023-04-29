@@ -171,6 +171,17 @@ Nhiệm vụ của srand(x) đưa ra seed x rồi rand() dựa vào x đưa ra s
 
 * BRUTEFORCE - `TWOSHOT - KMACTF2022`
 
+```python
+from ctypes import CDLL
+from ctypes.util import find_library
+
+libc = CDLL(find_library("c"))
+
+libc.srand(0x5a35b162)
+print(libc.rand(), libc.rand(), libc.rand())
+
+```
+
 ## 5. SECCOMP-tools - SANDBOX ESCAPE         
 
 * [KMACTF2022 - Duet](https://github.com/nhtri2003gmail/CTFWriteup/tree/master/2022/KMACTF-2022/Duet)
