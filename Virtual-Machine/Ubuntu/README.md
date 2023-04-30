@@ -103,7 +103,11 @@ sudo dpkg --add-architecture i386
 	
 * should use python3 install new versions or use direct python3 in OS Ubuntu.
 
-### 3.1. `Suggest:` [Python3 install new versions](https://github.com/NigmaZ/Blogs/blob/main/Virtual-Machine/Ubuntu/Advanced/README.md#13-python3-new-versions)
+### 3.1. `Suggest:` 
+
+* [Python3 install new versions](https://github.com/NigmaZ/Blogs/blob/main/Virtual-Machine/Ubuntu/Advanced/README.md#13-python3-new-versions)
+
+* [Python3 Virtual Environment](https://github.com/NigmaZ/Blogs/blob/main/Virtual-Machine/Ubuntu/Advanced/README.md#14-python-virtual-environment)
 
 ### 3.2. Python3 and pip3 (in OS Ubuntu)
 
