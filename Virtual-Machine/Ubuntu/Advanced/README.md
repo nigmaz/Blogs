@@ -90,17 +90,19 @@ curl https://bootstrap.pypa.io/get-pip.py --output get-pip.py && python get-pip.
 sudo pip install pwntools pathlib2 keystone-engine unicorn capstone ropper ipython
 ```
 
-* [Install python env](https://serverspace.io/support/help/python-3-virtual-environment-on-ubuntu-22-04/)
-
-* [Python virtual enviroment](https://linuxopsys.com/topics/create-python-virtual-environment-on-ubuntu)
-
 * [Upgrade Python](https://www.itsupportwale.com/blog/how-to-upgrade-to-python-3-10-on-ubuntu-18-04-and-20-04-lts/)
 
 * [Switch PythonVersions](https://www.rosehosting.com/blog/how-to-install-and-switch-python-versions-on-ubuntu-20-04/)
 
 **Note:** `source ~/.bashrc` or `source ~/.zshrc`.
 
-### 1.4. ~/.gdbinit
+### 1.4. Python Virtual Environment
+
+* [Install python env](https://serverspace.io/support/help/python-3-virtual-environment-on-ubuntu-22-04/)
+
+* [Python virtual environment](https://linuxopsys.com/topics/create-python-virtual-environment-on-ubuntu)
+
+### 1.5. ~/.gdbinit
 
 ```bash
 set disassembly-flavor intel
@@ -139,7 +141,7 @@ source /home/nigma/Tools/pwndbg/gdbinit.py
 # ----------------------------------------------
 ```
 
-### 1.5. Vim
+### 1.6. Vim
 
 ```bash
 1) touch ~/.vimrc
@@ -198,7 +200,7 @@ $ git clone --depth 1 \
 colorscheme nord
 ```
 
-### 1.6. Zsh other
+### 1.7. Zsh other
 
 * Theme powerlevel10k.
 
