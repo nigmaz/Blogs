@@ -34,6 +34,24 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
+    
+#!/usr/bin/env python3
+from pwn import *
+# p = remote('chall.pwnable.tw', '10403')
+
+elf = ELF('./vuln')
+libc = ELF('./libc.so.6')
+context.binary = elf
+context.log_level = 'DEBUG'
+p = elf.process()
+gdb.attach(p, '''
+	b *main+50
+''')
+
+
+
+p.interactive()
 ```
 
 
