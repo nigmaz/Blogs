@@ -220,7 +220,9 @@ the value of rax is 5 is SYSCALL FSTAT which is allowed in seccomp.
 
 ```python
 VD:
-exe = context.binary = ELF('./vuln', checksec=False)
+elf = ELF('./vuln')
+context.binary = elf
+p = elf.process()
 ...
 
 shellcode = asm('''
@@ -231,10 +233,6 @@ shellcode = asm('''
 OR
 
 context.arch = 'amd64'
-...
-
-context.arch = 'amd64'
-p = elf.process()
 
 shellcode = asm(
         f'''
