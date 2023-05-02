@@ -45,6 +45,7 @@ libc = ELF('./libc.so.6')
 context.binary = elf
 context.log_level = 'DEBUG'
 p = elf.process()
+p = process('./unexploitable',env={'LD_PRELOAD' :'./libc.so.6'}) 
 gdb.attach(p, '''
 	b *main+50
 ''')
