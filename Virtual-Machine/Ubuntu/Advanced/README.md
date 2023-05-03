@@ -47,6 +47,12 @@ sudo deluser --remove-home <user>
   
   * The "`nproc`" command is used to check how many processing units are available or installed in your system. In Linux-like systems, we can have multiple processing units in our system and check them. We use the "`nproc`" command.
 
+  * Change password
+
+```
+sudo passwd <user_change_passwd>
+```
+
 ### 1.1 Alias
 
 ```
