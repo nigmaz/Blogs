@@ -15,7 +15,7 @@
 
 5) Dictionary{,,}: cặp keys - values
 
-list, tuple, array, set, directory 
+list, tuple, arr (numpy, array [chuyên đặc tả dữ liệu]), set, directory 
 
 list - set [set không lưu giá trị trùng] | map - direct [direct là kiểu dữ liệu mà các key không được lặp lại]
 
