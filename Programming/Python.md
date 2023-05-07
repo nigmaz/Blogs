@@ -15,6 +15,8 @@
 
 5) Dictionary{,,}: cặp keys - values
 
+list, tuple, array, set, directory 
+
 list - set [set không lưu giá trị trùng] | map - direct [direct là kiểu dữ liệu mà các key không được lặp lại]
 
 >Không cần khai báo kiểu dữ liệu. Muốn biết kiểu dữ liệu gì print(type(<var>)).
