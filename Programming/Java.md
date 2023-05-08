@@ -4,6 +4,12 @@
 >Use `NetBeans` : [Java NetBeans](https://www3.ntu.edu.sg/home/ehchua/programming/howto/netbeans_howto.html). 
 
 >[New Project](https://www.youtube.com/watch?v=uksb46znL58). 
+
+> **BTL -JAVA mẫu**
+
+  * https://youtu.be/w3QmdZSshag
+  * https://youtu.be/ge5TsvEQEpg
+
 - In ra màn hình.
 
 ```java
