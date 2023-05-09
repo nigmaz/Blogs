@@ -1,9 +1,9 @@
 # JAVA
 >Use `Eclipse` to code Java and install [Java JDK](https://www.oracle.com/java/technologies/downloads/).
 
->Use `NetBeans` : [Java NetBeans](https://www3.ntu.edu.sg/home/ehchua/programming/howto/netbeans_howto.html). 
+* [New Project](https://www.youtube.com/watch?v=uksb46znL58). 
 
->[New Project](https://www.youtube.com/watch?v=uksb46znL58). 
+>Use `NetBeans` : [Java NetBeans](https://www3.ntu.edu.sg/home/ehchua/programming/howto/netbeans_howto.html). 
 
 > **BTL -JAVA mẫu**
 
