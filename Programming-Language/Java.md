@@ -8,7 +8,6 @@
 > **BTL -JAVA mẫu**
 
   * https://youtu.be/w3QmdZSshag
-  * https://youtu.be/ge5TsvEQEpg
   * https://youtu.be/0PPzWgRxpFk
 
 - In ra màn hình.
