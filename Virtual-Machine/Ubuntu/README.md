@@ -58,7 +58,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 **Setting Terminal run zsh:**
 
-* Run zsh default: `Preferences/Unnamed/Command/Run a custom command instead of my shell/Custom command: zsh -> source ~/.zshrc` .
+* [can dropped]Run zsh default: `Preferences/Unnamed/Command/Run a custom command instead of my shell/Custom command: zsh -> source ~/.zshrc` .
 
 * [Add automatic into ~/.Zshrc](https://github.com/NigmaZ/Blogs/blob/main/Virtual-Machine/Ubuntu/Advanced/README.md#16-zsh-other) .
 
