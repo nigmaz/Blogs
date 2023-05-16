@@ -1,5 +1,7 @@
 # Setup VMware virtual machine tools CTF Pwnable challenges .
 
+https://infosecwriteups.com/pwndbg-gef-peda-one-for-all-and-all-for-one-714d71bf36b8
+
 >DATE: 06/04/2023 - Ubuntu 18.04 | Ubuntu 20.04 | Ubuntu 22.04 .
 
 ## [1]. Install "Oh My ZSH!" and VMware Tools
