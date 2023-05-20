@@ -21,3 +21,5 @@ https://anti-debug.checkpoint.com/
 https://cryptohack.org/courses/
 
 https://cryptopals.com/
+
+https://www.facebook.com/groups/svattt2023/posts/212041321620623/?comment_id=212927514865337&notif_id=1684560639773762&notif_t=group_comment_mention
