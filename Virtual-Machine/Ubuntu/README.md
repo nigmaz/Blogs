@@ -486,6 +486,6 @@ sudo apt-get -y install qemu-kvm qemu
 
 ### [+] NOTE FIX:
 
-- [echo 20 | sudo tee /proc/sys/kernel/watchdog_thresh](https://www.suse.com/support/kb/doc/?id=000018705) .
+<!-- - [echo 20 | sudo tee /proc/sys/kernel/watchdog_thresh](https://www.suse.com/support/kb/doc/?id=000018705) . -->
 
-- [Fix error heap debug - pwndbg](https://robbert1978.github.io/posts/Add-dbg_sym-to-libc/) .
+<!-- - [Fix error heap debug - pwndbg](https://robbert1978.github.io/posts/Add-dbg_sym-to-libc/) . -->
