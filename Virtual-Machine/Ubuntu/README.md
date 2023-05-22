@@ -38,7 +38,7 @@ reboot
 - Install zsh.
 
 ```bash
-sudo apt-get install git curl zsh -y && sudo chsh -s $(which zsh) 
+sudo apt-get install git wget curl zsh -y && sudo chsh -s $(which zsh) 
 ```
 
 ```bash
