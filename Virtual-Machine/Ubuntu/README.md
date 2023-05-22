@@ -1,6 +1,6 @@
 # Setup VMware virtual machine tools CTF Pwnable challenges .
 
->DATE: 06/04/2023 - Ubuntu 18.04 | Ubuntu 20.04 | Ubuntu 22.04 .
+>DATE: 07/06/2023 - Ubuntu 18.04 | Ubuntu 20.04 | Ubuntu 22.04 .
 
 ## [1]. Install "Oh My ZSH!" and VMware Tools
 
