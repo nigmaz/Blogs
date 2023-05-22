@@ -38,7 +38,11 @@ reboot
 - Install zsh.
 
 ```bash
-sudo apt-get install git zsh curl && sudo chsh -s $(which zsh) && sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sudo apt-get install git zsh curl && sudo chsh -s $(which zsh) 
+```
+
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 - Install zsh-autosuggestions.
