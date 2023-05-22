@@ -24,8 +24,7 @@ reboot
 
 - **NOTE**: 
 
-	* Ubuntu 22.04: [How to Fix Drag and Drop Not Working in Ubuntu 22.04 on VMware](https://www.youtube.com/watch?v=y7MQXyjM9Hk)
-
+	* Ubuntu 22.04: [How to Fix Drag and Drop Not Working in Ubuntu 22.04 on VMware](https://www.youtube.com/watch?v=y7MQXyjM9Hk).
 
 	```
 	$ sudo nano /etc/gdm3/custom.conf 
@@ -33,21 +32,26 @@ reboot
 	#WaylandEnable=false => WaylandEnable=false
 	```
 
-	* Ubuntu 20.04, 18.04 vmware-tools installed -> check VM-Tools
+	* Ubuntu 20.04, 18.04 vmware-tools installed -> check VM-Tools.
 
 ### 1.2. "Oh My ZSH!"
+
+- Install zsh.
 
 ```bash
 sudo apt-get install git zsh curl && sudo chsh -s $(which zsh) && sudo sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
+
+- Install zsh-autosuggestions.
+
 ```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
-* Now change content file ~/.zshrc.
+- Now change content file ~/.zshrc.
 
 ```bash
-# $ nano ~/.zshrc
+$ nano ~/.zshrc
 	+) ZSH_THEME="half-life" 
 	# or "lukerandall"
 	# or "frontcube"
@@ -59,34 +63,38 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 	...
 ```
 
-**Setting Terminal run zsh:**
+- **NOTE:**
 
-* Run zsh default - [can dropped]:
+    * Run zsh default ~ **[can dropped]**:
 
-	`Preferences/Unnamed/Command/Run a custom command instead of my shell/Custom command: zsh -> source ~/.zshrc` .
+	`Preferences/Unnamed/Command/Run a custom command instead of my shell/Custom command: zsh` .
+     
 
-* [Add automatic into ~/.Zshrc](https://github.com/NigmaZ/Blogs/blob/main/Virtual-Machine/Ubuntu/Advanced/README.md#16-zsh-other) .
+    * zsh corrupt history file /home/<user_name>/.zsh_history, fix:
 
-**NOTE**: zsh corrupt history file /home/<user_name>/.zsh_history, fix:
+    ```bash
+    #!/usr/bin/env zsh
+    # Fixes a corrupt .zsh_history file
 
-```bash
-#!/usr/bin/env zsh
-# Fixes a corrupt .zsh_history file
+    mv ~/.zsh_history ~/.zsh_history_bad
+    strings -eS ~/.zsh_history_bad > ~/.zsh_history
+    fc -R ~/.zsh_history
+    rm ~/.zsh_history_bad
 
-mv ~/.zsh_history ~/.zsh_history_bad
-strings -eS ~/.zsh_history_bad > ~/.zsh_history
-fc -R ~/.zsh_history
-rm ~/.zsh_history_bad
+    # cd ~ && mv .zsh_history .zsh_history_bad && strings -eS .zsh_history_bad > .zsh_history && fc -R .zsh_history
+    ```
+    => Create file bash name `zsh_history_fix` and add into `/usr/bin`.
 
-# or $ cd ~ && mv .zsh_history .zsh_history_bad && strings -eS .zsh_history_bad > .zsh_history && fc -R .zsh_history
-```
-* Create file bash name `zsh_history_fix` and add into `/usr/bin`.
+    ```bash
+    chmod +x zsh_history_fix && sudo cp zsh_history_fix /usr/bin && cd ../
+    ```
 
-```bash
-chmod +x zsh_history_fix && sudo cp zsh_history_fix /usr/bin && cd ../
-```
+    * [Template ~/.zshrc](https://github.com/NigmaZ/Blogs/blob/main/Virtual-Machine/Ubuntu/Advanced/README.md#16-zsh-other) .
+
 
 ### 1.3. Terminator
+
+- DEBUG use Terminator.
 
 ```bash
 sudo apt-get update && sudo apt-get install terminator && \
@@ -97,33 +105,31 @@ sudo apt-get update -y && sudo apt-get dist-upgrade
 ## [2]. Add i386 architecture (to run and compile file ELF x86)
 
 ### 2.1. Intel-386
+
 ```bash
 sudo dpkg --add-architecture i386
 ```
 
 ## [3]. Install Python and Pip
 
-**NOTE:** 
+- **NOTE:** 
 
-* not recommend use python2 and pip2 `[exploitation kernel tools pip2 error]`.
+    * Not recommend use python2 and pip2 `[exploitation kernel tools pip2 error]`.
 	
-* should use python3 install new versions or use direct python3 in OS Ubuntu.
+    * Should use python3 install new versions or use direct python3 in OS Ubuntu.
 
-### 3.1. `Suggest:` 
+### 3.1. Python3 new version (not use directly python OS)
 
-* [Python3 install new versions](https://github.com/NigmaZ/Blogs/blob/main/Virtual-Machine/Ubuntu/Advanced/README.md#13-python3-new-versions)
+- [Python3 install new versions](https://github.com/NigmaZ/Blogs/blob/main/Virtual-Machine/Ubuntu/Advanced/README.md#13-python3-new-versions)
 
-* [Python3 Virtual Environment](https://github.com/NigmaZ/Blogs/blob/main/Virtual-Machine/Ubuntu/Advanced/README.md#14-python-virtual-environment)
-
-### 3.2. Python3 and pip3 (in OS Ubuntu)
+### 3.2. Python3 and pip3 (use directly in OS Ubuntu)
 
 ```bash
 sudo apt-get install python3 python3-dev python3-pip && \
 pip3 --version
-# pip 20.0.2 from /usr/lib/python3/dist-packages/pip (python 3.8)
 ```
 
-* Upgrade pip3
+- Upgrade pip3
 
 ```bash
 python3 -m pip install --upgrade pip
@@ -141,24 +147,25 @@ pip2 --version
 # pip 20.0.2 from /usr/local/lib/python2.7/dist-packages/pip (python 2.7)
 ```
 
-* **NOTE:** [Add PATH](https://linuxize.com/post/how-to-add-directory-to-path-in-linux/)
+- **NOTE:** /usr/bin/python2:/bin/python2:
 
-```
-# PYTHON write into ~/.bashrc or ~/.zshrc
-export PATH="$HOME/bin:/usr/bin/python3:/bin/python3:/usr/bin/python2:/bin/python2:$PATH"
+    * [Add PATH](https://linuxize.com/post/how-to-add-directory-to-path-in-linux/)
 
-export PATH="$HOME/bin:/usr/lib/python3/dist-packages/pip:/home/nigma/.local/lib/python3.8/site-packages/pip:/home/nigma/.local/bin:/usr/local/lib/python3.8/dist-packages:/usr/local/lib/python2.7/dist-packages/pip:$PATH"
-# cat /etc/environment
-# echo $PATH
-```
+    ```
+    # PYTHON write into ~/.bashrc or ~/.zshrc
+    export PATH="$HOME/bin:/usr/bin/python3:/usr/local/lib/python3.10/dist-packages/pip:$PATH"
 
-> export PATH="$HOME/bin:/usr/bin/python3:/usr/local/lib/python3.10/dist-packages/pip:$PATH"
+    # export PATH="$HOME/bin:/usr/bin/python3:/bin/python3/usr/lib/python3/dist-packages/pip:/home/nigma/.local/lib/python3.8/site-packages/pip:/home/nigma/.local/bin:/usr/local/lib/python3.8/dist-packages:$PATH"
+    # export PATH="$HOME/bin:/usr/bin/python2:/bin/python2:/usr/local/lib/python2.7/dist-packages/pip:$PATH"
+    # cat /etc/environment
+    # echo $PATH
+    ```
 
-* `source ~/.bashrc` or `source ~/.zshrc`.
+    => `source ~/.bashrc` or `source ~/.zshrc`.
 
 ## [4]. Install Libraries and support Tools
 
-* Update Ubuntu.
+- Update Ubuntu.
 
 ```bash
 sudo apt-get update -y && sudo apt-get upgrade
@@ -170,8 +177,6 @@ sudo apt-get update -y && sudo apt-get upgrade
 sudo apt-get install -y socat build-essential jq strace ltrace curl wget git make procps vim ssh rubygems gcc dnsutils netcat gcc-multilib net-tools gdb gdb-multiarch libssl-dev libffi-dev libpcre3-dev libdb-dev libxt-dev libxaw7-dev libc6:i386 libncurses5:i386 libstdc++6:i386 patchelf elfutils nasm ascii tree && \
 reboot
 ```
-
-* Brave browser - snap store => set default in settings app, [Tutorial-vi](https://www.linuxadictos.com/vi/c%C3%A1ch-c%C3%A0i-%C4%91%E1%BA%B7t-tr%C3%ACnh-duy%E1%BB%87t-web-d%C5%A9ng-c%E1%BA%A3m-tr%C3%AAn-debian-v%C3%A0-ubuntu.html), [Tutorial-en](https://brave.com/linux/).
 
 ### 4.2. Install Python3 Libraries
 
@@ -187,7 +192,7 @@ sudo pip2 install pwntools pathlib2 keystone-engine unicorn capstone ropper ipyt
 
 ## [5]. Install Text Editor
 
-* You can choose 1 of 2
+- You can choose 1 of 2
 
 ### 5.1. [Sublime Text](https://www.sublimetext.com/docs/linux_repositories.html)
 
@@ -217,13 +222,15 @@ mkdir Tools && \
 cd Tools
 ```
 
-(**WORKDIR:** ~/Tools).
+( **WORKDIR:** ~/Tools | or **use directly ~/Public** ).
 
-### 6.2. pwndbg (Gdb extension)
+### 6.2. Plugin debug (Gdb extension)
 
 ```
-sudo apt-get install libc6-dbg libc6:i386 libc6-dbg:i386
+sudo apt-get install libc6-dbg libc6:i386 libc6-dbg:i386 && \
+sudo apt-get install python3-testresources
 ```
+
 
 ```bash
 git clone https://github.com/pwndbg/pwndbg && \
@@ -232,20 +239,21 @@ cd pwndbg && \
 cd ../
 ```
 
->plugin-gdb:
+- Plugin-gdb:
 
-* [pwndbg](https://github.com/pwndbg/pwndbg) .
+    * [pwndbg](https://github.com/pwndbg/pwndbg) .
 
-* [gef](https://github.com/hugsy/gef) .
+    * [gef](https://github.com/hugsy/gef) .
 
-* [gdb-peda](https://github.com/longld/peda) .
+    * [gdb-peda](https://github.com/longld/peda) .
 
+    * [Reference](https://infosecwriteups.com/pwndbg-gef-peda-one-for-all-and-all-for-one-714d71bf36b8) .
 
-**NOTE:** `sudo apt-get install python3-testresources` .
+>You can 1 plugin or use 3 in 1. 
 
 ### 6.3. [pwninit](https://github.com/io12/pwninit) (Tools Patching Libc)
 
-* Download the pwninit binary and copy to `/usr/bin/` to excute as a command in terminal.
+- Download the pwninit binary and copy to `/usr/bin/` to excute as a command in terminal.
 
 ```bash
 mkdir pwninit && \
@@ -255,7 +263,6 @@ chmod +x pwninit && \
 sudo cp pwninit /usr/bin/ && \
 cd ../
 ```
-
 
 ### 6.4. [one_gadget](https://github.com/david942j/one_gadget) (Tools for one_gadget searching)
 
@@ -273,7 +280,7 @@ sudo apt-get install libseccomp-dev libseccomp2 seccomp
 
 ### 6.6. [libc-database](https://github.com/niklasb/libc-database)
 
-* Use to find version of libc with offset (more libc than web database).
+- Use to find version of libc with offset (more libc than web database).
 
 ```bash
 git clone https://github.com/niklasb/libc-database && \
@@ -287,7 +294,7 @@ or use libc-database search WEB [libc_serach](https://libc.blukat.me/).
 
 ### 6.7. Docker
 
-* You will need to use docker when you want to setup the same environment with the server.
+- You will need to use docker when you want to setup the same environment with the server.
 
 ```bash
 sudo apt install -y docker.io docker-compose && \
@@ -298,7 +305,7 @@ sudo service docker status
 
 **NOTE:** `sudo apt-get install libxcb-xinerama0` .
 
-* [Download IDA](https://hex-rays.com/ida-pro/).
+- [Download IDA](https://hex-rays.com/ida-pro/).
 
 ```bash
 sudo ln -s /opt/idafree-8.1/ida64 /usr/bin  
@@ -318,30 +325,30 @@ Categories=Application;Development;Utility;
 Comment=IDA Freeware 8.1
 ```
 
-* **Save file this as "ida64.desktop" in folder ~/.local/share/applications**.
+- **Save file this as "ida64.desktop" in folder ~/.local/share/applications**.
 
-* [Youtube Tutorial](https://www.google.com/search?q=how+to+install+ida+freeware+on+ubuntu&biw=1536&bih=758&tbm=vid&sxsrf=ALiCzsbb55gpcDfE0SMX5cbXcN5cGbliDQ%3A1669274367537&ei=_xp_Y9WqINqi-Qbg9bqgBg&oq=h%C6%A1+to+install+ida+for+ubuntu&gs_lcp=Cg1nd3Mtd2l6LXZpZGVvEAMYAjIECCMQJzIGCAAQFhAeMgYIABAWEB4yBggAEBYQHlAAWABg9RBoAHAAeACAAXKIAXKSAQMwLjGYAQDAAQE&sclient=gws-wiz-video#fpstate=ive&vld=cid:caa36be6,vid:3FnyzJ6bTEs).
+- [Youtube Tutorial](https://www.google.com/search?q=how+to+install+ida+freeware+on+ubuntu&biw=1536&bih=758&tbm=vid&sxsrf=ALiCzsbb55gpcDfE0SMX5cbXcN5cGbliDQ%3A1669274367537&ei=_xp_Y9WqINqi-Qbg9bqgBg&oq=h%C6%A1+to+install+ida+for+ubuntu&gs_lcp=Cg1nd3Mtd2l6LXZpZGVvEAMYAjIECCMQJzIGCAAQFhAeMgYIABAWEB4yBggAEBYQHlAAWABg9RBoAHAAeACAAXKIAXKSAQMwLjGYAQDAAQE&sclient=gws-wiz-video#fpstate=ive&vld=cid:caa36be6,vid:3FnyzJ6bTEs).
 
 ### 6.9. Ghidra (Tools for reversing)
 
-* If you cannot run the ghidra, checking the ghidra path again, if it alright, try checking `java` (`jdk` and `jre`).
+- If you cannot run the ghidra, checking the ghidra path again, if it alright, try checking `java` (`jdk` and `jre`).
 
 ```bash
 sudo apt install -y default-jdk default-jre
 ```
 
-* Version 10.1.5 latest in 01/04/2022, check for new version in [ghidra](https://github.com/NationalSecurityAgency/ghidra/releases).
+- Version 10.1.5 latest in 01/04/2022, check for new version in [ghidra](https://github.com/NationalSecurityAgency/ghidra/releases).
 
 ```bash
 wget https://github.com/NationalSecurityAgency/ghidra/releases/download/Ghidra_10.1.5_build/ghidra_10.1.5_PUBLIC_20220726.zip && \
 unzip ghidra_10.1.5_PUBLIC_20220726.zip && \
 rm -rf ghidra_10.1.5_PUBLIC_20220726.zip && \
 cd ghidra_10.1.5_PUBLIC && \
-sudo ln -s ~/Tools/ghidra_10.1.5_PUBLIC/ghidraRun /usr/bin/ghidra && \
+sudo ln -s ~/Public/ghidra_10.1.5_PUBLIC/ghidraRun /usr/bin/ghidra && \
 cd ../
 ```
 
-* The command `sudo ln -s ~/Tools/ghidra_10.1.5_PUBLIC/ghidraRun /usr/bin/ghidra` just add the symlink from `ghidraRun` to `/usr/bin/ghidra`, so you can open ghidra with command "ghidra" in terminal.
+- The command `sudo ln -s ~/Tools/ghidra_10.1.5_PUBLIC/ghidraRun /usr/bin/ghidra` just add the symlink from `ghidraRun` to `/usr/bin/ghidra`, so you can open ghidra with command "ghidra" in terminal.
 
 ### 6.10. Radare2
 
@@ -354,7 +361,7 @@ cd ../
 
 ### 6.11. Fidra
 
-* Use for dynamic reversing.
+- Use for dynamic reversing.
 
 ```
 pip3 install frida-tools
@@ -364,16 +371,16 @@ pip3 install frida-tools
 
 >FSOP attack
 
-* Use when you want to debug deep in libc function like (printf, puts, read, ...), i need to setup this when i learned FSOP attack.
+- Use when you want to debug deep in libc function like (printf, puts, read, ...), i need to setup this when i learned FSOP attack.
 
-* Download the glibc source code.
+- Download the glibc source code.
 
 ```bash
 git config --global http.sslverify false && \
 git clone https://sourceware.org/git/glibc.git
 ```
 
-* Setup some scripts for convenient work.
+- Setup some scripts for convenient work.
 
 ```bash
 mkdir add_glibc_source && \
@@ -382,7 +389,7 @@ touch add_glibc_source.py && \
 nano add_glibc_source.py
 ```
 
-* Copy and patse this code to `add_glibc_source.py`, edit the path `/home/nigma/` to your path ( this is my scripts, sorry if it so noob :) ).
+- Copy and patse this code to `add_glibc_source.py`, edit the path `/home/nigmaz/` to your path ( this is my scripts, sorry if it so noob :) ).
 
 ```python
 import gdb
@@ -396,32 +403,32 @@ def add_all_folder(path):
 		if os.path.isdir(subfolder):
 			add_all_folder(subfolder)
 
-add_all_folder('/home/nigma/Install/glibc/')
+add_all_folder('/home/nigmaz/Public/glibc/')
 ```
 
-* We add this script to `.gdbinit`, this will auto add glibc source code when we start gdb.
+- We add this script to `.gdbinit`, this will auto add glibc source code when we start gdb.
 
 ```bash
-echo "source ~/Install/add_glibc_source/add_glibc_source.py" >> ~/.gdbinit
+echo "source ~/Public/add_glibc_source/add_glibc_source.py" >> ~/.gdbinit
 ```
 
-* Create another scripts.
+- Create another scripts.
 
 ```bash
 touch libc && \
 nano libc
 ```
 
-* Copy and patse this code to `libc`.
+- Copy and patse this code to `libc`.
 
 ```bash
 #!/bin/sh
 
-cd ~/Install/glibc/
+cd ~/Public/glibc/
 git checkout release/$1/master
 ```
 
-* Add it to `/usr/bin/` to execute as a command.
+- Add it to `/usr/bin/` to execute as a command.
 
 ```bash
 chmod +x libc && \
@@ -429,19 +436,19 @@ sudo cp libc /usr/bin && \
 cd ../
 ```
 
-* Later if you want to change version of glibc source code, just open the terminal and type `libc + version`, this equal to go to the libc folder and checkout to that version.
+- Later if you want to change version of glibc source code, just open the terminal and type `libc + version`, this equal to go to the libc folder and checkout to that version.
 
 ### 6.13. Setup qemu 
 
-* [Prepare Kernel](https://github.com/NigmaZ/Blogs/tree/main/Virtual-Machine/Ubuntu/Advanced/Kernel).
+**NOTE:** [Prepare Kernel](https://github.com/NigmaZ/Blogs/tree/main/Virtual-Machine/Ubuntu/Advanced/Kernel).
 
-* Use for Kernel Exploitation debug.
+- Use for Kernel Exploitation debug.
 
 ```
 sudo apt install qemu-utils qemu-system-x86
 ```
 
-* ARM compiler-debug.
+- ARM compiler-debug.
 
 ```bash
 sudo apt install -y qemu-user qemu-user-static gcc-aarch64-linux-gnu binutils-aarch64-linux-gnu binutils-aarch64-linux-gnu-dbg && \
@@ -452,9 +459,9 @@ sudo apt-get -y install qemu-kvm qemu
 
 # [7]. Finally
 
-* **The article is for general purposes, I recommend that you learn and practice as well as set up tools for the problems you have, do not install all the tools at once and I'm happy to receive your comments.**
+- **The article is for general purposes, I recommend that you learn and practice as well as set up tools for the problems you have, do not install all the tools at once and I'm happy to receive your comments.**
 
-* **For me, this series serves as a reminder, an exploitation template for me to look back on and reuse in the future, but if it could help someone on their first steps into Linux exploitation for just a little bit, I would be very delighted.**
+- **For me, this series serves as a reminder, an exploitation template for me to look back on and reuse in the future, but if it could help someone on their first steps into Linux exploitation for just a little bit, I would be very delighted.**
 
 >WELL!!!
 
@@ -464,6 +471,6 @@ sudo apt-get -y install qemu-kvm qemu
 
 ### [+] NOTE FIX:
 
-+ [echo 20 | sudo tee /proc/sys/kernel/watchdog_thresh](https://www.suse.com/support/kb/doc/?id=000018705) .
+- [echo 20 | sudo tee /proc/sys/kernel/watchdog_thresh](https://www.suse.com/support/kb/doc/?id=000018705) .
 
-+ [Fix error heap debug - pwndbg](https://robbert1978.github.io/posts/Add-dbg_sym-to-libc/) .
+- [Fix error heap debug - pwndbg](https://robbert1978.github.io/posts/Add-dbg_sym-to-libc/) .
