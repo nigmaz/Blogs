@@ -4,17 +4,17 @@
 
 ## [1]. Install "Oh My ZSH!" and VMware Tools
 
-* This is not really to play the pwn CTF challenge but it optimizes your performance when pwning.
+This is not really to play the pwn CTF challenge but it optimizes your performance when pwning.
 
 ### 1.1. VMware-Tools
 
-* Check VMware-Tools.
+- Check VMware-Tools.
 
 ```bash
 lsb_release -a
 ```
 
-* Install VMware-Tools
+- Install VMware-Tools.
 
 ```bash
 sudo apt install open-vm-tools && \
@@ -22,9 +22,9 @@ sudo apt install open-vm-tools-desktop && \
 reboot
 ```
 
-* If this is error, fix:
+- **NOTE**: 
 
-**NOTE**: Ubuntu 22.04: [How to Fix Drag and Drop Not Working in Ubuntu 22.04 on VMware](https://www.youtube.com/watch?v=y7MQXyjM9Hk)
+* Ubuntu 22.04: [How to Fix Drag and Drop Not Working in Ubuntu 22.04 on VMware](https://www.youtube.com/watch?v=y7MQXyjM9Hk)
 
 ```
 $ sudo nano /etc/gdm3/custom.conf 
