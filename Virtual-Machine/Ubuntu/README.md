@@ -6,7 +6,15 @@
 
 * This is not really to play the pwn CTF challenge but it optimizes your performance when pwning.
 
-### 1.1. VMware Tools
+### 1.1. VMware-Tools
+
+* Check VMware-Tools.
+
+```bash
+lsb_release -a
+```
+
+* Install VMware-Tools
 
 ```bash
 sudo apt install open-vm-tools && \
@@ -24,11 +32,6 @@ $ sudo nano /etc/gdm3/custom.conf
 #WaylandEnable=false => WaylandEnable=false
 ```
 
-* Check VMware Tools.
-
-```bash
-lsb_release -a
-```
 
 ### 1.2. "Oh My ZSH!"
 
