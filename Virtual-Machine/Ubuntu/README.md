@@ -460,7 +460,7 @@ cd ../
 - Use for Kernel Exploitation debug.
 
 ```
-sudo apt install qemu-utils qemu-system-x86
+sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison qemu-utils qemu-system-x86
 ```
 
 - ARM compiler-debug.
