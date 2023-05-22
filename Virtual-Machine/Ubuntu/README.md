@@ -17,8 +17,7 @@ lsb_release -a
 - Install VMware-Tools.
 
 ```bash
-sudo apt install open-vm-tools && \
-sudo apt install open-vm-tools-desktop && \
+sudo apt install open-vm-tools-desktop open-vm-tools && \
 reboot
 ```
 
