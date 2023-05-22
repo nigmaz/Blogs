@@ -38,7 +38,7 @@ reboot
 - Install zsh.
 
 ```bash
-sudo apt-get install git wget curl zsh -y && sudo chsh -s $(which zsh) 
+sudo apt-get install git wget curl zsh -y 
 ```
 
 ```bash
@@ -49,6 +49,12 @@ or
 
 ```bash
 sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+```
+
+and
+
+```bash
+sudo chsh -s $(which zsh) && reboot
 ```
 
 - Install zsh-autosuggestions.
