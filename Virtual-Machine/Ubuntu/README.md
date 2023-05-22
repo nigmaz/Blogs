@@ -26,12 +26,13 @@ reboot
 
 	* Ubuntu 22.04: [How to Fix Drag and Drop Not Working in Ubuntu 22.04 on VMware](https://www.youtube.com/watch?v=y7MQXyjM9Hk)
 
-```
-$ sudo nano /etc/gdm3/custom.conf 
+	```
+	$ sudo nano /etc/gdm3/custom.conf 
 
-#WaylandEnable=false => WaylandEnable=false
-```
+	#WaylandEnable=false => WaylandEnable=false
+	```
 
+	* Ubuntu 20.04, 18.04 vmware-tools installed -> check VM-Tools
 
 ### 1.2. "Oh My ZSH!"
 
