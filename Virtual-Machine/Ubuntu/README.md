@@ -4,7 +4,7 @@
 
 ## [1]. Install "Oh My ZSH!" and VMware Tools
 
-* It's not really to play the pwn CTF challenge but it optimizes your performance when pwning.
+* This is not really to play the pwn CTF challenge but it optimizes your performance when pwning.
 
 ### 1.1. VMware Tools
 
