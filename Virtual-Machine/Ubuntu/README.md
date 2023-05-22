@@ -32,7 +32,7 @@ reboot
 	#WaylandEnable=false => WaylandEnable=false
 	```
 
-	* Ubuntu 20.04, 18.04 vmware-tools installed -> check VM-Tools.
+	* [Ubuntu 16.04](https://kb.vmware.com/s/article/1022525) .
 
 ### 1.2. "Oh My ZSH!"
 
