@@ -1,21 +1,17 @@
 # Setup Advanced for learn and research Exploit attack
-* Heap 
-* FSOP
-* Sandbox
-* Kernel 
-* ...
-
-* [Fuzzing](https://y3a.github.io/2022/12/14/fuzzing1/)
+- Heap 
+- FSOP
+- Sandbox
+- Kernel 
+- [Fuzzing](https://y3a.github.io/2022/12/14/fuzzing1/)
 
 ## [1]. ~/.bashrc OR ~/.zshrc, rename user, rename hostname,...
 
->NOTE: 
+**NOTE:**
 
-   * `sudo -s` - root user, `sudo -i` - root .
+- `sudo -s` - root user, `sudo -i` - root .
 
-   * Add it to `~/.bashrc` or `~/.zshrc` depending on which you use.
-
-   * [Add and Delete User](https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-ubuntu-18-04) 
+- [Add and Delete User](https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-ubuntu-18-04) 
 ```
 # Add
 sudo adduser <newuser>
@@ -29,7 +25,7 @@ sudo usermod -aG sudo <newuser>
 sudo deluser --remove-home <user>
 ```
     
-   * [Rename Hostname](https://www.cyberciti.biz/faq/ubuntu-change-hostname-command/)
+- [Rename Hostname](https://www.cyberciti.biz/faq/ubuntu-change-hostname-command/)
 ```
   The procedure to change the computer name on Ubuntu Linux:
 
@@ -41,17 +37,27 @@ sudo deluser --remove-home <user>
   Replace any occurrence of the existing computer name with your new one.
   3. Reboot the system to changes take effect:
   sudo reboot
-```
-   
-  `hostnamectl set-hostname newhostname`
-  
-  * The "`nproc`" command is used to check how many processing units are available or installed in your system. In Linux-like systems, we can have multiple processing units in our system and check them. We use the "`nproc`" command.
 
-  * Change password
+  OR> $ hostnamectl <current-hostname> <new-hostname>
+```
+
+- Change password
 
 ```
 sudo passwd <user_change_passwd>
 ```
+
+- Debug process ID with plugin
+
+```
+This is due to kernel hardening in Linux; you can disable this behavior by sudo -s && echo 0 > /proc/sys/kernel/yama/ptrace_scope or by modifying it in /etc/sysctl.d/10-ptrace.conf
+```
+
+  
+- The "`nproc`" command is used to check how many processing units are available or installed in your system. In Linux-like systems, we can have multiple processing units in our system and check them. We use the "`nproc`" command.
+
+- Check port open> `netstat -tulpn | grep ':<port>'`
+
 
 ### 1.1 Alias
 
@@ -86,7 +92,7 @@ nasm64(){
 
 ### 1.3. Python3 [new versions]
 
-* [Install PythonLatestVersion](https://serverspace.io/support/help/install-python-latest-version-on-ubuntu-20-04/) [*]
+- [Install PythonLatestVersion](https://serverspace.io/support/help/install-python-latest-version-on-ubuntu-20-04/) [*]
 
 ```bash
 curl https://bootstrap.pypa.io/get-pip.py --output get-pip.py && python get-pip.py
@@ -96,46 +102,34 @@ curl https://bootstrap.pypa.io/get-pip.py --output get-pip.py && python get-pip.
 sudo pip install pwntools pathlib2 keystone-engine unicorn capstone ropper ipython
 ```
 
-* [Upgrade Python](https://www.itsupportwale.com/blog/how-to-upgrade-to-python-3-10-on-ubuntu-18-04-and-20-04-lts/)
-
-* [Switch PythonVersions](https://www.rosehosting.com/blog/how-to-install-and-switch-python-versions-on-ubuntu-20-04/)
-
-**Note:** `source ~/.bashrc` or `source ~/.zshrc`.
-
-### 1.4. Python Virtual Environment
-
-* [Install python env](https://serverspace.io/support/help/python-3-virtual-environment-on-ubuntu-22-04/)
-
-* [Python virtual environment](https://linuxopsys.com/topics/create-python-virtual-environment-on-ubuntu)
-
-### 1.5. ~/.gdbinit
+### 1.4. ~/.gdbinit
 
 ```bash
 set disassembly-flavor intel
 set follow-fork-mode child
-set max-visualize-chunk-size 0x500
+# set max-visualize-chunk-size 0x500
 
 # pwndbg-----------------------------------------
-source /home/nigma/Tools/pwndbg/gdbinit.py
+source /home/nigmaz/Public/pwndbg/gdbinit.py
 # -----------------------------------------------
 
 
 # peda-------------------------------------------
-# source /home/nigma/Tools/peda/peda.py
+# source /home/nigmaz/Public/peda/peda.py
 # -----------------------------------------------
 
 # gef--------------------------------------------
-# source /home/nigma/Tools/.gdbinit-gef.py
+# source /home/nigmaz/Public/.gdbinit-gef.py
 
-# $ pwd -> in ~/Tools
+# $ pwd -> in ~/Public
 # $ git clone https://github.com/hugsy/gef.git
 # $ echo source `pwd`/gef/gef.py >> ~/.gdbinit
 # -----------------------------------------------
 
 
 # Pwngdb-for-heap--------------------------------
-# source ~/Tools/Pwngdb/pwngdb.py
-# source ~/Tools/Pwngdb/angelheap/gdbinit.py
+# source ~/Public/Pwngdb/pwngdb.py
+# source ~/Public/Pwngdb/angelheap/gdbinit.py
 
 # define hook-run
 # python
@@ -231,18 +225,13 @@ https://dev.to/avantar/how-to-fix-zsh-icons-in-visual-studio-code-terminal-38bb
 ```
 
 
-## [2]. Tools
-
-> Setup tools for reversing as such as IDA, WSL, etc...
+## [2]. Tools-Hacking (should use in KALI)
 
 * Google
 
 ```bash
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo apt install ./google-chrome-stable_current_amd64.deb
 ```
-
-
-* [Oh My Zsh](https://www.youtube.com/watch?v=Mhdl-qppnlY&list=PL2YJKKcudhJ0ar-IYMehPGRwbcUz8NZJj&index=17&t=1112s) .
 
 * [Wine](https://www.youtube.com/watch?v=Wx8NbZEAPNM&list=PL2YJKKcudhJ0ar-IYMehPGRwbcUz8NZJj&index=18&t=9s) .
 
