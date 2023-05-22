@@ -42,7 +42,7 @@ sudo apt-get install git zsh curl && sudo chsh -s $(which zsh)
 ```
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 - Install zsh-autosuggestions.
