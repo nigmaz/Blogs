@@ -1,3 +1,15 @@
+*
+
+https://kienmanowar.wordpress.com/category/ida-pro-section/ida-tutorials/reversing-with-ida-from-scratch-p1/
+
+https://0xinfection.github.io/reversing/
+
+https://eviatargerzi.medium.com/remote-debugging-with-ida-from-windows-to-linux-4a98d7095215
+
+https://godbolt.org/z/KiMvdD?fbclid=IwAR3mqqTmZ9oAC-oiIPR7YNQzwxDPtxAqHmXomi6swWaV5R1zOv1wTPPtvpw
+
+*
+
 https://kienmanowar.wordpress.com/2019/03/22/reversing-with-ida-from-scratch-p9/#more-3729
 
 https://nextheia.com/tags/flare-on-9-write-up/
