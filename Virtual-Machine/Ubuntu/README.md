@@ -253,7 +253,7 @@ cd pwndbg && \
 cd ../
 ```
 
-- Plugin-gdb:
+- Plugin-gdb - [Template](https://github.com/Nigmaz/Blogs/blob/main/Virtual-Machine/Ubuntu/Advanced/README.md#14-gdbinit):
 
     * [pwndbg](https://github.com/pwndbg/pwndbg) .
 
