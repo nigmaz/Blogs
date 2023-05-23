@@ -36,11 +36,11 @@
 - CFF Explorer Suite IV
 - HxD
 - Text Editor | IDE:
-* Dev C++
-* Sublime Text | VS Code
+ * Dev C++
+ * Sublime Text | VS Code
 
 
-- **NOTE**
+> **NOTE**
 
   * https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite
 
