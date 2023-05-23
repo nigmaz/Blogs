@@ -36,8 +36,8 @@
 - CFF Explorer Suite IV
 - HxD
 - Text Editor | IDE:
- * Dev C++
- * Sublime Text | VS Code
+  * Dev C++
+  * Sublime Text | VS Code
 
 
 > **NOTE**
