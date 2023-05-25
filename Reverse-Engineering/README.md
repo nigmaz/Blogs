@@ -1,3 +1,5 @@
+https://hackmd.io/@antoinenguyen09/Hy0a2mb0t?fbclid=IwAR0zotdKiVJV-22nlqlGds9YOtvsE08MiKU-zMD8S1urx2mdYZC4nRk2BfQ
+
 *
 
 https://kienmanowar.wordpress.com/category/ida-pro-section/ida-tutorials/reversing-with-ida-from-scratch-p1/
