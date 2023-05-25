@@ -8,6 +8,8 @@
 >Python Project Example:
 
 	- [Flappy Bird](https://www.youtube.com/watch?v=MMxFDaIOHsE) .
+	
+	- [Object Tracking](https://www.youtube.com/shorts/ocA30qI9Z-M) .
 
 - Các kiểu dữ liệu trong python.
 
