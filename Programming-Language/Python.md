@@ -5,6 +5,10 @@
 
 >Python environment project - https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-programming-environment-on-ubuntu-20-04-quickstart
 
+>Python Project Example:
+
+	- [Flappy Bird](https://www.youtube.com/watch?v=MMxFDaIOHsE) .
+
 - Các kiểu dữ liệu trong python.
 
 1) Numbers: int, long, float, complex(số phức), ...
