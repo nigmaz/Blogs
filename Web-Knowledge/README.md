@@ -14,3 +14,4 @@ https://www.hacksplaining.com/
 
 https://portswigger.net/web-security/all-labs
 
+[Buid Server Physical](https://www.youtube.com/watch?v=apC1bOLbzbY)
