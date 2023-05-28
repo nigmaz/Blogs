@@ -10,8 +10,11 @@ Web Security
 
 SOC - https://securityflow.io/roadmap/
 
+- Lab learn hack web
+
 https://www.hacksplaining.com/
 
-https://portswigger.net/web-security/all-labs
+https://portswigger.net/web-security/all-lab
 
-[Buid Server Physical](https://www.youtube.com/watch?v=apC1bOLbzbY)
+> NOTE: 
+- [Buid Server Physical](https://www.youtube.com/watch?v=apC1bOLbzbY)
