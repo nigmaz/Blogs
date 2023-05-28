@@ -35,6 +35,7 @@
 - Detect It Easy
 - CFF Explorer Suite IV
 - HxD
+- Process Explorer
 - Text Editor | IDE:
   * Dev C++
   * Sublime Text | VS Code
