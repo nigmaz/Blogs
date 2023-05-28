@@ -1,6 +1,4 @@
-https://hackmd.io/@antoinenguyen09/Hy0a2mb0t?fbclid=IwAR0zotdKiVJV-22nlqlGds9YOtvsE08MiKU-zMD8S1urx2mdYZC4nRk2BfQ
-
-*
+- Thực hành 
 
 https://kienmanowar.wordpress.com/category/ida-pro-section/ida-tutorials/reversing-with-ida-from-scratch-p1/
 
@@ -10,9 +8,9 @@ https://eviatargerzi.medium.com/remote-debugging-with-ida-from-windows-to-linux-
 
 https://godbolt.org/z/KiMvdD?fbclid=IwAR3mqqTmZ9oAC-oiIPR7YNQzwxDPtxAqHmXomi6swWaV5R1zOv1wTPPtvpw
 
-*
+>NOTE: https://hackmd.io/@antoinenguyen09/Hy0a2mb0t?fbclid=IwAR0zotdKiVJV-22nlqlGds9YOtvsE08MiKU-zMD8S1urx2mdYZC4nRk2BfQ
 
-https://kienmanowar.wordpress.com/2019/03/22/reversing-with-ida-from-scratch-p9/#more-3729
+- Writeup Reverse
 
 https://nextheia.com/tags/flare-on-9-write-up/
 
@@ -30,6 +28,16 @@ https://github.com/wtsxDev/reverse-engineering
 
 https://anti-debug.checkpoint.com/
 
+- SECCON CTF 2016
+
+https://docs.microsoft.com/en-us/windows/win32/api/errhandlingapi/nf-errhandlingapi-unhandledexceptionfilter
+
+https://c9x.me/x86/html/file_module_x86_id_139.html
+
+- exception, debugger là gì
+
+https://www.apriorit.com/dev-blog/367-anti-reverse-engineering-protection-techniques-to-use-before-releasing-software?fbclid=IwAR2_tIEx1gkCASch-16xe9_Bjkjnts6AD-gdVDaeEGE9lQ8kbRuCgr1KQwM
+
 - Crypto 
 
 https://cryptohack.org/courses/
@@ -40,37 +48,5 @@ https://www.facebook.com/groups/svattt2023/posts/212041321620623/?comment_id=212
 
 https://sites.google.com/site/chitchatvmback/backdoor
 
-SECCON CTF 2016
-
-https://docs.microsoft.com/en-us/windows/win32/api/errhandlingapi/nf-errhandlingapi-unhandledexceptionfilter
-
-https://c9x.me/x86/html/file_module_x86_id_139.html
-
-exception là gì debugger là gì
-
-https://www.apriorit.com/dev-blog/367-anti-reverse-engineering-protection-techniques-to-use-before-releasing-software?fbclid=IwAR2_tIEx1gkCASch-16xe9_Bjkjnts6AD-gdVDaeEGE9lQ8kbRuCgr1KQwM
 
 
-antidebug = mình không chạy được bằng debugger, chương trình sẽ không chạy được khi chạy = debugger
-
-
-INTRO:
-packer = là một kỹ thuật anti-reverse. Anti-reverse = mình khó khăn khi reverse.
-
-
-packer = là một kỹ thuật anti-reverse. Anti-reverse = mình khó khăn khi reverse. Z thôi :v
-Vì khi chương trình bị pack em vẫn run được kể cả là run thường hay bằng debugger
-
-
-Theo như anh Shin phổ cập cho t, anti-debug thật ra giờ chỉ gặp trong CTF hoặc vài bài demo thôi 
-chứ trong malware thì người ta chủ yếu anti VM hoặc anti reverse chứ không có anti debug mấy vì giờ 
-plugin xịn nó bypass hết mà
-
-
-pack hoặc sửa thanh ghi
-
-
-NtGlobalFlag
-
-exception là gì
-debugger là gì
