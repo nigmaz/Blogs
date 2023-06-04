@@ -1,5 +1,7 @@
 - Thực hành 
 
+https://kienmanowar.wordpress.com/category/ida-pro-section/ida-tutorials/
+
 https://kienmanowar.wordpress.com/category/ida-pro-section/ida-tutorials/reversing-with-ida-from-scratch-p1/
 
 https://0xinfection.github.io/reversing/
