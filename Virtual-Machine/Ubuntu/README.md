@@ -458,8 +458,14 @@ cd ../
 
 - Use for Kernel Exploitation debug.
 
-```
+```bash
 sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison qemu-utils qemu-system-x86
+```
+
+- Exploit kernel challenge remote, you need compile exploit file small size.
+
+```bash
+sudo apt-get install musl-tools
 ```
 
 - ARM compiler-debug.
