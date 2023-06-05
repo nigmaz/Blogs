@@ -18,3 +18,5 @@ https://portswigger.net/web-security/all-lab
 
 > NOTE: 
 - [Buid Server Physical](https://www.youtube.com/watch?v=apC1bOLbzbY)
+
+[Client] -> [Proxy] -> [Web server] -> [NAS] 
