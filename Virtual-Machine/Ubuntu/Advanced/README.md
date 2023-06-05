@@ -41,6 +41,17 @@ sudo deluser --remove-home <user>
   OR> $ hostnamectl <current-hostname> <new-hostname>
 ```
 
+- Change username
+
+```bash
+# login usename != has root permisions
+sudo usermod -l newUsername oldUsername
+sudo groupmod -n newUsername oldUsername
+# sudo mv /home/old_username /home/new_username
+sudo chown -R new_username:new_username /home/new_username
+sudo usermod -d /home/newHomeDir -m newUsername
+```
+
 - Change password
 
 ```
