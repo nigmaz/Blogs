@@ -1,3 +1,9 @@
+- Anti
+  * anti-debug
+  * anti-reverse 
+  * anti-diassembly
+  * anti-vm
+ 
 - Thực hành 
 
 https://kienmanowar.wordpress.com/category/ida-pro-section/ida-tutorials/
