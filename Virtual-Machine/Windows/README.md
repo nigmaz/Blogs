@@ -25,9 +25,9 @@
 
 - IDA Pro
 
-  * [+] [IDA Pro - ]() .
+  * [+] [IDA Pro - English](https://drive.google.com/file/d/1wf2XemQQwzpdSdQic63fZ0pC0829XcDE/view?usp=sharing) .
 
-  * [+] [IDA Pro - ]() .
+  * [+] [IDA Pro - China](https://drive.google.com/file/d/1qkMy9u1FVz9uFRa2qfBI7_694iJLe5ZW/view?usp=sharing) .
 
 - WinDBG
 - x84_64dbg
