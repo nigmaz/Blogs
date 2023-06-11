@@ -39,7 +39,9 @@
 - Text Editor | IDE:
   * Dev C++
   * Sublime Text | VS Code
-
+- Demo CVE:
+  * Process Hacker 2
+  * WireShark
 
 > **NOTE**
 
