@@ -144,7 +144,7 @@ sudo apt-get install python3 python3-dev python3-pip && \
 pip3 --version
 ```
 
-- Upgrade pip3
+- Upgrade pip3 (Add PATH => Upgrade pip3)
 
 ```bash
 python3 -m pip install --upgrade pip
