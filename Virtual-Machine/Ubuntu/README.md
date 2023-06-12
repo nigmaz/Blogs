@@ -150,7 +150,7 @@ pip3 --version
 python3 -m pip install --upgrade pip
 ```
 
-### 3.3. Python2 and pip2 (not suggest)
+### 3.3. Python2 and pip2 (Not recommended)
 
 ```bash
 sudo add-apt-repository universe && \
