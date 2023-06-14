@@ -198,6 +198,10 @@ sudo apt-get install -y socat build-essential jq strace ltrace curl wget git mak
 sudo pip3 install pwntools pathlib2 keystone-engine unicorn capstone ropper ipython
 ```
 
+- __NOTE:__ Fix in VPS: 
+	* sudo apt-get install python3-setuptools
+	* pip3 install setuptools-rust
+
 ### 4.3. Install Python2 Libraries
 
 ```bash
