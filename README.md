@@ -12,6 +12,10 @@
 
 - https://www.taintedbits.com/tags/pwnable-tw/
 - https://hackmd.io/@wxrdnx/r1CXaFHdv
+- calc
+  * https://drx.home.blog/2019/04/07/pwnable-tw-calc/
+  * https://medium.com/@natsu2912/calc-pwnable-tw-bf2d32061ae3
+  * https://0xfeebe.medium.com/calc-pwnable-tw-33e705adeee7
 
 > TetCTF
  
