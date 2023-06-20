@@ -25,9 +25,9 @@
 
 ```bat
 cmd> diskpart
-select disk 0
-select partition 4
-delete partition override
+disk> select disk 0
+disk> select partition 4
+disk> delete partition override
 ```
 ### 3) Tools
 
