@@ -21,6 +21,14 @@
 
 - [Expand disk Windows VM](https://www.youtube.com/watch?v=Y5aT8hE177I)
 
+- Shrink Recovery Partition
+
+```bat
+cmd> diskpart
+select disk 0
+select partition 4
+delete partition override
+```
 ### 3) Tools
 
 - IDA Pro
