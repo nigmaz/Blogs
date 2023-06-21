@@ -7,19 +7,19 @@
 - Thực hành 
   * [IDA-kienmanowar](https://kienmanowar.wordpress.com/category/ida-pro-section/ida-tutorials/) .
 
- * [Assemble-Reverse](https://0xinfection.github.io/reversing/) .
+  * [Assemble-Reverse](https://0xinfection.github.io/reversing/) .
 
- * [Cpp=>Assemble](https://godbolt.org/) .
+  * [Cpp=>Assemble](https://godbolt.org/) .
 
 >NOTE: https://hackmd.io/@antoinenguyen09/Hy0a2mb0t?fbclid=IwAR0zotdKiVJV-22nlqlGds9YOtvsE08MiKU-zMD8S1urx2mdYZC4nRk2BfQ
 
 - Writeup Reverse
 
-https://nextheia.com/tags/flare-on-9-write-up/
+   * [Flare-on 9](https://nextheia.com/tags/flare-on-9-write-up/) .
 
-https://mochinishimiya.github.io/posts/ascis2022/?fbclid=IwAR1uNY6kSbsKBoyvQmbepMpdYjdBlOhfnY4yi9Hfs_ZAFJUalFQUTOZLjqA
+   * https://mochinishimiya.github.io/posts/ascis2022/?fbclid=IwAR1uNY6kSbsKBoyvQmbepMpdYjdBlOhfnY4yi9Hfs_ZAFJUalFQUTOZLjqA
 
-https://aides2593.github.io/writeup/re/2018/08/21/inter.html
+   * https://aides2593.github.io/writeup/re/2018/08/21/inter.html
 
 https://users.cs.utah.edu/~aburtsev/malw-sem/slides/02-anti-debugging.pdf
 
