@@ -20,3 +20,9 @@ https://portswigger.net/web-security/all-lab
 - [Buid Server Physical](https://www.youtube.com/watch?v=apC1bOLbzbY)
 
 [Client] -> [Proxy] -> [Web server] -> [NAS] 
+
+- Language + Framework => WEB
+  * Java/Spring/Spring Boot
+  * JavaScript/TypeScript/NodeJS
+  * Python/Django/Flask
+
