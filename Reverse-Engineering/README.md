@@ -6,7 +6,7 @@
  
 - Thực hành 
 
-- [IDA-kienmanowar](https://kienmanowar.wordpress.com/category/ida-pro-section/ida-tutorials/) .
+ * [IDA-kienmanowar](https://kienmanowar.wordpress.com/category/ida-pro-section/ida-tutorials/) .
 
 
 https://0xinfection.github.io/reversing/
