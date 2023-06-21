@@ -7,8 +7,7 @@
 - Thực hành 
   * [IDA-kienmanowar](https://kienmanowar.wordpress.com/category/ida-pro-section/ida-tutorials/) .
 
-
-https://0xinfection.github.io/reversing/
+ * [Assemble-Reverse](https://0xinfection.github.io/reversing/) .
 
 https://eviatargerzi.medium.com/remote-debugging-with-ida-from-windows-to-linux-4a98d7095215
 
