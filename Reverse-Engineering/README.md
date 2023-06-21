@@ -9,9 +9,7 @@
 
  * [Assemble-Reverse](https://0xinfection.github.io/reversing/) .
 
-https://eviatargerzi.medium.com/remote-debugging-with-ida-from-windows-to-linux-4a98d7095215
-
-https://godbolt.org/z/KiMvdD?fbclid=IwAR3mqqTmZ9oAC-oiIPR7YNQzwxDPtxAqHmXomi6swWaV5R1zOv1wTPPtvpw
+ * [Cpp=>Assemble](https://godbolt.org/) .
 
 >NOTE: https://hackmd.io/@antoinenguyen09/Hy0a2mb0t?fbclid=IwAR0zotdKiVJV-22nlqlGds9YOtvsE08MiKU-zMD8S1urx2mdYZC4nRk2BfQ
 
