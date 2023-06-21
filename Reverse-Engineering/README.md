@@ -55,3 +55,7 @@ https://cryptopals.com/
 - [RE-Toolkit](https://github.com/mentebinaria/retoolkit?fbclid=IwAR1uAu_jBCIVc1y57PSv6xesm4Nedmw6ai23Nj-a58HxwDuSFNG4AcZVJA0) .
 
 [+] https://tryhackme.com/room/windowsreversingintro?fbclid=IwAR3yC6T0hFYake1O9dIrP13sAlKdOxC2JJkXH79047LbxwHdmCQqjEOF1Jo
+
+https://drive.google.com/file/d/1vS8s8HECV2g6iWbEcHgrQDykZhzWjJ99/view?usp=sharing
+
+
