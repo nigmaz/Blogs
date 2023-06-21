@@ -35,7 +35,7 @@
 
 - https://anti-debug.checkpoint.com/
 
-- __Questions:__ exception, debugger là gì
+- __Questions:__ exception, debugger là gì ?
 
 ## Crypto 
 
