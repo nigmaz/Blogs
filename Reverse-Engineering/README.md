@@ -1,4 +1,4 @@
-- Anti
+- Anti Tech Reverse
   * anti-debug
   * anti-reverse 
   * anti-diassembly
@@ -6,9 +6,8 @@
  
 - Thực hành 
 
-https://kienmanowar.wordpress.com/category/ida-pro-section/ida-tutorials/
+- [IDA-kienmanowar](https://kienmanowar.wordpress.com/category/ida-pro-section/ida-tutorials/) .
 
-https://kienmanowar.wordpress.com/category/ida-pro-section/ida-tutorials/reversing-with-ida-from-scratch-p1/
 
 https://0xinfection.github.io/reversing/
 
