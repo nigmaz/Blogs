@@ -9,3 +9,5 @@
 https://youtu.be/N-L9hklSlNk
 
 >I will upgrade it in the future when I learn something related!!! 😅
+
+[+] [Python keylogger bypasses Windows 11 Defender // Convert WIFI py to EXE](https://www.youtube.com/watch?v=qaZ-IbssPDI)
