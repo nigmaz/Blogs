@@ -12,7 +12,7 @@
 
 - https://www.taintedbits.com/tags/pwnable-tw/
 - https://hackmd.io/@wxrdnx/r1CXaFHdv
-
+- https://drx.home.blog/2019/04/20/pwnable-tw-hacknote/
 
 > TetCTF
  
