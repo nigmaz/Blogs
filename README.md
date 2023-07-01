@@ -194,9 +194,7 @@ p.interactive()
 - https://www.taintedbits.com/tags/pwnable-tw/
 - https://hackmd.io/@wxrdnx/r1CXaFHdv
 - https://drx.home.blog/2019/04/20/pwnable-tw-hacknote/
-- https://www.programmersought.com/article/77565878612/
-- https://p1kk.github.io/2020/09/10/tw/tw%20death_note/
-- https://k1r4.github.io/posts/death_note/
+
 > TetCTF
  
 - `2019` https://d4rkn3ss.medium.com/write-up-for-pwnable-challenges-tetctf-2019-a74eb177518e
