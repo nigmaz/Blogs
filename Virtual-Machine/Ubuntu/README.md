@@ -221,6 +221,8 @@ wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | 
 
 ### 5.2. [VS Code](https://code.visualstudio.com/download)
 
+- [Reference-VScodeInstall](https://www.makeuseof.com/how-to-install-visual-studio-code-ubuntu/)
+
 ```bash
 $ sudo apt update && \
 sudo apt install -y software-properties-common apt-transport-https wget  && \
