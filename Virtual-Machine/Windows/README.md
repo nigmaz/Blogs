@@ -30,6 +30,7 @@ disk> select partition 4
 disk> delete partition override
 ```
 ### 3) Tools
+- [WSL](https://bwgjoseph.com/how-to-manually-install-wsl2-on-a-windows-10-virtual-machine) .
 
 - IDA Pro
 
