@@ -33,7 +33,7 @@ disk> delete partition override
 - [WSL](https://bwgjoseph.com/how-to-manually-install-wsl2-on-a-windows-10-virtual-machine) .
   * Virtualization engine => Virtualize Intel VT-x/EPT or AMD-V/RVI
 
-- IDA Pro
+- Hex-Rays IDA Pro 7.7
 
   * [+] [IDA Pro - English](https://drive.google.com/file/d/1wf2XemQQwzpdSdQic63fZ0pC0829XcDE/view?usp=sharing) .
 
