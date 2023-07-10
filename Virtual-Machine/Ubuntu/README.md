@@ -262,8 +262,8 @@ cd ../
 - Fix __AttributeError: module 'lib' has no attribute 'X509_V_FLAG_CB_ISSUER_CHECK'__ in wsl
 
 ```bash
-pip install pip --upgrade
-pip install pyopenssl --upgrade
+pip3 install pip --upgrade
+pip3 install pyopenssl --upgrade
 ```
 
 - Plugin-gdb - [Template](https://github.com/Nigmaz/Blogs/blob/main/Virtual-Machine/Ubuntu/Advanced/README.md#14-gdbinit):
