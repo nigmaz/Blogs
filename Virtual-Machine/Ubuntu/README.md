@@ -70,6 +70,7 @@ $ nano ~/.zshrc
 	+) ZSH_THEME="half-life" 
 	# or "lukerandall"
 	# or "frontcube"
+	# or "clean"
 	...
 	+) plugins=(
 		git
