@@ -189,7 +189,7 @@ sudo apt-get update -y && sudo apt-get upgrade
 ### 4.1. Install Tools
 
 ```bash
-sudo apt-get install -y socat build-essential jq strace ltrace curl wget git make procps vim ssh rubygems gcc dnsutils netcat gcc-multilib net-tools gdb gdb-multiarch libssl-dev libffi-dev libpcre3-dev libdb-dev libxt-dev libxaw7-dev libc6:i386 libncurses5:i386 libstdc++6:i386 patchelf elfutils nasm ascii tree
+sudo apt-get install -y socat build-essential jq strace ltrace curl wget git make procps vim ssh rubygems gcc dnsutils netcat gcc-multilib net-tools gdb gdb-multiarch libssl-dev libffi-dev libpcre3-dev libdb-dev libxt-dev libxaw7-dev libc6 libncurses5 libstdc++6 patchelf elfutils nasm ascii tree
 ```
 
 ### 4.2. Install Python3 Libraries
@@ -247,7 +247,7 @@ cd Tools
 ### 6.2. Plugin debug (Gdb extension)
 
 ```
-sudo apt-get install libc6-dbg libc6:i386 libc6-dbg:i386 && \
+sudo apt-get install libc6-dbg libc6 && \
 sudo apt-get install python3-testresources
 ```
 
