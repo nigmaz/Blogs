@@ -145,6 +145,14 @@ sudo apt-get install python3 python3-dev python3-pip && \
 pip3 --version
 ```
 
+- Error and try
+
+```bash
+sudo apt remove python3-pip 
+wget https://bootstrap.pypa.io/get-pip.py
+sudo python3 get-pip.py
+```
+
 - Upgrade pip3 (Add PATH => Upgrade pip3)
 
 ```bash
