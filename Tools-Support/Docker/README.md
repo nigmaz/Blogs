@@ -170,7 +170,12 @@ sudo docker-compose up --build
 ## [3] Run Local use ngrok: 
 
 - Tải ngrok về thêm key riêng của account sau đó add file ngrok vào /usr/bin để gọi như 1 command in linux.
-   
+
+- VD:
+
+```bash
+ngrok tcp 1337
+```
    
 ## [4] References:
 
