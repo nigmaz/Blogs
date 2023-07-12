@@ -1,3 +1,3 @@
 # Support for Deploy, Dev, Config and Code...
 
-- Markdown -, * và + .
+- Markdown: -, * và + .
