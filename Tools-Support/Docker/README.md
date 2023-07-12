@@ -4,11 +4,7 @@
 
 >link:
 
-  * https://wyv3rn.tistory.com/165
-  
-  * https://wyv3rn.tistory.com/233
 
-  * https://www.youtube.com/watch?v=N4YuCvxeD5Y
 
 Docker là một platform cung cấp cho người dùng những công cụ và service để có thể building, deploying và running ứng dụng dễ dàng hơn bằng cách sử dụng các containers (trên nền tảng ảo hóa).
 
