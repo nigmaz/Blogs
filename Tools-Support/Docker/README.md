@@ -1,129 +1,183 @@
-# Script for Docker
+# Docker
 
->NOTE: Cheatsheet command line .
+- Docker là một platform cung cấp cho người dùng những công cụ và service để có thể building, deploying và running ứng dụng dễ dàng hơn bằng cách sử dụng các containers (trên nền tảng ảo hóa).
 
->link:
-
-
-
-Docker là một platform cung cấp cho người dùng những công cụ và service để có thể building, deploying và running ứng dụng dễ dàng hơn bằng cách sử dụng các containers (trên nền tảng ảo hóa).
-
-```
-[DOCKER FILE] ==|build|==> [Image] ==|run|==> [Containers]  
+```bash
+[DOCKER FILE]=(build) ==> [Image]=(run) ==> [Containers]  
 ```
 
-  - `Docker Registry` : Nơi chứa Docker Image.
+- `Docker Registry` : Nơi chứa các Docker Image.
   
-  - `Docker Compose` : là công cụ cho phép bạn chạy Ứng Dụng với nhiều Docker Containers một cách nhanh chóng và dễ dàng.
-  
-  - sudo service docker status
+- `Docker Compose` : là công cụ cho phép chạy `Ứng Dụng` với nhiều Docker Containers một cách nhanh chóng và dễ dàng.
 
-## Các câu lệnh thường dùng.
+- Kiểm tra dịch vụ đang hoạt động.
 
-### 1) Build Image:
+```bash
+sudo service docker status
+```  
 
-```
-$
-docker build -t <name_image> . 
-[NOTE là có dấu "."]
-$
-docker images -a 
-[Liệt kê các image và lấy ID image].
-```
+## [1]. Use the Docker command line
 
-### 2) Run Image:
+### A. BUILD IMAGES:
 
-```
-$ 
-docker run -d -p <port>:<port> --rm -it <name/ID image>
-
-NOTE:
--d : là chạy nền .
--p : chứa đến một cổng trên máy chủ của tôi .
---rm : tự động xóa vùng chứa khi thoát vùng chứa .
-
-$ 
-docker ps -a 
-[Liệt kê các containers đang chạy]
-
-$
-docker exec -it <ID CONTAINERS STATUS> /bin/bash
-[Thực thi câu lệnh yêu cầu]
-
-$
-docker stop <name containers (h) ID containers>
-
-$
-docker rmi <name (h) ID images>
-[xóa Image].
-
-docker rm <container name>
-[xóa Container].
+- Dấu `"."` là chỉ thư viện mình đang hoạt động __(pwd - ý là Dockerfile tại ./)__.
+```bash
+sudo docker build . -t <tag_name-lower> 
 ```
 
-STOP ALL
+- Liệt kê các images đã build __(Khi chạy 1 image => 1 container)__.
 
-```
-$ Stop all running containers.
-docker stop $(sudo docker ps -a -q)
-
-$ Delete all stopted containers.
-docker rm $(sudo docker ps -a -q)
-
-$ Delete all image.
-docker rmi $(sudo docker images -q)
-
-$ Xóa tất cả image và tài nguyên không sử dụng.
-docker system prune
-
+```bash
+sudo docker images -a 
 ```
 
-```
-Một số vị trí nhận biết port
-socat thì xem phần tcp-listen sẽ cho biết port
-xinetd thì phải xem trong file xinetd (có thể có đuôi mở rộng) tại phần port
-docker-compose.yml thì xem phần port sẽ thấy
+- Xóa images đã build.
 
-Một số lệnh docker thường
-* Build và run:
-sudo docker build . -t "tag-name"
-sudo docker run --rm -p "host-port":"docker-port" -it "tag-name"
-sudo docker run --rm -p "host-port":"docker-port" --privileged -it "tag-name"
+```bash 
+sudo docker rmi <tag_name/ID_image>
+```
+
+### B. RUN IMAGE:
+
+- Chạy container từ image đã build.
+
+```bash
+sudo docker run --rm -p <hots-port>:<docker-port> -it <tag_name/ID_image>
+```
+
+- Chú thích:
+    * `-p` : chỉ định port kết nối trong đó
+        + `host-port` là port mà host sẽ listen - khi nc sẽ nc theo cái này.
+        + `docker-port` là port mà docker sẽ listen - cái này đi kèm trong dockerfile.
+    * --rm : tự động xóa vùng chứa khi thoát.
+    * -d : là chạy nền - tùy chọn này thêm cũng được.
+    
+- Liệt kê các container đang chạy, có cả port listen tcp.
+
+```bash
+sudo docker ps -a 
+```
+
+- Thực thi câu lệnh yêu cầu với container đã run __(VD như lấy shell vào tương tác với container)__.
+
+- `<cmd>` : có thể là pwd, /bin/bash, bash, sh.
+
+```bash 
+sudo docker exec -it <ID_container> <cmd> 
+```
+
+- Dừng container đang chạy (dù đã `ctrl + c` câu lệnh nhưng container chạy ngầm).
+
+```bash
+sudo docker stop <name_container/ID_container>
+```
+
+- Xóa container.
+
+```bash
+sudo docker rm <name_container>
+```
+
+### C. STOP ALL:
+
+- Stop all running containers.
+```bash
+sudo docker stop $(sudo docker ps -a -q)
+```
+
+- Delete all stopted containers.
+```bash
+sudo docker rm $(sudo docker ps -a -q)
+```
+
+- Delete all image.
+```bash
+sudo docker rmi $(sudo docker images -q)
+```
+
+- Xóa tất cả image và tài nguyên không sử dụng.
+```bash 
+sudo docker system prune
+```
+
+## [2]. The special case
+
+### A. Image github.com/redpwn/jail
+
+- Là 1 form image phổ biến cho CTF.
+
+```bash
+FROM pwn.red/jail
+```
+
+- Một số lưu ý:
+    * __redpwn port default 5000__.
+    * Nếu có chỉ định riêng trong file là dòng: __ENV JAIL_PORT = 1337__.
+    * Khi chạy container thì thêm tham số __--privileged__.
+```bash
+sudo docker run --rm -p5000:5000 --privileged -it <tag_name>
+```
+
+### B. Image Docker-compose
+
+- Nếu bài cho 3 file:
+    * Dockerfile
+    * docker-compose.yml
+    * xientd.conf
+
+- Lệnh với docker-compose (tự động chạy lệnh build và run).
+
+```bash
 sudo docker-compose up --build
-
-* Liệt kê các container đang chạy:
-sudo docker ps
-
-* Thực thi lệnh linux trong docker:
-sudo docker exec -it "containter-id" "commands"
-sudo docker-compose exec "service-name" "commands"
-
-* Lấy file từ docker ra host:
-sudo docker cp "container-id":"path-to-file-in-docker" "path-to-file-in-host"
-
-Đối với wsl, để chạy được lệnh docker cần chạy nền docker daemon với lệnh sau: sudo dockerd &
 ```
 
-### 3) Run Local use Ngrok: 
+- Lệnh `docker-compose <ID_container>` thay bằng tên service trong file.yml
 
-   * [Video](https://www.youtube.com/watch?v=jOm_XSeMnJI&t=33s) .
+### C. The LIBC in Docker
+
+- Khi cho docker là cho môi trường server => có thể lấy LIBC và LD.
+
+- Cách lấy LIBC:
+    * `1.` nc => container đang run.
+    * `2.` Lấy id-process của service đang chạy (VD: container chạy chương trình source thì service là source).
+    ```bash
+    ps aux | grep <service>
+    ```
+    * `3.` Dùng gdb tìm `info proc map` của chương trình đang chạy để tìm path của LIBC trên container.
+    ```bash
+    sudo gdb -p <id_process>
+    ```
+    * `4.` Lưu ý: Trường hợp cần tìm xem vị trí bắt đầu ở đâu (trong Docker file chỉ định nơi bắt đầu work - pwd) sau đó mới đến path tìm được từ gdb - __[/srv/usr/lib]__ OR __[/usr/lib]__ 
+        + Lấy LIBC
+        ```bash
+        sudo docker cp <container_id>:/path_libc .
+        ```
+        + Lấy LD
+        ```bash
+        sudo docker cp <container_id>:/path_ld .
+        ```
+
+### D. WSL
+
+- Đối với WSL, để chạy được lệnh docker cần chạy nền docker daemon với lệnh sau: __sudo dockerd &__ rồi mới đến các câu lệnh đã liệt kê.
+
+- Một số vị trí nhận biết port
+    * __socat__ thì xem phần tcp-listen sẽ cho biết port.
+    * __xinetd__ thì phải xem trong file xinetd (có thể có đuôi mở rộng) tại phần port.
+    * __docker-compose.yml__ thì xem phần port sẽ thấy.
+
+
+## [3] Run Local use ngrok: 
+
+- Tải ngrok về thêm key riêng của account sau đó add file ngrok vào /usr/bin để gọi như 1 command in linux.
    
-   * [Video](https://www.youtube.com/watch?v=9BJmDa0TIgw) .
    
-   * [Video](https://www.youtube.com/watch?v=uG1QW5UWVrU) .
+## [4] References:
 
-   * [Tutorial](https://viblo.asia/p/tooling-gioi-thieu-ngrok-mang-demo-du-an-web-len-internet-khong-can-deploy-naQZR7eqlvx) .
-   
-   * Pwn Deploy sample: [A Hiep](https://gitlab.com/hypnguyen1209/pwn-deploy), [A Chuoi](https://github.com/yuumi001/miniCTF2021_deploy?fbclid=IwAR19QpvrUm9jJXu_s5xvdCNkFKtN4SADFCNtQaciJWqm2cipE_LR7vRVDTQ) .
--------------------------------------------------------------------------------------------------------
-
-### REF:
-
-[+] [Docker](https://gist.github.com/chaseYLC/3d2ab4c6955044f21da628546c0c6977) .
-
-[+] [USE DOCKERFILE FOR DEBUGGING WITH PWNTOOLS](https://shakuganz.com/2022/04/20/use-dockerfile-for-debugging-with-pwntools/) .
-
-[+] [Search `setup docker local for debug pwn ctf`] .
+[+] Pwn Deploy sample Dockerfile: 
+- Các challenge đã làm có Dockerfile.
+- [A Hiep](https://gitlab.com/hypnguyen1209/pwn-deploy).
+- [A Chuoi](https://github.com/yuumi001/miniCTF2021_deploy?fbclid=IwAR19QpvrUm9jJXu_s5xvdCNkFKtN4SADFCNtQaciJWqm2cipE_LR7vRVDTQ).
 
 
-
+[+] [USE DOCKERFILE FOR DEBUGGING WITH PWNTOOLS](https://shakuganz.com/2022/04/20/use-dockerfile-for-debugging-with-pwntools/).
