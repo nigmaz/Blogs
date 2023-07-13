@@ -14,7 +14,7 @@
 - làm sao để cài được các bản windows thấp hơn để exploit (SV_ATTT)
 - for sheet reader => rce cve (Malware Excel)
 - microsoft visual basic for application (Malware Excel)
-
+https://blog.anhtv.live/2023/07/10/cookie-arena-ss2/
 > Pwnable.tw
 
 - https://www.taintedbits.com/tags/pwnable-tw/
