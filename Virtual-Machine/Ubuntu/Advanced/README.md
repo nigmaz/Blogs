@@ -154,6 +154,12 @@ source /home/nigmaz/Public/pwndbg/gdbinit.py
 
 ### 1.6. Vim
 
+- Setup vim.
+  
+  * [Setup1](https://codelearn.io/sharing/cai-dat-vim-editor-than-thanh-phan-1)
+  
+  * [Setup2](https://codelearn.io/sharing/cai-dat-vim-editor-than-thanh-phan-2)
+
 ```bash
 1) touch ~/.vimrc
 
