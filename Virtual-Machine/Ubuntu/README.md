@@ -117,6 +117,12 @@ sudo apt-get update && sudo apt-get install terminator && \
 sudo apt-get update -y && sudo apt-get dist-upgrade
 ```
 
+OR if ERROR
+
+```bash
+sudo apt-get install terminator --fix-missing && \
+sudo apt-get update -y && sudo apt-get dist-upgrade
+```
 
 ## [2]. Add i386 architecture (to run and compile file ELF x86)
 
