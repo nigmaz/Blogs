@@ -1,4 +1,10 @@
 # JAVA
+> Java Virtual Machine, Java Development Kit, Java Runtime Environment.
+- Install [Java JDK](https://www.oracle.com/java/technologies/downloads/) .
+```cmd
+java -version // this will check your jre version
+javac -version // this will check your java compiler version if you installed
+```
 >Use `Eclipse` to code Java and install [Java JDK](https://www.oracle.com/java/technologies/downloads/).
 - [New Project Eclipse](https://www.youtube.com/watch?v=uksb46znL58). 
 
@@ -10,7 +16,6 @@
   * https://youtu.be/w3QmdZSshag
   * https://youtu.be/0PPzWgRxpFk
 
-- Java Virtual Machine, Java Development Kit, Java Runtime Environment.
 
 - In ra màn hình.
 
