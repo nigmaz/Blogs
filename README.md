@@ -1,3 +1,4 @@
+# BLOGs
 > Note for me.
 
 - [Google Drive](https://drive.google.com/drive/folders/1Yd3RnKlJunSlAkmUS8o3cVPhGl3GtzmC?usp=share_link) .
@@ -39,12 +40,12 @@
 
   * https://uaf.io/tags.html#BCTF-ref
 
-## [1]. REFERENCES:
+## [1]. References:
 
 - List video pwnable, exploit, security research, ...
 
   * [BabyTalk#5](https://www.youtube.com/watch?v=94O8wdcvEFM&list=WL&index=249) .
 
-- OSCP - https://different-mosquito-965.notion.site/OSCP-ef04a657ca26423d81c1a1fc0b35e147
+- OSCP * https://different-mosquito-965.notion.site/OSCP-ef04a657ca26423d81c1a1fc0b35e147
 
-- Java - https://nickbloor.co.uk/2017/08/13/attacking-java-deserialization/
+- Java * https://nickbloor.co.uk/2017/08/13/attacking-java-deserialization/
