@@ -18,7 +18,7 @@
 
 # [1] VMware Workstation
 
-## 1.1. VMware Workstation Pro 17 key:
+## A. VMware Workstation Pro 17 key:
 
 >Used: 4A4RR-813DK-M81A9-4U35H-06KND
 
@@ -31,7 +31,7 @@
 - 4C21U-2KK9Q-M8130-4V2QH-CF810
 
 
-## 1.2. VMware Workstation Pro 16 key:
+## B. VMware Workstation Pro 16 key:
 
 >Used: ZF71R-DMX85-08DQY-8YMNC-PPHV8
 
