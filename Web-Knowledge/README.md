@@ -1,27 +1,30 @@
-
-https://youtu.be/p1QU3kLFPdg
-
+# Web-Knowledge
 
 
-- [Tools Burp Suite Pro](https://gitlab.com/hypnguyen1209/burp-pro?fbclid=IwAR29_fPDBXSdrYMbjx_ADP8ulzBxQZh1rEAJh0Jo3985VGOuuQOo4hVQUL4) .
+## [0]. Web 
 
-Web Security 
-
-SOC - https://securityflow.io/roadmap/
-
-- Lab learn hack web
-
-https://www.hacksplaining.com/
-
-https://portswigger.net/web-security/all-lab
-
-> NOTE: 
-- [Buid Server Physical](https://www.youtube.com/watch?v=apC1bOLbzbY)
-
-[Client] -> [Proxy] -> [Web server] -> [NAS] 
+- Mô hình: [Client] -> [Proxy] -> [Web server] -> [NAS] .
 
 - Language + Framework => WEB
   * Java/Spring/Spring Boot
   * JavaScript/TypeScript/NodeJS
   * Python/Django/Flask
 
+## [1]. Web Security 
+
+- [Tools Burp Suite Pro](https://gitlab.com/hypnguyen1209/burp-pro?fbclid=IwAR29_fPDBXSdrYMbjx_ADP8ulzBxQZh1rEAJh0Jo3985VGOuuQOo4hVQUL4) .
+
+- Lab learn hack web
+ * https://portswigger.net/web-security/all-lab
+ * https://www.hacksplaining.com/
+
+- SOC
+ * https://securityflow.io/roadmap/
+
+## [2]. Refenrences:
+
+[+] VIDEO: 
+- [How to put an HTML website online](https://youtu.be/p1QU3kLFPdg) .
+
+[+] OTHER:
+- [Buid Server Physical](https://www.youtube.com/watch?v=apC1bOLbzbY)
