@@ -1,4 +1,4 @@
-# Reverse-Engineering
+# [0]. Reverse-Engineering
 
 - Anti Tech Reverse
   * Obfuscate, junk-code
@@ -16,8 +16,6 @@
 
   * [PE Analysis](https://hackmd.io/@antoinenguyen09/Hy0a2mb0t?fbclid=IwAR0zotdKiVJV-22nlqlGds9YOtvsE08MiKU-zMD8S1urx2mdYZC4nRk2BfQ) .
 
->NOTE REFERENCE: https://github.com/wtsxDev/reverse-engineering
-
 - Writeup Reverse
 
    * [Flare-on 9](https://nextheia.com/tags/flare-on-9-write-up/) .
@@ -26,7 +24,7 @@
 
    * [ISITDTU CTF 2018 Quals - inter](https://aides2593.github.io/writeup/re/2018/08/21/inter.html) .
 
-## AntiDebug.
+## A. AntiDebug.
 
 - https://users.cs.utah.edu/~aburtsev/malw-sem/slides/02-anti-debugging.pdf
 
@@ -38,13 +36,15 @@
 
 - __Questions:__ exception, debugger là gì ?
 
-## Crypto 
+# [1]. Cryptography
 
-https://cryptohack.org/courses/
+- https://cryptohack.org/courses/
 
-https://cryptopals.com/
+- https://cryptopals.com/
 
----------------------------------------------
+# [2]. References: 
+
+[+] https://github.com/wtsxDev/reverse-engineering
 
 [+] [Slide SVATTT - RE b2](https://docs.google.com/presentation/d/1SBBp04TkILxE-vSARvI_Uo3aF7lswh-FT5dumWWssT0/edit?fbclid=IwAR33UPvpYYBkpxZL8qfOJ2V-XF6xxFhE5BRuVnrNZGVkLGHT2U0i1f-iOio#slide=id.g241d1437ad9_0_0) .
 
