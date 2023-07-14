@@ -10,6 +10,8 @@
   * https://youtu.be/w3QmdZSshag
   * https://youtu.be/0PPzWgRxpFk
 
+- Java Virtual Machine, Java Development Kit, Java Runtime Environment.
+
 - In ra màn hình.
 
 ```java
