@@ -6,14 +6,6 @@
 [+] [Google Drive](https://drive.google.com/drive/folders/1Yd3RnKlJunSlAkmUS8o3cVPhGl3GtzmC?usp=share_link) .
 
 [+] [Download folder from git](https://download-directory.github.io/) .
-
-> XYZ
-- path dev core (Kernel Driver)
-- setup proxy router (SV_ATTT)
-- học dùng wireshark filter character (SV_ATTT)
-- làm sao để cài được các bản windows thấp hơn để exploit (SV_ATTT)
-- for sheet reader => rce cve (Malware Excel)
-- microsoft visual basic for application (Malware Excel)
   
 > Pwnable.tw
 
