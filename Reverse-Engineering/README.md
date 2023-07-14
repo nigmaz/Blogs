@@ -6,6 +6,7 @@
   * anti-reverse 
   * anti-diassembly
   * anti-vm
+  * ...
  
 - Thực hành 
   * [IDA-kienmanowar](https://kienmanowar.wordpress.com/category/ida-pro-section/ida-tutorials/) .
