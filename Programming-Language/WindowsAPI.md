@@ -1,4 +1,4 @@
-# WinAPI
+# WindowsAPI
 
 > VisualStudio-2019. WindowsAPI (language C or Cpp) settings project Type: `Empty project`.
 
