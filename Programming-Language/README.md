@@ -5,7 +5,8 @@
   * Python
   * Java
   * C-Sharp
- 
+  * SQL
+  * 
 - Low Level
   * mASM
   * nASM
