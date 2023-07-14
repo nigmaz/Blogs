@@ -3,7 +3,8 @@
 
 ## [0]. Web 
 
-- Mô hình: [Client] -> [Proxy] -> [Web server] -> [NAS] .
+- Mô hình:
+  * [Client] -> [Proxy] -> [Web server] -> [NAS] .
 
 - Language + Framework => WEB
   * Java/Spring/Spring Boot
