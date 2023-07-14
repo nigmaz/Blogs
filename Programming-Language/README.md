@@ -11,3 +11,15 @@
   * mASM
   * nASM
 
+- Scripting language
+  * Linux
+   + bash
+  * Windows
+   + Windows PowerShell (.ps1)
+   + Batch Scripting (.bat or .cmd).
+   + VBScript (Visual Basic Scripting Edition)
+
+- References
+ * Perl
+ * Ruby
+ * Golang (*)
