@@ -14,4 +14,4 @@
 - Debug ASM in Linux: Sử dụng gdb.
 
   * https://github.com/newtonsart/vscode-assembly
-
+  * Dump to machine code: `objdump -M intel -d <program_name>` .
