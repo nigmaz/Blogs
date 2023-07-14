@@ -1,2 +1,2 @@
 # Bash
-- [bashscripting](https://tryhackme.com/room/bashscripting)
+- Learn: [bashscripting](https://tryhackme.com/room/bashscripting)
