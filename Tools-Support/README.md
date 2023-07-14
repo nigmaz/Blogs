@@ -1,6 +1,6 @@
 # Tools-Support
 
-## [1]. Tools
+## [0]. Tools
 
 - Keylogger
 - Metasploit
@@ -12,7 +12,7 @@
     * Tai nghe và máy quay mini (Hay dùng gian lận thi cử).
     * USB auto load.
 
-## [2]. Support
+## [1]. Support
 
 - Docker 
 - Markdown ["-", "*" và "+"]
