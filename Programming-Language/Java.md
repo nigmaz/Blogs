@@ -1,15 +1,15 @@
 # JAVA
 > Java Virtual Machine, Java Development Kit, Java Runtime Environment.
 - Install [Java JDK](https://www.oracle.com/java/technologies/downloads/) .
-```cmd
-java -version // this will check your jre version
-javac -version // this will check your java compiler version if you installed
+```c
+java -version   // this will check your jre version
+javac -version  // this will check your java compiler version if you installed
 ```
->Use `Eclipse` to code Java and install [Java JDK](https://www.oracle.com/java/technologies/downloads/).
-- [New Project Eclipse](https://www.youtube.com/watch?v=uksb46znL58). 
+> Use `Eclipse` to code Java. 
+- [Java Tutorial New Project Eclipse](https://www.youtube.com/watch?v=uksb46znL58). 
 
->Use `NetBeans` :
-- [Java NetBeans](https://www3.ntu.edu.sg/home/ehchua/programming/howto/netbeans_howto.html). 
+> Use `NetBeans` to code Java.
+- [Java Tutorial New Project NetBeans](https://www3.ntu.edu.sg/home/ehchua/programming/howto/netbeans_howto.html). 
 
 > **BTL -JAVA mẫu**
 
