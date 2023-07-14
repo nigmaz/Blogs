@@ -6,11 +6,10 @@
 
 - [Python environment project LINUX](https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-programming-environment-on-ubuntu-20-04-quickstart) .
 
->Python Project Example:
-
-	- [Flappy Bird](https://www.youtube.com/watch?v=MMxFDaIOHsE) .
+- Python Project Example:
+	* [Flappy Bird](https://www.youtube.com/watch?v=MMxFDaIOHsE) .
 	
-	- [Object Tracking](https://www.youtube.com/shorts/ocA30qI9Z-M) .
+	* [Object Tracking](https://www.youtube.com/shorts/ocA30qI9Z-M) .
 
 ## [1]. NOTE:
 - Các kiểu dữ liệu trong python.
