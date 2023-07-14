@@ -17,7 +17,7 @@
 - Docker 
 - Markdown ["-", "*" và "+"]
 
-## [2]. Reference
+## [2]. References
 
 [+] https://github.com/MTK911/Attiny85/tree/master/payloads
 
