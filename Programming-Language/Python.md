@@ -4,35 +4,27 @@
 ## [0]. IDE.
 - Pycharm - [Configure a Python interpreter](https://www.jetbrains.com/help/pycharm/configuring-python-interpreter.html) .
 
-- [Python environment project LINUX](https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-programming-environment-on-ubuntu-20-04-quickstart) .
+- [Python Environment project LINUX](https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-programming-environment-on-ubuntu-20-04-quickstart) .
 
-- Python Project Example:
+- Python Project Example (Các project Python có file requirements.txt install pip lib nên test project sử dụng python-env):
 	* [Flappy Bird](https://www.youtube.com/watch?v=MMxFDaIOHsE) .
-	
 	* [Object Tracking](https://www.youtube.com/shorts/ocA30qI9Z-M) .
 
 ## [1]. NOTE:
 - Các kiểu dữ liệu trong python.
 
-1) Numbers: int, long, float, complex(số phức), ...
+	* 1) Numbers: int, long, float, complex(số phức), ...
+	* 2) String: Dùng (*) (lặp chuỗi) ; Dùng (+) (nối chuỗi).
+	* 3) List[,,]: Dãy bao gồm có thể là cả sỗ lẫn chuỗi ; Có thể đặt lại giá trị của các phần tử ; [ : ].
+	* 4) Tuple(,,): Tương đối giống List, khác là không thể đặt lại giá trị. -> chỉ đọc.
+	* 5) Dictionary{,,}: cặp keys - values
 
-2) String: Dùng (*) (lặp chuỗi) ; Dùng (+) (nối chuỗi).
-
-3) List[,,]: Dãy bao gồm có thể là cả sỗ lẫn chuỗi ; Có thể đặt lại giá trị của các phần tử ; [ : ].
-
-4) Tuple(,,): Tương đối giống List, khác là không thể đặt lại giá trị. -> chỉ đọc.
-
-5) Dictionary{,,}: cặp keys - values
-
-list, tuple, arr (numpy, array [chuyên đặc tả dữ liệu]), set, directory 
-
-list - set [set không lưu giá trị trùng] | map - direct [direct là kiểu dữ liệu mà các key không được lặp lại]
-
->Không cần khai báo kiểu dữ liệu. Muốn biết kiểu dữ liệu gì print(type(<var>)).
-
-> Hàm round(number, ndigits) | ndigits là số chữ số cần làm tròn.
-	
->Muốn biết một hàm dùng để làm gì trong python shell sử dụng `help(tên hàm)`.
+Lưu ý: 
+	* Kiểu list, tuple, arr (numpy, array [chuyên đặc tả dữ liệu]), set, directory 
+	* Kiểu list - set [set không lưu giá trị trùng] | map - direct [direct là kiểu dữ liệu mà các key không được lặp lại]
+	* Không cần khai báo kiểu dữ liệu, muốn biết kiểu dữ liệu gì print(type(<var>)).
+	* Hàm round(number, ndigits) | ndigits là số chữ số cần làm tròn.
+	* Muốn biết một hàm dùng để làm gì thì trong python shell sử dụng `help(tên hàm)`.
 	
 ```python
 >>> help(pow)
@@ -52,7 +44,7 @@ name = input()
 print("Hello " + name)
 ```
 
->Khi nhập dữ liệu cho một biến từ keyboard thì kiểu dữ liệu đó luôn là str (kể cả nhập gái trị số cho biến đó). Muốn thay đổi kiểu dữ liệu thì phải ép kiểu.
+- Khi nhập dữ liệu cho một biến từ keyboard thì kiểu dữ liệu đó luôn là str (kể cả nhập gái trị số cho biến đó). Muốn thay đổi kiểu dữ liệu thì phải ép kiểu.
   
 ```python
 a = int(input())
@@ -63,18 +55,18 @@ b = float(input())
 
   VD: 2**3 = 8 ; 9 // 2 = 4.
   
-  Toán tử membership để kiểm tra xem 1 giá trị có nằm trong giá trị khác không. `in` và `not in`.
+- Toán tử membership để kiểm tra xem 1 giá trị có nằm trong giá trị khác không. `in` và `not in`.
   
   VD: x = input()
       print('H' in x)
   
-  Toán tử định danh
+- Toán tử định danh
   
   VD: a = int(input())
       b = int(input())
       print(a is b)
   
-  Toán tử logic giống C, Cpp.
+- Toán tử logic giống C, Cpp.
   
 - Điều kiện `if-else`.
   
@@ -111,9 +103,7 @@ else:
 		print(c)
 ```
 
-- Mảng
-
-Tạo ra list để lưu trữ các số nguyên
+- Mảng, VD: Tạo ra list để lưu trữ các số nguyên.
 		
 ```python
 # Tạo ra list để lưu trữ các số nguyên
@@ -203,7 +193,7 @@ print(name.replace("3", "e"))
 # Codelearn
 ```
   
-Cắt chuỗi
+- Cắt chuỗi
 		
 ```python
 s = 'Python String'
@@ -249,4 +239,4 @@ def get_unique_values(lst):
     return answer
 ```
 
->Note: Python3. VD: b'<string>'. u là chuỗi unicode ; b là biểu thị chuỗi kí tự byte ; r là chuỗi kí tự không thoát ra được @@. Không có `,` và `;`.
+- NOTE: Python3. VD: b'<string>'. u là chuỗi unicode ; b là biểu thị chuỗi kí tự byte ; r là chuỗi kí tự không thoát ra được @@. Không có `,` và `;`.
