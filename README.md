@@ -1,11 +1,11 @@
-# [0] Blogs
+# BLOGS
 > Note for me.
-
-# [1] Works...
 
 [+] [Google Drive](https://drive.google.com/drive/folders/1Yd3RnKlJunSlAkmUS8o3cVPhGl3GtzmC?usp=share_link) .
 
 [+] [Download folder from git](https://download-directory.github.io/) .
+
+## [0]. Works...
   
 > Pwnable.tw
 
@@ -40,13 +40,12 @@
 
   * https://uaf.io/tags.html#BCTF-ref
 
-### List video pwnable, exploit, security research, ...
+## [1]. REFERENCES:
 
-* [BabyTalk#5](https://www.youtube.com/watch?v=94O8wdcvEFM&list=WL&index=249) .
+- List video pwnable, exploit, security research, ...
 
---------------------------------------------------------------------------------
+  * [BabyTalk#5](https://www.youtube.com/watch?v=94O8wdcvEFM&list=WL&index=249) .
 
+- OSCP - https://different-mosquito-965.notion.site/OSCP-ef04a657ca26423d81c1a1fc0b35e147
 
-[+] OSCP - https://different-mosquito-965.notion.site/OSCP-ef04a657ca26423d81c1a1fc0b35e147
-
-[+] Java - https://nickbloor.co.uk/2017/08/13/attacking-java-deserialization/
+- Java - https://nickbloor.co.uk/2017/08/13/attacking-java-deserialization/
