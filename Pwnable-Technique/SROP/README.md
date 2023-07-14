@@ -15,11 +15,11 @@ Vì vậy, bằng cách tận dụng sigreturn, nếu như chúng ta có thể l
 
 - Để có thể tiếp tục tiến trình được tạm dừng khi đã xử lý xong tín hiệu xuất hiện kia, ngữ cảnh của tiến trình tạm dừng được đẩy lên lưu trữ trên stack(register, flag, stack pointer, instruction pointer, ...). Ngữ cảnh có dạng cấu trúc `"sigcontext"`.
 
-<h1 align="center"> <img height=500 src="https://github.com/Nigmaz/Blogs/blob/main/Technique/SROP/sigcontext.png"> </h1>
+<h1 align="center"> <img height=500 src="./sigcontext.png"> </h1>
 
 - Khi trình xử lý kết thúc, `sigreturn()` được gọi => giá trị trong ngữ cảnh được lưu trên stack được trả về với các thanh ghi và xóa chúng trên stack.
 
-<h1 align="center"> <img height=200 src="https://github.com/Nigmaz/Blogs/blob/main/Technique/SROP/sigreturn.png"> </h1>
+<h1 align="center"> <img height=200 src="./sigreturn.png"> </h1>
 
 >=> Vì vậy cuộc tấn công sử dụng `SROP` hoạt động bằng cách đẩy cấu trúc `sigcontext giả mạo` lên stack, ghi đè `return address` ban đầu bằng vị trí của `gadget` cho phép thiết lập các giá trị liên quan để thực hiện syscall `sigreturn`.
 
