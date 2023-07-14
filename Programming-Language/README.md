@@ -14,11 +14,11 @@
 
 - __Scripting language__
   * Linux
-   + bash
+    + bash
   * Windows
-   + Windows PowerShell (.ps1)
-   + Batch Scripting (.bat or .cmd).
-   + VBScript (Visual Basic Scripting Edition)
+    + Windows PowerShell (.ps1)
+    + Batch Scripting (.bat or .cmd).
+    + VBScript (Visual Basic Scripting Edition)
 
 - __References__
   * Perl
