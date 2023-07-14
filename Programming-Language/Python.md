@@ -19,7 +19,7 @@
 	* 4) Tuple(,,): Tương đối giống List, khác là không thể đặt lại giá trị. -> chỉ đọc.
 	* 5) Dictionary{,,}: cặp keys - values
 
-Lưu ý: 
+- Lưu ý: 
 	* Kiểu list, tuple, arr (numpy, array [chuyên đặc tả dữ liệu]), set, directory 
 	* Kiểu list - set [set không lưu giá trị trùng] | map - direct [direct là kiểu dữ liệu mà các key không được lặp lại]
 	* Không cần khai báo kiểu dữ liệu, muốn biết kiểu dữ liệu gì print(type(<var>)).
@@ -239,4 +239,10 @@ def get_unique_values(lst):
     return answer
 ```
 
-- NOTE: Python3. VD: b'<string>'. u là chuỗi unicode ; b là biểu thị chuỗi kí tự byte ; r là chuỗi kí tự không thoát ra được @@. Không có `,` và `;`.
+- NOTE: Python3. VD: b'<string>'.
+  	* u là chuỗi unicode.
+  	* b là biểu thị chuỗi kí tự byte.
+  	* r là chuỗi kí tự không thoát ra được @@.
+  	* Không có `,` và `;`.
+
+
