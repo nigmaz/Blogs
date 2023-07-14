@@ -1,17 +1,18 @@
 # Programming-language
 > Cheat sheet for Programming language and Tips setup IDE or text editor,...
 
-- Hight Level
+- __Hight Level__
   * Python
   * Java
   * C-Sharp
   * SQL
-  * 
-- Low Level
+  * WindowsAPI
+  * ...
+- __Low Level__
   * mASM
   * nASM
 
-- Scripting language
+- __Scripting language__
   * Linux
    + bash
   * Windows
@@ -19,7 +20,7 @@
    + Batch Scripting (.bat or .cmd).
    + VBScript (Visual Basic Scripting Edition)
 
-- References
- * Perl
- * Ruby
- * Golang (*)
+- __References__
+  * Perl
+  * Ruby
+  * Golang (*)
