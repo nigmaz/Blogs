@@ -11,7 +11,6 @@
 
 - https://www.taintedbits.com/tags/pwnable-tw/
 - https://hackmd.io/@wxrdnx/r1CXaFHdv
-- https://drx.home.blog/2019/04/20/pwnable-tw-hacknote/
 
 > TetCTF
  
@@ -25,7 +24,7 @@
   * setup proxy router and server 
   * wireshark filter byte character in payload attack
 
->Heap
+> Heap
 
   * `All view heap teachnique exploit` https://0x434b.dev/overview-of-glibc-heap-exploitation-techniques/
   
