@@ -239,7 +239,7 @@ def get_unique_values(lst):
     return answer
 ```
 
-- NOTE: Python3. VD: b'<string>'.
+- NOTE: Python3. VD: `b'string'`.
   	* u là chuỗi unicode.
   	* b là biểu thị chuỗi kí tự byte.
   	* r là chuỗi kí tự không thoát ra được @@.
