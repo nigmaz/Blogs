@@ -3,17 +3,17 @@
 
 - [Tools C->ASM](https://godbolt.org/) .
 
-### 1) Install masm32
+## [A]. Install MASM32
 
-[+] [Library Irvine](https://asmirvine.com/)
+- [Library Irvine](https://asmirvine.com/)
 
-[+] [Library masm32](https://www.masm32.com/download.htm)
+- [Library masm32](https://www.masm32.com/download.htm)
 
-[+] [Tutorial Install masm32](https://asmdude.wordpress.com/2019/02/15/how-to-install-masm32-on-windows-10/)
+- [Tutorial Install masm32](https://asmdude.wordpress.com/2019/02/15/how-to-install-masm32-on-windows-10/)
 
 - Check `masm32` in `cmd` run: *__ml__*.
 
-### 2) Setting for masm use LIB in VS2019
+## [B]. Setting for MASM use lib in VS2019
 
 [1] Build Dependencies.
 - `masm(.targets, .props)`.
@@ -30,7 +30,7 @@
 - Properties/VC++ Directories:
 `External Include Directories: ";C:\masm32".`
 
-### 3) [loadPEB](https://securitycafe.ro/2015/10/30/introduction-to-windows-shellcode-development-part1/) and `Extrn`.
+## [C] [loadPEB](https://securitycafe.ro/2015/10/30/introduction-to-windows-shellcode-development-part1/) and `Extrn`.
 
 [1] Build Dependencies.
 - `masm(.targets, .props)`.
@@ -40,12 +40,12 @@
 
 >NOTE: Check `Item type: Microsoft Macro Assembler` and `Configuration Manager - x64` .
 
-### * Code `mASM` load `PEB - (Process Environment Block)` .
+## [D] * Code `mASM` load `PEB - (Process Environment Block)` .
 
-* x86: point entry load start `main` / set `Build Dependencies` / set `Solution Platforms` .
-* x86_64: point entry load start `mainCRTStartup` / set `Build Dependencies` / set `Solution Platforms` . 
+- x86: point entry load start `main` / set `Build Dependencies` / set `Solution Platforms` .
+- x86_64: point entry load start `mainCRTStartup` / set `Build Dependencies` / set `Solution Platforms` . 
 
->[NOTE] Shellcode Windows:
+> [NOTE] Shellcode Windows:
 
 ```
 `LoadLibraryA` - allows you to load a DLL. 
@@ -69,11 +69,12 @@ labeldata:
 
 - Compile: 
  
->`ml /c /Zd /coff msgbox.obj` .
+  * `ml /c /Zd /coff msgbox.obj` .
 
->`link /SUBSYSTEM:CONSOLE  /LIBPATH:c:\masm32\lib  msgbox.obj` . WINDOWS or CONSOLE
+  * `link /SUBSYSTEM:CONSOLE  /LIBPATH:c:\masm32\lib  msgbox.obj` . WINDOWS or CONSOLE
 
------------------------------------------------
+
+## [E] References:
 
 [+] [Video Tutorial](https://www.youtube.com/watch?v=9e1ER2o83N0&list=PL2YJKKcudhJ0ar-IYMehPGRwbcUz8NZJj&index=19&t=11s) .
 
