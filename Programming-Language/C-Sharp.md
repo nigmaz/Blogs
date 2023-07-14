@@ -1,7 +1,7 @@
 # C-Sharp
 
-> VS2019. C# settings project Type: `Console App`.
-- ...
+> VisualStudio-2019. C# settings project Type: `Console App`.
+- Code OOP Application.
 
 ## [0] .Net (DotNet)
 
