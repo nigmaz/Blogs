@@ -1,4 +1,4 @@
-# Programming-language
+# Programming-Language
 > Cheat sheet for Programming language and Tips setup IDE or text editor,...
 
 - __Hight Level__
