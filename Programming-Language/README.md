@@ -1,6 +1,7 @@
 # Programming-Language
 > Cheat sheet for Programming language and Tips setup IDE or text editor,...
 
+## [0]. Overview
 - __Hight Level__
   * Python
   * Java
@@ -24,3 +25,12 @@
   * Perl
   * Ruby
   * Golang (*)
+
+## [1]. SHELLCODE
+
+- __[(System Calls) <= GLIBC ]__ & Shellcode (Linux).
+
+- __[(System Calls) <= WindowsAPI]__ & Shellcode (Windows).
+
+> Windows cũng có các syscall để tương tác với kernel nhưng nếu viết shellcode windows bằng syscall thì sẽ bị giới hạn về số lượng syscall và không thể tương tác với mạng như là bộ thư viện API được cung cấp để lập trình ứng dụng trên Windows.
+
