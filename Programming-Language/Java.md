@@ -5,18 +5,19 @@
 java -version   // this will check your jre version
 javac -version  // this will check your java compiler version if you installed
 ```
+
+## [0]. IDE.
 > Use `Eclipse` to code Java. 
 - [Java Tutorial New Project Eclipse](https://www.youtube.com/watch?v=uksb46znL58). 
 
 > Use `NetBeans` to code Java.
 - [Java Tutorial New Project NetBeans](https://www3.ntu.edu.sg/home/ehchua/programming/howto/netbeans_howto.html). 
 
-> **BTL -JAVA mẫu**
-
+- BTL JAVA mẫu:
   * https://youtu.be/w3QmdZSshag
   * https://youtu.be/0PPzWgRxpFk
 
-
+## [1]. NOTE:
 - In ra màn hình.
 
 ```java
@@ -34,12 +35,12 @@ System.out.print("125 + 206 = " + (125+206)); // 125 + 206 = 331.
 - Ép kiểu dữ liệu. `c = (long)a + b`.
 - Nhập xuất.
 
-Yêu cầu: 
->`import java.util.Scanner;`.
+- Yêu cầu: 
+  * `import java.util.Scanner;`.
 
->`Scanner sc = new Scanner(System.in);` | gán phương thức nhập Scanner = sc .
+  * `Scanner sc = new Scanner(System.in);` | gán phương thức nhập Scanner = sc .
 
-[Nhập xuất](https://loda.me/articles/jav4-nhap-xuat-du-lieu-trong-java) .
+- [Nhập xuất](https://loda.me/articles/jav4-nhap-xuat-du-lieu-trong-java) .
 
 VD:
 
@@ -50,7 +51,7 @@ int age = sc.nextInt();
 double gpa = sc.nextDouble();
 ```
 
-> Lớp `Scanner` không cung cấp phương thức để nhập dữ liệu kiểu char, thay vào đó cần nhập dữ liệu kiểu `String` và lấy ra ký tự đầu tiên trong String.
+- Lớp `Scanner` không cung cấp phương thức để nhập dữ liệu kiểu char, thay vào đó cần nhập dữ liệu kiểu `String` và lấy ra ký tự đầu tiên trong String.
 
 ```java
 char c = sc.next().charAt(0);
@@ -79,7 +80,7 @@ s.charAt(2);
 s.charAt(3);
 ```
 
-> Phương thức
+- Phương thức: Một số phương thức như (Hàm con).
 
 ```java
 1) s.length();
@@ -94,8 +95,7 @@ s.charAt(3);
 8) s.substring(0, 2);
 ```
 
-- Một số phương thức:(Hàm con).
->Truyền đối số như C, Cpp.
+- Truyền đối số như C, Cpp.
 
 ```java
 public class <name>{
