@@ -1,9 +1,10 @@
 # PYTHON
->Install - [Python3 Windows](https://www.python.org/downloads/).
+> [Install Python3 Windows](https://www.python.org/downloads/) and [get-pip.py](https://bootstrap.pypa.io/get-pip.py).
 
->Pycharm - [Configure a Python interpreter](https://www.jetbrains.com/help/pycharm/configuring-python-interpreter.html).
+## [0]. IDE.
+- Pycharm - [Configure a Python interpreter](https://www.jetbrains.com/help/pycharm/configuring-python-interpreter.html) .
 
->Python environment project - https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-programming-environment-on-ubuntu-20-04-quickstart
+- [Python environment project LINUX](https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-programming-environment-on-ubuntu-20-04-quickstart) .
 
 >Python Project Example:
 
@@ -11,6 +12,7 @@
 	
 	- [Object Tracking](https://www.youtube.com/shorts/ocA30qI9Z-M) .
 
+## [1]. NOTE:
 - Các kiểu dữ liệu trong python.
 
 1) Numbers: int, long, float, complex(số phức), ...
