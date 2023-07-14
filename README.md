@@ -28,7 +28,10 @@
 > ASCIS - SVATTT
 
 - `2017` https://www.youtube.com/watch?v=_EJQKtpQ0oM
- 
+
+- Attack&Defense
+  * setup proxy router and server 
+  * wireshark filter byte character in payload attack
 
 >Heap
 
