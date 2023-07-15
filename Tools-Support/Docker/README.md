@@ -60,7 +60,7 @@ sudo docker ps -a
 
 - Thực thi câu lệnh yêu cầu với container đã run __(VD như lấy shell vào tương tác với container)__.
 
-- __NOTE:__ `<cmd>` : có thể là pwd, /bin/bash, bash, sh.
+- __[+] NOTE:__ `<cmd>` : có thể là pwd, /bin/bash, bash, sh.
 
 ```bash 
 sudo docker exec -it <ID_container> <cmd> 
