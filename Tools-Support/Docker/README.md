@@ -115,7 +115,7 @@ FROM pwn.red/jail
     * Nếu có chỉ định riêng trong file là dòng: __ENV JAIL_PORT = 1337__.
     * Khi chạy container thì thêm tham số __--privileged__.
 ```bash
-sudo docker run --rm -p5000:5000 --privileged -it <tag_name>
+sudo docker run --rm -p 5000:5000 --privileged -it <tag_name>
 ```
 
 ### B. Image Docker-compose
