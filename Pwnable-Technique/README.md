@@ -30,6 +30,10 @@
 
 ## [0]. Cheatsheet
 
+- Với những bài bị stripped và bật PIE => gdb.attach sử dụng `breakrva *[offset]`, check giá trị biến toàn cục thì `got` -> tìm dần lên theo địa chỉ của GOT được lưu.
+
+- pwntools hỗ trợ flat(...) giá trị byte điền tự động là p64() hoặc p32() phụ thuộc cấu trúc chương trình là x86 hay x86_64 hoặc có thể đặt giá trị giống code exploit `[convert - ASCIS 2022]` .
+
 - Patchelf LIBC or pwnint 
 ```bash
 ##################### SUGGEST #########################
@@ -60,11 +64,20 @@ Ngoài ra, có một cách để tạo một tệp tạm thời và tải lại 
 gef➤  r `perl -e 'print "A"x10' > tmp` < tmp
 ```
 
-- Với những bài bị stripped và bật PIE => gdb.attach sử dụng `breakrva *[offset]`, check giá trị biến toàn cục thì `got` -> tìm dần lên theo địa chỉ của GOT được lưu.
+- Sử dụng google-colab trong 1 số trường hợp đặc biệt.
 
-- pwntools hỗ trợ flat(...) giá trị byte điền tự động là p64() hoặc p32() phụ thuộc cấu trúc chương trình là x86 hay x86_64 hoặc có thể đặt giá trị giống code exploit `[convert - ASCIS 2022]` .
-
-
+```python
+!pip install --upgrade git+https://github.com/Gallopsled/pwntools.git
+import os
+os.environ['PWNLIB_NOTERM'] = '1'
+os.environ['JUPYTER_DETECTED'] ='yes'
+from google.colab import drive
+drive.mount('/content/drive')
+!ls
+%cd /content/drive/MyDrive/Colab Notebooks/
+!ls
+...script-pwntools
+```
 
 ## [1]. Compile use mitigations
  
