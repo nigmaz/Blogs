@@ -8,7 +8,8 @@
 - Khi đó khớp trực tiếp libc.so từ module - hàm DynELF trong pwntools.
 - Điều kiện yêu cầu là địa chỉ thực trong LIBC và các hàm output: `write, puts, printf, ...`
 
-### `[A] VD:` Khi hàm output của chương trình được cung cấp là hàm write, chúng ta có thể sử dụng hàm write để xuất địa chỉ thực của hàm write. Mẫu viết DynELF(64-bits) của chức năng write được cung cấp:
+### `[A] write()` 
+- Khi hàm output của chương trình được cung cấp là hàm write, chúng ta có thể sử dụng hàm write để xuất địa chỉ thực của hàm write. Mẫu viết DynELF(64-bits) của chức năng write được cung cấp:
 ```python
 def leak(address):
     payload = padding
@@ -26,7 +27,8 @@ system_address=d.lookup("system", "libc")
 log.info("system LIBC address: " + hex(system))
 ```
 
-- `[B] VD:` Khi là hàm puts, đầu ra của hàm puts khó kiểm soát hơn nhiều so với đầu ra của chức năng write vì chúng ta có thể kiểm soát đầu ra của hàm write bao nhiêu byte  còn đầu ra của hàm puts là cho đến khi gặp ký tự NULL
+### `[B] puts()`
+- Khi là hàm puts, đầu ra của hàm puts khó kiểm soát hơn nhiều so với đầu ra của chức năng write vì chúng ta có thể kiểm soát đầu ra của hàm write bao nhiêu byte  còn đầu ra của hàm puts là cho đến khi gặp ký tự NULL
 => khó khăn hơn cho việc leak vì ta vẫn chỉ cần 4 byte đầu khi leak. Khi sử dụng puts sẽ xuất hiện hai tình huống:                                                                                                                                                                                          
     * `1.` Không còn dữ liệu nào của chương trình được in ra sau khi dùng pus để leak.
     * `2.` Có dữ liệu của chương trình được in ra sau khi sử dụng puts để leak. VD: "<value use puts => leak>Helloworld!!!"
