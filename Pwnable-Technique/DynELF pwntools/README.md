@@ -8,7 +8,7 @@
 - Khi đó khớp trực tiếp libc.so từ module - hàm DynELF trong pwntools.
 - Điều kiện yêu cầu là địa chỉ thực trong LIBC và các hàm output: `write, puts, printf, ...`
 
-- `[A] VD:` Khi hàm output của chương trình được cung cấp là hàm write, chúng ta có thể sử dụng hàm write để xuất địa chỉ thực của hàm write. Mẫu viết DynELF(64-bits) của chức năng write được cung cấp:
+### `[A] VD:` Khi hàm output của chương trình được cung cấp là hàm write, chúng ta có thể sử dụng hàm write để xuất địa chỉ thực của hàm write. Mẫu viết DynELF(64-bits) của chức năng write được cung cấp:
 ```python
 def leak(address):
     payload = padding
