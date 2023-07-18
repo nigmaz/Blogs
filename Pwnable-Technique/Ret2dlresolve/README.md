@@ -12,6 +12,7 @@
 
 ![otherCall.png](./images/otherCall.png)
 
+- Hai đối số có đối số thứ hai liên quan đến JMPREL, đối số thứ 1 link_map cần leak hoặc ghi đè để tránh gây lỗi.
 
 ## [1]. 32-bit
 
