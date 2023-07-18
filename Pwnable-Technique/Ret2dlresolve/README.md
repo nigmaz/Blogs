@@ -1,7 +1,7 @@
 # Ret2dlresolve 
 >Trả về hàm `_dl_runtime_resolve` với các tham số được tùy chỉnh nhằm giải quyết bất kì hàm nào trong libc mà chúng ta muốn gọi. 
 
-- Bài viết china nên đọc:
+- Bài viết China nên đọc:
     * https://blog.csdn.net/qq_51868336/article/details/114644569
     * https://ctf-wiki.org/pwn/linux/user-mode/stackoverflow/x86/advanced-rop/ret2dlresolve/
 
