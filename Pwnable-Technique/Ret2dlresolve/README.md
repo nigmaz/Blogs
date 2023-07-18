@@ -6,7 +6,7 @@
     * https://ctf-wiki.org/pwn/linux/user-mode/stackoverflow/x86/advanced-rop/ret2dlresolve/
     * [link_map struct](https://man7.org/linux/man-pages/man3/dlinfo.3.html) .
 
-- `_dl_runtime_resolve(link_map, rel_offset)` => Phân tích quá trình resolve dựa trên STRTAB, SYMTAB, JMPREL sau đó là các cấu trúc và thuật toán cần fake để thực hiện `ret2dlresolve`, để nắm vững kĩ thuật nên làm ví dụ mẫu, đọc writeup. 
+- `_dl_runtime_resolve(link_map, rel_offset)` => Phân tích quá trình resolve dựa trên `STRTAB, SYMTAB, JMPREL` sau đó là các cấu trúc và thuật toán cần fake để thực hiện `ret2dlresolve`, để nắm vững kĩ thuật nên làm ví dụ mẫu, đọc writeup. 
    * Bắt đầu từ kiến trúc `32 bit` trước vì nó đơn giản hơn khi khai thác trên kiến trúc này. 
    * Trên kiến trúc `64 bit` về cơ bản cấu trúc không thay đổi nhiều, có thay đổi về vị trí, một vài dữ liệu trong cấu trúc, thuật toán kiểm tra dữ liệu.
 - Khi chương trình gọi hàm từ thư viện lần đầu tiên.
