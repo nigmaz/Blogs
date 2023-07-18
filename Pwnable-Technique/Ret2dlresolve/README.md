@@ -191,6 +191,22 @@ fake_sym_struct = p32(st_name) + p32(0)
 fake_sym_struct += p32(0) + p32(0x12)
 ```
 
+- Mô tả bằng hình
+
+```c
+             +--------+
+r_offset     |GOT     |  0x300     
+r_info       |0x2100  |  0x304
+alignment    |AAAAAAAA|  0x308
+st_name      |0x120   |  0x310
+st_value     |0x0     |
+st_size      |0x0     |
+others       |0x12    |
+sym_string   |"syst   |  0x320
+             |em\x00" |
+             +--------+
+```
+
 - Sau khi resolve địa chỉ hàm system sẽ được đặt trong r_offset - trong vd là got của read. Khi tạo payload thì thường được để liền payload nên sau khi resolve sẽ gọi tới hàm system luôn.
 
 ### Reference Source:
