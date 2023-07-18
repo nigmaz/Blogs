@@ -25,15 +25,30 @@
 - DEBUG chương trình kiểm tra giá trị trên `GOT` khi hàm chưa được gọi - là địa chỉ lệnh thứ hai trong đoạn mã `PLT`, `jmp 0x80482f0` nhảy đến call reesolve.
 
 ```asm
+pwndbg> plt
+Section .plt 0x80482f0-0x8048330:
+0x8048300: read@plt
+0x8048310: alarm@plt
+0x8048320: __libc_start_main@plt
 pwndbg> disass 'read@plt'
 Dump of assembler code for function read@plt:
-   0x08048300 <+0>:	jmp    DWORD PTR ds:0x804a00c
-   0x08048306 <+6>:	push   0x0
-   0x0804830b <+11>:	jmp    0x80482f0
+   0x08048300 <+0>:     jmp    DWORD PTR ds:0x804a00c
+   0x08048306 <+6>:     push   0x0 ; rel_offset of read
+   0x0804830b <+11>:    jmp    0x80482f0
 End of assembler dump.
 pwndbg> x/wx 0x804a00c
-0x804a00c <read@got.plt>:	0x08048306
-pwndbg> 
+0x804a00c <read@got.plt>:       0x08048306
+pwndbg> disass 'alarm@plt'
+Dump of assembler code for function alarm@plt:
+   0x08048310 <+0>:     jmp    DWORD PTR ds:0x804a010
+   0x08048316 <+6>:     push   0x8 ; rel_offset of alarm 
+   0x0804831b <+11>:    jmp    0x80482f0
+End of assembler dump.
+pwndbg> x/3i 0x80482f0
+   0x80482f0:   push   DWORD PTR ds:0x804a004 ; link_map
+   0x80482f6:   jmp    DWORD PTR ds:0x804a008 ; _dl_runtime_resolve
+   0x80482fc:   add    BYTE PTR [eax],al
+pwndbg>
 ```
 
 - Phần .dynamic của tệp ELF chứa thông tin được ld.so sử dụng để phân giải các `symbol` trong thời gian chạy. Chỉ tập trung vào `SYMTAB, STRTAB, và JMPREL`.
