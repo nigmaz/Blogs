@@ -46,7 +46,7 @@ Dump of assembler code for function alarm@plt:
    0x0804831b <+11>:    jmp    0x80482f0
 End of assembler dump.
 pwndbg> x/3i 0x80482f0
-   0x80482f0:   push   DWORD PTR ds:0x804a004 ; link_map struct
+   0x80482f0:   push   DWORD PTR ds:0x804a004 ; struct link_map{4 fields}
    0x80482f6:   jmp    DWORD PTR ds:0x804a008 ; _dl_runtime_resolve
    0x80482fc:   add    BYTE PTR [eax],al
 pwndbg>
