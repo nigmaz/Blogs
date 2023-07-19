@@ -229,6 +229,8 @@ sym_string   |"syst   |  0x320
 
 - Sau khi resolve địa chỉ hàm system sẽ được đặt trong r_offset - trong vd là got của read. Khi tạo payload thì thường được để liền payload nên sau khi resolve sẽ gọi tới hàm system luôn.
 
+- VD babystack do limit input nên không đủ không gian stack => stack pivoting khi số lượng ký tự được nhập ít hơn pl ta cần thiết lập. Khi thay đổi stack sang rw-p dễ gây lỗi trong _dl_fixup() với vùng nhớ lỗi segment fault.
+
 ### Reference Source:
 
 [+] https://gist.github.com/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62
