@@ -140,6 +140,7 @@ sudo docker-compose up --build
 - Cách lấy LIBC:
     * `1.` nc => container đang run.
     * `2.` Lấy id-process của service đang chạy (VD: container chạy chương trình source thì service là source).
+    * Lưu ý là một số bài có timeout nên cần thao tác nhanh để `sudo gdb -p id_process`
     ```bash
     ps aux | grep <service>
     ```
