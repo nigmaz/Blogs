@@ -159,7 +159,7 @@ sudo docker-compose up --build
         ```
         + Phân quyền
         ```bash
-        sudo chown nigmaz libc.so.6
+        sudo chown nigmaz libc.so.6 ld-linux-x86-64.so.2
         ```
 
 ### D. WSL
