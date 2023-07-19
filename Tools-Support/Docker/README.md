@@ -157,6 +157,10 @@ sudo docker-compose up --build
         ```bash
         sudo docker cp <container_id>:/path_ld .
         ```
+        + Phân quyền
+        ```bash
+        sudo chown nigmaz libc.so.6
+        ```
 
 ### D. WSL
 
