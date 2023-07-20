@@ -5,31 +5,31 @@
 - Hiểu rõ các lý thuyết máy tính cơ bản như Mạng máy tính, Hệ điều hành, Kiến trúc máy tính và Lý thuyết trình biên dịch là bốn lý thuyết máy tính cơ bản quan trọng nhất 
 và hầu như tất cả các kỹ thuật mới đều được xây dựng dựa trên bốn lý thuyết này.
 
-    * [1] Stack bug.
+   * [1] Stack bug.
 
-    * [2] Format string.
+   * [2] Format string.
 
-* [3] Heap bug.
+   * [3] Heap bug.
 
-* [4] IO-File Structure.
+   * [4] IO-File Structure.
 
-* [5] Race condition.
+   * [5] Race condition.
 
-* [6] Typeof Confusion.
+   * [6] Typeof Confusion.
 
-* [7] Integer Overflow.
+   * [7] Integer Overflow.
 
-* [8] Sandbox Escape.
+   * [8] Sandbox Escape.
 
-* [9] Linux Kernel. (Kernel read CVE => report => modern hơn | kernel Pwn2Own - đọc CVE xong variant hunting)
+   * [9] Linux Kernel. (Kernel read CVE => report => modern hơn | kernel Pwn2Own - đọc CVE xong variant hunting)
 
-* [10] ARM - Pwn.
+   * [10] ARM - Pwn.
 
-* [11] Pwn - Windows.
+   * [11] Pwn - Windows.
 
-* [12] Browser Serach (Browser v8 pwn - state of the art exploit)
+   * [12] Browser Serach (Browser v8 pwn - state of the art exploit)
 
-* [13] CVE realworld (RCE/PLE - Windows | Linux | IOS)
+   * [13] CVE realworld (RCE/PLE - Windows | Linux | IOS)
 
 ## [0]. Cheatsheet
 
