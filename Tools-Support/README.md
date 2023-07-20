@@ -26,3 +26,5 @@
 [+] https://drx.home.blog/2018/08/24/hack-password-wifi-chuan-bao-mat-wpa-wpa2-bang-kali-linux/
 
 [+] https://drx.home.blog/2018/07/20/tu-viet-chuong-trinh-danh-cap-password-duoc-luu-trong-chrome-bang-python/
+
+[+] https://www.youtube.com/watch?v=CV39QzFpJx4
