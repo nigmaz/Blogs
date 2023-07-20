@@ -17,6 +17,8 @@ javac -version  // this will check your java compiler version if you installed
   * https://youtu.be/w3QmdZSshag
   * https://youtu.be/0PPzWgRxpFk
 
+- Code Android: android studio app
+
 ## [1]. NOTE:
 - In ra màn hình.
 
