@@ -5,9 +5,9 @@
 - Hiểu rõ các lý thuyết máy tính cơ bản như Mạng máy tính, Hệ điều hành, Kiến trúc máy tính và Lý thuyết trình biên dịch là bốn lý thuyết máy tính cơ bản quan trọng nhất 
 và hầu như tất cả các kỹ thuật mới đều được xây dựng dựa trên bốn lý thuyết này.
 
-   * [1] Stack bug.
+    * [1] Stack bug.
 
-* [2] Format string.
+    * [2] Format string.
 
 * [3] Heap bug.
 
