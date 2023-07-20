@@ -20,7 +20,8 @@
     ```
     * Trong libc.so.6 có mọi gadgets, đôi khi không thể dùng tools để tìm được 1 số gadgets. VD: `syscall ; ret` [dicectf 2023 - bop].
     * Vậy nên để bypass tránh việc ghi đè canary ta chỉ cần nhập chữ cái (+, -, *, /) mà không thuộc format %lu thì phần tử đó sẽ bị skip, không thay đổi. VD: chall `Warmup` - UIT-2022-CTF . 
-    * Lỗi ép kiểu là khi khai báo biến x là long (8 byte) nhưng khi xử lý điều kiện ép kiểu nó thành int (4 byte) dẫn đến sai về mặt giá trị so sánh (trên thanh ghi) => bug 
+    * Lỗi ép kiểu là khi khai báo biến x là long (8 byte) nhưng khi xử lý điều kiện ép kiểu nó thành int (4 byte) dẫn đến sai về mặt giá trị so sánh (trên thanh ghi) => bug
+    * Leak được LIBC thì có thể leak được stack thông qua biến environ trong LIBC.
     * Viết sheelcode cần set context.binary
 
     ```python
