@@ -28,6 +28,9 @@
 
 * [13] CVE realworld (RCE/PLE - Windows | Linux | IOS)
 
+- Hiểu rõ các lý thuyết máy tính cơ bản như Mạng máy tính, Hệ điều hành, Kiến trúc máy tính và Lý thuyết trình biên dịch là bốn lý thuyết máy tính cơ bản quan trọng nhất 
+và hầu như tất cả các kỹ thuật mới đều được xây dựng dựa trên bốn lý thuyết này.
+
 ## [0]. Cheatsheet
 
 - Với những bài bị stripped và bật PIE => gdb.attach sử dụng `breakrva *[offset]`, check giá trị biến toàn cục thì `got` -> tìm dần lên theo địa chỉ của GOT được lưu.
