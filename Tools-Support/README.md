@@ -16,6 +16,7 @@
 
 - Docker 
 - Markdown ["-", "*" và "+"]
+- [Telegram + API-ChatGPT](https://www.facebook.com/groups/j2team.community/permalink/2070108753321234/?mibextid=S66gvF) 
 
 ## [2]. References
 
