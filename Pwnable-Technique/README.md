@@ -33,6 +33,8 @@ và hầu như tất cả các kỹ thuật mới đều được xây dựng d�
 
 ## [0]. Cheatsheet
 
+- [g-libc source](https://elixir.bootlin.com/glibc/glibc-2.23/source) .
+
 - Với những bài bị stripped và bật PIE => gdb.attach sử dụng `breakrva *[offset]`, check giá trị biến toàn cục thì `got` -> tìm dần lên theo địa chỉ của GOT được lưu.
 
 - pwntools hỗ trợ flat(...) giá trị byte điền tự động là p64() hoặc p32() phụ thuộc cấu trúc chương trình là x86 hay x86_64 hoặc có thể đặt giá trị giống code exploit `[convert - ASCIS 2022]` .
