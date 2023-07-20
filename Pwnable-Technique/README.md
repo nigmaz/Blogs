@@ -2,7 +2,10 @@
 
 > Tổng hợp kỹ thuật khai thác và có ví dụ khai thác mẫu đơn giản để luyện tập trong quá trình chơi CTF.
 
-* [1] Stack bug.
+- Hiểu rõ các lý thuyết máy tính cơ bản như Mạng máy tính, Hệ điều hành, Kiến trúc máy tính và Lý thuyết trình biên dịch là bốn lý thuyết máy tính cơ bản quan trọng nhất 
+và hầu như tất cả các kỹ thuật mới đều được xây dựng dựa trên bốn lý thuyết này.
+
+   * [1] Stack bug.
 
 * [2] Format string.
 
@@ -27,9 +30,6 @@
 * [12] Browser Serach (Browser v8 pwn - state of the art exploit)
 
 * [13] CVE realworld (RCE/PLE - Windows | Linux | IOS)
-
-- Hiểu rõ các lý thuyết máy tính cơ bản như Mạng máy tính, Hệ điều hành, Kiến trúc máy tính và Lý thuyết trình biên dịch là bốn lý thuyết máy tính cơ bản quan trọng nhất 
-và hầu như tất cả các kỹ thuật mới đều được xây dựng dựa trên bốn lý thuyết này.
 
 ## [0]. Cheatsheet
 
