@@ -28,6 +28,8 @@
 - Realworld Malware Analysis
    * sheet reader => rce cve (Malware Excel)
    * microsoft visual basic for application (Malware Excel)
+   * https://class.malware.re/
+   * https://knightz1.github.io/blog/malware/analysis/2022/11/30/Malware-analysis.html
 
 ## A. AntiDebug.
 
