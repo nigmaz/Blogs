@@ -23,3 +23,6 @@
 
 [+] https://anonyviet.com/minh-da-bypass-av-xam-nhap-windows-10-voi-metasploit-va-python-nhu-the-nao/
 
+[+] https://drx.home.blog/2018/08/24/hack-password-wifi-chuan-bao-mat-wpa-wpa2-bang-kali-linux/
+
+[+] https://drx.home.blog/2018/07/20/tu-viet-chuong-trinh-danh-cap-password-duoc-luu-trong-chrome-bang-python/
