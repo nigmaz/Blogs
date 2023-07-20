@@ -16,8 +16,6 @@
 
 - Docker 
 - Markdown ["-", "*" và "+"]
-- Network
-  * application layer => transport layer => internet layer => link layer => physical layer | physical layer => link layer => internet layer => transport layer => application layer
 
 ## [2]. References
 
