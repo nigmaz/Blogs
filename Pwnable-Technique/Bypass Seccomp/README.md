@@ -1,4 +1,4 @@
-# Bypass Seccomp
+# Exploit Bypass Seccomp
 
 * [KMACTF2022 - Duet](https://github.com/nhtri2003gmail/CTFWriteup/tree/master/2022/KMACTF-2022/Duet)
 
