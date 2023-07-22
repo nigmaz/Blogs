@@ -4,7 +4,7 @@
 
 - Trường hợp [syst3mfailure](https://syst3mfailure.io/ret2dl_resolve) là VD không cần leak `link_map`.
 
->Trong trường hợp cần leak thì khi có hàm `write` từ libc bạn cũng có thể lựa chọn khai thác `ret2libc` nên chọn kỹ thuật khai thác nào phụ thuộc vào bạn và ngữ cảnh bạn đang khai thác(có thể khi không cung cấp libc thì khó tìm chính xác offset thì sẽ dùng ret2dlresolve hoặc là dùng DynELF).
+> Trong trường hợp cần leak thì khi có hàm `write` từ libc bạn cũng có thể lựa chọn khai thác `ret2libc` và cả hai kỹ thuật đều cần biêt control được gái trị các thanh ghi nên chọn kỹ thuật khai thác nào phụ thuộc vào bạn và ngữ cảnh bạn đang khai thác(có thể khi không cung cấp libc thì khó tìm chính xác offset thì sẽ dùng ret2dlresolve hoặc là dùng DynELF).
 
 - __[NOTE]__:
 
