@@ -6,10 +6,9 @@
 
 ### A) Active Windows and Office
 
-- Active
-```bat
-run cmd administrator
+- Active: run cmd administrator
 
+```bat
 Cscript slmgr.vbs -upk
 Cscript slmgr.vbs /ckms
 Sc config Sppsvc start= auto & Net.exe start Sppsvc
