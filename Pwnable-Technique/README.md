@@ -34,6 +34,7 @@ và hầu như tất cả các kỹ thuật mới đều được xây dựng d�
 ## [0]. Cheatsheet
 
 - [g-libc source](https://elixir.bootlin.com/glibc/glibc-2.23/source) .
+- [Temple Of Pwn](https://www.youtube.com/watch?v=TqGMVRV2l9s&list=PLiCcguURxSpbD9M0ha-Mvs-vLYt-VKlWt) .
 
 - Với những bài bị stripped và bật PIE => gdb.attach sử dụng `breakrva *[offset]`, check giá trị biến toàn cục thì `got` -> tìm dần lên theo địa chỉ của GOT được lưu.
 
