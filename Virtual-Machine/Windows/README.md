@@ -6,23 +6,7 @@
 
 ### A) Active Windows and Office
 
-- Active: run cmd administrator
-
-```bat
-Cscript slmgr.vbs -upk
-Cscript slmgr.vbs /ckms
-Sc config Sppsvc start= auto & Net.exe start Sppsvc
-Sc config Osppsvc  start= auto & Net.exe start Osppsvc
-sc config LicenseManager start= auto & net start LicenseManager
-sc config wuauserv start= auto & net start wuauserv
-Cscript slmgr.vbs /ipk VNW26-D6PYF-QK9V8-96XKC-7CFC6
-changepk.exe /productkey BGRWH-K2JPJ-VX82X-8CRF8-D43MT
-Cscript slmgr.vbs -ato
-exit
-exit
-```
-
-- Office
+- 
 
 ### B) Turn off Windows Defender
 
