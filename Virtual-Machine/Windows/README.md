@@ -6,7 +6,8 @@
 
 ### A) Active Windows and Office
 
-- 
+- Chỉ nên sử dụng trên máy ảo (Trong drive google cũng có).
+- [activate-aio-tools-version-3-1-3](https://tinhte.vn/thread/activate-aio-tools-version-3-1-3-tool-active-kich-hoat-windows-office-moi-phien-ban.3205474/) .
 
 ### B) Turn off Windows Defender
 
