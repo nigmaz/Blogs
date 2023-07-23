@@ -1,4 +1,4 @@
-# Ubuntu - Setup VMware virtual machine tools CTF Pwnable challenges .
+# Ubuntu - Setup VMware for CTF Pwnable challenges .
 
 >DATE: 07/06/2023 - Ubuntu 18.04 | Ubuntu 20.04 | Ubuntu 22.04 .
 
