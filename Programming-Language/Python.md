@@ -10,6 +10,13 @@
 	* [Flappy Bird](https://www.youtube.com/watch?v=MMxFDaIOHsE) .
 	* [Object Tracking](https://www.youtube.com/shorts/ocA30qI9Z-M) .
 
+- Python cho phân tích dữ liệu và tài chính:
+  	* https://www.youtube.com/watch?v=HPGYTWYM13s&list=PLJcWUrckOCKKwjjHALg6fnyQCHv8z92rs
+  	* https://www.youtube.com/watch?v=tm1jSQ41qbM&list=PLoncS0PB71UTLqgSm8GnTH2ryEiduPpuL
+  	* [Xác xuất thống kê](https://www.youtube.com/watch?v=Oahag8GhAJ0&list=PLsEmKKF4H46k013lBf0S_NFCMfU-JNZbd) .
+  	* [Python Finance](https://www.youtube.com/watch?v=wPvyIMh83dI&list=PLpSAba2Yn1UxkqOMh6AgZDKNFjGWaW5Sv) .
+  	* [Ứng dụng python trong các vấn đề thực tế](https://www.youtube.com/watch?v=hfnBswCe4QE&list=PLNgoJiFE4HNdoeXa9GbgDJL0--GmF5mF6) .
+
 ## [1]. NOTE:
 - Các kiểu dữ liệu trong python.
 
