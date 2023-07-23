@@ -12,6 +12,10 @@
 - https://www.taintedbits.com/tags/pwnable-tw/
 - https://hackmd.io/@wxrdnx/r1CXaFHdv
 
+> Attack & Defense
+- setup proxy router and server 
+- wireshark filter byte character in payload attack
+
 > TetCTF
  
 - `2019` https://d4rkn3ss.medium.com/write-up-for-pwnable-challenges-tetctf-2019-a74eb177518e
@@ -19,10 +23,6 @@
 > ASCIS - SVATTT
 
 - `2017` https://www.youtube.com/watch?v=_EJQKtpQ0oM
-
-- Attack&Defense
-  * setup proxy router and server 
-  * wireshark filter byte character in payload attack
 
 > Heap
 
