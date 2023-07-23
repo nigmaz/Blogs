@@ -24,7 +24,8 @@ dt FILE
  p/x _IO_2_1_stdout_
 x/28gx &_IO_2_1_stdout_
 
-Use null byte overflow to get overlapping chunks. Allocate chunk in stdout->flags and partial overwrite IO_write_base to get leak. Then allocation at __free_hook and overwrite with one_gadget.
+Use null byte overflow to get overlapping chunks.
+Allocate chunk in stdout->flags and partial overwrite IO_write_base to get leak. Then allocation at __free_hook and overwrite with one_gadget.
 
 
 puts() calls _IO_new_file_xsputn (FILE *f, const void *data, size_t n)
