@@ -2,7 +2,7 @@
 
 - Tùy từng tường hợp demo cái gì trên máy ảo windows kiểu rce back reverseshell thì tắt hết firewall đi (chỉ thực tập cơ sở thôi).
 
-## [1]. Windows stuff
+## [1]. Windows install and setup
 
 ### A) Active Windows and Office
 
