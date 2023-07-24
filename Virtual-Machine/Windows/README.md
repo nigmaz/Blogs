@@ -6,7 +6,9 @@
 
 ### A) Active Windows and Office
 
-- Chỉ sử dụng trên máy ảo (Trong google drive có office + aio-tools).
+- Chỉ sử dụng trên máy ảo (Trong google drive có office).
+- [Drive Google](https://drive.google.com/drive/u/1/folders/1UJZAV_8MK3QCuWO-pyZKTqrlLM7v_lK5) .
+- [Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts/releases) . 
 
 
 ### B) Turn off Windows Defender
