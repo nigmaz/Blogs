@@ -13,4 +13,4 @@
     * Default gateway: (ifconfig)(.1)
 
 - Network errors when trying to boot the copied virtual machine
-   * Alternatively, you can change the MAC address for a virtual machine by selecting the virtual machine and selecting `VM > Settings`. On the Hardware tab, select the virtual network adapter and click `Advanced`. Type a new MAC address in the MAC Address text box, or click `Generate` to have Workstation Pro generate a new address2.
+   * Alternatively, you can change the MAC address for a virtual machine by selecting the virtual machine and selecting `VM > Settings`. On the `Network Adapter` tab, select the virtual network adapter and click `Advanced`. Type a new MAC address in the MAC Address text box, or click `Generate` to have Workstation Pro generate a new address2.
