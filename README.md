@@ -48,6 +48,7 @@
 - List video pwnable, exploit, security research, ...
 
   * [BabyTalk#5](https://www.youtube.com/watch?v=94O8wdcvEFM&list=WL&index=249) .
+  * [HITCON-CTF 2019](https://www.youtube.com/watch?v=JsfI-5oog44) .
 
 - OSCP * https://different-mosquito-965.notion.site/OSCP-ef04a657ca26423d81c1a1fc0b35e147
 
