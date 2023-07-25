@@ -11,11 +11,8 @@
 - https://hackmd.io/@wxrdnx/r1CXaFHdv
 
 > Attack & Defense
-- setup proxy router and server 
-- wireshark filter byte character in payload attack
+- setup proxy router and use wireshark filter byte character in payload attack | write rule.
 - https://2022.faustctf.net/information/rules/
-- https://2020.faustctf.net/information/attackdefense-for-beginners/
-- https://7.enowars.com/setup
 - https://7.enowars.com/howto
 
 > TetCTF
