@@ -15,28 +15,13 @@
 - https://2022.faustctf.net/information/rules/
 - https://7.enowars.com/howto
 
-> TetCTF
- 
-- `2019` https://d4rkn3ss.medium.com/write-up-for-pwnable-challenges-tetctf-2019-a74eb177518e
-
 > ASCIS - SVATTT
 
 - `2017` https://www.youtube.com/watch?v=_EJQKtpQ0oM
 
-> Heap
-
-  * `All view heap teachnique exploit` https://0x434b.dev/overview-of-glibc-heap-exploitation-techniques/
-  
-  * `Heap security check` https://heap-exploitation.dhavalkapil.com/diving_into_glibc_heap/security_checks
-
-> how2heap 
-
-  * https://hackmd.io/@u1f383/Sy_2pqMAP
-
-
-> NOTE-PWNABLE
-
-  * https://uaf.io/tags.html#BCTF-ref
+> TetCTF
+ 
+- `2019` https://d4rkn3ss.medium.com/write-up-for-pwnable-challenges-tetctf-2019-a74eb177518e
 
 ## [1]. References:
 
