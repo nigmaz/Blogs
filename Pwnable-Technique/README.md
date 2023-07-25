@@ -5,38 +5,12 @@
 - Hiểu rõ các lý thuyết máy tính cơ bản như Mạng máy tính, Hệ điều hành, Kiến trúc máy tính và Lý thuyết trình biên dịch là bốn lý thuyết máy tính cơ bản quan trọng nhất 
 và hầu như tất cả các kỹ thuật mới đều được xây dựng dựa trên bốn lý thuyết này.
 
-   * [1] Stack bug.
-
-   * [2] Format string.
-
-   * [3] Heap bug.
-
-   * [4] IO-File Structure.
-
-   * [5] Race condition.
-
-   * [6] Typeof Confusion.
-
-   * [7] Integer Overflow.
-
-   * [8] Sandbox Escape.
-
-   * [9] Linux Kernel. (Kernel read CVE => report => modern hơn | kernel Pwn2Own - đọc CVE xong variant hunting)
-
-   * [10] ARM - Pwn.
-
-   * [11] Pwn - Windows.
-
-   * [12] Browser Serach (Browser v8 pwn - state of the art exploit)
-
-   * [13] CVE realworld (RCE/PLE - Windows | Linux | IOS)
-
 ## [0]. Cheatsheet
 
 - [g-libc source](https://elixir.bootlin.com/glibc/glibc-2.23/source) .
 - [Video list Temple Of Pwn](https://www.youtube.com/watch?v=TqGMVRV2l9s&list=PLiCcguURxSpbD9M0ha-Mvs-vLYt-VKlWt) .
 - [Vấn đề khi khai thác remote với socat](https://ir0nstone.gitbook.io/notes/types/stack/exploiting-over-sockets/socat) .
-
+- NOTE-PWNABLE: https://uaf.io/tags.html#BCTF-ref
 - Với những bài bị stripped và bật PIE => gdb.attach sử dụng `breakrva *[offset]`, check giá trị biến toàn cục thì `got` -> tìm dần lên theo địa chỉ của GOT được lưu.
 
 - pwntools hỗ trợ flat(...) giá trị byte điền tự động là p64() hoặc p32() phụ thuộc cấu trúc chương trình là x86 hay x86_64 hoặc có thể đặt giá trị giống code exploit `[convert - ASCIS 2022]` .
@@ -209,3 +183,29 @@ gcc -Wall test1.o test2.o -o test
 [+] https://dtrugman.medium.com/elf-loaders-libraries-and-executables-on-linux-e5cfce318f94
 
 [+] https://www.redhat.com/en/blog/hardening-elf-binaries-using-relocation-read-only-relro
+
+   * [1] Stack bug.
+
+   * [2] Format string.
+
+   * [3] Heap bug.
+
+   * [4] IO-File Structure.
+
+   * [5] Race condition.
+
+   * [6] Typeof Confusion.
+
+   * [7] Integer Overflow.
+
+   * [8] Sandbox Escape.
+
+   * [9] Linux Kernel. (Kernel read CVE => report => modern hơn | kernel Pwn2Own - đọc CVE xong variant hunting)
+
+   * [10] ARM - Pwn.
+
+   * [11] Pwn - Windows.
+
+   * [12] Browser Serach (Browser v8 pwn - state of the art exploit)
+
+   * [13] CVE realworld (RCE/PLE - Windows | Linux | IOS)
