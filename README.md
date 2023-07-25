@@ -39,7 +39,7 @@
   * https://hackmd.io/@u1f383/Sy_2pqMAP
 
 
-> listNOTE-PWNABLE
+> NOTE-PWNABLE
 
   * https://uaf.io/tags.html#BCTF-ref
 
