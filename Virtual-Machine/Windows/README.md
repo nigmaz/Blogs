@@ -1,5 +1,7 @@
 # Windows
 
+![version.png](./version.png)
+
 - Tùy từng tường hợp demo cái gì trên máy ảo windows kiểu rce back reverseshell thì tắt hết firewall đi (chỉ thực tập cơ sở thôi).
 
 ## [1]. Windows install and setup
