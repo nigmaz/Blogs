@@ -1,5 +1,7 @@
 # FILE STRUCTURE ORIENTED PROGRAMMING
 
+- filestruct allocated in heap (VD: stream = fopen("/dev/urandom", "r");)
+
 - Overview:
     * [FSOP angelboy](https://nightrainy.github.io/2019/08/07/play-withe-file-structure-%E6%90%AC%E8%BF%90/?fbclid=IwAR06PLkixggoSadl1ANGvZNW4zgfNOgcs5VC2l2IHtFzEVclUJzFp2NObsI#content) .
 
