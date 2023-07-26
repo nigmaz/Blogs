@@ -9,7 +9,7 @@
 ### A) Active Windows and Office
 
 - Chỉ sử dụng trên máy ảo (Trong google drive có office).
-- [Drive Google](https://drive.google.com/drive/u/1/folders/1UJZAV_8MK3QCuWO-pyZKTqrlLM7v_lK5) .
+- [Office2016](https://drive.google.com/drive/folders/1VgZRlnU4GvfcmqUW-ms4rfqrqiQIZJsB?usp=sharing) .
 - [Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts/releases) . 
 
 
