@@ -26,6 +26,8 @@
 
 ## [2]. Refenrences:
 
+- https://fullstack.edu.vn/learning-paths?_type=tab
+
 [+] VIDEO: 
 - [How to put an HTML website online](https://youtu.be/p1QU3kLFPdg) .
 - [Docker for web](https://www.youtube.com/watch?v=M-Uf-GjtYyA&list=PLxF76yfppeZafDqtHWXOMu6HoLCydjCtL) .
