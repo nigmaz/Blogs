@@ -8,7 +8,6 @@ và hầu như tất cả các kỹ thuật mới đều được xây dựng d�
 ## [0]. Cheatsheet
 
 - [g-libc source](https://elixir.bootlin.com/glibc/glibc-2.23/source) .
-- [Video list Temple Of Pwn](https://www.youtube.com/watch?v=TqGMVRV2l9s&list=PLiCcguURxSpbD9M0ha-Mvs-vLYt-VKlWt) .
 - [Vấn đề khi khai thác remote với socat](https://ir0nstone.gitbook.io/notes/types/stack/exploiting-over-sockets/socat) .
 - NOTE-PWNABLE: https://uaf.io/tags.html#BCTF-ref
 - Với những bài bị stripped và bật PIE => gdb.attach sử dụng `breakrva *[offset]`, check giá trị biến toàn cục thì `got` -> tìm dần lên theo địa chỉ của GOT được lưu.
