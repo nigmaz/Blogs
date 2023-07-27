@@ -56,10 +56,10 @@ disk> delete partition override
 - Detect It Easy
 - CFF Explorer Suite IV
 - HxD
-- Process Explorer
 - Text Editor | IDE:
+  * Visual Studio*
   * Dev C++
-  * Sublime Text | VS Code
+  * Sublime Text
 - Demo CVE:
   * Process Hacker 2
   * WireShark
