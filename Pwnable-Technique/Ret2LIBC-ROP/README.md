@@ -62,40 +62,4 @@
     * [CTF: No leak - close(fd)](https://blog.idiot.sg/2018-09-03/tokyowesterns-ctf-2018-load-pwn/) .
     * [CTF: BlindROP](https://soolidsnake.github.io/2018/07/15/blindx86_64_rop.html) .
 
-- OTHER LOGIC BUG: seed, permission, ...
-    * __RANDOM => seed__: dùng seed có giá trị là thời gian thực lúc chạy chương trình, vì vậy tạo 1 script chạy cùng là xong
-
-    * Nhiệm vụ của srand(x) đưa ra seed x rồi rand() dựa vào x đưa ra số a. Khi đó a là seed cho lần gọi rand() tiếp theo (cứ như thế tiếp tục). Do vậy VD trong vòng lặp thời gian 1 giây rand() dùng seed cũ liên tục nên nó không bao giờ ra số khác nhau trong khoảng thời gian đó.
-
-    * VD: [Meshuggah](https://qbao.home.blog/2020/04/30/start-to-pwnb01lers-ctf/) .
-    ```asm
-    asm:
-        mov edi, 0      ; time
-        call _time
-        add eax, 2
-        mov edi, eax    ; seed
-        call _srand
-    ```
-
-    ```C
-    int main(){
-        int seed = time(0) + 2;
-        srand(seed);
-        for(int i = 0; i < 100; i++)
-            printf("%d\n", rand());
-        return 0;
-    }
-    ```
-
-    ```python
-    from ctypes import CDLL
-    from ctypes.util import find_library
-
-    libc = CDLL(find_library("c"))
-
-    libc.srand(0x5a35b162)
-    print(libc.rand(), libc.rand(), libc.rand())
-    ```
-    * BRUTEFORCE - `TWOSHOT - KMACTF2022`
-    * ...
 
