@@ -2,7 +2,9 @@
 
 - Overview:
     * [format-specifiers-in-c](https://www.tutorialspoint.com/format-specifiers-in-c) .
-
+```python
+pl += f"%{wr}c%17$hn\x00".encode()
+```
 
 - Technique note:
     * Một số bài format strings cần tạo vòng lặp loop thì có rất nhiều ý tưởng để tạo vòng lặp loop: 
