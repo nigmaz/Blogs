@@ -34,3 +34,4 @@
 
 [+] OTHER:
 - [Buid Server Physical](https://www.youtube.com/watch?v=apC1bOLbzbY)
+- Kích hoạt cái này là được này chrome://flags/#allow-insecure-localhost
