@@ -15,7 +15,8 @@
     * [bypass vtable check](https://dhavalkapil.com/blogs/FILE-Structure-Exploitation/) .
     * https://outflux.net/blog/archives/2011/12/22/abusing-the-file-structure/
     * MICS technique with HEAP ATTACK:
-        + House of orange 
+        + House of orange
+    * https://blog.kylebot.net/2022/10/22/angry-FSROP/
 - gdb:
 
 ```bash
