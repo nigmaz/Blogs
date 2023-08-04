@@ -5,6 +5,7 @@
 - Seccomp
 
 ## [1]. ~/.bashrc OR ~/.zshrc, rename user, rename hostname,...
+### 1.0. NOTE
 - File cấu hình sourcepackge nằm ở /etc/apt/source.list .
 - `sudo -s` - root user, `sudo -i` - root .
 
