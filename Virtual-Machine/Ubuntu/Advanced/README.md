@@ -5,9 +5,7 @@
 - Seccomp
 
 ## [1]. ~/.bashrc OR ~/.zshrc, rename user, rename hostname,...
-
-**NOTE:**
-
+- File cấu hình sourcepackge nằm ở /etc/apt/source.list .
 - `sudo -s` - root user, `sudo -i` - root .
 
 - [Add and Delete User](https://www.digitalocean.com/community/tutorials/how-to-add-and-delete-users-on-ubuntu-18-04) 
