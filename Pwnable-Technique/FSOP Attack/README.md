@@ -21,6 +21,7 @@
 - gdb:
 
 ```bash
+p *stdout
 ptype FILE
 dt FILE
  => view FILE STRUCT 
