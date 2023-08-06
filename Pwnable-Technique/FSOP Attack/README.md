@@ -17,6 +17,7 @@
     * MICS technique with HEAP ATTACK:
         + House of orange
     * https://blog.kylebot.net/2022/10/22/angry-FSROP/
+    * [FSOP + HEAP](https://ret2school.github.io/post/mailman/) .
 - gdb:
 
 ```bash
