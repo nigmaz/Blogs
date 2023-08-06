@@ -8,6 +8,8 @@ This is not really to play the pwn CTF challenge but it optimizes your performan
 
 ### 1.1. VMware-Tools
 
+- sharefolder vmware ubuntu.
+
 - Check VMware-Tools.
 
 ```bash
