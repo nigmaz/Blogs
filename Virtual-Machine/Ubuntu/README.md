@@ -151,18 +151,20 @@ sudo apt-get install python3 python3-dev python3-pip && \
 pip3 --version
 ```
 
-- Error and try
+- Upgrade pip3 (Add PATH => Upgrade pip3)
+
+```bash
+python3 -m pip install --upgrade pip
+```
+
+- Error (pip or lib not support python3 less version)
+    * [Upgrade python3 in ubuntu 18.04](https://www.itsupportwale.com/blog/how-to-upgrade-to-python-3-10-on-ubuntu-18-04-and-20-04-lts/) .
+    * [Upgrade python latest version in ubuntu](https://cloudbytes.dev/snippets/upgrade-python-to-latest-version-on-ubuntu-linux) .
 
 ```bash
 sudo apt remove python3-pip 
 wget https://bootstrap.pypa.io/get-pip.py
 sudo python3 get-pip.py
-```
-
-- Upgrade pip3 (Add PATH => Upgrade pip3)
-
-```bash
-python3 -m pip install --upgrade pip
 ```
 
 ### 3.3. Python2 and pip2 (Not recommended)
@@ -210,7 +212,7 @@ sudo apt-get install -y socat build-essential jq strace ltrace curl wget git mak
 ### 4.2. Install Python3 Libraries
 
 ```bash
-sudo pip3 install pwntools pathlib2 keystone-engine unicorn capstone ropper ipython
+python3 -m pip install pwntools pathlib2 keystone-engine unicorn capstone ropper ipython
 ```
 
 - __NOTE:__ Fix in VPS: 
@@ -220,7 +222,7 @@ sudo pip3 install pwntools pathlib2 keystone-engine unicorn capstone ropper ipyt
 ### 4.3. Install Python2 Libraries
 
 ```bash
-sudo pip2 install pwntools pathlib2 keystone-engine unicorn capstone ropper ipython
+python2 -m pip install pwntools pathlib2 keystone-engine unicorn capstone ropper ipython
 ```
 
 ## [5]. Install Text Editor
@@ -277,8 +279,8 @@ cd ../
 - Fix __AttributeError: module 'lib' has no attribute 'X509_V_FLAG_CB_ISSUER_CHECK'__ in wsl
 
 ```bash
-pip3 install pip --upgrade
-pip3 install pyopenssl --upgrade
+python3 -m pip install pip --upgrade &&
+python3 -m pip install pyopenssl --upgrade
 ```
 
 - Plugin-gdb - [Template](https://github.com/Nigmaz/Blogs/blob/main/Virtual-Machine/Ubuntu/Advanced/README.md#14-gdbinit):
