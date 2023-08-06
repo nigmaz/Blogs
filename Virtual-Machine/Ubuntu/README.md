@@ -4,11 +4,10 @@
 
 ## [1]. Install "Oh My ZSH!" and VMware Tools
 
-This is not really to play the pwn CTF challenge but it optimizes your performance when pwning.
+- This is not really to play the pwn CTF challenge but it optimizes your performance when pwning.
+- Turnon ShareFolder VMWARE Ubuntu.
 
 ### 1.1. VMware-Tools
-
-- sharefolder vmware ubuntu.
 
 - Check VMware-Tools.
 
