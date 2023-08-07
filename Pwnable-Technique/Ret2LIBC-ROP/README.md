@@ -6,6 +6,12 @@
     next(libc.search(b'/bin/sh'))
     ```
    * Trong libc.so.6 có mọi gadgets, đôi khi không thể dùng tools để tìm được 1 số gadgets. VD: `syscall ; ret` [dicectf 2023 - bop].
+   ```python
+   import pwn
+   rop = pwn.ROP(libc, base=<address_overwrite>)
+   rop.call(rop.find_gadget(["syscall", "ret"]))
+   print(rop.dump())
+   ```
    * Từ Ubuntu 18.04 trở đi, nếu việc thực thi thất bại tại những hàm như buffered_vfprintf() hay do_system() trong những file thực thi 64 bit là do ngay trước câu lệnh ret, đầu vùng nhớ stack được cấp phát 16 bytes cho việc gọi lệnh tại return address nên để thực thi được thì cần chèn thêm 1 ROPgadget "ret" vào trước câu lệnh cần thực thi để bỏ đi 1 stack 8 bytes đầu tiên và thực thi câu lệnh này nằm ở stack ngay sau đó.
     ```
     STACK:
