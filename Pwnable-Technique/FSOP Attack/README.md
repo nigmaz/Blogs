@@ -1,5 +1,9 @@
 # FILE STRUCTURE ORIENTED PROGRAMMING
 
+- Technique attack
+   * stdout => read arbitrary
+   * stdin => write arbitrary
+
 - filestruct allocated in heap (VD: stream = fopen("/dev/urandom", "r");)
 
 - Overview:
