@@ -10,8 +10,10 @@
 
 > Attack & Defense
 - setup proxy router and use wireshark filter byte character in payload attack | write rule.
-- https://2022.faustctf.net/information/rules/
-- https://7.enowars.com/howto
+  * https://2022.faustctf.net/information/rules/
+  * https://7.enowars.com/howto
+- setup iptable, proxy and tools sub flag
+  * https://phoenixnap.com/kb/iptables-tutorial-linux-firewall
 
 > ASCIS - SVATTT
 - `2017` https://www.youtube.com/watch?v=_EJQKtpQ0oM
