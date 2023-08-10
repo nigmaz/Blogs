@@ -1,5 +1,5 @@
 # Windows Service Application
-## Tạo một ứng dụng dịch vụ Windows bằng Visual Studio 2019 và sau đó gọi calc.exe từ trong dịch vụ này.
+## [+] Tạo một ứng dụng dịch vụ Windows bằng Visual Studio 2019 và sau đó gọi calc.exe từ trong dịch vụ này.
 
 
 `Bước 1:` Tạo dự án Windows Service
@@ -77,7 +77,7 @@ sc create MyCalcService binPath= "đường_dẫn_đến_tệp.exe"
 - 4. Bạn sẽ thấy calc.exe được mở.
 
 
-## Bạn có thể tạo một dịch vụ Windows bằng C++ để gọi calc.exe:
+## [+] Bạn có thể tạo một dịch vụ Windows bằng C++ để gọi calc.exe:
 
 `Bước 1:` Tạo dự án dịch vụ Windows
 
