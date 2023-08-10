@@ -1,4 +1,4 @@
-![image](https://github.com/nigmaz/Blogs/assets/75942822/cf22b663-261a-4595-aa34-32b89c513cb5)![image](https://github.com/nigmaz/Blogs/assets/75942822/9da4e8e4-faf2-4c16-923a-30153c423d85)# FILE STRUCTURE ORIENTED PROGRAMMING
+# FILE STRUCTURE ORIENTED PROGRAMMING
 
 ## [0] Overview
 - Filestruct allocated in heap `(VD: stream = fopen("/dev/urandom", "r");)`
