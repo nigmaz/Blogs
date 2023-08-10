@@ -1,4 +1,4 @@
-# FILE STRUCTURE ORIENTED PROGRAMMING
+![image](https://github.com/nigmaz/Blogs/assets/75942822/cf22b663-261a-4595-aa34-32b89c513cb5)![image](https://github.com/nigmaz/Blogs/assets/75942822/9da4e8e4-faf2-4c16-923a-30153c423d85)# FILE STRUCTURE ORIENTED PROGRAMMING
 
 ## [0] Overview
 - Filestruct allocated in heap `(VD: stream = fopen("/dev/urandom", "r");)`
@@ -7,8 +7,10 @@
 ## [1] Technique Attack
 - FSOP có hai kiểu attack 1 là corrupt file stream của libc (thường là stdout để leak), hai là fake hoặc corrupt file stream của chương trình khởi tạo (có thể là vtable, cả struct file, ...) và một dạng nữa là kết hợp cùng tấn công HEAP.
 - FSOP technique
-   * stdout => read arbitrary
-   * stdin => write arbitrary
+   *  _IO_FILE-Arbitrary-Address-Read | stdout => read arbitrary 
+   *  _IO_FILE-Arbitrary-Address-Write |stdin => write arbitrary
+   *  iofile_aw
+   *  Bypass-IO_validate_vtable
    * ...
 - Attack FSOP + Heap
    * Use null byte overflow to get overlapping chunks. Allocate chunk in stdout->flags and partial overwrite IO_write_base to get leak. Then allocation at __free_hook and overwrite with one_gadget.
