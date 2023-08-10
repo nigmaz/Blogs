@@ -7,10 +7,10 @@
 ## [1] Technique Attack
 - FSOP có hai kiểu attack 1 là corrupt file stream của libc (thường là stdout để leak), hai là fake hoặc corrupt file stream của chương trình khởi tạo (có thể là vtable, cả struct file, ...) và một dạng nữa là kết hợp cùng tấn công HEAP.
 - FSOP technique
-   *  _IO_FILE-Arbitrary-Address-Read | stdout => read arbitrary 
-   *  _IO_FILE-Arbitrary-Address-Write |stdin => write arbitrary
-   *  iofile_aw
-   *  Bypass-IO_validate_vtable
+   *  `_IO_FILE-Arbitrary-Address-Read` | stdout => read arbitrary 
+   *  `_IO_FILE-Arbitrary-Address-Write` |stdin => write arbitrary
+   *  `iofile_aw`
+   *  `Bypass-IO_validate_vtable`
    * ...
 - Attack FSOP + Heap
    * Use null byte overflow to get overlapping chunks. Allocate chunk in stdout->flags and partial overwrite IO_write_base to get leak. Then allocation at __free_hook and overwrite with one_gadget.
