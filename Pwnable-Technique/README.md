@@ -36,6 +36,10 @@ $ patchelf --set-rpath ./<libc.so.6-[libc]> ./<my-program>
 $ check use: --print-needed
 $        --add-needed
 ```
+- GDB + arguments
+```bash
+gdb -q ./babyrev_2 111111111111111ABCDEFGHIJKMNTO
+```
 
 - GDB Khi nhận được giá trị đầu vào sau khi chạy chương trình, gdb có thể truyền giá trị như sau.
 
