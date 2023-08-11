@@ -38,7 +38,7 @@ $        --add-needed
 ```
 - GDB + arguments
 ```bash
-gdb -q ./babyrev_2 111111111111111ABCDEFGHIJKMNTO
+gdb -q --args ./babyrev_2 111111111111111ABCDEFGHIJKMNTO
 ```
 
 - GDB Khi nhận được giá trị đầu vào sau khi chạy chương trình, gdb có thể truyền giá trị như sau.
