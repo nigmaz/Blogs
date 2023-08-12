@@ -4,6 +4,7 @@
 
 - Tùy từng tường hợp demo cái gì trên máy ảo windows kiểu rce back reverseshell thì tắt hết firewall đi (chỉ thực tập cơ sở thôi).
 - Fix [Antimalware Service Executable hight CPU](https://www.freecodecamp.org/news/what-is-antimalware-service-executable-why-is-it-high-cpu-disk-usage/#:~:text=Antimalware%20service%20executable%20is%20a%20Windows%20Security%20process%20that%20executes,programs%20from%20time%20to%20time.) .
+- [Windows Server enable wifi](https://www.youtube.com/watch?v=PupMFBL39RI) .
 
 ## [1]. Windows install and setup
 
