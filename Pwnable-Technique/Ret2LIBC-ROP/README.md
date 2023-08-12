@@ -6,7 +6,11 @@
     next(libc.search(b'/bin/sh'))
     ```
    * [Tools local find offset LIBC](https://x3ero0.tech/posts/orxw_balsn_ctf_2021_pwn/) .
-   * Trong libc.so.6 có mọi gadgets, đôi khi không thể dùng tools để tìm được 1 số gadgets. VD: `syscall ; ret` [dicectf 2023 - bop].
+   * Trong libc.so.6 có mọi gadgets, đôi khi không thể dùng tools để tìm được 1 số gadgets.
+       + VD: `syscall ; ret` [dicectf 2023 - bop].
+       + gadget push rax;ret
+       + jmp rsp
+       + ...
    ```python
    import pwn
    rop = pwn.ROP(libc, base=<address_overwrite>)
