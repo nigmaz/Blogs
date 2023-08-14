@@ -3,6 +3,9 @@
 - &environ
 - fini_array
 - rtld_global
+- Type Error
+- Command Injection
+- Path Traversal
 - OTHER LOGIC BUG: seed, permission, ...
     * __RANDOM => seed__: dùng seed có giá trị là thời gian thực lúc chạy chương trình, vì vậy tạo 1 script chạy cùng là xong
 
