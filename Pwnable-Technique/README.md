@@ -70,6 +70,31 @@ drive.mount('/content/drive')
 ...script-pwntools
 ```
 
+- Script sample
+
+```python
+#!/usr/bin/env python3
+from pwn import *
+
+elf = ELF("./babyheap")
+libc = ELF("/usr/lib/x86_64-linux-gnu/libc.so.6")
+ld = ELF("/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2")
+if args.LOCAL:
+    p = elf.process()
+    if args.GDB:
+        context.update(binary=elf, log_level="DEBUG")
+        gdb.attach(
+            p,
+            """
+            
+            """,
+        )
+else:
+    p = remote("", "")
+
+p.interactive()
+```
+
 ## [1]. Compile use mitigations
  
 ### RELRO:
@@ -100,3 +125,4 @@ drive.mount('/content/drive')
 [+] https://dtrugman.medium.com/elf-loaders-libraries-and-executables-on-linux-e5cfce318f94
 
 [+] https://www.redhat.com/en/blog/hardening-elf-binaries-using-relocation-read-only-relro
+
