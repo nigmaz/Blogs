@@ -1,4 +1,4 @@
-# Add libc source code to gdb
+# FSOP - add libc source code to GDB
 
 
 * Use when you want to debug deep in libc function like (printf, puts, read, ...), i need to setup this when i learned FSOP attack
