@@ -44,7 +44,8 @@ disk> select partition 4
 disk> delete partition override
 ```
 ## [2]. Windows for Exploit
-- [WSL](https://bwgjoseph.com/how-to-manually-install-wsl2-on-a-windows-10-virtual-machine) .
+- [WSL in Windows-10 and Windows-11](https://learn.microsoft.com/en-us/windows/wsl/install) .
+- [WSL](https://bwgjoseph.com/how-to-manually-install-wsl2-on-a-windows-10-virtual-machine) in `Virtual Machine`.
   * Virtualization engine => Virtualize Intel VT-x/EPT or AMD-V/RVI
 
 - Hex-Rays IDA Pro 7.7
