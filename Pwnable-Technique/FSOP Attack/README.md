@@ -1,5 +1,6 @@
 # FILE STRUCTURE ORIENTED PROGRAMMING
 
+- https://github.com/nigmaz/Blogs/tree/main/Virtual-Machine/Ubuntu/Advanced/FSOP
 ## [0] Overview
 - Filestruct allocated in heap `(VD: stream = fopen("/dev/urandom", "r");)`
 - puts() calls _IO_new_file_xsputn (FILE *f, const void *data, size_t n)
