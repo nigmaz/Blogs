@@ -1,8 +1,7 @@
 # Setup Advanced for learn and research Exploit attack
-- FSOP
 - [Fuzzing](https://y3a.github.io/2022/12/14/fuzzing1/)
+- FSOP
 - Kernel 
-- Seccomp
 
 ## [1]. ~/.bashrc OR ~/.zshrc, rename user, rename hostname,...
 ### 1.0. NOTE
