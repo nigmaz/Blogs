@@ -1,7 +1,17 @@
 # Exploit Bypass Seccomp
 
-* https://dreamhack.io/?obj=221
-* [KMACTF2022 - Duet](https://github.com/nhtri2003gmail/CTFWriteup/tree/master/2022/KMACTF-2022/Duet)
+- https://dreamhack.io/?obj=221
+- [KMACTF2022 - Duet](https://github.com/nhtri2003gmail/CTFWriteup/tree/master/2022/KMACTF-2022/Duet)
+- [https://github.com/david942j/seccomp-tools](https://github.com/david942j/seccomp-tools)
+- [https://pypi.org/project/pwnsandbox/](https://pypi.org/project/pwnsandbox/)
+
+## +) seccomp-tools (Tools for seccomp)
+
+```bash
+$ sudo apt install -y gcc ruby-dev && \
+sudo gem install seccomp-tools
+```
+
 
 ```bash
 Để thực hiện SYSCALL READ, trước tiên chúng ta cần mở tệp. 
