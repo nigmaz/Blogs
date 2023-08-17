@@ -1,4 +1,4 @@
-# Race condition
+# Race Condition
 
 ![race-conditions](./race-conditions.jpg)
 
