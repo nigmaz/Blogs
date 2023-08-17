@@ -1,4 +1,40 @@
-# Exploit Bypass Seccomp
+# Bypass Seccomp
+
+## [0] Overview
+- `SANDBOX` -> `SECCOMP`(SECure COMPuting mode) -> (`STRICT_MODE`, `FILTER_MODE`)
+    * `STRICT_MODE` -> This mode allows only `read,  write,  exit, and sigreturn` system calls to be called, so when a call request for other system calls comes in, a `SIGKILL signal` is generated and the program is terminated. This mode allows very few system calls, making it unsuitable for multi-function applications.
+    ```c
+    // Name: strict_mode.c
+    // Compile: gcc -o strict_mode strict_mode.c
+    #include <fcntl.h>
+    #include <linux/seccomp.h>
+    #include <sys/prctl.h>
+    #include <unistd.h>
+    void init_filter() { prctl(PR_SET_SECCOMP, SECCOMP_MODE_STRICT); }
+    int main() {
+        char buf[256];
+        int fd = 0;
+        init_filter();
+        write(1, "OPEN!\n", 6);
+        fd = open("/bin/sh", O_RDONLY);
+        write(1, "READ!\n", 6);
+        read(fd, buf, sizeof(buf) - 1);
+        write(1, buf, sizeof(buf));
+        return 0;
+    }
+    ```
+    * `FILTER_MODE` -> This mode can use 2 list is (`ALLOW_LIST` or `DENY_LIST`) and has two ways apply this: 
+        + `A Library Function` 
+        | Function          | Explain        |
+        | ----------------- | -------------- |
+        | seccomp_init      | Set value default of mode SECCOMP  |
+        | seccomp_rule_add  | Add rule SECCOMP, can is DENY or ALLOW  |
+        | seccomp_load      | Load rule into application  |
+
+        + `Berkeley Packet Filter (BPF) syntax`
+
+
+
 
 - https://dreamhack.io/?obj=221
 - [KMACTF2022 - Duet](https://github.com/nhtri2003gmail/CTFWriteup/tree/master/2022/KMACTF-2022/Duet)
@@ -8,10 +44,13 @@
 ## +) seccomp-tools (Tools for seccomp)
 
 ```bash
-$ sudo apt install -y gcc ruby-dev && \
+sudo apt install -y gcc ruby-dev && \
 sudo gem install seccomp-tools
 ```
 
+```bash
+sudo apt-get install libseccomp-dev libseccomp2 seccomp
+```
 
 ```bash
 Để thực hiện SYSCALL READ, trước tiên chúng ta cần mở tệp. 
