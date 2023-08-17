@@ -1,8 +1,9 @@
 # Other Attack
 
 - &environ
-- fini_array
 - rtld_global
+- Canary global TLS
+- fini_array
 - Type Error
 - Command Injection
 - Path Traversal
