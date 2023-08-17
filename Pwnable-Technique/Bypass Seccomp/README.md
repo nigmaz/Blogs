@@ -293,7 +293,8 @@ sudo gem install seccomp-tools
     * Use int0x80 thay cho syscall vì x64 có thể thực thi được system call của x86.
         + Đặt rax, rbx, rcx và rdx nhưng nó chỉ lấy 32 bit đầu tiên của các thanh ghi, đó là eax, ebx, ecx và edx.
         + VD: con trỏ tên tệp chỉ được tối đã là vùng nhớ nào đó có giá trị của địa chỉ tối đa 32-bit .
-
+    * `open, write, mmap and exit syscall` https://github.com/unixist/seccomp-bypass 
+    * ...
 ## [2] REFERENCES:
 
 - https://dreamhack.io/?obj=221
