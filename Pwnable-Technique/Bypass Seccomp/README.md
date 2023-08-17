@@ -269,7 +269,7 @@ sudo gem install seccomp-tools
 - `Một số bài CTF có các format sử dụng seccomp từng gặp`
     * open, read, write có thể được thực thi mà không phụ thuộc vào các lệnh gọi hệ thống khác.
     * Sample `dreamhack.io` deny_list: open, read, write and use `openat`, `sendfile` replace. 
-    * Application Binary Interface (ABI): `or rax, 0x40000000`
+    * Application Binary Interface (ABI): `or rax, 0x40000000`, VD: [bypassing-seccomp-prctl](https://tripoloski1337.github.io/ctf/2021/07/12/bypassing-seccomp-prctl.html) .
     ```bash
     mov rax, 2
     or rax, 0x40000000
