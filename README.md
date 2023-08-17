@@ -28,17 +28,4 @@
 
 - OSCP * https://different-mosquito-965.notion.site/OSCP-ef04a657ca26423d81c1a1fc0b35e147
 - Java * https://nickbloor.co.uk/2017/08/13/attacking-java-deserialization/
-- Pwnable map
-   * [1] Stack bug.
-   * [2] Format string.
-   * [3] Heap bug.
-   * [4] FileStructure attack.
-   * [5] Race condition.
-   * [6] Typeof Confusion.
-   * [7] Integer Overflow.
-   * [8] Sandbox Escape.
-   * [9] Linux Kernel. (Kernel read CVE Pwn2Own => report modern and variant hunting)
-   * [10] ARM Exploit.
-   * [11] Windows Exploit.
-   * [12] Browser Exploit. (Browser v8 pwn => state of the art exploit)
-   * [13] CVE realworld. (RCE&PLE => Windows | Linux | IOS)
+
