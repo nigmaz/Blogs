@@ -2,7 +2,7 @@
 
 > Tổng hợp kỹ thuật khai thác và có ví dụ khai thác mẫu đơn giản để luyện tập trong quá trình chơi CTF.
 
-- Hiểu rõ các lý thuyết máy tính cơ bản như Mạng máy tính, Hệ điều hành, Kiến trúc máy tính và Lý thuyết trình biên dịch là bốn lý thuyết máy tính cơ bản quan trọng nhất 
+- Hiểu rõ các lý thuyết máy tính cơ bản như `Mạng máy tính`, `Hệ điều hành`, `Kiến trúc máy tính` và `Lý thuyết trình biên dịch` là bốn lý thuyết máy tính cơ bản quan trọng nhất 
 và hầu như tất cả các kỹ thuật mới đều được xây dựng dựa trên bốn lý thuyết này.
 - TARGET(Xem qua short ở Dreamhack):
    * Heap and Other House of (0CTF_BabyHeap-2022(tls_attack2ROP+seccomp))...
@@ -16,9 +16,29 @@ và hầu như tất cả các kỹ thuật mới đều được xây dựng d�
 - NOTE-PWNABLE: https://uaf.io/tags.html#BCTF-ref
 - Với những bài bị stripped và bật PIE => gdb.attach sử dụng `breakrva *[offset]`, check giá trị biến toàn cục thì `got` -> tìm dần lên theo địa chỉ của GOT được lưu.
 - pwntools hỗ trợ flat(...) giá trị byte điền tự động là p64() hoặc p32() phụ thuộc cấu trúc chương trình là x86 hay x86_64 hoặc có thể đặt giá trị giống code exploit VD:`[convert - ASCIS 2022]` .
-- python script load LIBC:
+- python script:
 ```python
-p = process('./unexploitable',env={'LD_PRELOAD' :'./libc.so.6'}) 
+#!/usr/bin/env python3
+from pwn import *
+
+elf = ELF("./babyheap")
+# p = process('./unexploitable',env={'LD_PRELOAD' :'./libc.so.6'}) 
+libc = ELF("/usr/lib/x86_64-linux-gnu/libc.so.6")
+ld = ELF("/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2")
+if args.LOCAL:
+    p = elf.process()
+    if args.GDB:
+        context.update(binary=elf, log_level="DEBUG")
+        gdb.attach(
+            p,
+            """
+            
+            """,
+        )
+else:
+    p = remote("", "")
+
+p.interactive()
 ```
 - Patchelf LIBC or pwnint 
 ```bash
