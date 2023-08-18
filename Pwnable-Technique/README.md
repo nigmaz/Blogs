@@ -16,7 +16,7 @@ và hầu như tất cả các kỹ thuật mới đều được xây dựng d�
 - Với những bài bị stripped và bật PIE
     * gdb.attach sử dụng `breakrva *[offset]`
     * Check giá trị biến toàn cục thì `got` -> tìm dần lên theo địa chỉ của GOT được lưu.
-- pwntools hỗ trợ flat(...) điền tự động byte là p64() hoặc p32() phụ thuộc cấu trúc chương trình là x86 hay x86_64, VD:`[convert - ASCIS 2022]` .
+- pwntools flat(...) điền tự động byte là p64() hoặc p32() phụ thuộc cấu trúc chương trình là x86 hay x86_64, VD:`[convert - ASCIS 2022]` .
 - Python script:
 ```python
 #!/usr/bin/env python3
