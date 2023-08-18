@@ -119,7 +119,7 @@ drive.mount('/content/drive')
 
 [+] https://www.redhat.com/en/blog/hardening-elf-binaries-using-relocation-read-only-relro
 
-[+] Pwnable Map
+[+] `Pwnable Map`
    * `[1]` Stack bug.
    * `[2]` Format string.
    * `[3]` Heap bug.
