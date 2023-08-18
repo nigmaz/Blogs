@@ -4,7 +4,7 @@
 ## [0] Overview
 - Integer Overflow
 - &environ
-- rtld_global
+- _rtld_global
 - Canary global TLS
 - .fini_array
 - Type of Confusion | Type Error
