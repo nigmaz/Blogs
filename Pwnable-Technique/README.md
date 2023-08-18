@@ -11,12 +11,13 @@ và hầu như tất cả các kỹ thuật mới đều được xây dựng d�
    * ...
 ## [0]. Cheatsheet
 
-- [GLIBC source](https://elixir.bootlin.com/glibc/glibc-2.23/source) .
+- [GLIBC source code](https://elixir.bootlin.com/glibc/glibc-2.23/source) .
 - [Vấn đề khi khai thác remote với socat](https://ir0nstone.gitbook.io/notes/types/stack/exploiting-over-sockets/socat) .
-- NOTE-PWNABLE: https://uaf.io/tags.html#BCTF-ref
-- Với những bài bị stripped và bật PIE => gdb.attach sử dụng `breakrva *[offset]`, check giá trị biến toàn cục thì `got` -> tìm dần lên theo địa chỉ của GOT được lưu.
-- pwntools hỗ trợ flat(...) giá trị byte điền tự động là p64() hoặc p32() phụ thuộc cấu trúc chương trình là x86 hay x86_64 hoặc có thể đặt giá trị giống code exploit VD:`[convert - ASCIS 2022]` .
-- python script:
+- Với những bài bị stripped và bật PIE
+    * gdb.attach sử dụng `breakrva *[offset]`
+    * Check giá trị biến toàn cục thì `got` -> tìm dần lên theo địa chỉ của GOT được lưu.
+- pwntools hỗ trợ flat(...) giá trị byte điền tự động là p64() hoặc p32() phụ thuộc cấu trúc chương trình là x86 hay x86_64, VD:`[convert - ASCIS 2022]` .
+- Python script:
 ```python
 #!/usr/bin/env python3
 from pwn import *
@@ -40,7 +41,7 @@ else:
 
 p.interactive()
 ```
-- Patchelf LIBC or pwnint 
+- Patch LIBC use `patchelf`
 ```bash
 ##################### SUGGEST ##########################
 $ patchelf --set-interpreter ./ld-linux-x86-64.so.2 ./chall
@@ -60,8 +61,7 @@ $        --add-needed
 gdb -q --args ./babyrev_2 111111111111111ABCDEFGHIJKMNTO
 ```
 
-- GDB Khi nhận được giá trị đầu vào sau khi chạy chương trình, gdb có thể truyền giá trị như sau.
-
+- GDB khi nhận được giá trị đầu vào là kết quả của chương trình khác.
 ```bash
 gef➤  r <<< $(perl -e 'print "%n"')
 Starting program: /challenge/app-systeme/ch17/ch17 <<< $(perl -e 'print "%n"')
@@ -73,7 +73,7 @@ Ngoài ra, có một cách để tạo một tệp tạm thời và tải lại 
 gef➤  r `perl -e 'print "A"x10' > tmp` < tmp
 ```
 
-- Sử dụng google-colab trong 1 số trường hợp đặc biệt.
+- `google-colab` trong 1 số trường hợp đặc biệt (tăng tốc độ kết nối đến server).
 
 ```python
 !pip install --upgrade git+https://github.com/Gallopsled/pwntools.git
@@ -86,31 +86,6 @@ drive.mount('/content/drive')
 %cd /content/drive/MyDrive/Colab Notebooks/
 !ls
 ...script-pwntools
-```
-
-- Script sample
-
-```python
-#!/usr/bin/env python3
-from pwn import *
-
-elf = ELF("./babyheap")
-libc = ELF("/usr/lib/x86_64-linux-gnu/libc.so.6")
-ld = ELF("/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2")
-if args.LOCAL:
-    p = elf.process()
-    if args.GDB:
-        context.update(binary=elf, log_level="DEBUG")
-        gdb.attach(
-            p,
-            """
-            
-            """,
-        )
-else:
-    p = remote("", "")
-
-p.interactive()
 ```
 
 ## [1]. Compile use mitigations
@@ -145,17 +120,18 @@ p.interactive()
 [+] https://www.redhat.com/en/blog/hardening-elf-binaries-using-relocation-read-only-relro
 
 [+] Pwnable Map
-   * [1] Stack bug.
-   * [2] Format string.
-   * [3] Heap bug.
-   * [4] FileStructure attack.
-   * [5] Race condition.
-   * [6] Typeof Confusion.
-   * [7] Integer Overflow.
-   * [8] Sandbox Escape.
-   * [9] Linux Kernel. (Kernel read CVE Pwn2Own => report modern and variant hunting)
-   * [10] ARM Exploit.
-   * [11] Windows Exploit.
-   * [12] Browser Exploit. (Browser v8 pwn => state of the art exploit)
-   * [13] CVE realworld. (RCE&PLE => Windows | Linux | IOS)
+   * `[1]` Stack bug.
+   * `[2]` Format string.
+   * `[3]` Heap bug.
+   * `[4]` FileStructure attack.
+   * `[5]` Race condition.
+   * `[6]` Typeof Confusion.
+   * `[7]` Integer Overflow.
+   * `[8]` Logic bug.
+   * `[9]` Sandbox Escape.
+   * `[10]` *Linux Kernel. (Kernel read CVE Pwn2Own => report modern and variant hunting)
+   * `[11]` *ARM Exploit.
+   * `[12]` *Windows Exploit.
+   * `[13]` *Browser Exploit. (Browser v8 pwn => state of the art exploit)
+   * `[14]` *CVE realworld. (RCE&PLE => Windows | Linux | IOS)
 
