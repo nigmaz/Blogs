@@ -3,6 +3,7 @@
 > VisualStudio-2019. WindowsAPI (language C or Cpp) settings project Type: `Empty project`.
 
 - Learn: `learn mfc` - https://functionx.com/visualc/index.htm.
+- https://learn.microsoft.com/en-us/windows/win32/api/
 - [Windows System Programming in C/C++](https://www.youtube.com/watch?v=B999K9yztnI&list=PLDpFwQfbVxIw_rysNCHPeGmh6wIUnhjrt) .
 - [dll project](https://learn.microsoft.com/en-us/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp?view=msvc-170) .
 - https://learn.microsoft.com/en-us/cpp/windows/overview-of-windows-programming-in-cpp?view=msvc-170
