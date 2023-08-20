@@ -1,3 +1,4 @@
+// gcc chall.c -o chall -Wl,-z,relro -fstack-protector-all -no-pie
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
