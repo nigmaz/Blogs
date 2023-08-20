@@ -29,12 +29,13 @@ int main()
     fflush(stdout);
     fgets(buf, ARRAY_SIZE, stdin);
 
-    if (existsInString(flagString, buf))
+    if (existsInString(flagString, buf)) // condition 1 
     {
         printf("only admins are allowed to use the 'super secret' string\n");
         invalidInput();
     }
-    if (strstr(buf, flagString))
+    // dieu kien long nhau de filter du true hay false
+    if (strstr(buf, flagString)) // condition 2
     {
         printf("welcome, you must be an admin!\n");
         FILE *flagFile = fopen("flag.txt", "r");
