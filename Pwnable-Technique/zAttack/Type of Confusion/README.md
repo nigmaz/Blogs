@@ -1,3 +1,6 @@
+# Type of Confusion
+
+```c
 // CPP program to illustrate strstr()
 #include <string.h>
 #include <stdio.h>
@@ -21,7 +24,10 @@ int main()
  
     return 0;
 }
+```
 
-// OUTPUT:
-// String found
-// First occurrence of string 'for' in 'GeeksforGeeks' is 'forGeeks'
+- OUTPUT:
+```
+String found
+First occurrence of string 'for' in 'GeeksforGeeks' is 'forGeeks'
+```
