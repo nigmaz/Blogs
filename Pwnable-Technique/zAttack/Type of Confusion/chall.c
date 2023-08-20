@@ -28,7 +28,7 @@ int main()
     printf("please enter your super secret string: ");
     fflush(stdout);
     fgets(buf, ARRAY_SIZE, stdin);
-
+    // b *main+122
     if (existsInString(flagString, buf)) // condition 1 
     {
         printf("only admins are allowed to use the 'super secret' string\n");
