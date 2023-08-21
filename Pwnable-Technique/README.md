@@ -6,7 +6,7 @@
 và hầu như tất cả các kỹ thuật mới đều được xây dựng dựa trên bốn lý thuyết này.
 - TARGET(Xem qua short ở Dreamhack):
    * Heap and Other House of (0CTF_BabyHeap-2022(tls_attack2ROP+seccomp))...
-   * FSOP
+   * FSOP (target 2/9)
    * Race Condition (target 2/9)
    * ...
 ## [0]. Cheatsheet
