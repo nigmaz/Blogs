@@ -1,6 +1,7 @@
 # FILE STRUCTURE ORIENTED PROGRAMMING
 
 - https://github.com/nigmaz/Blogs/tree/main/Virtual-Machine/Ubuntu/Advanced/FSOP
+
 ## [0] Overview
 - Filestruct allocated in heap `(VD: stream = fopen("/dev/urandom", "r");)`
 - puts() calls _IO_new_file_xsputn (FILE *f, const void *data, size_t n)
@@ -48,7 +49,9 @@ $25 = (struct _IO_FILE *) 0x7ffff7dd18c0 <_IO_2_1_stdin_>
 gef➤  print _IO_2_1_stdin_.file._chain
 $26 = (struct _IO_FILE *) 0x0
 ```
+- _IO_FILE : Cấu trúc biểu diễn luồng tệp trong thư viện chuẩn của hệ thống Linux.
 
+- Bảng hàm ảo (vtable) : Là bảng được cấp phát khi định nghĩa lớp và sử dụng hàm ảo trong ngôn ngữ lập trình hướng đối tượng
 ```c
 struct _IO_FILE_plus
 {
