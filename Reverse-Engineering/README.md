@@ -24,3 +24,7 @@ if ($is64Bit) {
     Write-Host "The file is a 32-bit PE file."
 }
 ```
+- Anti-Disassembly
+- Anti-Debugging
+- Anti-Virtual Machine Techniques
+- Packers and Unpacking
