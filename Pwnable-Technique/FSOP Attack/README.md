@@ -84,3 +84,55 @@ struct _IO_FILE
 #ifdef _IO_USE_OLD_IO_FILE
 };
 ```
+```c
+struct _IO_jump_t
+{
+    JUMP_FIELD(size_t, __dummy);
+    JUMP_FIELD(size_t, __dummy2);
+    JUMP_FIELD(_IO_finish_t, __finish);
+    JUMP_FIELD(_IO_overflow_t, __overflow);
+    JUMP_FIELD(_IO_underflow_t, __underflow);
+    JUMP_FIELD(_IO_underflow_t, __uflow);
+    JUMP_FIELD(_IO_pbackfail_t, __pbackfail);
+    /* showmany */
+    JUMP_FIELD(_IO_xsputn_t, __xsputn);
+    JUMP_FIELD(_IO_xsgetn_t, __xsgetn);
+    JUMP_FIELD(_IO_seekoff_t, __seekoff);
+    JUMP_FIELD(_IO_seekpos_t, __seekpos);
+    JUMP_FIELD(_IO_setbuf_t, __setbuf);
+    JUMP_FIELD(_IO_sync_t, __sync);
+    JUMP_FIELD(_IO_doallocate_t, __doallocate);
+    JUMP_FIELD(_IO_read_t, __read);
+    JUMP_FIELD(_IO_write_t, __write);
+    JUMP_FIELD(_IO_seek_t, __seek);
+    JUMP_FIELD(_IO_close_t, __close);
+    JUMP_FIELD(_IO_stat_t, __stat);
+    JUMP_FIELD(_IO_showmanyc_t, __showmanyc);
+    JUMP_FIELD(_IO_imbue_t, __imbue);
+};
+
+gdb-peda$ p *(struct _IO_jump_t *)0x00007ffff7dca2a0
+$32 = {
+  __dummy = 0x0, 
+  __dummy2 = 0x0, 
+  __finish = 0x7ffff7a6e400 <_IO_new_file_finish>, 
+  __overflow = 0x7ffff7a6f3d0 <_IO_new_file_overflow>, 
+  __underflow = 0x7ffff7a6f0f0 <_IO_new_file_underflow>, 
+  __uflow = 0x7ffff7a70490 <__GI__IO_default_uflow>, 
+  __pbackfail = 0x7ffff7a71d20 <__GI__IO_default_pbackfail>, 
+  __xsputn = 0x7ffff7a6da00 <_IO_new_file_xsputn>, 
+  __xsgetn = 0x7ffff7a6d660 <__GI__IO_file_xsgetn>, 
+  __seekoff = 0x7ffff7a6cc60 <_IO_new_file_seekoff>, 
+  __seekpos = 0x7ffff7a70a60 <_IO_default_seekpos>, 
+  __setbuf = 0x7ffff7a6c920 <_IO_new_file_setbuf>, 
+  __sync = 0x7ffff7a6c7a0 <_IO_new_file_sync>, 
+  __doallocate = 0x7ffff7a601e0 <__GI__IO_file_doallocate>, 
+  __read = 0x7ffff7a6d9e0 <__GI__IO_file_read>, 
+  __write = 0x7ffff7a6d260 <_IO_new_file_write>, 
+  __seek = 0x7ffff7a6c9e0 <__GI__IO_file_seek>, 
+  __close = 0x7ffff7a6c910 <__GI__IO_file_close>, 
+  __stat = 0x7ffff7a6d250 <__GI__IO_file_stat>, 
+  __showmanyc = 0x7ffff7a71ea0 <_IO_default_showmanyc>, 
+  __imbue = 0x7ffff7a71eb0 <_IO_default_imbue>
+}
+```
