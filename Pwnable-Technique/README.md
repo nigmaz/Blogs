@@ -7,7 +7,7 @@ và hầu như tất cả các kỹ thuật mới đều được xây dựng d�
 - TARGET(Xem qua short ở Dreamhack):
    * Heap and Other House of (0CTF_BabyHeap-2022(tls_attack2ROP+seccomp))...
    * FSOP
-   * Race Condition
+   * Race Condition (target 2/9)
    * ...
 ## [0]. Cheatsheet
 
