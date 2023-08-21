@@ -8,6 +8,7 @@ và hầu như tất cả các kỹ thuật mới đều được xây dựng d�
    * Heap and Other House of (0CTF_BabyHeap-2022(tls_attack2ROP+seccomp))...
    * FSOP (target 2/9)
    * Race Condition (target 2/9)
+   * Crypto (Dreamhack)
    * ...
 ## [0]. Cheatsheet
 
