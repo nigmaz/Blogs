@@ -55,8 +55,8 @@ disk> delete partition override
 - WinDBG
 - x84_64dbg
 - OllyDbg
-- Detect It Easy
-- CFF Explorer Suite IV
+- Detect It Easy *
+- CFF Explorer Suite IV *
 - HxD
 - Text Editor | IDE:
   * Visual Studio*
