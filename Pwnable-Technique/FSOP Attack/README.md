@@ -139,3 +139,10 @@ $32 = {
   __imbue = 0x7ffff7a71eb0 <_IO_default_imbue>
 }
 ```
+
+- Tham chiếu đến `_IO_jump_t` (gọi vtable)
+
+- Hàm `fread` define = _IO_fread and call function (_IO_sgets => _IO_XSGETN) 
+- Nếu bạn kiểm tra liên tục các macro được định nghĩa, cuối cùng sẽ thấy nó tham chiếu đến biến vtable.
+- Tất cả các chức năng tệp, bao gồm fread sẽ cố gắng hoạt động trên các tệp bằng cách tham chiếu vtable như thế.
+- Tuy nhiên vì vtable là một khu vực được allocate dynamic (heap segment has rw_) nên nó có thể bị khai thác tấn công.
