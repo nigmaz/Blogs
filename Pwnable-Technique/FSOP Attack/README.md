@@ -146,3 +146,9 @@ $32 = {
 - Nếu bạn kiểm tra liên tục các macro được định nghĩa, cuối cùng sẽ thấy nó tham chiếu đến biến vtable.
 - Tất cả các chức năng tệp, bao gồm fread sẽ cố gắng hoạt động trên các tệp bằng cách tham chiếu vtable như thế.
 - Tuy nhiên vì vtable là một khu vực được allocate dynamic (heap segment has rw_) nên nó có thể bị khai thác tấn công.
+
+# Abitrary Read 
+- Quá trình đọc và ghi file sử dụng con trỏ và giá trị của struct _IO_FILE bên trong library.
+- Abitrary read = cách thao tác với struct _IO_FILE trong quá trình ghi writefile, 
+- Để hiểu cách khai thác, bạn cần biết mã nào đang chạy trong hàm để ghi tệp, vì vậy hãy phân tích
+mã 
