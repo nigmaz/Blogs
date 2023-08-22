@@ -1,6 +1,7 @@
 # FILE STRUCTURE ORIENTED PROGRAMMING
 
 - https://github.com/nigmaz/Blogs/tree/main/Virtual-Machine/Ubuntu/Advanced/FSOP
+- https://bluecyber.hashnode.dev/pwnabletw-seethefile
 
 ## [0] Overview
 - Filestruct allocated in heap `(VD: stream = fopen("/dev/urandom", "r");)`
