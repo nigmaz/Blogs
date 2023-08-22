@@ -30,10 +30,6 @@
     * MICS technique with HEAP ATTACK:
         + House of orange
     * https://blog.kylebot.net/2022/10/22/angry-FSROP/
-    * [FSOP + HEAP](https://ret2school.github.io/post/mailman/) .
-    * https://viblo.asia/p/co-che-virtual-table-yMnKMMLAK7P
-    * https://cppdeveloper.com/c-nang-cao/virtual-tables-vtable-trong-c/
-    * https://www.google.com/search?q=table+virtual+function+vtable+in+oop+%3F&oq=table+virtual+function+vtable+in+oop+%3F&aqs=chrome..69i57.9238j0j1&sourceid=chrome&ie=UTF-8
     * Tự giải bài ở BKCTF
 - `GDB Script`
 ```bash
