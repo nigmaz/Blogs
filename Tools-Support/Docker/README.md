@@ -10,6 +10,8 @@
   
 - `Docker Compose` : là công cụ cho phép chạy `Ứng Dụng` với nhiều Docker Containers một cách nhanh chóng và dễ dàng.
 
+- Run hidden + `&`
+  
 - Kiểm tra dịch vụ đang hoạt động.
 
 ```bash
