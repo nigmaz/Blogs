@@ -6,7 +6,7 @@
 - &environ
 - _rtld_global
 - Canary global TLS
-- .fini_array
+- overwrite `.fini_array` => loop
 - Type of Confusion | Type Error
 - Command Injection
 - Path Traversal
