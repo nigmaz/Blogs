@@ -1,29 +1,31 @@
 # Reverse-Engineering
 
 - RE Android
-- ...
-
-## [0] Overview
-- RVA (Relative Virtual Address) is an address relative to the base address of the program, an address at which the executable was loaded (where its MZ signature can be found). Any its `VA = base address + RVA`.
-![baseAddress.jpeg](./images/baseAddress.jpeg)
 - Decompile GCC, Clang và MSVC
     * IDA: decompiler cho C/C++/Golang
     * jadx: decompiler cho Java
     * dnSpy: decompiler cho C#
+- RVA (Relative Virtual Address) is an address relative to the base address of the program, an address at which the executable was loaded (where its MZ signature can be found). Any its `VA = base address + RVA`.
 
-- Course:
+![baseAddress.jpeg](./images/baseAddress.jpeg)
+
+- ...
+
+## [0] Overview
+
+- `Course:`
     * https://p.ost2.fyi/courses/course-v1:OpenSecurityTraining2+RE3011_re_cpp+2022_v1/about
     * [crackmes.one](https://crackmes.one/) .
 
-- Thực hành 
+- `Thực hành:` 
   * [IDA-kienmanowar](https://kienmanowar.wordpress.com/category/ida-pro-section/ida-tutorials/) .
   * [PE Analysis Report](https://hackmd.io/@antoinenguyen09/Hy0a2mb0t?fbclid=IwAR0zotdKiVJV-22nlqlGds9YOtvsE08MiKU-zMD8S1urx2mdYZC4nRk2BfQ) .
   * [Assemble-Reverse](https://0xinfection.github.io/reversing/) .
 
-- Tools: 
+- `Tools:`
   * [Cpp=>Assemble](https://godbolt.org/) .
 
-- Writeup Reverse CTF
+- `Writeup Reverse CTF:`
    * https://blog.anhtv.live/2023/07/10/cookie-arena-ss2/
    * [Flare-on 9](https://nextheia.com/tags/flare-on-9-write-up/) .
    * https://0ji54n.netlify.app/works/flareon9 .
@@ -31,10 +33,8 @@
    * [ISITDTU CTF 2018 Quals - inter](https://aides2593.github.io/writeup/re/2018/08/21/inter.html) .
     
 
-- References: 
-
+- `References:`
     * [Slide SVATTT - RE b2](https://docs.google.com/presentation/d/1SBBp04TkILxE-vSARvI_Uo3aF7lswh-FT5dumWWssT0/edit?fbclid=IwAR33UPvpYYBkpxZL8qfOJ2V-XF6xxFhE5BRuVnrNZGVkLGHT2U0i1f-iOio#slide=id.g241d1437ad9_0_0) .
-
     * **Machine RE**
         + [Windows](https://github.com/mandiant/flare-vm?fbclid=IwAR3DP9tGOnymNlmTD_jeT1UEGAY_KrNWnB-2nCtvEr3Qrt9TsjJa0OvYHqE) .
         + [GNU Linux](https://remnux.org/?fbclid=IwAR3LEPYLKkJWe2rwHav8pwY9igS5e89p3q0sqFy8_ZNvkio-WHRRV99GjhA) .
