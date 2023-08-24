@@ -100,6 +100,7 @@ nasm64(){
 
 ### 1.3. Python3 [new versions]
 
+- [Update python3.10 in Ubuntu 18.04 LTS](https://www.youtube.com/watch?v=ir6KxzMICbE)
 - [Install PythonLatestVersion](https://serverspace.io/support/help/install-python-latest-version-on-ubuntu-20-04/) [*]
 
 ```bash
