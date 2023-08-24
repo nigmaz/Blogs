@@ -73,5 +73,6 @@ shellcode = asm(
 ## [1] Technique:
 - [CTF: No leak - close(fd)](https://blog.idiot.sg/2018-09-03/tokyowesterns-ctf-2018-load-pwn/) .
 - [CTF: BlindROP](https://soolidsnake.github.io/2018/07/15/blindx86_64_rop.html) .
-- BRUTEFORCE - `TWOSHOT - KMACTF2022` - ...
+- BRUTEFORCE - `TWOSHOT - KMACTF2022`
+- ...
 
