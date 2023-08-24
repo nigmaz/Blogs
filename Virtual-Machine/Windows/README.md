@@ -1,5 +1,6 @@
 # Windows
 - `Build file install.bat or install.ps1` is loading...
+
 ![version.png](./version.png)
 
 - Tùy từng tường hợp demo cái gì trên máy ảo windows kiểu rce back reverseshell thì tắt hết firewall đi (chỉ thực tập cơ sở thôi).
