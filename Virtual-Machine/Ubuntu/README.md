@@ -265,17 +265,19 @@ cd Tools
 
 ### 6.2. Plugin debug (Gdb extension)
 
-```
-sudo apt-get install libc6-dbg libc6 && \
-sudo apt-get install python3-testresources
-```
-
-
+- After `git clone` and use `git checkout <version>`.
 ```bash
 git clone https://github.com/pwndbg/pwndbg && \
 cd pwndbg && \
 ./setup.sh && \
 cd ../
+```
+
+- Fix pip install.
+
+```
+sudo apt-get install libc6-dbg libc6 libc6-dbg:i386 libc6:i386 && \
+sudo apt-get install python3-testresources
 ```
 
 - Fix __AttributeError: module 'lib' has no attribute 'X509_V_FLAG_CB_ISSUER_CHECK'__ in wsl
