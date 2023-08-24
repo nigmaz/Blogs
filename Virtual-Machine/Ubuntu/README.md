@@ -1,7 +1,7 @@
 # Ubuntu - Setup VMware for CTF Pwnable challenges .
 
 >DATE: 07/06/2023 - Ubuntu 18.04 | Ubuntu 20.04 | Ubuntu 22.04 .
-
+- `Build file install.sh` is loading...
 ## [1]. Install "Oh My ZSH!" and VMware Tools
 
 - This is not really to play the pwn CTF challenge but it optimizes your performance when pwning.
