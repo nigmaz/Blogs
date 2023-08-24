@@ -267,10 +267,8 @@ cd Tools
 
 - After `git clone` and use `git checkout <version>`.
 ```bash
-git clone https://github.com/pwndbg/pwndbg && \
-cd pwndbg && \
-./setup.sh && \
-cd ../
+git clone https://github.com/pwndbg/pwndbg && cd pwndbg && \
+./setup.sh && cd ../
 ```
 
 - Fix pip install.
