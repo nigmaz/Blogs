@@ -11,7 +11,7 @@ và hầu như tất cả các kỹ thuật mới đều được xây dựng d�
    * Crypto (Dreamhack)
    * ...
 ## [0]. Cheatsheet
-
+- [pwntools-cheatsheet.md](https://gist.github.com/anvbis/64907e4f90974c4bdd930baeb705dedf) .
 - [GLIBC source code](https://elixir.bootlin.com/glibc/glibc-2.23/source) .
 - [Vấn đề khi khai thác remote với socat](https://ir0nstone.gitbook.io/notes/types/stack/exploiting-over-sockets/socat) .
 - Với những bài bị stripped và bật PIE
