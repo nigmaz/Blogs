@@ -12,7 +12,8 @@
 - Check VMware-Tools.
 
 ```bash
-lsb_release -a
+lsb_release -a && \
+sudo snap refresh
 ```
 
 - Install VMware-Tools.
