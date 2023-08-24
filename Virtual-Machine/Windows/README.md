@@ -53,7 +53,7 @@ disk> delete partition override
   * [+] [IDA Pro - China](https://drive.google.com/file/d/1qkMy9u1FVz9uFRa2qfBI7_694iJLe5ZW/view?usp=sharing) .
 
 - WinDBG
-- x84_64dbg
+- x84_64dbg | https://gist.github.com/sidharthpunathil/74911917ebc7be6ce13fabe8e3abdf8d
 - OllyDbg
 - Detect It Easy *
 - CFF Explorer Suite IV *
