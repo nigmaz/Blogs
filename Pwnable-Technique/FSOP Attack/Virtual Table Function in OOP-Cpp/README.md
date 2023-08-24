@@ -5,9 +5,9 @@
 - Virtual Method
     * https://cppdeveloper.com/c-co-ban/6-3-1-ghi-de-phuong-thuc-trong-lop-dan-xuat-1/
       
-- virtual table contain virtual function
+- `VirtualTable` contain ptr* `VirtualFunction`.
 
-- Pointer `_vptr` created when (class define this object declare `virtual function`)
+- Pointer `_vptr` created when (class define this object declare `virtual function` - Khai báo `virtual class`)
 
-- Khi một đối tượng tạo ra thì đồng thời _vptr cũng được tạo ra để trỏ đến virtual table của đối tượng đó. VD: 
-Đối tượng b đưuọc tạo ra, thì con trỏ _vptr cũng được khai báo để trỏ tới virtual table của đối tượng b
+- Khi một đối tượng được tạo ra với khai báo `virtual function` thì đồng thời _vptr cũng được tạo ra để trỏ đến virtual table của đối tượng đó. VD: 
+Đối tượng b được tạo ra, thì con trỏ _vptr cũng được khai báo để trỏ tới virtual table của đối tượng b
