@@ -181,21 +181,21 @@ pip2 --version
 # pip 20.0.2 from /usr/local/lib/python2.7/dist-packages/pip (python 2.7)
 ```
 
-- **NOTE:** /usr/bin/python2:/bin/python2:
+### 3.4. **NOTE:**
 
-    * [Add PATH](https://linuxize.com/post/how-to-add-directory-to-path-in-linux/)
+- [Add PATH](https://linuxize.com/post/how-to-add-directory-to-path-in-linux/)
 
-    ```
-    # PYTHON write into ~/.bashrc or ~/.zshrc
-    export PATH="$HOME/bin:/usr/bin/python3:/usr/bin/pip3:/usr/lib/python3/dist-packages/pip:/home/nigmaz/.local/bin:$PATH"
+```
+# PYTHON write into ~/.bashrc or ~/.zshrc
+export PATH="$HOME/bin:/usr/bin/python3:/usr/bin/pip3:/usr/lib/python3/dist-packages/pip:/home/nigmaz/.local/bin:$PATH"
 
-    # export PATH="$HOME/bin:/usr/bin/python3:/bin/python3/usr/lib/python3/dist-packages/pip:/home/nigma/.local/lib/python3.8/site-packages/pip:/home/nigma/.local/bin:/usr/local/lib/python3.8/dist-packages:$PATH"
-    # export PATH="$HOME/bin:/usr/bin/python2:/bin/python2:/usr/local/lib/python2.7/dist-packages/pip:$PATH"
-    # cat /etc/environment
-    # echo $PATH
-    ```
+# export PATH="$HOME/bin:/usr/bin/python3:/bin/python3/usr/lib/python3/dist-packages/pip:/home/nigma/.local/lib/python3.8/site-packages/pip:/home/nigma/.local/bin:/usr/local/lib/python3.8/dist-packages:$PATH"
+# export PATH="$HOME/bin:/usr/bin/python2:/bin/python2:/usr/local/lib/python2.7/dist-packages/pip:$PATH"
+# cat /etc/environment
+# echo $PATH
+```
 
-    => `source ~/.bashrc` or `source ~/.zshrc`.
+=> `source ~/.bashrc` or `source ~/.zshrc`.
 
 ## [4]. Install Libraries and support Tools
 
