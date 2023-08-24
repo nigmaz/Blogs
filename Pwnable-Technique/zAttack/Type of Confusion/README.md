@@ -1,5 +1,7 @@
 # Type of Confusion
 
+- Lỗi ép kiểu là khi khai báo biến x là long (8 byte) nhưng khi xử lý điều kiện ép kiểu nó thành int (4 byte) hoặc boolean (2 byte) dẫn đến sai về mặt giá trị so sánh (trên thanh ghi).
+
 ```c
 // CPP program to illustrate strstr()
 #include <string.h>
