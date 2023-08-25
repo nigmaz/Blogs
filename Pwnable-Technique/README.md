@@ -17,8 +17,7 @@ và hầu như tất cả các kỹ thuật mới đều được xây dựng d�
 - Với những bài bị stripped và bật PIE
     * gdb.attach sử dụng `breakrva *[offset]`
     * Check giá trị biến toàn cục thì `got` -> tìm dần lên theo địa chỉ của GOT được lưu.
-- pwntools flat(...) điền tự động byte là p64() hoặc p32() phụ thuộc cấu trúc chương trình là x86 hay x86_64, VD:`[convert - ASCIS 2022]` .
-- Python script:
+- Python script.
 ```python
 #!/usr/bin/env python3
 from pwn import *
@@ -42,7 +41,7 @@ else:
 
 p.interactive()
 ```
-- Patch LIBC use `patchelf`
+- Patch LIBC use `patchelf`.
 ```bash
 ##################### SUGGEST ##########################
 $ patchelf --set-interpreter ./ld-linux-x86-64.so.2 ./chall
@@ -57,7 +56,7 @@ $ patchelf --set-rpath ./<libc.so.6-[libc]> ./<my-program>
 $ check use: --print-needed
 $        --add-needed
 ```
-- GDB + arguments
+- GDB + arguments.
 ```bash
 gdb -q --args ./babyrev_2 111111111111111ABCDEFGHIJKMNTO
 ```
