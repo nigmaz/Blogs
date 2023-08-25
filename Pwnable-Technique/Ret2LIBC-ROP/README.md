@@ -5,6 +5,7 @@
 ```python
 next(libc.search(b'/bin/sh'))
 ```
+- pwntools flat(...) điền tự động byte là p64() hoặc p32() phụ thuộc cấu trúc chương trình là x86 hay x86_64, VD:`[convert 
 - [Tools local find offset LIBC](https://x3ero0.tech/posts/orxw_balsn_ctf_2021_pwn/) .
 - Để ý một số bài có thể sử dụng one_gadget kết hợp với đối số của các hàm bị ghi đè khi gọi tới.
 - Trong libc.so.6 có mọi gadgets, đôi khi không thể dùng tools để tìm được 1 số gadgets.
