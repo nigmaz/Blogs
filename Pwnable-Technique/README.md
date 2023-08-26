@@ -8,7 +8,8 @@ và hầu như tất cả các kỹ thuật mới đều được xây dựng d�
    * Heap and Other House of (0CTF_BabyHeap-2022(tls_attack2ROP+seccomp))...
    * FSOP (target 2/9)
    * Race Condition (target 2/9)
-   * Crypto (Dreamhack)
+   * Fuzzing + convert ascis 2022
+   * imaginary có 1 bài về ARM
    * ...
 ## [0]. Cheatsheet
 - [pwntools-cheatsheet.md](https://gist.github.com/anvbis/64907e4f90974c4bdd930baeb705dedf) .
