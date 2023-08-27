@@ -63,11 +63,11 @@ và hầu như tất cả các kỹ thuật mới đều được xây dựng d�
 
 - `core dump` .
 
-    * Check `-c: core file size` , if this unable use `ulimit -c unlimited`
+    * Check `-c: core file size` , if this unable use `ulimit -c unlimited` or auto enable core-dump, `nano /etc/security/limits.conf` and edit `<user>      hard    core        ulimited` .
     ```bash
     ulimit -a
     ```
-
+    
     * Check path store core file
     ```bash
     cat /proc/sys/kernel/core_pattern
