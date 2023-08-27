@@ -7,42 +7,80 @@ và hầu như tất cả các kỹ thuật mới đều được xây dựng d�
 - TARGET(Xem qua short ở Dreamhack):
    * Heap and Other House of (0CTF_BabyHeap-2022(tls_attack2ROP+seccomp))...
    * FSOP (target 2/9)
-   * Race Condition (target 2/9)
    * Fuzzing + convert ascis 2022
    * imaginary có 1 bài về ARM
    * ...
 ## [0]. Cheatsheet
-- [pwntools-cheatsheet.md](https://gist.github.com/anvbis/64907e4f90974c4bdd930baeb705dedf) .
+
 - [GLIBC source code](https://elixir.bootlin.com/glibc/glibc-2.23/source) .
-- [Vấn đề khi khai thác remote với socat](https://ir0nstone.gitbook.io/notes/types/stack/exploiting-over-sockets/socat) .
-- Với những bài bị stripped và bật PIE
-    * gdb.attach sử dụng `breakrva *[offset]`
-    * Check giá trị biến toàn cục thì `got` -> tìm dần lên theo địa chỉ của GOT được lưu.
-- Python script.
-```python
-#!/usr/bin/env python3
-from pwn import *
+- [Problem when exploit remote with socat](https://ir0nstone.gitbook.io/notes/types/stack/exploiting-over-sockets/socat) .
 
-elf = ELF("./babyheap")
-# p = process('./unexploitable',env={'LD_PRELOAD' :'./libc.so.6'}) 
-libc = ELF("/usr/lib/x86_64-linux-gnu/libc.so.6")
-ld = ELF("/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2")
-if args.LOCAL:
-    p = elf.process()
-    if args.GDB:
-        context.update(binary=elf, log_level="DEBUG")
-        gdb.attach(
-            p,
-            """
-            
-            """,
-        )
-else:
-    p = remote("", "")
+- `pwntools` - [pwntools-cheatsheet.md](https://gist.github.com/anvbis/64907e4f90974c4bdd930baeb705dedf) .
+    * Challenge stripped và Enable PIE:
+        + gdb.attach() sử dụng `breakrva *[offset]`
+        + Check giá trị biến toàn cục thì `got` -> tìm dần lên theo địa chỉ của GOT được lưu.
+    * Sample python script
+    ```python
+    #!/usr/bin/env python3
+    from pwn import *
 
-p.interactive()
-```
-- Patch LIBC use `patchelf`.
+    elf = ELF("./babyheap")
+    # p = process('./unexploitable',env={'LD_PRELOAD' :'./libc.so.6'}) 
+    libc = ELF("/usr/lib/x86_64-linux-gnu/libc.so.6")
+    ld = ELF("/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2")
+    if args.LOCAL:
+        p = elf.process()
+        if args.GDB:
+            context.update(binary=elf, log_level="DEBUG")
+            gdb.attach(
+                p,
+                """
+                
+                """,
+            )
+    else:
+        p = remote("", "")
+
+    p.interactive()
+    ```
+
+- `GDB` .
+    * Arguments
+    ```bash
+    gdb -q --args ./babyrev_2 111111111111111ABCDEFGHIJKMNTO
+    ```
+    * GDB khi nhận giá trị đầu vào là kết quả của chương trình khác.
+    ```bash
+    gef➤  r <<< $(perl -e 'print "%n"')
+    Starting program: /challenge/app-systeme/ch17/ch17 <<< $(perl -e 'print "%n"')
+
+    Ngoài ra, bạn có thể tạo một tệp chứa các giá trị đầu vào và tải nó khi chương trình được chạy.
+    gef➤  r < input.tx
+
+    Ngoài ra, có một cách để tạo một tệp tạm thời và tải lại tệp, như hình dưới đây, nhưng nó không chắc sẽ được sử dụng.
+    gef➤  r `perl -e 'print "A"x10' > tmp` < tmp
+    ```
+
+- `core dump` .
+
+    * Check `-c: core file size` , if this unable use `ulimit -c unlimited`
+    ```bash
+    ulimit -a
+    ```
+
+    * Check path store core file
+    ```bash
+    cat /proc/sys/kernel/core_pattern
+    ```
+
+    * Go to path file get file core-dump
+
+    ```bash
+    gdb -q <file>
+    (gdb) core <path-core-file>
+    ```
+
+- `patchelf` - Patch Glibc into elf.
 ```bash
 ##################### SUGGEST ##########################
 $ patchelf --set-interpreter ./ld-linux-x86-64.so.2 ./chall
@@ -56,22 +94,6 @@ $ patchelf --set-rpath ./<libc.so.6-[libc]> ./<my-program>
 ############### parameter ############################## 
 $ check use: --print-needed
 $        --add-needed
-```
-- GDB + arguments.
-```bash
-gdb -q --args ./babyrev_2 111111111111111ABCDEFGHIJKMNTO
-```
-
-- GDB khi nhận được giá trị đầu vào là kết quả của chương trình khác.
-```bash
-gef➤  r <<< $(perl -e 'print "%n"')
-Starting program: /challenge/app-systeme/ch17/ch17 <<< $(perl -e 'print "%n"')
-Ngoài ra, bạn có thể tạo một tệp chứa các giá trị đầu vào và tải nó khi chương trình được chạy.
-
-gef➤  r < input.tx
-Ngoài ra, có một cách để tạo một tệp tạm thời và tải lại tệp, như hình dưới đây, nhưng nó không chắc sẽ được sử dụng.
-
-gef➤  r `perl -e 'print "A"x10' > tmp` < tmp
 ```
 
 - `google-colab` trong 1 số trường hợp đặc biệt (tăng tốc độ kết nối đến server).
@@ -135,4 +157,3 @@ drive.mount('/content/drive')
    * `[12]` *Windows Exploit.
    * `[13]` *Browser Exploit. (Browser v8 pwn => state of the art exploit)
    * `[14]` *CVE realworld. (RCE&PLE => Windows | Linux | IOS)
-
