@@ -24,6 +24,7 @@
 
 - `Tools:`
   * [Cpp=>Assemble](https://godbolt.org/) .
+  * https://microcorruption.com/debugger/Hanoi
 
 - `Writeup Reverse CTF:`
    * https://blog.anhtv.live/2023/07/10/cookie-arena-ss2/
