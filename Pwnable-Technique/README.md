@@ -4,9 +4,8 @@
 
 - Hiểu rõ các lý thuyết máy tính cơ bản như `Mạng máy tính`, `Hệ điều hành`, `Kiến trúc máy tính` và `Lý thuyết trình biên dịch` là bốn lý thuyết máy tính cơ bản quan trọng nhất 
 và hầu như tất cả các kỹ thuật mới đều được xây dựng dựa trên bốn lý thuyết này.
-- TARGET(Xem qua short ở Dreamhack):
-   * Heap and Other House of (0CTF_BabyHeap-2022(tls_attack2ROP+seccomp))...
-   * FSOP (target 2/9)
+- TARGET:
+   * Heap and Other House of Heap...
    * Fuzzing + convert ascis 2022
    * imaginary có 1 bài về ARM
    * ...
