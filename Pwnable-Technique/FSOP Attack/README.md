@@ -98,18 +98,17 @@
     ```
 ## [2] References
 - [FSOP angelboy](https://nightrainy.github.io/2019/08/07/play-withe-file-structure-%E6%90%AC%E8%BF%90/?fbclid=IwAR06PLkixggoSadl1ANGvZNW4zgfNOgcs5VC2l2IHtFzEVclUJzFp2NObsI#content) .
-- [Tổng hợp tiếng việt](https://hackmd.io/@ductin/r1b8nhBs5) .
 - [bypass vtable check](https://dhavalkapil.com/blogs/FILE-Structure-Exploitation/) .
 - https://blog.kylebot.net/2022/10/22/angry-FSROP/
 - https://chovid99.github.io/posts/file-structure-attack-part-1/
 - https://1ce0ear.github.io/2017/09/25/File-Stream-Pointer-Overflow1/
-- https://hackmd.io/@y198/HkR3Bz1-s
 - https://sh4dy.com/notes/pwn/heap-exploitation/fsop.html
 - https://blog.kylebot.net/2022/10/22/angry-FSROP/
 - https://outflux.net/blog/archives/2011/12/22/abusing-the-file-structure/
 - https://maheshhari.github.io/blog/babytcache/
-
-
+- Tổng hợp tiếng việt
+    * https://hackmd.io/@ductin/r1b8nhBs5 .
+    * https://hackmd.io/@y198/HkR3Bz1-s .
 
 
 
