@@ -6,6 +6,7 @@
 - &environ
 - _rtld_global
 - Canary global TLS
+- Race Condition
 - overwrite `.fini_array` => loop
 - Type of Confusion | Type Error
 - Command Injection
