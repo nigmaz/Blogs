@@ -16,9 +16,6 @@ javac -version  // this will check your java compiler version if you installed
 - Java video learn:
   * [Cô Vân Anh](https://www.youtube.com/watch?v=9dddxv8E5Mk&list=PLD8zSU7U1L2HjyE8U_ojnYOe1_zixZjsc) .
   * [Java + CNPM](https://www.youtube.com/watch?v=c4q7n5cmEOM&list=PL43ofROd3vU8aGy5hId6RM4YT8Nr8N2e7) .
-  * [BTL+project Java](https://www.youtube.com/watch?v=WKL0jsNrFzY&list=PL8JRkLx_73-KoDilxKX-DT5it1xlhj5f-) .
-  * https://youtu.be/w3QmdZSshag
-  * https://youtu.be/0PPzWgRxpFk
 
 - Code Android: android studio app
 
