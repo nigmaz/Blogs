@@ -240,20 +240,6 @@ https://dev.to/avantar/how-to-fix-zsh-icons-in-visual-studio-code-terminal-38bb
 ```
 
 
-## [2]. Tools-Hacking (should use in KALI)
 
-* Google
-
-```bash
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo apt install ./google-chrome-stable_current_amd64.deb
-```
-
-* [Wine](https://www.youtube.com/watch?v=Wx8NbZEAPNM&list=PL2YJKKcudhJ0ar-IYMehPGRwbcUz8NZJj&index=18&t=9s) .
-
-* [Burp Suite](https://www.youtube.com/watch?v=-ozGijESmTY&list=PL2YJKKcudhJ0ar-IYMehPGRwbcUz8NZJj&index=3&t=5s) .
-
-* ipyida: https://github.com/eset/ipyida
-
-* WSL: https://pureinfotech.com/install-windows-subsystem-linux-2-windows-10/
 
 
