@@ -25,7 +25,7 @@
 
     * [_IO_FILE_plus](https://elixir.bootlin.com/glibc/glibc-2.23/source/libio/libioP.h#L342)
     ```c
-    gdb> p *(struct _IO_FILE_plus *) <Address struct _IO_FILE_plus>
+    gdb> p *(struct _IO_FILE_plus *)<Address struct _IO_FILE_plus>
     ...
     struct _IO_FILE_plus
     {
@@ -35,7 +35,7 @@
     ```
     * [_IO_FILE](https://elixir.bootlin.com/glibc/glibc-2.23/source/libio/libio.h#L241)
     ```c
-    gdb> p *(struct _IO_FILE *) <Address struct _IO_FILE>
+    gdb> p *(struct _IO_FILE *)<Address struct _IO_FILE>
     ...
     struct _IO_FILE
     {
@@ -68,7 +68,7 @@
     ```
     * [_IO_jump_t](https://elixir.bootlin.com/glibc/glibc-2.23/source/libio/libioP.h#L307)    
     ```c
-    gdb> p *(struct _IO_jump_t *) <Address *vtable>
+    gdb> p *(struct _IO_jump_t *)<Address *vtable>
     ...
     struct _IO_jump_t
     {
