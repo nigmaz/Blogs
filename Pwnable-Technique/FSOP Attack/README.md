@@ -97,13 +97,7 @@
     };
     ```
 ## [2] References
-- [FSOP angelboy](https://nightrainy.github.io/2019/08/07/play-withe-file-structure-%E6%90%AC%E8%BF%90/?fbclid=IwAR06PLkixggoSadl1ANGvZNW4zgfNOgcs5VC2l2IHtFzEVclUJzFp2NObsI#content) .
-- [bypass vtable check](https://dhavalkapil.com/blogs/FILE-Structure-Exploitation/) .
-- https://blog.kylebot.net/2022/10/22/angry-FSROP/
-- https://chovid99.github.io/posts/file-structure-attack-part-1/
-- https://1ce0ear.github.io/2017/09/25/File-Stream-Pointer-Overflow1/
-- https://sh4dy.com/notes/pwn/heap-exploitation/fsop.html
-- https://blog.kylebot.net/2022/10/22/angry-FSROP/
+
 
 
 
