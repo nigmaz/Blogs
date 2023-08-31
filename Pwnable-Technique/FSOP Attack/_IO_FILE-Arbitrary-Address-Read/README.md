@@ -4,6 +4,10 @@
 - Abitrary read = cách thao tác với struct _IO_FILE trong quá trình ghi writefile sử dụng `fwrite, fputs`
 
 ```c
+// if (ch == EOF)
+//     return _IO_do_write (f, f->_IO_write_base,
+//	 		 f->_IO_write_ptr - f->_IO_write_base);
+
 write(f->_fileno, _IO_write_base, _IO_write_ptr - _IO_write_base);
 f-> fileno = stdout
 _IO_write_base = flag_buf
