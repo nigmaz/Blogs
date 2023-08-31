@@ -25,6 +25,7 @@ Nếu muốn có thể tránh được vật cản thì mua thêm con Sr-04
 - Security IOT:
    * https://iotworkers.com/
    * Hikvision-IP-Camera: [CVE-2021-36260](https://watchfulip.github.io/2021/09/18/Hikvision-IP-Camera-Unauthenticated-RCE.html) .
+   * [Backdoor Camera Wyza](https://www.youtube.com/watch?v=hV8W4o-Mu2o) .
    * https://thao.pw/hacking-yoosee-camera?x-host=thao.pw
    * https://www.youtube.com/watch?v=zs86OYea8Wk
    * https://www.youtube.com/results?search_query=arduino+socket+system+defense
