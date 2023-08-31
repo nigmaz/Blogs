@@ -106,9 +106,7 @@
 - https://blog.kylebot.net/2022/10/22/angry-FSROP/
 - https://outflux.net/blog/archives/2011/12/22/abusing-the-file-structure/
 - https://maheshhari.github.io/blog/babytcache/
-- Tổng hợp tiếng việt
-    * https://hackmd.io/@ductin/r1b8nhBs5 .
-    * https://hackmd.io/@y198/HkR3Bz1-s .
+
 
 
 
