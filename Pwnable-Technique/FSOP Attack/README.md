@@ -1,10 +1,15 @@
 # FILE STRUCTURE ORIENTED PROGRAMMING
 
-- Setup debug internal function g-libc: https://github.com/nigmaz/Blogs/tree/main/Virtual-Machine/Ubuntu/Advanced/FSOP
+- Setup debug internal function g-libc:
+    * https://github.com/nigmaz/Blogs/tree/main/Virtual-Machine/Ubuntu/Advanced/FSOP
 
 ## [0] Overview
 
 - `The File Struct` allocated in heap `(VD: stream = fopen("/dev/urandom", "r");)` except stdin, stdout, stderr.
+- `References:`
+    * https://nightrainy.github.io/2019/08/07/play-withe-file-structure-%E6%90%AC%E8%BF%90/
+    * https://sh4dy.com/notes/pwn/heap-exploitation/fsop.html
+    * https://chovid99.github.io/posts/file-structure-attack-part-1/
 
 ## [1] Technique Attack
 - FSOP có hai kiểu attack 
@@ -96,7 +101,8 @@
         JUMP_FIELD(_IO_imbue_t, __imbue);
     };
     ```
-## [2] References
+## [2] References CTF
+- ...
 
 
 
