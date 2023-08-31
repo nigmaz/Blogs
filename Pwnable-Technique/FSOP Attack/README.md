@@ -6,6 +6,16 @@
 ## [0] Overview
 
 - `The File Struct` allocated in heap `(VD: stream = fopen("/dev/urandom", "r");)` except stdin, stdout, stderr.
+- Các bước OPEN FILE:
+   * 1. Malloc FILE structure
+   * 2. Gán vtable vào FILE structure
+   * 3. Khởi tạo FILE structure
+   * 4. Liên kết FILE structure vào _IO_list_all
+   * 5. Call system khởi tạo file.
+- Các bước CLOSE FILE:
+   * 1. Unlink FILE structure ra khỏi _IO_list_all
+   * 2. Call system đóng file.
+   * 3. _IO_FINISH trong vtable được thực thi.
 - `References:`
     * https://nightrainy.github.io/2019/08/07/play-withe-file-structure-%E6%90%AC%E8%BF%90/
     * https://sh4dy.com/notes/pwn/heap-exploitation/fsop.html
