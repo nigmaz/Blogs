@@ -8,7 +8,7 @@ và hầu như tất cả các kỹ thuật mới đều được xây dựng d�
    * Heap and Other House of Heap...
    * Baby Service - BKsec
    * Fuzzing + convert ascis 2022
-   * imaginary có 1 bài về ARM
+   *  ARM
    * ...
 ## [0]. Cheatsheet
 
