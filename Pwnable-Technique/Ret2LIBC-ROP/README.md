@@ -36,8 +36,8 @@ STACK:
 10. địa chỉ nào đó muốn return về.
 ```
 - Vậy nên để bypass tránh việc ghi đè canary ta chỉ cần nhập chữ cái (+, -, -, /) mà không thuộc format %lu thì phần tử đó sẽ bị skip, không thay đổi. VD: chall `Warmup` - UIT-2022-CTF .
-- Leak được LIBC thì có thể leak được stack thông qua biến environ trong LIBC.
-- Viết sheelcode cần set context.binary
+- Leak được LIBC thì có thể leak được địa chỉ thuộc stack thông qua biến environ trong LIBC.
+- Có thể leak libc thông qua đọc `/proc/self/maps`
 
 ```python
 ...
