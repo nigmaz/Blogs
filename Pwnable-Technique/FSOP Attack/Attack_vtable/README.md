@@ -5,9 +5,7 @@
 - Nếu kiểm tra liên tục các macro được định nghĩa, cuối cùng sẽ thấy nó tham chiếu đến biến vtable. Tất cả các chức năng tệp, bao gồm fread sẽ cố gắng hoạt động trên các tệp bằng cách tham chiếu vtable. Tuy nhiên vì vtable là một khu vực được allocate dynamic (heap segment has rw_) nên nó có thể bị khai thác tấn công.
     * Ví dụ: khi fclose(FILE *ptr) được gọi, con trỏ hàm được lưu trữ trong trường __finish trong cấu trúc sẽ được gọi sau khi giải phóng các cấu trúc bên trong.
 
-- Tất cả các file đều dùng chung 1 vtable, kiến trúc 64 bit nằm ở offset 0xd8 và Bypass vtable check:
-    * https://dhavalkapil.com/blogs/FILE-Structure-Exploitation/
-    * https://blog.kylebot.net/2022/10/22/angry-FSROP/
+- Tất cả các file đều dùng chung 1 vtable, kiến trúc 64 bit nằm ở offset `0xd8` .
 
 ## [1] Technique Attack
 
