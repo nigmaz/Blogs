@@ -32,6 +32,7 @@
    * https://0ji54n.netlify.app/works/flareon9 .
    * [ASCIS 2022 - Faku](https://mochinishimiya.github.io/posts/ascis2022/?fbclid=IwAR1uNY6kSbsKBoyvQmbepMpdYjdBlOhfnY4yi9Hfs_ZAFJUalFQUTOZLjqA) .
    * [ISITDTU CTF 2018 Quals - inter](https://aides2593.github.io/writeup/re/2018/08/21/inter.html) .
+   * https://hackmd.io/Egk1bvxQTXCG1Tvkk2MNkg#REVERSE
     
 
 - `References:`
