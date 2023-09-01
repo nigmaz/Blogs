@@ -507,13 +507,13 @@ sudo apt install qemu qemu-user qemu-user-static kpartx gdb-multiarch
 - Run file
   
   * x86_64	 
-   ```bash
-    qemu-aarch64 ./example_arm64
-    ```
- 	* x86
-    	```bash
-     	qemu-arm-static ./arm-exploit
-        ```
+  ```bash
+  qemu-aarch64 ./example_arm64
+  ```
+  * x86
+  ```bash
+  qemu-arm-static ./arm-exploit
+  ```
 
 - Tổng hợp
 
