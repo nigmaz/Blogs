@@ -289,6 +289,10 @@ python3 -m pip install pyopenssl --upgrade
     * [pwndbg](https://github.com/pwndbg/pwndbg) .
 
     * [gef](https://github.com/hugsy/gef) .
+    ```bash
+    git clone https://github.com/hugsy/gef.git
+    echo source `pwd`/gef/gef.py >> ~/.gdbinit
+    ```
 
     * [gdb-peda](https://github.com/longld/peda) .
 
