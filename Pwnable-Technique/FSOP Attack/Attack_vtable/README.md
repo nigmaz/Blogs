@@ -9,16 +9,18 @@
     * https://dhavalkapil.com/blogs/FILE-Structure-Exploitation/
     * https://blog.kylebot.net/2022/10/22/angry-FSROP/
 
-
 ## [1] Technique Attack
 
 - Kỹ thuật này thay đổi theo 3 mốc versions của g-libc 2.23, 2.27, 2.29,...
 
-- `Glibc-2.23` chỉ cần fake struct *vtable mà không cần để ý đến các hàm security check, VD: `seethefile-pwnable.tw`,...
+- `Glibc-2.23` chỉ cần fake struct *vtable mà không cần để ý đến các hàm security check.
+    * VD: `seethefile-pwnable.tw`,...
 
 - `Glibc-2.27` => `Bypass IO_validate_vtable()` > Hàm kiểm tra xem địa chỉ hàm của vtable được tham chiếu bởi hàm tệp có tồn tại trong phần __libc_IO_vtables hay không.
     * Pointer *vtables được gán cho phần __libc_IO_vtables. Mã trừ địa chỉ bắt đầu và kết thúc của section để tìm ra kích thước của section và nếu địa chỉ của vtable được gọi nằm ngoài kích thước của section, hàm _IO_vtable_check sẽ được gọi để tạo ra lỗi.
-    * Bypass thông qua IO_str_overflow, VD: `dreamhack`
+    * Bypass thông qua IO_str_overflow, VD: https://learn.dreamhack.io/272
 
 - `Glibc-2.29` Trong thư viện glibc 2.29 trở lên, mã gọi con trỏ hàm bên trong hàm IO_str_overflow đã bị xóa nên các kỹ thuật tấn công sử dụng hàm đó không thể sử dụng được nữa.
+    * https://blog.kylebot.net/2022/10/22/angry-FSROP/
+
  
