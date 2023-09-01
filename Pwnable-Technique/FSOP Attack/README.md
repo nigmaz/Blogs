@@ -1,7 +1,7 @@
 # FILE STRUCTURE ORIENTED PROGRAMMING
 
 - Setup debug internal function g-libc:
-    * https://github.com/nigmaz/Blogs/tree/main/Virtual-Machine/Ubuntu/Advanced/FSOP
+    * https://github.com/nigmaz/Blogs/tree/main/Virtual-Machine/Ubuntu#612-fsop---add-libc-source-code-to-gdb
 
 ## [0] Overview
 
