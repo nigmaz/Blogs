@@ -501,22 +501,26 @@ sudo apt-get install musl-tools
 - ARM compiler-debug.
 
 ```bash
-sudo apt update
-sudo apt install qemu-user
+sudo apt install qemu qemu-user qemu-user-static kpartx gdb-multiarch
 ```
 
 - Run file
-```bash
-qemu-aarch64 ./example_arm64
-```
+    	* x86_64	 
+	```bash
+	qemu-aarch64 ./example_arm64
+	```
+ 	* x86
+    	```bash
+     	qemu-arm-static ./arm-exploit
+        ```
 
 - Tổng hợp
+
 ```bash
 sudo apt install -y qemu-user qemu-user-static gcc-aarch64-linux-gnu binutils-aarch64-linux-gnu binutils-aarch64-linux-gnu-dbg && \
 sudo apt install -y gcc-arm-linux-gnueabihf binutils-arm-linux-gnueabihf binutils-arm-linux-gnueabihf-dbg && \
 sudo apt-get -y install qemu-kvm qemu
 ```
-
 
 # [7]. Finally
 
