@@ -1,5 +1,4 @@
 # Setup Advanced for learn and research Exploit attack
-- [Fuzzing](https://y3a.github.io/2022/12/14/fuzzing1/)
 - FSOP
 - Kernel 
 
