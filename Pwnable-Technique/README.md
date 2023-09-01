@@ -6,7 +6,6 @@
 và hầu như tất cả các kỹ thuật mới đều được xây dựng dựa trên bốn lý thuyết này.
 - TARGET:
    * Heap and Other House of Heap...
-   * Baby Service - BKsec
    * Fuzzing + convert ascis 2022
    *  ARM
    *  Review FSOP
