@@ -107,7 +107,6 @@ $ nano ~/.zshrc
     chmod +x zsh_history_fix && sudo cp zsh_history_fix /usr/bin && cd ../
     ```
 
-    * [Template ~/.zshrc](https://github.com/NigmaZ/Blogs/blob/main/Virtual-Machine/Ubuntu/Advanced/README.md#16-zsh-other) .
 
 
 ### 1.3. Terminator
@@ -144,7 +143,7 @@ sudo dpkg --add-architecture i386
 
 ### 3.1. Python3 new version (not use directly python OS)
 
-- [Python3 install new versions](https://github.com/NigmaZ/Blogs/blob/main/Virtual-Machine/Ubuntu/Advanced/README.md#13-python3-new-versions)
+- [Python3 install new versions](https://github.com/nigmaz/Blogs/blob/main/Virtual-Machine/Ubuntu/config.md#13-python3-new-versions)
 
 ### 3.2. Python3 and pip3 (use directly in OS Ubuntu)
 
@@ -285,7 +284,7 @@ python3 -m pip install pip --upgrade &&
 python3 -m pip install pyopenssl --upgrade
 ```
 
-- Plugin-gdb - [Template](https://github.com/Nigmaz/Blogs/blob/main/Virtual-Machine/Ubuntu/Advanced/README.md#14-gdbinit):
+- Plugin-gdb - [Template](https://github.com/nigmaz/Blogs/blob/main/Virtual-Machine/Ubuntu/config.md#14-gdbinit):
 
     * [pwndbg](https://github.com/pwndbg/pwndbg) .
 
@@ -483,8 +482,6 @@ cd ../
 - Later if you want to change version of glibc source code, just open the terminal and type `libc + version`, this equal to go to the libc folder and checkout to that version.
 
 ### 6.13. Setup qemu 
-
-**NOTE:** [Prepare Kernel](https://github.com/NigmaZ/Blogs/tree/main/Virtual-Machine/Ubuntu/Advanced/Kernel).
 
 - Use for Kernel Exploitation debug.
 
