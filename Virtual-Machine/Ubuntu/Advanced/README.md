@@ -1,6 +1,4 @@
 # Setup Advanced for learn and research Exploit attack
-- FSOP
-- Kernel 
 
 ## [1]. ~/.bashrc OR ~/.zshrc, rename user, rename hostname,...
 ### 1.0. NOTE
