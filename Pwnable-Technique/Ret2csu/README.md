@@ -1,6 +1,6 @@
 # Ret2csu
 
->Được sử dụng khi muốn kiếm soát giá trị các thanh ghi nhưng thiếu các `gadget` cần thiết (Đặc biệt là với thanh ghi `rdx`).
+>Được sử dụng khi muốn kiểm soát giá trị các thanh ghi nhưng thiếu các `gadget` cần thiết (Đặc biệt là với thanh ghi `rdx`).
 
 Đối với việc khai thác chương trình 64bit, do `The __fastcall calling convention` mà các đối số khi gọi hàm sẽ được lưu trên các thanh ghi lần lượt là rdi, rsi, rdx, rcx, r8, r9 và sau đó mới đến stack. Vì vậy việc kiểm soát các giá trị của các thanh ghi rất quan trọng.
 
