@@ -487,7 +487,7 @@ cd ../
 
 ### 6.13. Setup qemu 
 
-- Use for Kernel Exploitation debug.
+- `Kernel Exploitation compiler-debug`.
 
 ```bash
 sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-dev bc flex libelf-dev bison qemu-utils qemu-system-x86
@@ -499,7 +499,7 @@ sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-de
 sudo apt-get install musl-tools
 ```
 
-- ARM compiler-debug.
+- `ARM Exploitation compiler-debug`.
 
 ```bash
 sudo apt install -qy qemu qemu-user libc6-arm64-cross qemu-user-static kpartx gdb-multiarch
