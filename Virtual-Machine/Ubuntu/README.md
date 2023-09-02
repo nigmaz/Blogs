@@ -509,7 +509,7 @@ sudo apt install -qy qemu qemu-user libc6-arm64-cross qemu-user-static kpartx gd
   
   * x86_64	 
   ```bash
-  qemu-aarch64 ./example_arm64
+  qemu-aarch64 -L /usr/aarch64-linux-gnu arm
   ```
   * x86
   ```bash
