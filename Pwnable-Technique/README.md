@@ -6,6 +6,8 @@
 và hầu như tất cả các kỹ thuật mới đều được xây dựng dựa trên bốn lý thuyết này.
 - TARGET:
    * Heap and Other House of Heap...
+   * Fuzzing
+   * ARM Exploit
    * ...
 ## [0]. Cheatsheet
 
