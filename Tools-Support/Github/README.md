@@ -1,7 +1,14 @@
 # Github
 
 > Git commit Github
- 
+
+- Section `Folder` => Section `Staging` => Section `Commit` => Section `Github`.
+- Một số lệnh git thường dùng:
+```bash
+git config user.name
+git config user.email
+git status
+```
 - Dưới đây là tóm tắt các bước để thêm một thư mục có tên "WRITEUP" vào kho lưu trữ GitHub sử dụng Personal Access Token:
 
 1. **Tạo Personal Access Token trên GitHub**:
@@ -70,8 +77,3 @@
 
 > Lúc này, Git sẽ sử dụng token cá nhân thay vì mật khẩu để xác thực và bạn sẽ có thể đẩy thay đổi lên kho lưu trữ GitHub của bạn một cách thành công.
 
-- Một số lệnh git thường dùng:
-```bash
-git config user.name
-git config user.email
-```
