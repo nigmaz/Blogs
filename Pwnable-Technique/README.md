@@ -16,7 +16,7 @@ và hầu như tất cả các kỹ thuật mới đều được xây dựng d�
 
 - `pwntools` - [pwntools-cheatsheet.md](https://gist.github.com/anvbis/64907e4f90974c4bdd930baeb705dedf) .
     * Challenge stripped và Enable PIE:
-        + gdb.attach() sử dụng `breakrva *[offset]`
+        + gdb.attach() sử dụng `breakrva [offset]`
         + Check giá trị biến toàn cục thì `got` -> tìm dần lên theo địa chỉ của GOT được lưu.
     * Sample python script
     ```python
