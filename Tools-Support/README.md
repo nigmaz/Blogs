@@ -25,5 +25,20 @@
 
 [+] https://drx.home.blog/2018/08/24/hack-password-wifi-chuan-bao-mat-wpa-wpa2-bang-kali-linux/
 
+[+] 20 Free softwares/tools for cybersecurity
+- 1. Kali Linux - Operating System
+- 2. Wireshark - Network Protocol Analyzer
+- 3. Nmap - port Scan
+- 4. Burp Suite - Web Hacking
+- 5. Gophish - Open Source Phishing Toolkit
+- 6. Aircrack-ng - Wifi Security
+- 7. Have i been pwned - Email security
+- 8. Metasploit framework - Pentesting Tool
+- 9. Nikto - Vulnerability Scanner
+- 10. HackTheBox - training
+- 11. Pfsense - Firewall/Router
+- 12. Cyber chef - data modification
+- 13. Snort - Intrusion Detection System
+- 14. Ghidra - Debugging
 
 
