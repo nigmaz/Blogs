@@ -1,7 +1,7 @@
 # BLOGs
 > Note for me.
 - [Download folder from git](https://download-directory.github.io/) .
-- http://phrack.org/issues/64/6.html
+- [Phrack Magazine](http://phrack.org/issues/64/6.html) .
 
 ## [0]. Works...
   
