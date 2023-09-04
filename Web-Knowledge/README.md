@@ -22,17 +22,12 @@
   * https://portswigger.net/web-security/all-lab
   * https://www.hacksplaining.com/
     
-- SOC
-  * https://securityflow.io/roadmap/
-
 ## [2]. Refenrences:
-
+- `SOC lab learn`: https://securityflow.io/roadmap/
 - https://fullstack.edu.vn/learning-paths?_type=tab
-
-[+] VIDEO: 
-- [How to put an HTML website online](https://youtu.be/p1QU3kLFPdg) .
-- [Docker for web](https://www.youtube.com/watch?v=M-Uf-GjtYyA&list=PLxF76yfppeZafDqtHWXOMu6HoLCydjCtL) .
-
-[+] OTHER:
-- [Buid Server Physical](https://www.youtube.com/watch?v=apC1bOLbzbY) .
-- Allow http in localhost `chrome://flags/#allow-insecure-localhost` .
+- VIDEO: 
+  * [How to put an HTML website online](https://youtu.be/p1QU3kLFPdg) .
+  * [Docker for web](https://www.youtube.com/watch?v=M-Uf-GjtYyA&list=PLxF76yfppeZafDqtHWXOMu6HoLCydjCtL) .
+- OTHER:
+  * [Buid Server Physical](https://www.youtube.com/watch?v=apC1bOLbzbY) .
+  * Allow http in localhost `chrome://flags/#allow-insecure-localhost` .
