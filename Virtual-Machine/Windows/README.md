@@ -79,7 +79,7 @@ disk> delete partition override
 
 
 ## [3]. Reeferences:
-  * [Windows-Virtual-Machine-for-RE](https://github.com/mandiant/flare-vm) .
+  * [Windows-Virtual-Machine-for-RE | flare-vm](https://github.com/mandiant/flare-vm) .
   * [Sysinternals-full-tools](https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite) .
   * [SublimeText config](https://github.com/NigmaZ/Blogs/tree/main/Virtual-Machine/Note/Sublime%20config) .
   * ...
