@@ -75,7 +75,11 @@ disk> delete partition override
   * API monitoring
 - `Network monitor`
   * WireShark
+ 
 
-## [3]. NOTE
+
+## [3]. Reeferences:
+  * [Windows-Virtual-Machine-for-RE](https://github.com/mandiant/flare-vm) .
   * [Sysinternals-full-tools](https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite) .
   * [SublimeText config](https://github.com/NigmaZ/Blogs/tree/main/Virtual-Machine/Note/Sublime%20config) .
+  * ...
