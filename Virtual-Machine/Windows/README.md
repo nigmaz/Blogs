@@ -1,14 +1,14 @@
+
 # Windows
 - `Build file install.bat or install.ps1` is loading...
 
 ![version.png](./version.png)
-
 - Tùy từng tường hợp demo cái gì trên máy ảo windows kiểu rce back reverseshell thì tắt hết firewall đi (chỉ thực tập cơ sở thôi).
+## [1]. Windows install and setup
+
 - Trick-in-Windows-setup
   * [Fix Antimalware Service Executable hight CPU](https://www.freecodecamp.org/news/what-is-antimalware-service-executable-why-is-it-high-cpu-disk-usage/#:~:text=Antimalware%20service%20executable%20is%20a%20Windows%20Security%20process%20that%20executes,programs%20from%20time%20to%20time.) .
   * [Windows Server enable wifi](https://www.youtube.com/watch?v=PupMFBL39RI) .
-
-## [1]. Windows install and setup
 
 ### A) Active Windows and Office
 
@@ -50,24 +50,32 @@ disk> delete partition override
 - [WSL](https://bwgjoseph.com/how-to-manually-install-wsl2-on-a-windows-10-virtual-machine) in `Virtual Machine`.
   * Virtualization engine => Virtualize Intel VT-x/EPT or AMD-V/RVI
 
-- Hex-Rays IDA Pro 7.7
-  * [+] [IDA Pro - English](https://drive.google.com/file/d/1wf2XemQQwzpdSdQic63fZ0pC0829XcDE/view?usp=sharing) .
-  * [+] [IDA Pro - China](https://drive.google.com/file/d/1qkMy9u1FVz9uFRa2qfBI7_694iJLe5ZW/view?usp=sharing) .
+- Debugging Tools
+  * Hex-Rays IDA Pro 7.7
+    + [IDA Pro - English](https://drive.google.com/file/d/1wf2XemQQwzpdSdQic63fZ0pC0829XcDE/view?usp=sharing) .
+    + [IDA Pro - China](https://drive.google.com/file/d/1qkMy9u1FVz9uFRa2qfBI7_694iJLe5ZW/view?usp=sharing) .
 
-- WinDBG
-- x84_64dbg | https://gist.github.com/sidharthpunathil/74911917ebc7be6ce13fabe8e3abdf8d
-- OllyDbg
-- Detect It Easy *
-- CFF Explorer Suite IV *
-- HxD
+  * WinDBG
+  * x84_64dbg 
+    + [Cheat-sheet](https://gist.github.com/sidharthpunathil/74911917ebc7be6ce13fabe8e3abdf8d) .
+  * OllyDbg
+- PE Analysis tools
+  * Detect It Easy
+  * CFF Explorer Suite IV 
+  * HxD
 - Text Editor | IDE:
   * Visual Studio*
   * Dev C++
   * Sublime Text
-- Demo CVE:
+- Process Monitor
   * Process Hacker 2
+  * Process Explorer
+- Logs and check events
+  * Event Viewer (Sysmon + Logs powershell commandline)
+  * API monitoring
+- Network monitor:
   * WireShark
 
 ## [3]. NOTE
-  * https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite
+  * [Sysinternals-full-tools](https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite) .
   * [SublimeText config](https://github.com/NigmaZ/Blogs/tree/main/Virtual-Machine/Note/Sublime%20config) .
