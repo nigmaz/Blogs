@@ -29,6 +29,7 @@
 - `Writeup Reverse CTF:`
    * https://blog.anhtv.live/2023/07/10/cookie-arena-ss2/
    * [Flare-on 9](https://nextheia.com/tags/flare-on-9-write-up/) .
+   * https://github.com/fareedfauzi/Flare-On-Challenges
    * https://0ji54n.netlify.app/works/flareon9 .
    * [ASCIS 2022 - Faku](https://mochinishimiya.github.io/posts/ascis2022/?fbclid=IwAR1uNY6kSbsKBoyvQmbepMpdYjdBlOhfnY4yi9Hfs_ZAFJUalFQUTOZLjqA) .
    * [ISITDTU CTF 2018 Quals - inter](https://aides2593.github.io/writeup/re/2018/08/21/inter.html) .
