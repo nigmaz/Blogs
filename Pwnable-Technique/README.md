@@ -8,9 +8,9 @@ và hầu như tất cả các kỹ thuật mới đều được xây dựng d�
    * Heap and Other House of Heap...
    * Heap v2.0
    * FSOP fake vtable-2.27
+   * Side Chanel Attack
    * Fuzzing
    * ARM Exploit
-   * Side Chanel Attack
    * Begin Windows Exploit
    * ...
 ## [0]. Cheatsheet
