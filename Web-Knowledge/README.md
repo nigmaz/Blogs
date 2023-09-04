@@ -34,5 +34,5 @@
 - [Docker for web](https://www.youtube.com/watch?v=M-Uf-GjtYyA&list=PLxF76yfppeZafDqtHWXOMu6HoLCydjCtL) .
 
 [+] OTHER:
-- [Buid Server Physical](https://www.youtube.com/watch?v=apC1bOLbzbY)
-- Kích hoạt cái này là được này chrome://flags/#allow-insecure-localhost
+- [Buid Server Physical](https://www.youtube.com/watch?v=apC1bOLbzbY) .
+- Allow http in localhost `chrome://flags/#allow-insecure-localhost` .
