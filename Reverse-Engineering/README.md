@@ -64,37 +64,5 @@
 
 - `CTF>` BKsec-memorydump: https://gist.github.com/1259iknowthat/8cb818f0a37566b1fc25151ef074d9af
 
-## [3]. MALWARE ANALYSIS
-
-- https://xikhud.wordpress.com/
-- https://github.com/wtsxDev/reverse-engineering
-- https://github.com/mytechnotalent/Reverse-Engineering
-- https://github.com/michalmalik/linux-re-101
-- https://github.com/michalmalik/osx-re-101
-- Malware
-  * Bypass windows defender
-  * certutil -hashfile <ten-file> (check hash virustotal)
-  * https://github.com/Da2dalus/The-MALWARE-Repo
-  * https://github.com/CMEPW/BypassAV
-  * https://anonyviet.com/hacker-an-malware-vao-hinh-anh-va-thuc-thi-nhu-the-nao/?fbclid=IwAR23pXiQNxQkhijurEbGFHk2nuCeZn3VsBY0GgbrCcyx_ojOEgY7InjszLI_aem_AdKHux11-ltaYC1vH3PTR7guZ_n1Bv46eDb7VmGrCf8CoKgb1lL4IrHRJtUGyBA9iU8
-  * https://github.com/nigmaz/Blogs/tree/main/Tools-Support
-  * sheet reader => rce cve (Malware Excel)
-  * microsoft visual basic for application (Malware Excel)
-  * https://class.malware.re/
-  * https://knightz1.github.io/blog/malware/analysis/2022/11/30/Malware-analysis.html
-  * [dll side loading](https://whitehat.vn/threads/ky-thuat-dll-side-loading-la-gi.17345/?fbclid=IwAR3Ru7pXgl6xgUdXTxu-UhhHpVghC5BGHEz3uXo9FpEsJ8wV5W9oPW3tqoM) .
-  * [malware analysis](https://cocomelonc.github.io/tutorial/2022/05/09/malware-pers-4.html) .
-  * Tấn công thông qua sửa Windows Registry => sửa tham số hệ thống, có 1 dịch vụ dangerous là `remote windows registry`.
-  * Các cơ chế `Autorun` nhằm `Persistence` như:
-      + services 
-      + schedules task
-      + office application startup
-  * Lây lan qua mạng `Lateral Movement` Tools chuyển tiếp gói tin, pivot point làm lây lan từ máy victim vào mạng, có hai cách là:    
-      + forwarding / proxy (Blueteam dễ điều tra hơn)
-      + tunneling (đóng  gói traffic trong protocol khác). (VD: ssh tunneling)
-
-- Paper tech and real attack
-  * https://whitehat.vn/threads/chien-dich-aurora-va-cuoc-chien-ngam-tren-khong-gian-mang-giua-hai-sieu-cuong-phan-1.17333/
-  * https://whitehat.vn/threads/phan-tich-ma-doc-windows-co-ban-phan-i.16951/
 
  
