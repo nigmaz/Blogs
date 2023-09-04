@@ -6,9 +6,11 @@
 và hầu như tất cả các kỹ thuật mới đều được xây dựng dựa trên bốn lý thuyết này.
 - TARGET:
    * Heap and Other House of Heap...
+   * Heap v2.0
+   * FSOP fake vtable-2.27
    * Fuzzing
    * ARM Exploit
-   * Side Chanel Sttack
+   * Side Chanel Attack
    * ...
 ## [0]. Cheatsheet
 
