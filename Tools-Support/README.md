@@ -5,7 +5,7 @@
 ## [0]. Tools
 
 - Keylogger
-- Metasploit
+- Metasploit framework
 - Nmap
 - Reverse Shell
 - Một số sản phẩm vật lý hỗ trợ:
@@ -16,7 +16,8 @@
 
 ## [1]. Support
 
-- Docker 
+- Docker
+- Github
 - Markdown ["-", "*" và "+"]
 - [Telegram + API-ChatGPT](https://www.facebook.com/groups/j2team.community/permalink/2070108753321234/?mibextid=S66gvF) 
 
