@@ -22,5 +22,7 @@
 
 - `Glibc-2.29` Trong thư viện glibc 2.29 trở lên, mã gọi con trỏ hàm bên trong hàm IO_str_overflow đã bị xóa nên các kỹ thuật tấn công sử dụng hàm đó không thể sử dụng được nữa.
     * https://blog.kylebot.net/2022/10/22/angry-FSROP/
+    * https://github.com/Kyle-Kyle/angry-FSROP
+
 
  
