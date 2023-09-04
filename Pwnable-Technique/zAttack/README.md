@@ -7,6 +7,7 @@
 - _rtld_global
 - Canary global TLS
 - Race Condition
+- Side-Channel-Attack
 - overwrite `.fini_array` => loop
 - Type of Confusion | Type Error
 - Command Injection
