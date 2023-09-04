@@ -2,8 +2,6 @@
 
 - https://anonyviet.com/6-cong-cu-tim-kiem-hacker-thuong-dung-de-tim-lo-hong/?fbclid=IwAR1loHKq0_Ef-ZzHV7HuzlFT7g9ImPM5gUwJiwm3A5PYwuQDhF_jffrfEkA
 
-![tools.jpeg](./images/tools.jpeg)
-
 ## [0]. Tools
 
 - Keylogger
