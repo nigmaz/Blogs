@@ -9,6 +9,16 @@ git config user.name
 git config user.email
 git status
 ```
+## [0] git clone
+
+- Tải 1 thư mục bất kỳ trong 1 repo của 1 github về.
+
+```bash
+git clone https://github.com/user/repo.git folder_name
+```
+
+## [1] git commit
+
 - Dưới đây là tóm tắt các bước để thêm một thư mục có tên "WRITEUP" vào kho lưu trữ GitHub sử dụng Personal Access Token:
 
 1. **Tạo Personal Access Token trên GitHub**:
