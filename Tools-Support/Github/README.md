@@ -13,7 +13,7 @@ git status
 
 - download subversions.
 ```bash
-sudo apt-get update && sudo apt-get install subversion
+sudo apt-get update && sudo apt-get install subversion && svn --version
 ```
 - Tải 1 thư mục bất kỳ trong 1 repo của 1 github.
 
