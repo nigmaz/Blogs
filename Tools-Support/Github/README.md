@@ -9,12 +9,16 @@ git config user.name
 git config user.email
 git status
 ```
-## [0] git clone
+## [0] download folder in github repo
 
-- Tải 1 thư mục bất kỳ trong 1 repo của 1 github về.
+- download subversions.
+```bash
+sudo apt-get update && sudo apt-get install subversion
+```
+- Tải 1 thư mục bất kỳ trong 1 repo của 1 github.
 
 ```bash
-git clone https://github.com/user/repo.git folder_name
+svn export https://github.com/nigmaz/PTIT/trunk/HK-1_Nam4/IOT/BTL-IOT/Web
 ```
 
 ## [1] git commit
