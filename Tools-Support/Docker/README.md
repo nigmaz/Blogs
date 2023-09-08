@@ -183,6 +183,15 @@ sudo docker-compose up --build
 ```bash
 ngrok tcp 1337
 ```
+
+> Lệnh `netstat -tnlp` được sử dụng để liệt kê tất cả các cổng mà hệ thống đang lắng nghe kết nối, cũng như các tiến trình đang mở các cổng đó. Cụ thể:
+
+- `t`: Hiển thị các kết nối TCP.
+- `n`: Hiển thị địa chỉ và cổng số học thay vì giải quyết các tên máy chủ và cổng.
+- `l`: Chỉ hiển thị các kết nối và cổng đang lắng nghe.
+- `p`: Hiển thị tiến trình và ID của chúng liên kết với các kết nối.
+
+> Kết quả sẽ bao gồm danh sách các cổng và tiến trình đang lắng nghe trên các cổng đó.
    
 ## [4] References:
 
