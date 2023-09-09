@@ -499,22 +499,8 @@ sudo apt-get install git fakeroot build-essential ncurses-dev xz-utils libssl-de
 sudo apt-get install musl-tools
 ```
 
-- `ARM Exploitation compiler-debug`.
-
-```bash
-sudo apt install -qy qemu qemu-user libc6-arm64-cross qemu-user-static kpartx gdb-multiarch
-```
-
-- Run file
-  
-  * x86_64	 
-  ```bash
-  qemu-aarch64 -L /usr/aarch64-linux-gnu arm
-  ```
-  * x86
-  ```bash
-  qemu-arm-static ./arm-exploit
-  ```
+- `ARM Exploitation compiler-debug`:
+  	* https://github.com/nigmaz/Blogs/tree/main/Pwnable-Technique/ARM%20Exploit
 
 - Tổng hợp
 
