@@ -113,7 +113,8 @@ drive.mount('/content/drive')
 !ls
 %cd /content/drive/MyDrive/Colab Notebooks/
 !ls
-...script-pwntools
+#!/usr/bin/env python3
+< ... script-pwntools ... >
 ```
 
 ## [1]. Compile use mitigations
