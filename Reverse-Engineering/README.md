@@ -49,7 +49,11 @@
         + https://www.veracode.com/blog/2008/12/anti-debugging-series-part-i
         + https://anti-debug.checkpoint.com/
         + **Questions:** exception, debugger là gì ?
-
+- `Lab:`
+   * https://github.com/wtsxDev/reverse-engineering
+   * https://github.com/mytechnotalent/Reverse-Engineering
+   * https://github.com/michalmalik/linux-re-101
+   * https://github.com/michalmalik/osx-re-101
 ## [1]. Cryptography
 - Crypto (Dreamhack)
 - https://cryptohack.org/courses/
