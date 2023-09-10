@@ -7,7 +7,8 @@ next(libc.search(b'/bin/sh'))
 ```
 - pwntools `flat()` điền byte là p64() hoặc p32() theo cấu trúc chương trình là x86 hay x86_64, VD:`[convert - ASCIS 2022]` .
 - [Tools local find offset LIBC](https://x3ero0.tech/posts/orxw_balsn_ctf_2021_pwn/) .
-- Để ý một số bài có thể sử dụng one_gadget kết hợp với đối số của các hàm bị ghi đè khi gọi tới.
+- Để ý cái lỗi dùng chung stack giữa hai hàm đều được gọi từ hàm main dẫn đến giá trị được tham chiếu của hàm này nếu không đặt lại giá trị thì sẽ mang giá trị được tạo bởi hàm kia.
+- Một số bài có thể sử dụng one_gadget kết hợp với đối số của các hàm bị ghi đè khi gọi tới.
 - Trong libc.so.6 có mọi gadgets, đôi khi không thể dùng tools để tìm được 1 số gadgets.
     * VD: `syscall ; ret` [dicectf 2023 - bop].
     * gadget push rax;ret
