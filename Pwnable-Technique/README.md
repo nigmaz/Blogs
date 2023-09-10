@@ -104,7 +104,8 @@ $        --add-needed
 - `google-colab` trong 1 số trường hợp đặc biệt (tăng tốc độ kết nối đến server).
 
 ```python
-!pip install --upgrade git+https://github.com/Gallopsled/pwntools.git
+!pip install pyelftools==0.28
+!pip install pwntools==4.7.1
 import os
 os.environ['PWNLIB_NOTERM'] = '1'
 os.environ['JUPYTER_DETECTED'] ='yes'
@@ -112,8 +113,9 @@ from google.colab import drive
 drive.mount('/content/drive')
 !ls
 %cd /content/drive/MyDrive/Colab Notebooks/
-!ls
+!ls -al
 #!/usr/bin/env python3
+from pwn import *
 < ... script-pwntools ... >
 ```
 
