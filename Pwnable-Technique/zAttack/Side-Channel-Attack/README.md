@@ -1,5 +1,5 @@
 # Side-Channel-Attack
-
+- Một dạng biến thể của seccomp sandbox, gần giống với bruteforce trong CTF.
 - Trong các CTF pwn challenges, side-channel attacks thường áp dụng vào việc tấn công các chương trình có lỗ hổng bảo mật. Dưới đây là một số loại side-channel attacks thường gặp:
 
    * `1.` **Timing Attacks**: Đây là loại tấn công sử dụng thông tin thời gian thực hiện để xác định thông tin bên trong chương trình. Ví dụ, một lỗ hổng bảo mật có thể được tiết lộ thông tin bằng cách kiểm tra thời gian thực hiện của một số phép toán.
