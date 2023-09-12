@@ -43,6 +43,7 @@ và hầu như tất cả các kỹ thuật mới đều được xây dựng d�
             )
     else:
         p = remote("", "")
+    # p = gdb.debug("./note_keeper_arm", '''...''')
 
     p.interactive()
     ```
