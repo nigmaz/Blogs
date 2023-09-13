@@ -162,7 +162,7 @@ from pwn import *
    * `[8]` Logic Bug.
    * `[9]` SandboxEscape Seccomptools.
    * `[10]` ARM Exploit.
-   * `[11]` *Linux Kernel. (Kernel read CVE Pwn2Own => report modern and variant hunting)
-   * `[12]` *Windows Exploit.
+   * `[11]` Windows Exploit.
+   * `[12]` *Linux Kernel. (Kernel read CVE Pwn2Own => report modern and variant hunting)
    * `[13]` *Browser Exploit. (Browser v8 pwn => state of the art exploit)
    * `[14]` *CVE realworld. (RCE&PLE => Windows | Linux | IOS)
