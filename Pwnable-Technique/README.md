@@ -152,17 +152,17 @@ from pwn import *
 [+] https://www.redhat.com/en/blog/hardening-elf-binaries-using-relocation-read-only-relro
 
 [+] `Pwnable Map`
-   * `[1]` Stack bug.
-   * `[2]` Format string.
-   * `[3]` Heap bug.
-   * `[4]` FileStructure attack.
-   * `[5]` Race condition.
+   * `[1]` Stack Bug.
+   * `[2]` Format String.
+   * `[3]` Heap Bug.
+   * `[4]` FileStructure Attack.
+   * `[5]` Race Condition.
    * `[6]` Typeof Confusion.
    * `[7]` Integer Overflow.
-   * `[8]` Logic bug.
-   * `[9]` Sandbox Escape.
-   * `[10]` *Linux Kernel. (Kernel read CVE Pwn2Own => report modern and variant hunting)
-   * `[11]` *ARM Exploit.
+   * `[8]` Logic Bug.
+   * `[9]` SandboxEscape Seccomptools.
+   * `[10]` ARM Exploit.
+   * `[11]` *Linux Kernel. (Kernel read CVE Pwn2Own => report modern and variant hunting)
    * `[12]` *Windows Exploit.
    * `[13]` *Browser Exploit. (Browser v8 pwn => state of the art exploit)
    * `[14]` *CVE realworld. (RCE&PLE => Windows | Linux | IOS)
