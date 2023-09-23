@@ -34,7 +34,7 @@
    * [ASCIS 2022 - Faku](https://mochinishimiya.github.io/posts/ascis2022/?fbclid=IwAR1uNY6kSbsKBoyvQmbepMpdYjdBlOhfnY4yi9Hfs_ZAFJUalFQUTOZLjqA) .
    * [ISITDTU CTF 2018 Quals - inter](https://aides2593.github.io/writeup/re/2018/08/21/inter.html) .
    * https://hackmd.io/Egk1bvxQTXCG1Tvkk2MNkg#REVERSE
-    
+   * https://knightz1.github.io/blog/?fbclid=IwAR2u4ZJvxEFvaGAcgSwZVRrc2a7UPQz8d3ExOP0vCSwTJZwFGVEVLu8viK8_aem_ATRFVrLxZKGJHRksRAr0yU7rUTq8lqlSuItH9V4Impev2IVselV1RbeaPWmnbK-UlKI
 
 - `References:`
     * [Slide SVATTT - RE b2](https://docs.google.com/presentation/d/1SBBp04TkILxE-vSARvI_Uo3aF7lswh-FT5dumWWssT0/edit?fbclid=IwAR33UPvpYYBkpxZL8qfOJ2V-XF6xxFhE5BRuVnrNZGVkLGHT2U0i1f-iOio#slide=id.g241d1437ad9_0_0) .
