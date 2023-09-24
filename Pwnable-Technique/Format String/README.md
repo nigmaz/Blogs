@@ -12,8 +12,9 @@ pl += f"%{wr}c%17$hn\x00".encode()
          + `1:` ghi đè GOT func libc đằng sau vị trí có fmt.
          + `2:` ghi đè .fini_array (Sử dụng exit(0) trực tiếp, hãy cân nhắc sử dụng fini_array và khi exit được thực thi, tất cả các hàm trong mảng .fini sẽ được duyệt và thực thi. ), ...
            ```c
-           main:		%rdi
-	        argc:		%rsi
+		_start:
+           	main:		%rdi
+		argc:		%rsi
 	        argv:		%rdx
 	        init:		%rcx
 	        fini:		%r8
