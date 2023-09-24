@@ -10,7 +10,7 @@ pl += f"%{wr}c%17$hn\x00".encode()
 - `Technique note`:
     * Một số bài format strings cần tạo vòng lặp loop thì có rất nhiều ý tưởng để tạo vòng lặp loop: 
          + `1:` ghi đè GOT func libc đằng sau vị trí có fmt.
-         + `2:` ghi đè .fini_array (Sử dụng exit(0) trực tiếp, hãy cân nhắc sử dụng fini_array và khi exit được thực thi, tất cả các hàm trong mảng .fini sẽ được duyệt và thực thi. ), ...
+         + `2:` ghi đè .fini_array (Sử dụng exit(0) trực tiếp, hãy cân nhắc sử dụng fini_array và khi exit được thực thi, tất cả các hàm trong mảng .fini sẽ được duyệt và thực thi). Kiểm tra địa chỉ của .fini_array thì tìm trong giá trị của r8.
 		```c
 		_start:
 		main:		%rdi
