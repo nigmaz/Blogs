@@ -11,16 +11,16 @@ pl += f"%{wr}c%17$hn\x00".encode()
     * Một số bài format strings cần tạo vòng lặp loop thì có rất nhiều ý tưởng để tạo vòng lặp loop: 
          + `1:` ghi đè GOT func libc đằng sau vị trí có fmt.
          + `2:` ghi đè .fini_array (Sử dụng exit(0) trực tiếp, hãy cân nhắc sử dụng fini_array và khi exit được thực thi, tất cả các hàm trong mảng .fini sẽ được duyệt và thực thi. ), ...
-           ```c
+		```c
 		_start:
-           	main:		%rdi
+		main:		%rdi
 		argc:		%rsi
-	        argv:		%rdx
-	        init:		%rcx
-	        fini:		%r8
-	        rtld_fini:	%r9
-	        stack_end:	stack.	*/
-           ```
+		argv:		%rdx
+		init:		%rcx
+		fini:		%r8
+		rtld_fini:	%r9
+		stack_end:	stack.	*/
+		```
          + ...
     * Blind Format String:
         + [Blind Format String video](https://www.youtube.com/watch?v=XuzuFUGuQv0) .
