@@ -18,6 +18,7 @@
    * 3. _IO_FINISH trong vtable được thực thi.
 - `References:`
     * https://nightrainy.github.io/2019/08/07/play-withe-file-structure-%E6%90%AC%E8%BF%90/
+    * https://www.slideshare.net/AngelBoy1/play-with-file-structure-yet-another-binary-exploit-technique
     * https://sh4dy.com/notes/pwn/heap-exploitation/fsop.html
     * https://chovid99.github.io/posts/file-structure-attack-part-1/
 
