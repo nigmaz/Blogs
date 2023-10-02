@@ -5,13 +5,19 @@
 - Hiểu rõ các lý thuyết máy tính cơ bản như `Mạng máy tính`, `Hệ điều hành`, `Kiến trúc máy tính` và `Lý thuyết trình biên dịch` là bốn lý thuyết máy tính cơ bản quan trọng nhất 
 và hầu như tất cả các kỹ thuật mới đều được xây dựng dựa trên bốn lý thuyết này.
 - TARGET:
-   * Heap and Other House of Heap...
-   * Heap v2.0
-   * FSOP fake vtable-2.27
-   * Side Chanel Attack
-   * Fuzzing
-   * ARM Exploit
-   * Begin Windows Exploit
+   * `HEAP`
+      + how2heap(đến unlink)...
+      + Heap v2.0 (interupt t-cache managerment, robbert)
+   * `FSOP`
+      + FSOP fake vtable-2.27
+   * `Fuzzing` (đọc references trong github)
+   * `ARM Exploit` (học ARM trong link references)
+   * `Begin Windows Exploit` (Fuzzing CTF)
+   * `CTFtime`
+      + ASIS
+      + DownUnder
+      + Recruit (còn bài heap interupt t-cache management)
+      + TeamItaly  
    * ...
 ## [0]. Cheatsheet
 
