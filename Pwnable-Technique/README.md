@@ -13,6 +13,7 @@ và hầu như tất cả các kỹ thuật mới đều được xây dựng d�
    * `Fuzzing` (đọc references trong github)
    * `ARM Exploit` (học ARM trong link references)
    * `Begin Windows Exploit` (Fuzzing CTF)
+   * `pwnable.tw`: printable
    * `CTFtime`
       + ASIS
       + DownUnder
