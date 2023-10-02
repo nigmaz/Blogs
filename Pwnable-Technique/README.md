@@ -7,7 +7,7 @@ và hầu như tất cả các kỹ thuật mới đều được xây dựng d�
 - TARGET:
    * `HEAP`
       + how2heap(đến unlink)...
-      + Heap v2.0 (interupt t-cache managerment, robbert)
+      + Heap v2.0 (interupt t-cache managerment: bài unsafe-inlink, bài RE-ACSC-2023 (writeup robbert))
    * `FSOP`
       + FSOP fake vtable-2.27
    * `Fuzzing` (đọc references trong github)
