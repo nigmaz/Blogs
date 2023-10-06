@@ -196,6 +196,8 @@ netstat -tnlp
 - `p`: Hiển thị tiến trình và ID của chúng liên kết với các kết nối.
 
 > Kết quả sẽ bao gồm danh sách các cổng và tiến trình đang lắng nghe trên các cổng đó.
+
+
    
 ## [4] References:
 
@@ -204,5 +206,8 @@ netstat -tnlp
 - [A Hiep](https://gitlab.com/hypnguyen1209/pwn-deploy).
 - [A Chuoi](https://github.com/yuumi001/miniCTF2021_deploy?fbclid=IwAR19QpvrUm9jJXu_s5xvdCNkFKtN4SADFCNtQaciJWqm2cipE_LR7vRVDTQ).
 
-
 [+] [USE DOCKERFILE FOR DEBUGGING WITH PWNTOOLS](https://shakuganz.com/2022/04/20/use-dockerfile-for-debugging-with-pwntools/).
+
+[+] Copy file and folder from VPS
+- File: `scp username@remote_host:/path/to/remote/file /path/to/local/directory` .
+- Folder: `scp -r username@remote_host:/path/to/remote/folder /path/to/local/directory` .
