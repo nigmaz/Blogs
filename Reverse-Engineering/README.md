@@ -71,8 +71,8 @@
 - **RE-Machine**:
    * [Windows-10 + flare-vm](https://github.com/mandiant/flare-vm) .
    * [A Linux Toolkit for Malware Analysis](https://remnux.org/) .
-   * [RE-Toolkit](https://github.com/mentebinaria/retoolkit?fbclid=IwAR1uAu_jBCIVc1y57PSv6xesm4Nedmw6ai23Nj-a58HxwDuSFNG4AcZVJA0) .
-   * [LAB Tryhackme](https://tryhackme.com/room/windowsreversingintro?fbclid=IwAR3yC6T0hFYake1O9dIrP13sAlKdOxC2JJkXH79047LbxwHdmCQqjEOF1Jo) .
+   * [RE-Toolkit](https://github.com/mentebinaria/retoolkit) .
+- ...
 
 
  
