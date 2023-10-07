@@ -173,6 +173,9 @@ sudo docker-compose up --build
     * __xinetd__ thì phải xem trong file xinetd (có thể có đuôi mở rộng) tại phần port.
     * __docker-compose.yml__ thì xem phần port sẽ thấy.
 
+### E. Docker-compose
+
+- https://www.educative.io/blog/docker-compose-tutorial
 
 ## [3] Run Local use ngrok: 
 
