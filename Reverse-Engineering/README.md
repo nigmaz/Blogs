@@ -70,8 +70,8 @@
 
 - **RE-Machine**:
    * [Windows-10 + flare-vm](https://github.com/mandiant/flare-vm) .
+   * [RE-Toolkit Windows](https://github.com/mentebinaria/retoolkit) .
    * [A Linux Toolkit for Malware Analysis](https://remnux.org/) .
-   * [RE-Toolkit](https://github.com/mentebinaria/retoolkit) .
 - ...
 
 
