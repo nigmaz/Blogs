@@ -21,7 +21,7 @@
     + Batch Scripting (.bat or .cmd).
     + VBScript (Visual Basic Scripting Edition)
 
-- __References__
+## [1]. References
   * Perl
   * Ruby
   * Golang (*)
