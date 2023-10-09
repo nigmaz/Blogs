@@ -10,11 +10,11 @@
 
 ## [1]. NETWORK
 
-Cả hai OSI (Open Systems Interconnection) và TCP/IP (Transmission Control Protocol/Internet Protocol) là các mô hình được sử dụng để mô tả cách mà các giao thức mạng hoạt động. Dưới đây là mô tả ngắn về cả hai:
+- Cả hai OSI (Open Systems Interconnection) và TCP/IP (Transmission Control Protocol/Internet Protocol) là các mô hình được sử dụng để mô tả cách mà các giao thức mạng hoạt động. Dưới đây là mô tả ngắn về cả hai:
 
 ### Mô hình OSI (Open Systems Interconnection):
 
-Mô hình OSI chia quá trình truyền thông mạng thành 7 lớp khác nhau. Các lớp này mô tả các chức năng khác nhau mà hệ thống mạng cần thực hiện để truyền thông thành công.
+- Mô hình OSI chia quá trình truyền thông mạng thành 7 lớp khác nhau. Các lớp này mô tả các chức năng khác nhau mà hệ thống mạng cần thực hiện để truyền thông thành công.
 
 1. **Lớp 1 - Lớp Vật lý (Physical Layer)**:
    - Nhiệm vụ: Định nghĩa các thiết bị vật lý và truyền dẫn dữ liệu qua các phương tiện truyền thông như cáp, sóng radio, và các kỹ thuật vật lý khác.
@@ -39,7 +39,7 @@ Mô hình OSI chia quá trình truyền thông mạng thành 7 lớp khác nhau.
 
 ### Mô hình TCP/IP (Transmission Control Protocol/Internet Protocol):
 
-Mô hình TCP/IP tập trung vào việc mô tả cách mà các giao thức TCP/IP (bao gồm cả TCP và IP) hoạt động trên mạng.
+- Mô hình TCP/IP tập trung vào việc mô tả cách mà các giao thức TCP/IP (bao gồm cả TCP và IP) hoạt động trên mạng.
 
 1. **Lớp 1 - Lớp Giao thức Truyền thông (Application Layer)**:
    - Tương đương với lớp 7 trong mô hình OSI, nhưng TCP/IP đưa ra nhiều giao thức cụ thể hơn cho ứng dụng, bao gồm HTTP, SMTP, FTP, và nhiều giao thức khác.
@@ -53,7 +53,7 @@ Mô hình TCP/IP tập trung vào việc mô tả cách mà các giao thức TCP
 4. **Lớp 4 - Lớp Giao thức Truyền thông (Physical Layer)**:
    - Tương đương với lớp 1 và 2 trong mô hình OSI. Bao gồm các giao thức và thiết bị vật lý dùng để truyền dữ liệu qua các phương tiện truyền thông.
 
-Mô hình TCP/IP được thiết kế để phù hợp với cách mà Internet hoạt động, trong khi mô hình OSI mang tính lý thuyết hơn và không thực sự triển khai rộng rãi trong thực tế.
+- Mô hình TCP/IP được thiết kế để phù hợp với cách mà Internet hoạt động, trong khi mô hình OSI mang tính lý thuyết hơn và không thực sự triển khai rộng rãi trong thực tế.
 
 ## [2]. REFERENCES
 - ...
