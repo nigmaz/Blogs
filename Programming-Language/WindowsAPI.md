@@ -2,6 +2,7 @@
 
 > VisualStudio-2019. WindowsAPI (language C or Cpp) settings project Type: `Empty project`.
 
+- https://learn.microsoft.com/en-us/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project?view=msvc-170
 - Learn: `learn mfc` - https://functionx.com/visualc/index.htm.
 - https://learn.microsoft.com/en-us/windows/win32/api/
 - [Windows System Programming in C/C++](https://www.youtube.com/watch?v=B999K9yztnI&list=PLDpFwQfbVxIw_rysNCHPeGmh6wIUnhjrt) .
