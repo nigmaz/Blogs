@@ -55,7 +55,10 @@
 
 - Mô hình TCP/IP được thiết kế để phù hợp với cách mà Internet hoạt động, trong khi mô hình OSI mang tính lý thuyết hơn và không thực sự triển khai rộng rãi trong thực tế.
 
-<img src="./img/Networking-Protocols.jpg" alt="Networking-Protocols.jpg" width="500" height="400">
+<div style="text-align:center;">
+    <img src="./img/Networking-Protocols.jpg" alt="Networking Protocols" width="700" height="700">
+</div>
+
 
 ## [2]. REFERENCES
 - ...
