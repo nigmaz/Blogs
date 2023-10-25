@@ -2,6 +2,11 @@
 >Setup `Visual Studio 2019` code and debug `mASM` with lib `masm32` .
 
 - [Tools C->ASM](https://godbolt.org/) .
+- Format code:
+  * include library (masm32, Irvine32.inc)
+  * extrn 
+  * asm loadPEB
+
 
 ## [A]. Install MASM32
 
