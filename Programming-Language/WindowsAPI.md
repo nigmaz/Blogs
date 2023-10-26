@@ -2,17 +2,9 @@
 
 > WindowsAPI and MFC Application (language C or Cpp).
 
-
-
-- https://learn.microsoft.com/en-us/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project?view=msvc-170
-- Learn: `learn mfc` - https://functionx.com/visualc/index.htm.
-- https://learn.microsoft.com/en-us/windows/win32/api/
-- [Windows System Programming in C/C++](https://www.youtube.com/watch?v=B999K9yztnI&list=PLDpFwQfbVxIw_rysNCHPeGmh6wIUnhjrt) .
-- [dll project](https://learn.microsoft.com/en-us/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp?view=msvc-170) .
-- https://learn.microsoft.com/en-us/cpp/windows/overview-of-windows-programming-in-cpp?view=msvc-170
 ## [0]. NOTE:
 
-- `Config`:
+- `Config` [Deploy a Visual C++ application](https://learn.microsoft.com/en-us/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project?view=msvc-170):
   - Project type: `Empty Project`.
 
   - Config project: Properties => Linker => System => `SubSystem : Windows (/SUBSYSTEM:WINDOWS)` .
@@ -36,6 +28,13 @@
 
 [+] [List video WinAPI - MFC Programming](https://www.youtube.com/watch?v=60O6B2Di5RE&list=PLfszubEEhakf7mGTDjsImyp-YGU69_S5k&index=42) .
 
+[+] Learn: `learn mfc` - https://functionx.com/visualc/index.htm .
+
+[+] WIN32 API:
+- https://learn.microsoft.com/en-us/cpp/windows/overview-of-windows-programming-in-cpp?view=msvc-170
+- `dll`: https://learn.microsoft.com/en-us/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp?view=msvc-170
+- [youtube Windows System Programming in C/C++](https://www.youtube.com/watch?v=B999K9yztnI&list=PLDpFwQfbVxIw_rysNCHPeGmh6wIUnhjrt)
+- https://learn.microsoft.com/en-us/windows/win32/api/
 
 
 
