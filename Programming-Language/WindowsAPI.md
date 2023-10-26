@@ -2,7 +2,7 @@
 
 > WindowsAPI and MFC Application (language C or Cpp).
 
-- settings project Type: `Empty project`.
+
 
 - https://learn.microsoft.com/en-us/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project?view=msvc-170
 - Learn: `learn mfc` - https://functionx.com/visualc/index.htm.
@@ -12,17 +12,15 @@
 - https://learn.microsoft.com/en-us/cpp/windows/overview-of-windows-programming-in-cpp?view=msvc-170
 ## [0]. NOTE:
 
-- config VS 2019 - {Name project} => Properties => Linker => System => SubSystem : `Windows (/SUBSYSTEM:WINDOWS)` .
+- `Config`:
+  - Project type: `Empty Project`.
 
-- run in VS 2019 - fix chinese characters: [add utf-8 into Character Set](https://learn.microsoft.com/en-us/cpp/build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8?view=msvc-170#set-the-option-in-visual-studio-or-programmatically) .
+  - Config project: Properties => Linker => System => `SubSystem : Windows (/SUBSYSTEM:WINDOWS)` .
 
+  - Project multi-byte: Properties -> Advanced (or. General for older versions) -> Character Set option to Use Multi-Byte Character Set
 
-- C4133 error visual studio 2019 from 'LPWSTR' to 'LPCSTR', FIX:
-     * To compile your code in Visual C++ you need to use Multi-Byte char WinAPI functions instead of Wide char ones.
-     * Set Project -> Properties -> Advanced (or. General for older versions) -> Character Set option to Use Multi-Byte Character Set
-
-- x64 change `Solution Platforms` => x64 / set [1] NOTE .
-
+- `Error`:
+  - Fix error chinese language display in visual studio: [add utf-8 into Character Set](https://learn.microsoft.com/en-us/cpp/build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8?view=msvc-170#set-the-option-in-visual-studio-or-programmatically) .
 
 ## [1]. Knowledge:
 
