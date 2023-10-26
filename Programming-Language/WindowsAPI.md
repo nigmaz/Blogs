@@ -1,6 +1,8 @@
-# WindowsAPI
+# WindowsAPI - MFC Application
 
-> VisualStudio-2019. WindowsAPI (language C or Cpp) settings project Type: `Empty project`.
+> WindowsAPI and MFC Application (language C or Cpp).
+
+- settings project Type: `Empty project`.
 
 - https://learn.microsoft.com/en-us/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project?view=msvc-170
 - Learn: `learn mfc` - https://functionx.com/visualc/index.htm.
@@ -24,11 +26,7 @@
 
 ## [1]. Knowledge:
 
-* Base Services - kernel32.dll 
-* Advance Services - dvapi32.dll
-* Graphics Services - gdi32.dll
-* User Interface - shell32.dll, user32.dll, comctl32.dll, comdlg32.dll
-* Network Service and Multimedia 
+- ...
 
 ## [2] References:
 
