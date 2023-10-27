@@ -120,7 +120,7 @@ FROM pwn.red/jail
 sudo docker run --rm -p 5000:5000 --privileged -it <tag_name>
 ```
 
-### B. Image Docker-compose
+### B. Docker-Compose
 
 - Nếu bài cho 3 file:
     * Dockerfile
@@ -134,6 +134,8 @@ sudo docker-compose up --build
 ```
 
 - Lệnh `docker-compose <ID_container>` thay bằng tên service trong file.yml
+
+- `Tutorial`: https://www.educative.io/blog/docker-compose-tutorial
 
 ### C. The LIBC in Docker
 
@@ -173,9 +175,7 @@ sudo docker-compose up --build
     * __xinetd__ thì phải xem trong file xinetd (có thể có đuôi mở rộng) tại phần port.
     * __docker-compose.yml__ thì xem phần port sẽ thấy.
 
-### E. Docker-compose
 
-- https://www.educative.io/blog/docker-compose-tutorial
 
 ## [3] Run Local use ngrok: 
 
