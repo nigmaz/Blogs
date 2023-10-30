@@ -63,7 +63,7 @@ svn export https://github.com/nigmaz/PTIT/trunk/HK-1_Nam4/IOT/BTL-IOT/Web
 
 6. **Thêm và commit thư mục "WRITEUP" vào kho lưu trữ cục bộ**:
 
-   - Thêm tất cả các thay đổi vào vùng chờ:
+   - Thêm tất cả các thay đổi vào vùng chờ (`git init` nếu là new-folder):
 
      ```bash
      git add .
