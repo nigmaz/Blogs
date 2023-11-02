@@ -204,6 +204,22 @@ netstat -tnlp
    
 ## [4] References:
 
+[+] Một số thao tác với Docker
+- Từ docker-image được pull về lấy Dockerfile.
+- docker run -it `image-pull` /bin/sh
+- docker history <image_name>
+- tạo một bản sao của container thành một tệp tar `docker save <image> -o temp.tar` or
+```bash
+# Tạo bản sao container thành tệp tar
+docker export <container_id> > container.tar
+
+# Giải nén tệp tar
+tar -xf container.tar
+
+# Kiểm tra các tệp trong thư mục vừa giải nén
+```
+
+
 [+] Pwn Deploy sample Dockerfile: 
 - Các challenge đã làm có Dockerfile.
 - [A Hiep](https://gitlab.com/hypnguyen1209/pwn-deploy).
