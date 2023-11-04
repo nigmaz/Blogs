@@ -228,5 +228,9 @@ tar -xf container.tar
 [+] [USE DOCKERFILE FOR DEBUGGING WITH PWNTOOLS](https://shakuganz.com/2022/04/20/use-dockerfile-for-debugging-with-pwntools/).
 
 [+] Copy file and folder from VPS
-- File: `scp username@remote_host:/path/to/remote/file /path/to/local/directory` .
-- Folder: `scp -r username@remote_host:/path/to/remote/folder /path/to/local/directory` .
+```bash
+# File:
+scp username@remote_host:/path/to/remote/file /path/to/local/directory
+# Folder:
+scp -r username@remote_host:/path/to/remote/folder /path/to/local/directory
+```
