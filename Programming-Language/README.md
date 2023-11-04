@@ -1,5 +1,7 @@
 # Programming-Language
 > Cheat sheet for Programming language and Tips setup IDE or text editor,...
+- Golang (*), Rust, Ruby, Perl
+  - https://github.com/inancgumus/learngo
 
 ## [0]. Overview
 - __Hight Level__
@@ -21,9 +23,7 @@
     + Batch Scripting (.bat or .cmd).
     + VBScript (Visual Basic Scripting Edition)
 
-## [1]. References
-  * Perl
-  * Ruby
-  * Golang (*)
+- ...
+
 
 
