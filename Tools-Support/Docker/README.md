@@ -8,14 +8,14 @@
 
 - `Docker Registry` : Nơi chứa các Docker Image.
   
-- `Docker Compose` : là công cụ cho phép chạy `Ứng Dụng` với nhiều Docker Containers một cách nhanh chóng và dễ dàng.
-
-- Run hidden + `&`
-  
-- Kiểm tra dịch vụ đang hoạt động.
+- `Docker-Compose` : là công cụ cho phép chạy `Ứng Dụng` với nhiều Docker Containers một cách nhanh chóng và dễ dàng.
 
 ```bash
+sudo apt install -y docker.io docker-compose && \
 sudo service docker status
+
+# Run hidden
+docker ... + &
 ```  
 
 ## [1]. Use the Docker command line
