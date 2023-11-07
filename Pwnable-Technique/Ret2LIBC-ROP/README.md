@@ -1,9 +1,12 @@
 # Ret2LIBC-ROP
 
 ## [0] Overview:
-- pwntools '/bin/sh':
+- pwntools '/bin/sh', gadget:
 ```python
 next(libc.search(b'/bin/sh'))
+
+POP_RDI = (rop.find_gadget(['pop rdi', 'ret']))[0] #Same as ROPgadget --binary vuln | grep "pop rdi"
+RET = (rop.find_gadget(['ret']))[0]
 ```
 - pwntools `flat()` điền byte là p64() hoặc p32() theo cấu trúc chương trình là x86 hay x86_64, VD:`[convert - ASCIS 2022]` .
 - [Tools local find offset LIBC](https://x3ero0.tech/posts/orxw_balsn_ctf_2021_pwn/) .
