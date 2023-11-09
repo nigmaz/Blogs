@@ -18,6 +18,9 @@
     - Configuration Properties > C/C++ > Command Line > Additional Options, add the `/utf-8`.
 
   - ...
+ 
+- `Run and Debug`:
+  - Debug with arguments: Configuration Properties > Debugging > Command Arguments, add the argv[] `...`.
 
 ## [1]. Knowledge:
 
