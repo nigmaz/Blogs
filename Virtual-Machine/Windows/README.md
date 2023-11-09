@@ -19,7 +19,9 @@
 
 ### B) Turn off Windows Defender
 
-- [TurnOffWindowsDefender](https://superuser.com/questions/1757339/how-to-permanently-disable-windows-defender-real-time-protection-with-gpo) .
+- TurnOffWindowsDefender:
+  - https://superuser.com/questions/1757339/how-to-permanently-disable-windows-defender-real-time-protection-with-gpo .
+  - https://www.windowscentral.com/how-permanently-disable-windows-defender-windows-10 .
 
 - Windows10 Home: 
 
