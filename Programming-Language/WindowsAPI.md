@@ -11,6 +11,7 @@
   - Config project: Properties > Linker > System > `SubSystem : Windows (/SUBSYSTEM:WINDOWS)`.
 
   - Project multi-byte: Properties > Advanced (or. General for older versions) > Character Set, option to `Use Multi-Byte Character Set`.
+  - ...
 
 - `Error`:
   - Fix error chinese language display in visual studio: [add utf-8 into Character Set](https://learn.microsoft.com/en-us/cpp/build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8?view=msvc-170#set-the-option-in-visual-studio-or-programmatically) .
@@ -21,6 +22,7 @@
  
 - `Run and Debug`:
   - Debug with arguments: Configuration Properties > Debugging > Command Arguments, add the argv[] `...`.
+  - ...
 
 ## [1]. Knowledge:
 
