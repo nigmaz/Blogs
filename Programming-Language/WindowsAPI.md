@@ -4,7 +4,8 @@
 
 ## [0]. NOTE:
 
-- `Config` [Deploy a Visual C++ application](https://learn.microsoft.com/en-us/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project?view=msvc-170):
+- `Config`:
+  - [Deploy a Visual C++ application](https://learn.microsoft.com/en-us/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project?view=msvc-170).
   - Project type: `Empty Project`.
 
   - Config project: Properties => Linker => System => `SubSystem : Windows (/SUBSYSTEM:WINDOWS)` .
