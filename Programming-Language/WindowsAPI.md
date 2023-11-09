@@ -8,14 +8,14 @@
   - [Deploy a Visual C++ application](https://learn.microsoft.com/en-us/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project?view=msvc-170).
   - Project type: `Empty Project`.
 
-  - Config project: Properties => Linker => System => `SubSystem : Windows (/SUBSYSTEM:WINDOWS)` .
+  - Config project: Properties > Linker > System > `SubSystem : Windows (/SUBSYSTEM:WINDOWS)`.
 
-  - Project multi-byte: Properties -> Advanced (or. General for older versions) -> Character Set option to Use Multi-Byte Character Set
+  - Project multi-byte: Properties > Advanced (or. General for older versions) > Character Set, option to `Use Multi-Byte Character Set`.
 
 - `Error`:
   - Fix error chinese language display in visual studio: [add utf-8 into Character Set](https://learn.microsoft.com/en-us/cpp/build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8?view=msvc-170#set-the-option-in-visual-studio-or-programmatically) .
     - Open the project Property Pages dialog box.
-    - Configuration Properties > C/C++ > Command Line > Additional Options, add the `/utf-8` > OK
+    - Configuration Properties > C/C++ > Command Line > Additional Options, add the `/utf-8`.
 
   - ...
 
