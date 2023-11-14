@@ -1,11 +1,5 @@
 # Reverse-Engineering
 
-- RE Android
-- Decompile GCC, Clang và MSVC
-    * IDA: decompiler cho C/C++/Golang
-    * jadx: decompiler cho Java
-      - Download source decompile: http://www.javadecompilers.com/ 
-    * `DNSpy` or `ILSpy`: debug and decompiler cho C#, VBS,...
 - RVA (Relative Virtual Address) is an address relative to the base address of the program, an address at which the executable was loaded (where its MZ signature can be found). Any its `VA = base address + RVA`.
 
 ![baseAddress.jpeg](./images/baseAddress.jpeg)
