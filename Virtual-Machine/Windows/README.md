@@ -15,7 +15,9 @@
 - Chỉ sử dụng trên máy ảo (Trong google drive có office).
 - [Office2016](https://drive.google.com/drive/folders/1VgZRlnU4GvfcmqUW-ms4rfqrqiQIZJsB?usp=sharing) .
 - [Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts/releases) . 
-
+- Windows 7:
+  - Service turn off: `Windows Update` and `Software Protection`.
+  - cmd: `slmgr -rearm`.
 
 ### B) Turn off Windows Defender
 
