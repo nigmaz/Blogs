@@ -11,8 +11,8 @@
   * [Windows Server enable wifi](https://www.youtube.com/watch?v=PupMFBL39RI) .
 
 ### A) Active Windows and Office
-
-- Chỉ sử dụng trên máy ảo (Trong google drive có office).
+> Chỉ sử dụng trên máy ảo (Trong google drive có office).
+- https://voz.vn/t/tong-hop-tien-ich-kich-hoat-all-in-one-windows-office-backup-key-cap-nhat-03-2023.737622/
 - [Office2016 install](https://drive.google.com/drive/folders/1VgZRlnU4GvfcmqUW-ms4rfqrqiQIZJsB?usp=sharing) .
 - [Microsoft-(Windows+Office)-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts/releases) . 
 - active Windows 7:
