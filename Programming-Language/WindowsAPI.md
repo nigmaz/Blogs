@@ -50,6 +50,18 @@
   ```
   - Lựa chọn giữa "Windows" và "Console" phụ thuộc vào loại ứng dụng mà bạn định xây dựng. Nếu bạn định xây dựng một ứng dụng với giao diện người dùng hoặc một dịch vụ Windows, bạn có thể chọn SubSystem là "Windows". Nếu bạn muốn chương trình của mình tương tác với người dùng thông qua dòng lệnh, bạn sẽ chọn SubSystem là "Console".
 
+- Trong lập trình Windows, `HINSTANCE` là một kiểu dữ liệu thường được sử dụng để đại diện cho một thể hiện (instance) của một ứng dụng Windows. Kiểu dữ liệu này thường là một con trỏ hoặc một loại cấu trúc có thể chứa thông tin về việc thực thi của chương trình.
+
+  - Đối với hàm `WinMain` hoặc các hàm tương tự trong lập trình Windows, `HINSTANCE` được sử dụng để đại diện cho thể hiện của chính chương trình đang chạy. Điều này có thể được sử dụng để truy cập các tài nguyên như biểu tượng, dữ liệu tệp tin, hay các cấu trúc dữ liệu khác mà chương trình cần để hoạt động.
+
+  - Ví dụ, `HINSTANCE` có thể được sử dụng để:
+
+    - Load tệp tin resource như hình ảnh, âm thanh, hoặc cấu trúc dữ liệu từ tệp tin resource của chương trình.
+    - Tạo ra cửa sổ windows, điều này thường yêu cầu thông tin từ thể hiện của ứng dụng.
+    - Truy cập thông tin về đường dẫn của chương trình, ví dụ như để mở các tệp tin nằm trong cùng thư mục với chương trình.
+
+  - `HINSTANCE` thường được truyền vào các hàm Windows như là một tham số để cho phép chương trình truy cập thông tin về thể hiện của chính nó và thực hiện các tác vụ liên quan đến việc quản lý tài nguyên và giao diện.
+
 - ...
 
 ## [2] References:
