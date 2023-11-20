@@ -26,7 +26,13 @@
 
 ## [1]. Knowledge:
 
-- ...
+- Khác biệt chính giữa cấu hình SubSystem "Windows" (/SUBSYSTEM:WINDOWS) và "Console" (/SUBSYSTEM:CONSOLE) nằm ở cách mà chương trình của bạn sẽ chạy và tương tác với môi trường hệ thống:
+
+- 1. **SubSystem: Windows (/SUBSYSTEM:WINDOWS):** Khi chọn cấu hình này, chương trình của bạn sẽ không hiển thị cửa sổ dòng lệnh (command prompt) khi chạy. Thay vào đó, nó sẽ chạy trong môi trường giao diện người dùng Windows (GUI). Đây là cấu hình thích hợp cho các ứng dụng desktop hoặc ứng dụng không cần giao diện dòng lệnh.
+
+- 2. **SubSystem: Console (/SUBSYSTEM:CONSOLE):** Khi chọn cấu hình này, chương trình của bạn sẽ chạy trong cửa sổ dòng lệnh (command prompt). Điều này cho phép chương trình xuất thông tin ra dòng lệnh và tương tác với người dùng thông qua giao diện dòng lệnh. Đây thường là cấu hình được chọn cho các ứng dụng cần tương tác người dùng hoặc cần xuất thông tin ra dòng lệnh.
+
+- Lựa chọn giữa "Windows" và "Console" phụ thuộc vào loại ứng dụng mà bạn định xây dựng. Nếu bạn định xây dựng một ứng dụng với giao diện người dùng hoặc một dịch vụ Windows, bạn có thể chọn SubSystem là "Windows". Nếu bạn muốn chương trình của mình tương tác với người dùng thông qua dòng lệnh, bạn sẽ chọn SubSystem là "Console".
 
 ## [2] References:
 
