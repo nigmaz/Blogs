@@ -289,9 +289,7 @@ python3 -m pip install pyopenssl --upgrade
 
     * [gdb-peda](https://github.com/longld/peda) .
 
-    * [Reference](https://infosecwriteups.com/pwndbg-gef-peda-one-for-all-and-all-for-one-714d71bf36b8) .
-
->You can 1 plugin or use 3 in 1. 
+>You can use 3 plugin in 1 OS [Reference all-for-one](https://infosecwriteups.com/pwndbg-gef-peda-one-for-all-and-all-for-one-714d71bf36b8) . 
 
 ### 6.3. [pwninit](https://github.com/io12/pwninit) (Tools Patching Libc)
 
