@@ -67,7 +67,6 @@
    * [Windows-10 + flare-vm](https://github.com/mandiant/flare-vm) .
    * [RE-Toolkit Windows](https://github.com/mentebinaria/retoolkit) .
    * [Linux distribution + REMnux](https://remnux.org/) .
-     + https://docs.remnux.org/install-distro/get-virtual-appliance .
 - ...
 
 
