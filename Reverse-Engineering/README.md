@@ -49,19 +49,7 @@
 - https://cryptohack.org/courses/
 - https://cryptopals.com/
 
-## [2]. Forensics - Threat Hunting
-- Tools forensics VM   * https://github.com/1259iknowthat/ForVM
-  
-- Dump Memory Tools:
-  * https://github.com/volatilityfoundation/volatility
-  * https://github.com/volatilityfoundation/volatility/wiki/Command-Reference
-  * Convert snapshot file => file.vmem https://kb.vmware.com/s/article/2003941
-
-- `CTF>` BKsec-memorydump: https://gist.github.com/1259iknowthat/8cb818f0a37566b1fc25151ef074d9af
-- https://vmtien.id.vn/phan-0-tong-quan-ve-digital-forensics-lab-vncert-cc/
-- https://labs.jumpsec.com/no-logs-no-problem-incident-response-without-windows-event-logs/
-
-## [3]. References:
+## [2]. References:
 
 - **RE-Machine**:
    * [Windows-10 + flare-vm](https://github.com/mandiant/flare-vm) .
