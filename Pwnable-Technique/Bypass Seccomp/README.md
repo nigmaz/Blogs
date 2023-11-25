@@ -294,7 +294,7 @@ sudo gem install seccomp-tools
         + Đặt rax, rbx, rcx và rdx nhưng nó chỉ lấy 32 bit đầu tiên của các thanh ghi, đó là eax, ebx, ecx và edx.
         + VD: con trỏ tên tệp chỉ được tối đã là vùng nhớ nào đó có giá trị của địa chỉ tối đa 32-bit .
     * `open, write, mmap and exit syscall` https://github.com/unixist/seccomp-bypass 
-    * ...
+    * Allow `open, read` và 1 syscall khác VD như `sleep, getdents, ...` 
 ## [2] REFERENCES:
 
 - https://dreamhack.io/?obj=221
