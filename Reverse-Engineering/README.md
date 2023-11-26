@@ -44,10 +44,7 @@
    * https://github.com/mytechnotalent/Reverse-Engineering
    * https://github.com/michalmalik/linux-re-101
    * https://github.com/michalmalik/osx-re-101
-## [1]. Cryptography
-- Crypto (Dreamhack)
-- https://cryptohack.org/courses/
-- https://cryptopals.com/
+
 
 ## [2]. References:
 
