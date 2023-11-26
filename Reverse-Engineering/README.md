@@ -2,8 +2,6 @@
 
 - RVA (Relative Virtual Address) is an address relative to the base address of the program, an address at which the executable was loaded (where its MZ signature can be found). Any its `VA = base address + RVA`.
 
-![baseAddress.jpeg](./images/baseAddress.jpeg)
-
 - ...
 
 ## [0] Overview
