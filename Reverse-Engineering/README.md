@@ -1,7 +1,9 @@
 # Reverse-Engineering
 
 - RVA (Relative Virtual Address) is an address relative to the base address of the program, an address at which the executable was loaded (where its MZ signature can be found). Any its `VA = base address + RVA`.
-
+- File PE 32-bit có chữ `'L'` đằng sau PE Signature, PE 64-bit có chữ `'dt'` đằng sau PE signature.
+  - IMAGE_OPTIONAL_HEADER32/Magic: 0x10B cho 32bit.
+  - IMAGE_OPTIONAL_HEADER32/Magic: 0x20B cho 64bit.
 - ...
 
 ## [0] Overview
