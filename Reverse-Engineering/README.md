@@ -31,14 +31,7 @@
    * https://hackmd.io/Egk1bvxQTXCG1Tvkk2MNkg#REVERSE
    * https://knightz1.github.io/blog/?fbclid=IwAR2u4ZJvxEFvaGAcgSwZVRrc2a7UPQz8d3ExOP0vCSwTJZwFGVEVLu8viK8_aem_ATRFVrLxZKGJHRksRAr0yU7rUTq8lqlSuItH9V4Impev2IVselV1RbeaPWmnbK-UlKI
 
-- `References:`
-    * [Slide SVATTT - RE b2](https://docs.google.com/presentation/d/1SBBp04TkILxE-vSARvI_Uo3aF7lswh-FT5dumWWssT0/edit?fbclid=IwAR33UPvpYYBkpxZL8qfOJ2V-XF6xxFhE5BRuVnrNZGVkLGHT2U0i1f-iOio#slide=id.g241d1437ad9_0_0) .
-    * **AntiDebug**
-        + https://users.cs.utah.edu/~aburtsev/malw-sem/slides/02-anti-debugging.pdf
-        + https://www.apriorit.com/dev-blog/367-anti-reverse-engineering-protection-techniques-to-use-before-releasing-software#p4
-        + https://www.veracode.com/blog/2008/12/anti-debugging-series-part-i
-        + https://anti-debug.checkpoint.com/
-        + **Questions:** exception, debugger là gì ?
+
 - `Lab:`
    * https://github.com/wtsxDev/reverse-engineering
    * https://github.com/mytechnotalent/Reverse-Engineering
