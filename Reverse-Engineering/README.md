@@ -43,7 +43,7 @@
 
 - **RE-Machine**:
    * [Windows-10 + flare-vm](https://github.com/mandiant/flare-vm) .
-   * [RE-Toolkit Windows](https://github.com/mentebinaria/retoolkit) .
+     + [RE-Toolkit Windows](https://github.com/mentebinaria/retoolkit) .
    * [Linux-Distribution + REMnux](https://remnux.org/) .
 - ...
 
