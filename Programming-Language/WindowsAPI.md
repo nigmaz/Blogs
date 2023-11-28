@@ -83,6 +83,20 @@
 - https://learn.microsoft.com/en-us/windows/win32/api/
 
 
+1. **ASCII (American Standard Code for Information Interchange)**:
+   - ASCII là một bộ mã ký tự tiêu chuẩn được phát triển trong những năm 1960 tại Hoa Kỳ.
+   - Nó chỉ sử dụng 7 bit để biểu diễn ký tự (từ 0 đến 127).
+   - ASCII chỉ hỗ trợ các ký tự tiếng Anh cơ bản, số, dấu câu và các ký tự đặc biệt. Nó không hỗ trợ các ký tự đặc biệt của các ngôn ngữ khác.
+   - Ví dụ: 'A', 'B', '1', '$', '@'.
+
+2. **UTF-8 (Unicode Transformation Format - 8 bits)**:
+   - UTF-8 là một bộ mã ký tự Unicode tiêu chuẩn.
+   - Nó sử dụng từ 1 đến 4 byte để biểu diễn một ký tự. Điều này cho phép nó hỗ trợ hầu hết các ngôn ngữ và biểu tượng trên thế giới.
+   - Ký tự ASCII sẽ có cùng mã trong UTF-8 (nghĩa là, ký tự ASCII sẽ vẫn được biểu diễn bởi một byte như cách nó được biểu diễn trong ASCII).
+   - UTF-8 cũng có thể biểu diễn ký tự từ nhiều vùng Unicode khác nhau.
+   - Ví dụ: 'A', 'B', '1', '$', '@', các ký tự tiếng Trung, tiếng Nhật, tiếng Ả Rập, vv.
+
+Trong tổng quát, UTF-8 được coi là một bộ mã ký tự mở rộng vượt xa khỏi phạm vi của ASCII và là một tiêu chuẩn rất phổ biến cho biểu diễn các ký tự trong các ứng dụng hiện đại.
 
 
 
