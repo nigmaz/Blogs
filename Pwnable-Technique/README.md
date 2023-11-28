@@ -71,6 +71,14 @@ và hầu như tất cả các kỹ thuật mới đều được xây dựng d�
     Ngoài ra, có một cách để tạo một tệp tạm thời và tải lại tệp, như hình dưới đây, nhưng nó không chắc sẽ được sử dụng.
     gef➤  r `perl -e 'print "A"x10' > tmp` < tmp
     ```
+    * If you're using tmux, the following will automatically open up a gdb debugging session in a new horizontally split window:
+    ```bash
+    context.terminal = ["tmux", "splitw", "-h"]
+    ```
+    * And to split the screen with the new gdb session window vertically:
+    ```bash
+    context.terminal = ["tmux", "splitw", "-v"]
+    ```
 
 - `core dump` .
 
