@@ -23,6 +23,7 @@
 
 - TurnOffWindowsDefender:
   - https://www.youtube.com/watch?v=31TDHRegTLM
+  - Task Scheduler -> Edit group policy -> Windows Services
 
 - Windows10 Home: 
 
