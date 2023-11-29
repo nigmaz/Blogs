@@ -14,9 +14,9 @@
   - ...
 
 - `Error`:
-  - Fix error chinese language display in visual studio: [add utf-8 into Character Set](https://learn.microsoft.com/en-us/cpp/build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8?view=msvc-170#set-the-option-in-visual-studio-or-programmatically) .
-    - Open the project Property Pages dialog box.
-    - Configuration Properties > C/C++ > Command Line > Additional Options, add the `/utf-8` (or `/utf-16`).
+  - Fix error chinese language display in visual studio: [add utf-8 into Character Set](https://learn.microsoft.com/en-us/cpp/build/reference/utf-8-set-source-and-executable-character-sets-to-utf-8?view=msvc-170#set-the-option-in-visual-studio-or-programmatically). Open the project Property Pages dialog box:
+    - Configuration Properties > C/C++ > Command Line > Additional Options, add the `/utf-8`.
+    - Configuration Properties > Linker > Command Line > Additional Options, add the `/utf-8`.
 
   - ...
  
