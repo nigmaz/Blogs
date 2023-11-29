@@ -8,7 +8,8 @@
   - [Deploy a Visual C++ application](https://learn.microsoft.com/en-us/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project?view=msvc-170).
   - Project type: `Empty Project`.
 
-  - Config project: Properties > Linker > System > `SubSystem: Console (/SUBSYSTEM:CONSOLE)` OR `SubSystem : Windows (/SUBSYSTEM:WINDOWS)`.
+  - Config project:
+    - Properties > Linker > System > `SubSystem: Console (/SUBSYSTEM:CONSOLE)` OR `SubSystem : Windows (/SUBSYSTEM:WINDOWS)`.
 
   - Project multi-byte: Properties > Advanced (or. General for older versions) > Character Set, option to `Use Multi-Byte Character Set`.
   - ...
