@@ -2,7 +2,7 @@
 > Cheat sheet for Programming language and Tips setup IDE or text editor,...
 - Golang (*), Rust, Ruby, Perl
   - https://github.com/inancgumus/learngo
-
+  - sắp xếp kế hoạch học code golang | xem cái video trên cousera trước
 ## [0]. Overview
 - __Hight Level__
   * Python
