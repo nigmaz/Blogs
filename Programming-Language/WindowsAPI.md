@@ -10,6 +10,8 @@
 
   - Config project:
     - Properties > Linker > System > `SubSystem: Console (/SUBSYSTEM:CONSOLE)` OR `SubSystem : Windows (/SUBSYSTEM:WINDOWS)`.
+    - Nếu không set gì thì mặc định `Entry Point` sẽ nhận theo như mô tả bên dưới, nếu set lại thì setting như sau:
+    - `Properties -> Linker -> Advanced -> Entry Point: mainCRTStartup`.
 
   - Project multi-byte: Properties > Advanced (or. General for older versions) > Character Set, option to `Use Multi-Byte Character Set`.
   - ...
