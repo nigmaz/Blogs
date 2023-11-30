@@ -42,7 +42,6 @@ certutil -hashfile <ten-file> <hash-type>
    * https://github.com/michalmalik/osx-re-101
 
 ## [1]. Malware:
-# References
 
 - https://xikhud.wordpress.com/
 
