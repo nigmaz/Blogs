@@ -4,6 +4,9 @@
 - File PE 32-bit có chữ `'L'` or `'I'` đằng sau PE Signature, PE 64-bit có chữ `'dt'` đằng sau PE signature.
   - IMAGE_OPTIONAL_HEADER32/Magic: 0x10B cho 32bit.
   - IMAGE_OPTIONAL_HEADER32/Magic: 0x20B cho 64bit.
+```ps1
+certutil -hashfile <ten-file> <hash-type>
+```
 - ...
 
 ## [0] Overview
