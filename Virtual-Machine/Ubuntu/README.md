@@ -137,7 +137,7 @@ sudo dpkg --add-architecture i386
 ### 3.1. Python3 new version (not use directly python OS)
 
 - [Python3 install new versions](https://github.com/nigmaz/Blogs/blob/main/Virtual-Machine/Ubuntu/config.md#13-python3-new-versions) .
-- [Python 3.10 - Ubuntu 18.04 and 20.04 LTS | Video ](https://www.youtube.com/watch?v=q_SDagn_740) .
+- [Python 3.10 - Ubuntu 18.04 and 20.04 LTS | Video](https://www.youtube.com/watch?v=q_SDagn_740) .
 
 ### 3.2. Python3 and pip3 (use directly in OS Ubuntu)
 
