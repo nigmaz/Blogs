@@ -41,6 +41,31 @@ certutil -hashfile <ten-file> <hash-type>
    * https://github.com/michalmalik/linux-re-101
    * https://github.com/michalmalik/osx-re-101
 
+## [1]. Malware:
+# References
+
+- https://xikhud.wordpress.com/
+
+- Dev malware quynx: https://maldevacademy.com/syllabusa
+
+- Malware
+  - https://github.com/Da2dalus/The-MALWARE-Repo
+  - https://github.com/CMEPW/BypassAV
+  - https://anonyviet.com/hacker-an-malware-vao-hinh-anh-va-thuc-thi-nhu-the-nao/?fbclid=IwAR23pXiQNxQkhijurEbGFHk2nuCeZn3VsBY0GgbrCcyx_ojOEgY7InjszLI_aem_AdKHux11-ltaYC1vH3PTR7guZ_n1Bv46eDb7VmGrCf8CoKgb1lL4IrHRJtUGyBA9iU8
+  - https://class.malware.re/
+  - https://knightz1.github.io/blog/malware/analysis/2022/11/30/Malware-analysis.html
+  - [malware analysis](https://cocomelonc.github.io/tutorial/2022/05/09/malware-pers-4.html) .
+
+- Paper tech and real attack
+  - https://whitehat.vn/threads/chien-dich-aurora-va-cuoc-chien-ngam-tren-khong-gian-mang-giua-hai-sieu-cuong-phan-1.17333/
+  - https://whitehat.vn/threads/phan-tich-ma-doc-windows-co-ban-phan-i.16951/
+
+[+] https://anonyviet.com/minh-da-bypass-av-xam-nhap-windows-10-voi-metasploit-va-python-nhu-the-nao/
+
+[+] https://drx.home.blog/2018/07/20/tu-viet-chuong-trinh-danh-cap-password-duoc-luu-trong-chrome-bang-python/
+
+[+] [Russian Hacker](https://www.youtube.com/watch?v=CV39QzFpJx4)
+
 
 ## [2]. References:
 
