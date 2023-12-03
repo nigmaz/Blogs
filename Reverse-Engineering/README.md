@@ -14,6 +14,10 @@ certutil -hashfile <ten-file> <hash-type>
 - `Course:`
     * https://p.ost2.fyi/courses/course-v1:OpenSecurityTraining2+RE3011_re_cpp+2022_v1/about
     * [crackmes.one](https://crackmes.one/) .
+    * https://beginners.re/paywall/
+    * http://reversing.kr/
+    * https://kienbigmummy.medium.com/
+    * https://opensecuritytraining.info/Training.html
 
 - `Thực hành:` 
   * [IDA-kienmanowar](https://kienmanowar.wordpress.com/category/ida-pro-section/ida-tutorials/) .
