@@ -1,4 +1,4 @@
-# zAttack
+# Bugs Other
 - Technique and subTechnique support pwnable ctf and exploit.
 
 ## [0] Overview
