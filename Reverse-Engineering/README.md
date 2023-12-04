@@ -40,6 +40,7 @@ certutil -hashfile <ten-file> <hash-type>
 
 
 - `Lab:`
+   * PyInstaller
    * https://github.com/wtsxDev/reverse-engineering
    * https://github.com/mytechnotalent/Reverse-Engineering
    * https://github.com/michalmalik/linux-re-101
