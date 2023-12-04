@@ -2,7 +2,6 @@
 
 ## [0]. Tools
 
-- Keylogger
 - Metasploit framework
 - Nmap
 - Reverse Shell
