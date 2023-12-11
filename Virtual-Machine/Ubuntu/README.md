@@ -502,6 +502,10 @@ sudo apt install -y gcc-arm-linux-gnueabihf binutils-arm-linux-gnueabihf binutil
 sudo apt-get -y install qemu-kvm qemu
 ```
 
+### 6.14. Metasploit Framework
+
+- https://linuxways.net/ubuntu/how-to-install-metasploit-framework-on-ubuntu-20-04/
+
 # [7]. Finally
 
 - **The article is for general purposes, I recommend that you learn and practice as well as set up tools for the problems you have, do not install all the tools at once and I'm happy to receive your comments.**
