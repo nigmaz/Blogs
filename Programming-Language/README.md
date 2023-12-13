@@ -3,6 +3,7 @@
 - Golang (*), Rust, Ruby, Perl
   - https://github.com/inancgumus/learngo
   - sắp xếp kế hoạch học code golang | xem cái video trên cousera trước
+    - https://youtu.be/jFfo23yIWac?si=da0rTTWzetEi_RaX
 ## [0]. Overview
 - __Hight Level__
   * Python
