@@ -8,4 +8,5 @@
   - XOR (XOR với 1 ký tự hoặc là XOR với 1 chuỗi byte, chuỗi ký tự)
   - AES mode ECB
   - RSA
+  - Base64
   - 
