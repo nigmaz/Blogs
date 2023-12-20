@@ -17,6 +17,7 @@
 
 - https://fareedfauzi.gitbook.io/ctf-playbook/reverse-engineering
 - https://0xinfection.github.io/reversing/ .
+- https://ctf-wiki.mahaloz.re/reverse/windows/anti-debug/int-3/
 - `kienmanowar`:
 
   - https://kienbigmummy.medium.com/
