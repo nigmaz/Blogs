@@ -39,7 +39,7 @@
 
 ### [B]. Anti-Disassembly
 
-- ...
+- https://docs.google.com/presentation/d/1SBBp04TkILxE-vSARvI_Uo3aF7lswh-FT5dumWWssT0/edit#slide=id.ge1d838b627_4_19
 
 ### [C]. Anti-Virtual Machine Techniques
 
