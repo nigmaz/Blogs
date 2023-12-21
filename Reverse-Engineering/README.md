@@ -40,6 +40,8 @@
 ### [B]. Anti-Disassembly
 
 - https://docs.google.com/presentation/d/1SBBp04TkILxE-vSARvI_Uo3aF7lswh-FT5dumWWssT0/edit#slide=id.ge1d838b627_4_19
+- Thay đổi các byte không bao giờ được sử dụng như 0xE8, 0xE9, 0xEB thành 0x90 (NOP).
+
 
 ### [C]. Anti-Virtual Machine Techniques
 
