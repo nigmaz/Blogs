@@ -47,8 +47,7 @@
 
 ### [D]. Packers and Unpacking
 
-- [Pack PE Analysis Report](https://hackmd.io/@antoinenguyen09/Hy0a2mb0t?fbclid=IwAR0zotdKiVJV-22nlqlGds9YOtvsE08MiKU-zMD8S1urx2mdYZC4nRk2BfQ) .
-- https://github.com/unipacker/unipacker
+- `Tools`: https://github.com/unipacker/unipacker
 
 ### [E]. Reverse Cpp
 
