@@ -96,6 +96,7 @@ certutil -hashfile <ten-file> <hash-type>
   - https://anonyviet.com/minh-da-bypass-av-xam-nhap-windows-10-voi-metasploit-va-python-nhu-the-nao/
   - https://github.com/matro7sh/BypassAV
   - https://anonyviet.com/hacker-an-malware-vao-hinh-anh-va-thuc-thi-nhu-the-nao
+  - https://security.stackexchange.com/questions/252595/detect-what-antivirus-installed-on-windows-operating-system
 
 - `References`:
   - [How Does Malware Know It's Being Monitored?](https://www.youtube.com/watch?si=0lbLFGG9dlPLZ3PJ&v=5cch_-3NVLk&feature=youtu.be).
