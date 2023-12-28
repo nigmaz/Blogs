@@ -45,7 +45,7 @@
   - https://www.apriorit.com/dev-blog/367-anti-reverse-engineering-protection-techniques-to-use-before-releasing-software#p4
 
 - `Kỹ thuật phân tích`:
-  - `Static`: Phân tích code và viết script decrypt để phân tích rồi tìm chỗ nao quan trọng để debug nhằm lấy data hoặc phân tích hành vi.
+  - `Static`: Phân tích code và viết script decrypt để phân tích rồi tìm chỗ nào quan trọng để debug nhằm lấy data hoặc phân tích hành vi.
   - `Dynamic`: Debug và sử dụng cách bypass các kỹ thuật antidebug để đi đến follow chương trình mà muốn thực thi và phân tích (Nếu gặp mẫu nào malware dài thì debug sẽ rất lâu và khó).
 
 - Một số dạng bài:
