@@ -30,18 +30,27 @@
   - https://beginners.re/paywall/
   - https://opensecuritytraining.info/Training.html
 
-### [A]. Anti-Debugging
+### [A]. Anti-Disassembly
+
+- https://docs.google.com/presentation/d/1SBBp04TkILxE-vSARvI_Uo3aF7lswh-FT5dumWWssT0/edit#slide=id.ge1d838b627_4_19
+- Thay đổi các byte không bao giờ được sử dụng như 0xE8, 0xE9, 0xEB thành 0x90 (NOP).
+- Các `JUMPOUT` trong IDA là nó nhảy đến bytecode không hợp lệ hoặc do control flow phức tạp quá nên IDA không phân tích được.
+- Khi sửa giá trị EIP trong IDA để nhảy lung tung cũng phải chỉnh stack vs register nếu cần cho chuẩn và không để bị lỗi.
+
+### [B]. Anti-Debugging
 
 - `NOTE`:
   - https://anti-debug.checkpoint.com/
   - https://users.cs.utah.edu/~aburtsev/malw-sem/slides/02-anti-debugging.pdf
-- https://www.apriorit.com/dev-blog/367-anti-reverse-engineering-protection-techniques-to-use-before-releasing-software#p4
+  - https://www.apriorit.com/dev-blog/367-anti-reverse-engineering-protection-techniques-to-use-before-releasing-software#p4
 
-### [B]. Anti-Disassembly
+- `Kỹ thuật phân tích`:
+  - `Static`: Phân tích code và viết script decrypt để phân tích rồi tìm chỗ nao quan trọng để debug nhằm lấy data hoặc phân tích hành vi.
+  - `Dynamic`: Debug và sử dụng cách bypass các kỹ thuật antidebug để đi đến follow chương trình mà muốn thực thi và phân tích (Nếu gặp mẫu nào malware dài thì debug sẽ rất lâu và khó).
 
-- https://docs.google.com/presentation/d/1SBBp04TkILxE-vSARvI_Uo3aF7lswh-FT5dumWWssT0/edit#slide=id.ge1d838b627_4_19
-- Thay đổi các byte không bao giờ được sử dụng như 0xE8, 0xE9, 0xEB thành 0x90 (NOP).
-
+- Một số dạng bài:
+  - Chương trình sẽ tự decrypt bytecode lúc chạy để check input.
+  - ...
 
 ### [C]. Anti-Virtual Machine Techniques
 
