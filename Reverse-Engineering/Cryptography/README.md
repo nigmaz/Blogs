@@ -47,5 +47,10 @@
   	output K = S[(S[i] + S[j]) % 256]
   ```
 
-## [1]. ...
+## [1]. Base64
+
+- 3 byte (24 bit) chia thành 4 character (24 / 6 | mỗi char nhận 6 bit), nếu thiếu thì padding sử dụng dâu `=`.
+
+
+## [2]. ...
   
