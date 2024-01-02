@@ -64,6 +64,7 @@
 
   - `HINSTANCE` thường được truyền vào các hàm Windows như là một tham số để cho phép chương trình truy cập thông tin về thể hiện của chính nó và thực hiện các tác vụ liên quan đến việc quản lý tài nguyên và giao diện.
 
+- `Windows Messages`: http://autohotkey.free.fr/docs/misc/SendMessageList.htm
 - ...
 
 ## [2] References:
