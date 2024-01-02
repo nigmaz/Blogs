@@ -115,7 +115,10 @@ certutil -hashfile <ten-file> <hash-type>
   - Video WannaCry:
     - https://www.youtube.com/watch?si=gEm193iR5BD4bV-M&v=Sv8yu12y5zM&feature=youtu.be
     - https://github.com/Da2dalus/The-MALWARE-Repo/blob/master/Ransomware/WannaCry.exe
-  - ...
+
+- `Scenario`:
+  - https://noventiq.com/security_blog/detecting-guloaders-infection-chain-with-microsoft-sentinel
+- ...
 
 [+] [Russian Hacker video demo attack](https://www.youtube.com/watch?v=CV39QzFpJx4)
 
