@@ -54,6 +54,7 @@
 
 ### [C]. Anti-Virtual Machine Techniques
 
+- https://github.com/hzqst/VmwareHardenedLoader
 - ...
 
 ### [D]. Packers and Unpacking
