@@ -69,6 +69,7 @@ disk> delete partition override
   * OllyDbg
     + `OllyDbg-Scripts unpacking`: https://github.com/ThomasThelen/OllyDbg-Scripts
     + https://reverseengineering.stackexchange.com/questions/14149/how-to-load-a-script-in-ollydbg
+    + https://low-priority.appspot.com/ollydumpex/
     
 - `PE Analysis tools`
   * Detect It Easy
