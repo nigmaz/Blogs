@@ -64,6 +64,7 @@
 ### [E]. Reverse Cpp
 
 - https://p.ost2.fyi/courses/course-v1:OpenSecurityTraining2+RE3011_re_cpp+2022_v1/about
+- https://mahaloz.re/dec-history-pt1
 
 ### [F]. Reversing Other Platform
 
