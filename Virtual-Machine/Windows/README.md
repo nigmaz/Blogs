@@ -61,6 +61,7 @@ disk> delete partition override
     + `Lumina`: https://github.com/naim94a/lumen
 
   * WinDBG
+    + ...
   * x84_64dbg 
     + [Cheat-sheet](https://gist.github.com/sidharthpunathil/74911917ebc7be6ce13fabe8e3abdf8d) .
     + `scyllahide plugin`: https://www.youtube.com/watch?v=jNyFkld-7xU | https://github.com/x64dbg/ScyllaHide .
