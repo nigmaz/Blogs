@@ -58,10 +58,13 @@ disk> delete partition override
   * Hex-Rays IDA Pro 7.7
     + [IDA Pro - English](https://drive.google.com/file/d/1wf2XemQQwzpdSdQic63fZ0pC0829XcDE/view?usp=sharing) .
     + [IDA Pro - China](https://drive.google.com/file/d/1qkMy9u1FVz9uFRa2qfBI7_694iJLe5ZW/view?usp=sharing) .
+    + `Lumina`: https://github.com/naim94a/lumen
 
   * WinDBG
   * x84_64dbg 
     + [Cheat-sheet](https://gist.github.com/sidharthpunathil/74911917ebc7be6ce13fabe8e3abdf8d) .
+    + `scyllahide plugin`: https://www.youtube.com/watch?v=jNyFkld-7xU .
+      
   * OllyDbg
 - `PE Analysis tools`
   * Detect It Easy
