@@ -119,6 +119,9 @@ certutil -hashfile <ten-file> <hash-type>
 
 - `Scenario`:
   - https://noventiq.com/security_blog/detecting-guloaders-infection-chain-with-microsoft-sentinel
+ 
+- `Bypass anti-virus`:
+  - https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9312198
 - ...
 
 [+] [Russian Hacker video demo attack](https://www.youtube.com/watch?v=CV39QzFpJx4)
