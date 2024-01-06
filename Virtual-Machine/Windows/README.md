@@ -66,6 +66,7 @@ disk> delete partition override
     + `scyllahide plugin`: https://www.youtube.com/watch?v=jNyFkld-7xU | https://github.com/x64dbg/ScyllaHide .
       
   * OllyDbg
+    + `OllyDbg-Scripts unpacking`: https://github.com/ThomasThelen/OllyDbg-Scripts
 - `PE Analysis tools`
   * Detect It Easy
   * CFF Explorer Suite IV 
