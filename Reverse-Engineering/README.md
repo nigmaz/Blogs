@@ -95,6 +95,8 @@ certutil -hashfile <ten-file> <hash-type>
 
 - https://xikhud.wordpress.com/
 
+- https://samsclass.info/126/126_S16.shtml
+
 - Dev malware quynx: https://maldevacademy.com/syllabusa
 
 - CS6038/CS5138- https://class.malware.re/
