@@ -86,7 +86,9 @@
 - `ARM architectures`
 
   - https://github.com/mytechnotalent/Reverse-Engineering
-
+ 
+- `Golang`
+  - https://github.com/0xjiayu/go_parser
 ## [1]. Malware:
 
 ```ps1
