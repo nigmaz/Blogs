@@ -2,6 +2,7 @@
 
 - Setup debug internal function g-libc:
     * https://github.com/nigmaz/Blogs/tree/main/Virtual-Machine/Ubuntu#612-fsop---add-libc-source-code-to-gdb
+    * https://hackmd.io/MZ68cAPRRmC2JcQ_WGvvaw?both&fbclid=IwAR03LPfFOdctrCOsPf2gSExaw5o2BbkzsjdInMPfYO_CPx0FilR8khtr7y8
 
 ## [0] Overview
 
