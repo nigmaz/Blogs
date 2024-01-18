@@ -13,6 +13,8 @@
 
 ## [0]. RC4
 
+> Mã hóa đối xứng.
+
 - KSA | PGSA (hoặc gọi là PRG) sinh ra bảng mã s-box, sau đó dùng thuật toán để tìm idx trong s-box rồi dùng ký tự s-box để xor tạo encrypt-text.
 - `Plaintext` XOR `STREAMKEY` => `Ciphertext`.
 - Trong đó quá trình tạo `STREAMKEY` từ `SECRETKEY` được cho là ngẫu nhiên và không thể đảo ngược do vị trí các giá trị % 256 ra idx trong S-box là rất nhiều.
@@ -48,6 +50,8 @@
   ```
 
 ## [1]. Base64
+
+
 
 - 3 byte (24 bit) chia thành 4 character (24 / 6 | mỗi char nhận 6 bit), nếu thiếu thì padding sử dụng dâu `=`.
 
