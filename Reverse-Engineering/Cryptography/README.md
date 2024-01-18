@@ -3,7 +3,7 @@
 - Crypto (Dreamhack)
 - https://cryptohack.org/courses/
 - https://cryptopals.com/
-- `Tools`: https://gchq.github.io/CyberChef/, kt.gy,...
+- `Tools`: https://gchq.github.io/CyberChef/, https://kt.gy/tools.html#conv/,...
 - Các loại mã hóa thường gặp khi Reverse:
   - RC4
   - XOR (XOR với 1 ký tự hoặc là XOR với 1 chuỗi byte, chuỗi ký tự)
