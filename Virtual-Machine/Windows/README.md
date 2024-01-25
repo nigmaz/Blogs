@@ -3,7 +3,7 @@
 - `Build file install.bat or install.ps1` is loading...
   - 1, 2, 3, 95, 98, NT, 2000, XP, VISTA, 7, 8, 10, 11.
 - Tùy từng tường hợp demo cái gì trên máy ảo windows kiểu rce back reverseshell thì tắt hết firewall đi (chỉ thực tập cơ sở thôi).
-- Source File .ISO
+- Source File `.ISO`:
   - https://docs.google.com/spreadsheets/d/1o5dmOw8jBCVGxFmlMOsKgoIKULMY7tk-TCSz67IJMc4/pubhtml#
 
 ## [1]. Windows install and setup
