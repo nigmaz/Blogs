@@ -36,6 +36,8 @@
 - Thay đổi các byte không bao giờ được sử dụng như 0xE8, 0xE9, 0xEB thành 0x90 (NOP).
 - Các `JUMPOUT` trong IDA là nó nhảy đến bytecode không hợp lệ hoặc do control flow phức tạp quá nên IDA không phân tích được.
 - Khi sửa giá trị EIP trong IDA để nhảy lung tung cũng phải chỉnh stack vs register nếu cần cho chuẩn và không để bị lỗi.
+- `VM-Protecter`:
+  - ...
 
 ### [B]. Anti-Debugging
 
