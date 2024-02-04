@@ -183,3 +183,8 @@ File_offset = RVA - pSect->VirtualAddress + pSect->PointerToRawData
   - Phần Base reclocation(.reloc) chứa thông tin cần thiết để thực hiện việc thay đổi địa chỉ cơ sở(base address) của một module khi nó được tải vào bộ nhớ. Phàn này có vai trò quan trọng trong quátrinhf nạp và chạy một chương trinh. đảm bảo rằng các địa chỉ trong chương trình được định vị chính xác và đúng với địa chỉ bộ nhớ mà chương trình đang chạy.
   - Khi chương trình được nạp và chạy, trình nạp(loader) sẽ đọc phần `.reloc` và áp dụng cách điều chỉnh cần thiết vào các địa chỉ trong chương trình. Điều này đảmbaor rằng chương trình được định vị đúng trong bộ nhớ và có thể chạy mà không xảy ra xung đột địa chỉ hoặc lỗi tham chiếu.
   - Tóm lại, phần `.reloc` chứa thông tin để thực hiện điều chỉnh các địa chỉ cơ sở của một module khi chương trình được nạp vào bộ nhớ, đồng thời đảm bảo tính ổn định và khả năng chạy đúng của chương trình.
+
+
+-------------------------------------------------------------------------------------
+
+
