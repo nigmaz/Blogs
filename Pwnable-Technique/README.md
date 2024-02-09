@@ -79,7 +79,11 @@ và hầu như tất cả các kỹ thuật mới đều được xây dựng d�
     ```bash
     context.terminal = ["tmux", "splitw", "-v"]
     ```
-
+    * How to use pwndbg with sudo:
+    ```bash
+    $ sudo gdb -p <pid>
+    gdb> source /home/nigmaz/Tools/pwndbg/gdbinit.py
+    ```
 - `core dump` .
 
     * Check field `-c: core file size` , if this unable
