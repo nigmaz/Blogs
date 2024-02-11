@@ -8,5 +8,5 @@
 	- https://hex-rays.com/products/ida/support/idadoc/488.shtml
 
 - `Phím tắt`:
-  	- Y, G, HexView, Bolder + Shift + E,...
+  	- Y, G, HexView, Bolder + Shift + E, N,...
 
