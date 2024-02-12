@@ -4,6 +4,9 @@
 
 - Trình bày tiêu đề chính của bài báo cáo, ví dụ: "PE File: Introduction and Analysis".
 - Bài này sẽ sử dụng chương trình mẫu là `Notepad++` và các công cụ để phần tích `PE Bear`, `HxD`.
+- `References`:
+  - https://chuongdong.com/reverse%20engineering/2020/08/15/PE-Parser/
+  - ...
 
 ## Giới thiệu:
 
