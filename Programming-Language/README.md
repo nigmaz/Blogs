@@ -26,5 +26,12 @@
 
 - ...
 
+## [1]. Project
+
+- `Complete Employee Management System | .NET 8`: https://www.youtube.com/watch?v=buSimkHFYmw
+
+- `How to automate Accounting Ledger, Trial Balance, Income Statement, Balance Sheet in Excel | English`: https://www.youtube.com/watch?v=pgBsyTKAwLw
+
+- `C# Full Tutorial - Employee Management System with Source Code`: https://www.youtube.com/watch?v=8LlitCpjoxA
 
 
