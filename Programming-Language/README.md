@@ -36,3 +36,4 @@
 
 - `Full Project in Excel with Interactive Dashboard | Excel Project | Excel Project from Start to End`: https://www.youtube.com/watch?v=XeWfLNe3moM
   
+- `Build and Deploy a React Admin Dashboard With Real time Data, Charts, Events, Kanban, CRM, and More`: https://www.youtube.com/watch?v=6a3Dz8gwjdg 
