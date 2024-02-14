@@ -2,9 +2,8 @@
 
 ## [0]. Tools
 
-- Metasploit framework
+- Metasploit framework: Reverse Shell,...
 - Nmap
-- Reverse Shell
 - Một số sản phẩm vật lý hỗ trợ:
     * Thiết bị theo dõi gắn chip GPS.
     * Camera mini.
