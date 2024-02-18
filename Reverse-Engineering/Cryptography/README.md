@@ -52,10 +52,9 @@
 
 ## [1]. Base64
 
+- 3 byte (24 bit) chia thành 4 character (24 / 6 | mỗi char nhận 6 bit), nếu thiếu thì padding sử dụng dấu `=`.
 
-
-- 3 byte (24 bit) chia thành 4 character (24 / 6 | mỗi char nhận 6 bit), nếu thiếu thì padding sử dụng dâu `=`.
-
+- Các loại mã hóa tương tự về nguyên lý: base64, base58, base91,...
 
 ## [2]. ...
   
