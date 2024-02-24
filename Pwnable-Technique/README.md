@@ -104,7 +104,7 @@ và hầu như tất cả các kỹ thuật mới đều được xây dựng d�
     gdb -q <file>
     (gdb) core <path-core-file>
     ```
-
+    
 - `patchelf` - Patch Glibc into elf.
 ```bash
 ##################### SUGGEST ##########################
