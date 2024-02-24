@@ -4,6 +4,7 @@
 
   - [Cpp=>Assemble](https://godbolt.org/) .
   - https://microcorruption.com/debugger/Hanoi
+  - https://github.com/tandasat/scripts_for_RE
 
 - ...
 
