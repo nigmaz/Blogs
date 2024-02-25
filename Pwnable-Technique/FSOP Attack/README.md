@@ -24,10 +24,11 @@
     * https://chovid99.github.io/posts/file-structure-attack-part-1/
 
 ## [1] Technique Attack
-- FSOP có hai kiểu attack 
+- FSOP attack: 
   * `1.` là corrupt file stream của libc (thường là stdout để leak hoặc ít hơn là stdin để đọc tùy ý). 
-  * `2.` là fake hoặc corrupt file stream của chương trình khởi tạo (có thể là vtable, cả struct file, ...) 
-  * `3.` một dạng nữa là kết hợp cùng tấn công HEAP (House of Orange) hoặc các dạng tấn công khác.
+  * `2.` là fake hoặc corrupt file stream của chương trình khởi tạo (có thể là vtable, cả struct file, ...).
+  * `3.` một dạng nữa là kết hợp cùng tấn công HEAP (House of Orange) hoặc các dạng tấn công.
+  * `4.` FSOP + Exit Handlers.
 - FSOP technique
    *  `_IO_FILE-Arbitrary-Address-Read`  | stdout => read arbitrary 
    *  `_IO_FILE-Arbitrary-Address-Write` |stdin => write arbitrary
