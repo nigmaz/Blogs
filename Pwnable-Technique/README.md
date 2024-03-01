@@ -85,8 +85,9 @@ và hầu như tất cả các kỹ thuật mới đều được xây dựng d�
     gdb> source /home/nigmaz/Tools/pwndbg/gdbinit.py
     ```
     * Check: `show environment HOME`.
-    * When use gdb with sudo, $HOME=/root => add plugin into `/root/.gdbinit`.
+    * When use gdb with sudo, $HOME=/root => add plugin into `/root/.gdbinit`. (use gef-gdb with root).
     * Permission error when attempting to parse page tables with gdb-pt-dump. Either change the kernel-vmmap setting, re-run GDB as root, or disable `ptrace_scope` (`echo 0 | sudo tee /proc/sys/kernel/yama`)
+    * ...
 - `core dump` .
 
     * Check field `-c: core file size` , if this unable
