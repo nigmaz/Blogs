@@ -86,7 +86,7 @@ và hầu như tất cả các kỹ thuật mới đều được xây dựng d�
     ```
     * Check: `show environment HOME`.
     * When use gdb with sudo, $HOME=/root => add plugin into `/root/.gdbinit`. (use gef-gdb with root).
-    * Permission error when attempting to parse page tables with gdb-pt-dump. Either change the kernel-vmmap setting, re-run GDB as root, or disable `ptrace_scope` (`echo 0 | sudo tee /proc/sys/kernel/yama`)
+    * Permission error when attempting to parse page tables with gdb-pt-dump. Either change the kernel-vmmap setting, re-run GDB as root, or disable `ptrace_scope` (`echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope`)
     * ...
 - `core dump` .
 
