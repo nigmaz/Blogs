@@ -19,7 +19,7 @@ và hầu như tất cả các kỹ thuật mới đều được xây dựng d�
       + DownUnder
       + Recruit (còn bài heap interupt t-cache management)
       + TeamItaly  
-   * ...
+   * Pwnable v8
 ## [0]. Cheatsheet
 
 - [GLIBC source code](https://elixir.bootlin.com/glibc/glibc-2.23/source) .
