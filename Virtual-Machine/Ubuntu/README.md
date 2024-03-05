@@ -338,9 +338,11 @@ or use libc-database search WEB [libc_serach](https://libc.blukat.me/).
 - You will need to use docker when you want to setup the same environment with the server.
 
 ```bash
-sudo apt install -y docker.io docker-compose && \
+sudo apt install -y docker.io && \
 sudo service docker status
 ```
+
+- `docker-compose`: https://www.educative.io/blog/docker-compose-tutorial
 
 ### 6.8. IDA Freeware (Tools for reversing)
 
