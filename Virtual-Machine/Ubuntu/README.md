@@ -344,6 +344,10 @@ sudo service docker status
 
 - `docker-compose`: https://www.educative.io/blog/docker-compose-tutorial
 
+- References:
+  - https://docs.docker.com/engine/install/ubuntu/
+  - https://docs.docker.com/compose/install/standalone/
+
 ### 6.8. IDA Freeware (Tools for reversing)
 
 **NOTE:** `sudo apt-get install libxcb-xinerama0` .
