@@ -168,6 +168,7 @@ from pwn import *
 - `-static` : file không liên kết thư viện động.
 - `-g` : debug file with source code.
 - `-Wall` : in ra mọi warning để tạo mã tốt nhất có thể.
+- `gcc -fno-stack-protector -ggdb -mpreferredstack-boundary=2 . /stack1.c -o stack1`.
 
 ## [2]. Refenrences:
 
