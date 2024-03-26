@@ -11,3 +11,4 @@
   	- Y, G, HexView, Bolder + Shift + E, N,...
 
 - `Relocate load address of main module IDA`: see `Edit`-->`Segments`-->`Rebase program` menu item in IDA.
+- Kinh nghiệm là 1 số bài IDA không tạo mã giả được hết thì dùng Ghidra hoặc các tools tạo pseudo code khác. (VD Bài golang của anh Hoàn,...)
