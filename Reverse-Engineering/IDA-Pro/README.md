@@ -10,3 +10,4 @@
 - `Phím tắt`:
   	- Y, G, HexView, Bolder + Shift + E, N,...
 
+- `Relocate load address of main module IDA`: see `Edit`-->`Segments`-->`Rebase program` menu item in IDA.
