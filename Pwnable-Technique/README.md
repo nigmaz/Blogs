@@ -24,7 +24,7 @@ và hầu như tất cả các kỹ thuật mới đều được xây dựng d�
 
 - [GLIBC source code](https://elixir.bootlin.com/glibc/glibc-2.23/source) .
 - [Problem when exploit remote with socat](https://ir0nstone.gitbook.io/notes/types/stack/exploiting-over-sockets/socat) .
-
+-  Ta có thể leak được cả canary và cũng như libc thông qua hàm read và hàm puts khi mà hàm read sẽ không thêm kí tự NULL byte vào cuối input mà trong khi hàm puts sẽ tiến hành đọc cho đến khi gặp NULL byte thì dừng.
 - `pwntools` - [pwntools-cheatsheet.md](https://gist.github.com/anvbis/64907e4f90974c4bdd930baeb705dedf) .
     * Challenge stripped và Enable PIE:
         + gdb.attach() sử dụng `breakrva [offset]`
